@@ -36,7 +36,7 @@ header("Pragma: no-cache"); // HTTP/1.0
 <meta property="og:type" content="website">
 <meta property="og:title" content="차놀자협동조합">
 <meta property="og:url" content="http://www.chanolja-union.kr">
-
+<link rel="icon" href="http://chanolja-union.kr/theme/union/img/favicon.ico" />
 
 <?php
 /*if (G5_IS_MOBILE) {
