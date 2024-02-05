@@ -70,6 +70,7 @@ span {
   background-image:url(../img/sub/sub_visual_01.jpg);
 }
 .visual .text_box {
+    width: 100%;
     position:absolute;
     top:60%;
     left:50%;
