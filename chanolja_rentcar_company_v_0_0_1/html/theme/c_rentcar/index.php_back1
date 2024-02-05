@@ -1,0 +1,497 @@
+<?php
+if (!defined('_INDEX_')) define('_INDEX_', true);
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+
+if (G5_IS_MOBILE) {
+    include_once(G5_THEME_MOBILE_PATH.'/index.php');
+    return;
+}
+
+if(G5_COMMUNITY_USE === false) {
+    include_once(G5_THEME_SHOP_PATH.'/index.php');
+    return;
+}
+
+include_once(G5_THEME_PATH.'/head.php');
+?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/icofont.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    </div>
+    <div id="main">
+        <div class="top-btn">
+            <i class="xi-angle-up"></i>
+
+        </div>
+        <div id="fullpage">
+            <div class="section main-section">
+                <div class="main-slick">
+                    <div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/Visual01.jpg')">							
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/Visual02.jpg')">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/Visual03.jpg')">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/Visual04.jpg')">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/Visual05.jpg')">
+                        </div>
+                    </div>
+                </div>
+                <div class="controll">
+                    <div class="progressBarContainer">
+                            <div class="item">
+                                <h3>01</h3>
+                                <span data-slick-index="0" class="progressBar"></span>
+                            </div>
+                            <div class="item">
+                                <h3>02</h3>
+                                <span data-slick-index="1" class="progressBar"></span>
+                            </div>
+                            <div class="item">
+                                <h3>03</h3>
+                                <span data-slick-index="2" class="progressBar"></span>
+                            </div>
+                            <div class="item">
+                                <h3>04</h3>
+                                <span data-slick-index="2" class="progressBar"></span>
+                            </div>
+                            <div class="item">
+                                <h3>05</h3>
+                                <span data-slick-index="2" class="progressBar"></span>
+                            </div>
+                    </div>
+                    <div class="slick-btn">
+                        <div class="pause-btn">
+                            <i class="xi-pause"></i>
+                        </div>
+                        <div class="play-btn">
+                            <i class="xi-play"></i>
+                        </div>
+                    </div>
+                    <div class="main-controll">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<!-- main #1 -->
+
+            <div class="section section1">
+				<center>
+				<br>
+				<br>
+                 <h2>고객이 원하는 차량을 시간만큼, 고객이 필요한 <span>모든 렌터카 서비스</span> 제공  </h2>
+				<br>
+				<br>
+<br>
+<br>
+<br>
+
+ 				</center>
+                <div class="sec1-inner">
+                     <div class="sec1-lt">
+                        <div>
+
+                        <img src = "<?php echo G5_THEME_URL?>/img/main/section1_left.jpg">                                       
+                        </div>
+                    </div>
+                    <div class="sec1-rt">
+                        <div class="category">
+	
+                        </div>
+                            <div class="sec1-slick">
+                                <div class="_dl">
+                                    <dl>
+                                     <img src = "<?php echo G5_THEME_URL?>/img/main/section1_img.png">                                       
+
+                                    </dl>
+									<center>
+                                    <a href="<?php echo G5_THEME_URL?>/sub/jw-business2.php"><h3>일반렌트카 문의</h3></a>
+									</center>
+                                </div>
+                            </div>
+
+						
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<!-- main #2 -->
+
+            <div class="section section2">
+				<center>
+				<br>
+				<br>
+                 <h2>렌터카 창업! <span>차놀자 렌트카</span>와 함께하세요.</h2>
+				<br>
+				<br>
+<br>
+<br>
+<br>
+
+ 				</center>
+                <div class="sec2-inner">
+                     <div class="sec2-lt">
+                        <div>
+
+                        <img src = "<?php echo G5_THEME_URL?>/img/main/sec2-lt.jpg">                                       
+                        </div>
+                    </div>
+
+	                  <div class="sec2-rt">
+                        <div>
+
+                        <img src = "<?php echo G5_THEME_URL?>/img/main/sec2-rt.jpg">                                       
+                        </div>
+                    </div>
+                </div>
+
+					<!--
+                    <div class="sec2-rt">
+                        <div class="category">
+	
+                        </div>
+                            <div class="sec2-slick">
+                                <div class="_dl">
+                                    <dl>
+                                     <img src = "<?php echo G5_THEME_URL?>/img/main/sec2-rt.jpg">                                       
+
+                                    </dl>
+
+                                </div>
+                            </div>
+
+						
+                    </div>
+                </div>
+													<center>
+                                    <a href="<?php echo G5_THEME_URL?>/sub/jw-business2.php"><h3>일반렌트카 문의</h3></a>
+									</center>
+-->
+            </div>
+
+<!--
+            <div class="section section2">
+                <div class="sec2-inner elm">
+                    <div class="sec2-lt">
+                        <div class="sec2-con">
+                            <dl>
+                                <dd><div class="line"></div>Pipeline</dd>
+                                <dt>세계수준의 기술과 생산력</dt>
+                                <dd> 최고의 연구진들과 다양한 시도를 통해 우수한 제품을 개발합니다.<br>
+                                    건강한 미래를 위하여 OOO가 노력합니다.</dd>
+                            </dl>
+                            <a href="<?php echo G5_THEME_URL?>/sub/jw-company.php"><span>MORE VIEW</span></a>
+                         
+                            <ul class="sec2-contents">
+                                <li>
+                                    <i class="icofont-chart-growth"></i>
+                                    <p class="num" data-rate="45">0</p>
+                                    <dl>
+                                        <dt>제품 생산공장</dt>
+                                        <dd>Production plant</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="icofont-bulb-alt"></i>
+                                    <p class="num" data-rate="07">0</p>
+                                    <dl>
+                                        <dt>신제품 출시</dt>
+                                        <dd>New Product</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="icofont-beaker"></i>
+                                    <p class="num" data-rate="15">0</p>
+                                    <dl>
+                                        <dt>연구기간</dt>
+                                        <dd>Research period</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="icofont-badge"></i>
+                                    <p class="num" data-rate="23">0</p>
+                                    <dl>
+                                        <dt>제품 수출국가</dt>
+                                        <dd>Export country</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec2-rt background"></div>
+                </div>
+            </div>
+-->
+
+
+<!-- main #3 -->
+			<div class="section section3">
+
+				<center>
+				<br>
+				<br>
+                 <h2><span>차놀자 렌트카</span>만의 특별한 장기렌터카 서비스</h2>
+				<br>
+				<br>
+                <h3>여신금융협회 교육과 시헙을 이수한 등록상담사를 통해 합법적인 상담으로<br>고객 컨설팅을 통한 맞춤형 상담을 제공합니다.</h2>
+<br>
+<br>
+<br>
+
+ 				</center>
+                <div class="sec3-inner">
+
+                        <div>
+
+                        <img src = "<?php echo G5_THEME_URL?>/img/main/sec3-sample.png">                                       
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+<!--
+            <div class="section section3 background">
+                <div class="bg background"></div>
+                <div class="sec3-inner">
+                    <div class="sec3-tit">
+                        <dl>
+                            <dd><div class="line"></div>BioTechnology</dd>
+                            <dt>미래 기술 발굴</dt>
+                            <dd>
+                                최고의 연구진들과 다양한 시도를 통해 우수한 제품을 개발합니다.<br>
+                                건강한 미래를 위하여 OOO가 노력합니다.
+                            </dd>
+                        </dl>
+                    </div>
+                    <ul class="sec3-contents">
+                        <li>
+                            <i class="icofont-dna"></i>
+                            <dl>
+                                <dt>BIOREACTOR</dt>
+                                <dd>생물의 체내에서 일어나는 화학반응을 체외에서 이용하는 시스템으로 이를 실현시키면 자원 및 에너지절약을 이룰 수 있다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <i class="icofont-molecule"></i>
+                            <dl>
+                                <dt>BIOREACTOR</dt>
+                                <dd>생물의 체내에서 일어나는 화학반응을 체외에서 이용하는 시스템으로 이를 실현시키면 자원 및 에너지절약을 이룰 수 있다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <i class="icofont-autism"></i>
+                            <dl>
+                                <dt>BIOREACTOR</dt>
+                                <dd>생물의 체내에서 일어나는 화학반응을 체외에서 이용하는 시스템으로 이를 실현시키면 자원 및 에너지절약을 이룰 수 있다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <i class="icofont-pills"></i>
+                            <dl>
+                                <dt>BIOREACTOR</dt>
+                                <dd>생물의 체내에서 일어나는 화학반응을 체외에서 이용하는 시스템으로 이를 실현시키면 자원 및 에너지절약을 이룰 수 있다.</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="sec3-mo-dot"></div>
+                </div>
+            </div>
+
+-->
+
+
+<!-- main #4 -->
+            <div class="section section4">
+				<center>
+				<br>
+				<br>
+
+<br>
+<br>
+<br>
+
+ 				</center>
+                <div class="sec4-inner">
+                     <div class="sec4-lt">
+                        <div>
+						
+                        <h2><span>사고대차,</span><br>이제 여러분이<br>선택하세요.  </h2>
+						<br><br>
+						<h1>아직도, 사고시에 보험사를 통해 차량을 바도 계시나요?<br>몇일을 사용해도 고객님의 조건에 맞는 렌트카를 선택해 보세요.<br>
+						<br>
+						<br>
+						<br>
+                                 <a href="<?php echo G5_THEME_URL?>/sub/jw-business2.php"><h3>지금 바로 상담 <br> 041-522-7000</h3></a>
+
+                        </div>
+                    </div>
+                    <div class="sec4-rt">
+                        <div class="category">
+	
+                        </div>
+                            <div class="sec4-slick">
+                                <div class="_dl">
+                                    <dl>
+                                     <img src = "<?php echo G5_THEME_URL?>/img/main/sec4-img.jpg">                                       
+
+                                    </dl>
+
+                                </div>
+                            </div>
+
+						
+                    </div>
+                </div>
+            </div>
+
+
+			<!-- main #5 -->
+            <div class="section section5">
+				<center>
+				<br>
+				<br>
+
+<br>
+<br>
+<br>
+
+ 				</center>
+                <div class="sec5-inner">
+                     <div class="sec5-lt">
+                        <div>
+						
+                        <h2>캠핑카 여행도 이제<br><span>합리적인 가격</span>의 <span>렌터카</span>로 <br>떠날 수 있습니다.  </h2>
+						<br><br>
+						<h1>캠핑카구매, 개조, 렌트, 수익형 렌트, 캠핑장 예약 등<br>모든 캠핑여행 서비스가 한 곳에서!</h1>
+						<br>
+						<br>
+						<br>
+                                 <a href="<?php echo G5_THEME_URL?>/sub/jw-business2.php"><h3>캠핑카 예약하기</h3></a>
+
+                        </div>
+                    </div>
+                    <div class="sec5-rt">
+                        <div class="category">
+	
+                        </div>
+                            <div class="sec5-slick">
+                                <div class="_dl">
+                                    <dl>
+                                     <img src = "<?php echo G5_THEME_URL?>/img/main/sec5-img.jpg">                                       
+
+                                    </dl>
+
+                                </div>
+                            </div>
+
+						
+                    </div>
+                </div>
+            </div>
+
+			<!-- main #6 -->
+			<div class="section section6">
+
+				<center>
+				<br>
+				<br>
+
+				<br>
+				<br>
+
+<br>
+<br>
+<br>
+
+ 				</center>
+                <div class="sec6-inner">
+
+                        <div>
+
+                        <img src = "<?php echo G5_THEME_URL?>/img/main/sec6-sample.png">                                       
+                        </div>
+                    </div>
+                </div>
+
+
+<!--
+            <div class="section section4 fp-auto-height" >
+                <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/main/14.jpg')"></div>
+                <div class="sec4-inner">
+                    <div class="sec4-tit">
+                        <dl>
+                            <dd><div class="line"></div>Our News</dd>
+                            <dt>바이오산업의 중심에 있는<br>
+                                OOO의 소식을 확인하세요.
+                            </dt>
+                            <dd>
+                            최고의 연구진들과 다양한 시도를 통해 우수한 제품을 개발합니다.<br>
+                            건강한 미래를 위하여 OOO가 노력합니다.
+                            </dd>
+                        </dl>
+                        <a href="<?php echo G5_THEME_URL?>/sub/jw-history.php"><span>MORE VIEW</span></a>
+                    </div>
+                    <div class="sec4-contents">
+                        <div class="news-tit">
+                            <h4>NEWS</h4>
+                            <div class="sec4-arrow"></div>
+                        </div>
+                        <?php echo latest("theme/slider","gallery01",4,100)?>
+                    </div>
+                </div>
+            </div>
+
+
+-->
+
+
+            <?php include_once(G5_THEME_PATH.'/tail.php'); ?>
+
+            <div class="section fp-auto-height">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="<?php echo G5_THEME_URL?>/js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="<?php echo G5_THEME_URL?>/js/main.js"></script>
+    <script src="<?php echo G5_THEME_URL?>/js/slick.js"></script>
+    <script src="<?php echo G5_THEME_URL?>/js/slick.min.js"></script>
+    <script src="<?php echo G5_THEME_URL?>/js/common.js"></script>
+    <script>
+        AOS.init({
+         duration: 1200,
+        });
+    </script>
+    
+<?php
+ include_once(G5_THEME_PATH.'/tail.sub.php');
+ ?>
