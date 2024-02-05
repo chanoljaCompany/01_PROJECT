@@ -597,6 +597,7 @@ function touch_end(event) {
     top: 20px;
     padding: 10px;
     font-weight: bold;
+    cursor:pointer;
   }
 </style>
 <script>

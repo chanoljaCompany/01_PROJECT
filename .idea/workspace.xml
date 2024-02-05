@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c8ca26a-642e-4377-975d-33de8340a639" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chanolja_union_service_v_0_0_1/html/theme/union/img/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chanolja_union_service_v_0_0_1/html/theme/union/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/chanolja_union_service_v_0_0_1/html/theme/union/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chanolja_camping_service_v_0_0_1/html/theme/template1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/chanolja_camping_service_v_0_0_1/html/theme/template1/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707097842479</updated>
       <workItem from="1707097846761" duration="58000" />
-      <workItem from="1707099406101" duration="4387000" />
+      <workItem from="1707099406101" duration="4870000" />
     </task>
     <servers />
   </component>
