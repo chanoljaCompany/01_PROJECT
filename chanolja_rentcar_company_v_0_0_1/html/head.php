@@ -104,8 +104,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     if( empty($row) ) continue;
                 $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
             ?>
-            <li class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
-                <a class="menu_tit"><?php echo $row['me_name'] ?></a>
+            <li onclick="location.href='<?php echo $row['me_link']; ?>'" class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
+                <a href="<?php echo $row['me_link']; ?>" class="menu_tit"><?php echo $row['me_name'] ?></a>
                     <!-- s:하위 gnb -->
                     <?php
                         $k = 0;

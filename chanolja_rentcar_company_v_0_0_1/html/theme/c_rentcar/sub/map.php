@@ -53,7 +53,7 @@ $g5['title'] = "오시는 길";
                 </div>
                 <div class="rt_box">
                     <strong>자동차 토탈 플랫폼 차놀자</strong>
-                    <strong>차놀자렌트카 주식회사 & 지에스렌트카 주식회사</strong>
+                    <strong>차놀자렌트카 주식회사 <br/> & <br/> 지에스렌트카 주식회사</strong>
                     <p>
                         <span>ADDRESS</span>
                         <span>충남 천안시 동남구 충절로 224, 1층</span>
