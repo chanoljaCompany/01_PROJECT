@@ -1,0 +1,67 @@
+/*reset.css*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,700,900');
+body.dark-mode .aboutWrap { background:#333; }
+body.dark-mode .aboutWrap h1, h2 , h3, p { color:#fff; }
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode a { color:#fff; }
+body.dark-mode button {
+    background-color:#c71526;
+    color:#fff;
+}
+body.light-mode h1, h2, h3, p, a { color:#333; }
+body.light-mode button {
+    background-color:#c71526;
+    color:#eee
+}
+button { background:#c71526; }
+#darkLight {
+    width:70px; height:90px; 
+    font-size:3em;
+    padding-left:0.5%;
+    position:fixed;
+    right:0; bottom:3%;
+    border-radius:100px 0 0 100px;
+    transition:all .3s;
+    z-index:99999;
+}
+#darkLight:hover {
+    width:130px;
+    padding-left:1%;
+    background-color:#111;
+}
+html, body{width: 100%; -ms-overflow-x: hidden; overflow-x: hidden;}
+#aside{display: none;} 
+#top_btn{display: none;} 
+.gnb_menu_btn{display: none;}
+body{background: none;}
+#hd{border-top: none; width: 100%; height: 90px; position: absolute;}
+#hd_wrapper{padding: 0;}
+#container_wr{width: 100%;}
+#container{margin: 0; width: 100%;}
+#logo{padding: 0; float: center;}
+#gnb{height: 100%;}
+#gnb .gnb_wrap{width: 100%;}
+#gnb .gnb_mnal{display: none;}
+#gnb #gnb_1dul{background: none; -webkit-box-shadow: none; box-shadow: none; width: 100%;}
+#gnb .gnb_1dli{padding: 0;}
+#gnb .gnb_1dli:hover{background: none; -webkit-transition: none; transition: none;}
+.gnb_1da{color: #000;}
+#ft{border-top: none; background: none; padding-bottom: 0; text-align: left;}
+#ft_wr{width: 100%;}
+#ft_link{border-bottom: none; padding: 0;}
+#ft_link a{padding: 0; line-height: 1em; font-weight: normal;}
+#ft_copy{color: #000; font-size: 1em;}
+button[type="submit"]{outline: 0;}
+input[type="submit"]{-webkit-appearance: none;-webkit-border-radius: 0;}
+img, iframe, fieldset, frameset, input, select, option, textarea, button{border: 0 none; border-radius: 0;}
+ul, ol, li{list-style: none;}
+b, strong{font-weight: normal;}
+address, i, em{font-style: normal;}
+a{text-decoration:none; color: #000;}
+a, img, label{max-width:100%; display: block;}
+html, body, table, tr, th, td, input, select, option, textarea, button{font: 15px / 150% ; color: #000; font-weight: normal;}
+h1, h2, h3, h4, h5, h6{font-size: 1.0em; font-weight: normal; color: #000;}
