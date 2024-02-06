@@ -6,13 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="8c8ca26a-642e-4377-975d-33de8340a639" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chanolja_rentcar_company_v_0_0_1/html/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/chanolja_rentcar_company_v_0_0_1/html/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chanolja_rentcar_company_v_0_0_1/html/theme/c_rentcar/sub/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/chanolja_rentcar_company_v_0_0_1/html/theme/c_rentcar/sub/map.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chanolja_rentcar_company_v_0_0_1/html/theme/c_rentcar/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/chanolja_rentcar_company_v_0_0_1/html/theme/c_rentcar/head.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,12 +50,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/gimchayeong/Documents/GitHub/01_PROJECT/chanolja_union_service_v_0_0_1/html/theme/union/img",
+    "last_opened_file_path": "/Users/gimchayeong/Documents/GitHub/01_PROJECT",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -51,6 +70,21 @@
       <recent name="$PROJECT_DIR$/chanolja_rentcar_company_v_0_0_1/html/theme/c_rentcar/img" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="01_PROJECT" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="01_PROJECT" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +94,9 @@
       <option name="presentableId" value="Default" />
       <updated>1707097842479</updated>
       <workItem from="1707097846761" duration="58000" />
-      <workItem from="1707099406101" duration="10549000" />
+      <workItem from="1707099406101" duration="10752000" />
+      <workItem from="1707177907750" duration="208000" />
+      <workItem from="1707178201037" duration="2338000" />
     </task>
     <servers />
   </component>

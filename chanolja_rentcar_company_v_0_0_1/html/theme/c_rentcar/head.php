@@ -110,7 +110,19 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
             ?>
             <li class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
-                <a class="menu_tit"><?php echo $row['me_name'] ?></a>
+                <?php
+                    if($gnb_zindex == 995) { /* 캠핑일때 링크 걸기  */
+                        echo "
+                            <a href='http://chatour.dothome.co.kr/' class='menu_tit'>" . $row['me_name'] . "</a>
+                        ";
+                    }
+                    else {
+                        echo "
+                            <a class='menu_tit'>" . $row['me_name'] . "</a>
+                       ";
+                    }
+                ?>
+
                     <!-- s:하위 gnb -->
                     <?php
                         $k = 0;
