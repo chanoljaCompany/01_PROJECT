@@ -80,9 +80,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         <li class="tnb_admin"><a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>">관리자</a></li>
                         <?php }  ?>
                         <?php } else {  ?>
-                        <li><a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a></li>
-                        <li><a href="<?php echo G5_BBS_URL ?>/login.php">로그인</a></li>
+                        <li><a href="<?php echo G5_BBS_URL ?>/register.php"><img src="http://gsrent.dothome.co.kr/theme/c_rentcar/img/회원가입아이콘.png" style="width: 30px;"></a></li>
+                        <li><a href="<?php echo G5_BBS_URL ?>/login.php"><img src="http://gsrent.dothome.co.kr/theme/c_rentcar/img/로그인아이콘.png" style="width: 30px;"></a></li>
                         <?php }  ?>
+                        <li><a href="https://www.youtube.com/@TV-ph5rs"><button style="border: none; background-color: transparent;"><img src="http://gsrent.dothome.co.kr/theme/c_rentcar/img/pngegg.png" style="width: 30px;"></button></a></li>
                     </ul>
             </div>
         </div>
