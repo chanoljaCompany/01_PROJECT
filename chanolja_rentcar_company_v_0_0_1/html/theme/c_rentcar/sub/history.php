@@ -13,7 +13,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
 <?php
-$g5['navTitle'] = "Company";
+$g5['navTitle'] = "회사소개";
 $g5['title'] = "회사연혁";
 ?>
 
