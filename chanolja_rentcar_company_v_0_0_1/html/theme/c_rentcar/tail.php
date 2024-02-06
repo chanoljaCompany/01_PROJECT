@@ -111,6 +111,7 @@ if(G5_COMMUNITY_USE === false) {
                         z-index: 99999;
                     }
                     #qna_btn a {
+                        transition: all 0.5s;
                         display: block;
                         width: 280px;
                         font-size: 22px;
@@ -128,6 +129,13 @@ if(G5_COMMUNITY_USE === false) {
                         animation-direction: alternate;
                         position: relative;
                     }
+
+                    #qna_btn a:hover{
+                        background-color: #ffffff;
+                        color:#164f92;
+                        border: 3px solid #164f92;
+                    }
+
                 </style>
 
 <?php
