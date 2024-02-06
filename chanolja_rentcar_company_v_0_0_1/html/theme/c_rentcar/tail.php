@@ -28,7 +28,7 @@ if(G5_COMMUNITY_USE === false) {
                                     </li>
                                     <li>
                                         <a href="<?php echo G5_THEME_URL?>/sub/gs-company.php">
-                                            회사소개                                            
+                                            회사소개
                                         </a>
                                     </li>
                                     <li>
@@ -42,13 +42,13 @@ if(G5_COMMUNITY_USE === false) {
                                     <i class="xi-angle-right"></i>
                                     <ul class="f-tab">
                                         <li>
-                                            <a href="http://www.chanolja-union.kr/">차놀자협동조합</a>
+                                            <a style="display:block" href="http://www.chanolja-union.kr/">차놀자협동조합</a>
                                         </li>
                                         <li>
-                                            <a href="http://www.chanolja.com/">차놀자캠핑</a>
+                                            <a style="display:block" href="http://www.chanolja.com/">차놀자캠핑</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.youtube.com/channel/UCjBtbct7aCsJ4fo0S4g5bRQ/">차놀자TV</a>
+                                            <a style="display:block" href="https://www.youtube.com/channel/UCjBtbct7aCsJ4fo0S4g5bRQ/">차놀자TV</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -81,7 +81,7 @@ if(G5_COMMUNITY_USE === false) {
                                         <li>
                                             <a href="#">
                                                 <i class="xi-instagram"></i>
-                                            </a>         
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="#">
@@ -148,6 +148,8 @@ if ($config['cf_analytics']) {
 
     $('.family-tab').click(function(){
         $('.f-tab').stop().slideUp();
+
+        $('.f-tab').css("display", "block"); // 슬라이드 보이게 수정
     });
 
 
