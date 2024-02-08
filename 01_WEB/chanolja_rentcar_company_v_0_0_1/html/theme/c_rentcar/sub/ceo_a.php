@@ -34,7 +34,7 @@ $g5['title'] = "인사말";
             <h1 class="blind">인사말</h1>
             <div class="inner">
                 <div class="lf_box">
-                    <img src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpg">
+                    <img src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
                 </div>
                 <div class="rt_box">
                     <div class="text_box">
