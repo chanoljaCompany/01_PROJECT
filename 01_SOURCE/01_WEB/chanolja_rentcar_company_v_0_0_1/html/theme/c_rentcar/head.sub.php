@@ -47,10 +47,14 @@ header("Pragma: no-cache"); // HTTP/1.0
 
     <!---오픈그래프-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="지에스렌트카">
-    <meta property="og:description" content="렌트카창업/사업 (지점,영업소모집) ·전국최대 120개지점 보유·렌트사관학교 설립">
+    <meta property="og:title" content="차놀자&지에스렌트카">
     <meta property="og:image" content="http://gsrent.kr/img/opimg.png">
+    <meta property="og:description" content="렌트카창업/사업 (지점,영업소모집) ·전국최대 120개지점 보유·렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카본사, 지에스렌트카,지에스렌터카,지에스오토리스,렌트,장기렌트,오토리스">
     <meta property="og:url" content="http://gsrent.kr">
+    <meta name="naver-site-verification" content="99a83febd1681482da8ff2e6cb8e47658f5a2e14" />
+    <meta name="description" content="렌트카창업/사업 (지점,영업소모집) ·전국최대 120개지점 보유·렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카본사, 지에스렌트카,지에스렌터카,지에스오토리스,렌트,장기렌트,오토리스">
+
+
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;

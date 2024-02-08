@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Chanolja_union"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.chanolja_union.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".loadingActivity"
+            android:name="com.example.chanolja_union.loadingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.LOADING" />
