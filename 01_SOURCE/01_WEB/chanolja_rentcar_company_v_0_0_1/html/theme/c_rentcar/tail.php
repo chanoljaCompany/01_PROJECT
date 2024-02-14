@@ -120,7 +120,7 @@ if(G5_COMMUNITY_USE === false) {
                         line-height: 50px;
                         border-radius: 5px;
                         color: #fff;
-                        background: #164f92;
+                        background: #15668E;
                         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
                         animation-name: topmove;
                         animation-duration: 0.8s;
@@ -132,8 +132,8 @@ if(G5_COMMUNITY_USE === false) {
 
                     #qna_btn a:hover{
                         background-color: #ffffff;
-                        color:#164f92;
-                        border: 3px solid #164f92;
+                        color: #15668E;
+                        border: 3px solid #15668E;
                     }
 
                 </style>
