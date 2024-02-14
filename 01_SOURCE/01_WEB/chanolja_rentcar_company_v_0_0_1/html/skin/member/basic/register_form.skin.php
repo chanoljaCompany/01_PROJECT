@@ -24,8 +24,8 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	<input type="hidden" name="mb_nick" value="<?php echo get_text($member['mb_nick']) ?>">
 	<?php }  ?>
 	
-	<div id="register_form" class="form_01">   
-	    <div class="register_form_inner">
+	<div id="register_form" class="form_01" style="max-width: 1200px; margin: 0 auto;">
+	    <div class="register_form_inner" style="margin-top: 120px;">
 	        <h2>사이트 이용정보 입력</h2>
 	        <ul>
 	            <li>
@@ -296,7 +296,7 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 	        </ul>
 	    </div>
 	</div>
-	<div class="btn_confirm">
+	<div class="btn_confirm" style="max-width : 1200px; margin: 0 auto;">
 	    <a href="<?php echo G5_URL ?>" class="btn_close">취소</a>
 	    <button type="submit" id="btn_submit" class="btn_submit" accesskey="s"><?php echo $w==''?'회원가입':'정보수정'; ?></button>
 	</div>
