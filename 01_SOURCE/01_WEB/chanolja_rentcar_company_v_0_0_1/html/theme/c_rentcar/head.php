@@ -111,10 +111,12 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             ?>
             <li class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
                 <?php
-                    if($gnb_zindex == 995) { /* 캠핑일때 링크 걸기  */
+                    if($gnb_zindex == 995) {
                         echo "
                             <a href='http://chatour.dothome.co.kr/' class='menu_tit'>" . $row['me_name'] . "</a>
+
                         ";
+
                     }
                     else {
                         echo "

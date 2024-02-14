@@ -207,7 +207,6 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         $('.navi').click(function(){   
             $(this).find('.navi_btn').toggleClass('on');
             $(this).find('.slide').slideToggle('on');
-
         }); 
     })
 </script>
