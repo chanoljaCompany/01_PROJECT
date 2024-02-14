@@ -184,6 +184,11 @@
     margin-right:10px;
     margin-bottom: 10px;
 }
+
+#board_cate ul li a:hover{
+    border:2px solid #52C3F1;
+}
+
 #bo_cate_on {
     background-color:#52C3F1;
     color:#fff;

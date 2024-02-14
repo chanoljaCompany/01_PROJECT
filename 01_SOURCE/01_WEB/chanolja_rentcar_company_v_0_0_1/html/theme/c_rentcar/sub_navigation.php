@@ -1,9 +1,10 @@
 <script type="text/javascript">
-<!--
+
     function display_submenu(num) {
+        console.log("test" + num + "test");
          document.getElementById("mysub"+num).style.display="block";
     }
-//-->
+
 </script>
 
 
