@@ -231,6 +231,47 @@ function touch_end(event) {
 	</div>
 </div>
 
+<!--신규입점 -->
+<div class="aboutWrap">
+   <div class="box inner">
+		<div class="main_title">
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자캠핑 신규입점</h2>
+			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+        </div>
+        <div class="detail">
+       <?php
+        echo latest('theme/splide3', '2222', 4, 15);
+         ?>
+	    </div>
+	</div>
+</div>
+
+<!--창업문의 -->
+<div class="aboutWrap">
+   <div class="box inner">
+    <div class="detail">
+       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_1.jpg" style="max-width : 100%"></a>
+        </div>
+  </div>
+</div>
+
+<!--캠핑카구매 -->
+<div class="aboutWrap">
+   <div class="box inner">
+        <div class="detail">
+       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_2.jpg" style="max-width : 100%"></a>
+        </div>
+  </div>
+</div>
+
+<!--서비스센터 -->
+<div class="aboutWrap">
+   <div class="box inner">
+        <div class="detail">
+       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/customer.png" style="max-width : 100%"></a>
+        </div>
+  </div>
+</div>
 
 
 <!-- 유듀브 -->
@@ -239,14 +280,14 @@ function touch_end(event) {
    <div class="box inner">
         <div class="utube_wrap">
             <table>
-                    <td width="40%">               
+                    <td width="40%">
                        <h2>MEDIA</h2>
                        <h3>차놀자캠핑<br> 미디어</h3>
                        <h4>#차놀자캠핑 #캠핑카여행 #캠핑 #여행</h4>
-                     </td>               
-                     <td width="60%">               
+                     </td>
+                     <td width="60%">
                         <?php echo latest('theme/youtube_latest','91',1,50) ?>
-                     </td>               
+                     </td>
                 </tr>
              </table>
         </div>
@@ -258,34 +299,13 @@ function touch_end(event) {
    <div class="box inner">
          <div class="row">
               <div class="col-md-9 col-xs-12 l_box box_all">
-                     <div class="utube_wrap"><?php echo latest('theme/youtube_latest','91',1,50) ?></div>  
+                     <div class="utube_wrap"><?php echo latest('theme/youtube_latest','91',1,50) ?></div>
               </div>
               <div class="col-md-3 col-xs-12 l_box box_all">#차놀자캠핑 #캠핑카여행 #캠핑 #여행</div>
          </div>
    </div>
 </div> -->
 <!-- 유듀브끝 -->
-
-
-
-
-
-
-
-
-
-
-<!--창업문의 -->
-<div class="aboutWrap">
-   <div class="box inner">
-    <div class="detail">
-       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_1.jpg" style="max-width : 100%"></a>
-        </div>
-  </div>
-</div>
-
-
-
 
 <!--공지사항 -->
 <div class="aboutWrap">
@@ -303,33 +323,6 @@ function touch_end(event) {
 </div>
 
 
-
-<!--캠핑카구매 -->
-<div class="aboutWrap">
-   <div class="box inner">
-        <div class="detail">
-       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_2.jpg" style="max-width : 100%"></a>
-        </div>
-  </div>
-</div>
-
-
-
-
-<!--신규입점 -->
-<div class="aboutWrap">
-   <div class="box inner">
-		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자캠핑 신규입점</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
-        </div>
-        <div class="detail">
-       <?php
-        echo latest('theme/splide3', '2222', 4, 15);      
-         ?>
-	    </div>	    
-	</div>
-</div>
 
 
 
@@ -352,14 +345,6 @@ function touch_end(event) {
 
 
 
-<!--서비스센터 -->
-<div class="aboutWrap">
-   <div class="box inner">
-        <div class="detail">
-       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/customer.png" style="max-width : 100%"></a>
-        </div>
-  </div>
-</div>
 
 
 
