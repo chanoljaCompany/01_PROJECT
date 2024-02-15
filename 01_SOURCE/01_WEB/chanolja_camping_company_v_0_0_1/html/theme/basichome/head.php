@@ -22,6 +22,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 상단 시작 { -->
     <header id="header">
+
     <div class="menu_bg"></div>
     <div class="inner">
         <div class="logo">

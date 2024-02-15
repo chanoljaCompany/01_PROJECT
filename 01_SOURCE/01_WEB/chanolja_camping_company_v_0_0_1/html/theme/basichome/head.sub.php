@@ -99,6 +99,7 @@ if(G5_IS_MOBILE) {
 if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
+<link rel="icon" href="http://company.chanolja.co.kr/theme/basichome/img/main_favicon.ico" />
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/jquery.fullPage.css" />
 
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/common.css" />
@@ -109,10 +110,13 @@ if(!defined('G5_IS_ADMIN'))
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    
+
+
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </head>
 <body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
 <?php
