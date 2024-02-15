@@ -346,13 +346,9 @@
 @media screen and (max-width:600px) {
 
     #company .sec1-contents .img-wrap{
-        height: 360px;
         background-image: url("../img/건설3.jpg");
         background-position: center;
         background-size: cover;
-    }
-    #company .sec1-contents .img-wrap img{
-        display: none;
     }
 
     #company .sec3-lt h3{

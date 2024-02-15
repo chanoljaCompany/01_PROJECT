@@ -43,8 +43,8 @@ $g5['title'] = "인사말";
                         </h1>
                         <dl>
                             <dt>
-                                <strong>
-                                    차놀자캠핑 홈페이지엣 오신걸 환영합니다
+                                <strong style="word-break: auto-phrase;">
+                                    차놀자캠핑 홈페이지에 오신걸 환영합니다
                                 </strong>
                             </dt>
                             <dd class="txt">
