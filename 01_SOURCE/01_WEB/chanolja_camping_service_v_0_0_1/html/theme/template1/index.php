@@ -544,7 +544,7 @@ function touch_end(event) {
 
 <div class="pop_up_back">
     <div class="pop_up">
-         <image src="http://www.chanolja.co.kr/theme/template1/img/이벤트팝업.jpg" />
+         <image src="http://www.chanolja.co.kr/theme/template1/img/hashtag_popup.jpg" />
           <div class="pop_up_x">✕</div>
     </div>
 
