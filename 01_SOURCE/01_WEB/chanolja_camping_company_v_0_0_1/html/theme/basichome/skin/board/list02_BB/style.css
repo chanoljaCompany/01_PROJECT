@@ -81,7 +81,7 @@
 #bo_list .txt_expired {color:#ccc}
 #bo_list tbody tr {border-left:2px solid transparent;}
 #bo_list tbody tr:hover {border-left:2px solid #ffd747; }
-#bo_list tbody .even td {background:#fbfbfb;}
+#bo_list tbody .even td {background:#fbfbfb; word-break:auto-phrase;}
 
 
 /* 게시판 목록 공통 */
