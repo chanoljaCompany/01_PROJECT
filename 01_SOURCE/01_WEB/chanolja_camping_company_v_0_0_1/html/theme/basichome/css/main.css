@@ -384,7 +384,7 @@
 .sec2-con>a{
     color: #fff;;
     border-radius: 0px 25px 25px 25px;
-    width:500px;height: 30px;
+    width:240px;height: 63px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1034,7 +1034,7 @@
         font-size: 19px;
     }
     .sec3-contents li{
-        width:48.5%;
+        width:90%;
         padding:50px 10px;
     }
 
@@ -1103,7 +1103,8 @@
     }
     .sec2-con>a{
         font-size: 15px;
-        width:135px;
+        width:180px;
+        height:50px;
     }
     .sec2-contents{
         flex-flow: row wrap;
@@ -1125,7 +1126,7 @@
         font-size: 30px;
     }
     .sec3-contents li{
-        margin:0px 5px;
+        margin:10px 10px;
     }
     .sec3-tit dd br{
         display: none;
