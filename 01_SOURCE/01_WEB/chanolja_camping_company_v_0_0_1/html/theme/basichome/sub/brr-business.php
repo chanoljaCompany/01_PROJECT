@@ -18,7 +18,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/jw-sub.css">')
 
 <?php
 $g5['navTitle'] = "차놀자캠핑";
-$g5['title'] = "전국지점모집";
+$g5['title'] = "지점모집안내";
 $g5['sub-text']="캠핑인구 1000만 시대, 차놀자와 함께 하실 지점사업자를 모십니다.";
 ?>
 

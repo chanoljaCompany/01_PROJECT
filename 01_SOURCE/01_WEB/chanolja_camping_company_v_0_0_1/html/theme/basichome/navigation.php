@@ -149,6 +149,13 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         #navigation .navi_btn span::after {
             font-size:1.8em;
         }
+
+    }
+
+    @media screen and (max-width:600px) {
+        .visual .text_box h2 {
+            font-size: 50px;
+        }
     }
 </style>
 
