@@ -144,8 +144,8 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 
 <div class="slider" style="max-witdh : 100%;  position: relative;">
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_1.png" style="border-radius: 20px; max-width: 1240px;"></div>
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_2.png" style="border-radius: 20px; max-width: 1240px;"></div>
+      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_1.png" style="border-radius: 20px; "></div>
+      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_2.png" style="border-radius: 20px; "></div>
 </div>
 
 <!-- 상단아이콘 PC -->
