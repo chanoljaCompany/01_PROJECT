@@ -543,9 +543,11 @@ function touch_end(event) {
 
 
 <div class="pop_up_back">
-  <div class="pop_up">
-  <div class="pop_up_x">✕</div>
-  </div>
+    <div class="pop_up">
+         <image src="http://www.chanolja.co.kr/theme/template1/img/이벤트팝업.jpg" />
+          <div class="pop_up_x">✕</div>
+    </div>
+
 </div>
 
 <style>
@@ -564,7 +566,6 @@ function touch_end(event) {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url(http://www.chanolja.co.kr/theme/template1/img/이벤트팝업.jpg);
       max-height: 750px;
       max-width: 500px;
       width: 80%;
@@ -578,7 +579,7 @@ function touch_end(event) {
     color: red;
     font-size: 25px;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 20px;
     padding: 10px;
     font-weight: bold;
