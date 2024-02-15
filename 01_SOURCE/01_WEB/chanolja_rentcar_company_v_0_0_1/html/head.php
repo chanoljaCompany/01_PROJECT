@@ -22,6 +22,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 상단 시작 { -->
     <header id="header">
+
+    <!-- -->
     <div class="menu_bg"></div>
     <div class="inner">
         <div class="logo">
@@ -45,7 +47,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                             $k = 0;
                             foreach( (array) $row['sub'] as $row2 ){
 
-                                if( empty($row2) ) continue; 
+                                if( empty($row2) ) continue;
 
                                 if($k == 0)
                                     echo '<div class="gnb_box"><div class="inner"><ul class="gnb_ul">'.PHP_EOL;
@@ -96,6 +98,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         </div>
     </div>
     <div id="all_menu">
+
+
         <ul class="menu_ul">
             <?php
                 $menu_datas = get_menu_db(0, true);
@@ -105,14 +109,28 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     if( empty($row) ) continue;
                 $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
             ?>
-            <li onclick="location.href='<?php echo $row['me_link']; ?>'" class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
-                <a href="<?php echo $row['me_link']; ?>" class="menu_tit"><?php echo $row['me_name'] ?></a>
+            <li class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
+                <?php
+                    if($gnb_zindex == 995) {
+                        echo "
+                            <a href='http://chatour.dothome.co.kr/' class='menu_tit'>" . $row['me_name'] . "</a>
+
+                        ";
+
+                    }
+                    else {
+                        echo "
+                            <a class='menu_tit'>" . $row['me_name'] . "</a>
+                       ";
+                    }
+                ?>
+
                     <!-- s:하위 gnb -->
                     <?php
                         $k = 0;
                         foreach( (array) $row['sub'] as $row2 ){
 
-                            if( empty($row2) ) continue; 
+                            if( empty($row2) ) continue;
 
                             if($k == 0)
                                 echo '<div class="all_box"><ul class="all_ul">'.PHP_EOL;
@@ -135,7 +153,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <?php } ?>
         </ul>
         <div class="head-img">
-            
+
         </div>
     </div>
 </header>
@@ -146,12 +164,33 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <script>
     // all_menu
-    
+
     $(document).ready(function(){
-        $('.hamburger').click(function(){
-           $('#all_menu').toggleClass('on');
-           $(this).find('.hamburger_container').toggleClass('on')
-           $(this).toggleClass('on')
+        $('.hamburger').click(function(target){
+
+
+            console.log(target);
+
+            if($(target.currentTarget).hasClass('on')){
+                console.log('on ham');
+                $('.userBox').css('display', 'block');
+                $('#header .inner').css('background-color', '#ffffff');
+
+                $('#all_menu').toggleClass('on');
+                $(this).find('.hamburger_container').toggleClass('on');
+                $(this).toggleClass('on');
+
+            }else{
+                console.log('off ham');
+                $('.userBox').css('display', 'none');
+                $('#header .inner').css('background-color', '#00000000');
+
+                $('#all_menu').toggleClass('on');
+                $(this).find('.hamburger_container').toggleClass('on');
+                $(this).toggleClass('on');
+
+            }
+
         });
     });
 </script>
@@ -160,38 +199,39 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 </script>
 <script>
      $(document).ready(function(){
-        if(window.matchMedia("(min-width:1040px)").matches){
-        //      $('#nav .menu_tit').mouseenter(function(){
-        //                 $('.menu_tit').removeClass('on');
-        //                 $(this).addClass('on');
-        //             });
-        //              $('#nav .menu_li').mouseenter(function(){
-        //                 var ed = $(this).index();
-        //                 $(this).addClass('on');
-        //                 $(this).children('.gnb_box').show();
-        //          });
-        //          $('#nav .menu_li').mouseleave(function(){
-        //                  var ed = $(this).index();
-        //                  $(this).removeClass('on');
-        //                  $(this).children('.gnb_box').hide();
-        //                  $('.menu_tit').removeClass('on');
-        //              });
+
+         if(window.matchMedia("(min-width:1040px)").matches){
+         //      $('#nav .menu_tit').mouseenter(function(){
+         //                 $('.menu_tit').removeClass('on');
+         //                 $(this).addClass('on');
+         //             });
+         //              $('#nav .menu_li').mouseenter(function(){
+         //                 var ed = $(this).index();
+         //                 $(this).addClass('on');
+         //                 $(this).children('.gnb_box').show();
+         //          });
+         //          $('#nav .menu_li').mouseleave(function(){
+         //                  var ed = $(this).index();
+         //                  $(this).removeClass('on');
+         //                  $(this).children('.gnb_box').hide();
+         //                  $('.menu_tit').removeClass('on');
+         //              });
                      $('#all_menu .menu_tit').mouseenter(function(){
                           $(this).nextAll('.all_box').addClass('on');
-                      }); 
+                      });
                       $('#all_menu .menu_li').mouseleave(function(){
                           $('.all_box').removeClass('on');
                       });
                       $('#all_menu .menu_li').click(function(){
                    $(this).toggleClass('on');
                           $(this).find('.all_box').toggleClass('on');
-                  });  
+                  });
 
              $('#nav .menu_li').mouseover(function(){
                  $('.gnb_ul').stop().slideDown();
                  $('.menu_bg').stop().slideDown();
              });
-             $('#header').mouseleave(function(){
+             $('#nav .menu_li').mouseleave(function(){
                  $('.gnb_ul').stop().slideUp();
                 $('.menu_bg').stop().slideUp();
              });
@@ -210,15 +250,23 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 </script>
 
 <script>
-    // $(window).scroll(function(){ 
+    // $(window).scroll(function(){
     //     var height = $(document).scrollTop(); //실시간으로 스크롤의 높이를 측정
-    //     if(height > 0){ 
-    //         $('#header').addClass('on'); 
-    //     }else if(height == 0){ 
-    //         $('#header').removeClass('on'); 
-    //     } 
+    //     if(height > 0){
+    //         $('#header').addClass('on');
+    //     }else if(height == 0){
+    //         $('#header').removeClass('on');
+    //     }
     // });
-
+    $('#header .inner').css('background-color', 'white');
 </script>
 <!-- 콘텐츠 시작 { -->
+<style>
+    .hamburger.on .hamburger__container.on > span{
+        background-color: black !important;
+    }
 
+    header{
+        word-break: auto-phrase;
+    }
+</style>
