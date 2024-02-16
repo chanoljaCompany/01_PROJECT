@@ -181,8 +181,9 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <style>
     .bounceInUp img:hover{
-        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .85);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .85) !important;
         filter: blur(0) brightness(1.05);
+        transition: all 150ms ease-out;
     }
     .bounceInUp img:active{
         box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 1);

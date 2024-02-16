@@ -171,13 +171,14 @@
     overflow: hidden;
 }
 #board_cate ul li {
+    margin: 5px;
+    border-radius: 10px;
     float:left;
     vertical-align:middle;
     width:120px;
     height:40px;
     line-height:40px;
     text-align:center;
-    margin-right:10px;
 }
 #bo_cate_on {
     background-color:#54C3FD;
