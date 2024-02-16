@@ -61,7 +61,7 @@ button { background:#F2F2F2; }
 .detail > ul{width: 100%; height: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; padding : 0; }
 .detail > ul li{float: left; }
 .detail > ul li.second{margin: 0 2%;}
-.detail > ul li img{margin: 30px auto 35px;}
+.detail > ul li img{margin: 40px auto 40px;}
 .detail > ul li p{color: #666; font-size: 28px; margin-bottom: 26px;}
 .detail > ul li p span{display: block;}
 .detail > ul li strong{display: block; font-size: 35px; line-height: 1.5; color: #333; margin: 0 auto; text-align: center;} 
@@ -69,11 +69,11 @@ button { background:#F2F2F2; }
 .detail > ul li p{text-align: center;}
 
 
-.aboutWrap_mo {display : none;}
+.aboutWrap_mo {display : none; margin-bottom: 40px;}
 .aboutWrap_mo .detail > ul li strong{text-align: center;}
 
 
-.aboutWrap{width: 100%;}
+.aboutWrap{width: 100%; margin-bottom: 120px;}
 .aboutWrap .detail > ul li strong{text-align: center;}
 
 

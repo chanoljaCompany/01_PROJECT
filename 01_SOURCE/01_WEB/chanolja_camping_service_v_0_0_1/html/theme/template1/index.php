@@ -127,7 +127,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 <!-- 검색바 -->
-<div class="aboutWrap">
+<div class="aboutWrap" style="margin-bottom: 8px !important">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
               <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/serch_bar.jpg" style="max-width : 100%"></a>
@@ -247,7 +247,7 @@ function touch_end(event) {
 </div>
 
 <!--창업문의 -->
-<div class="aboutWrap">
+<div class="aboutWrap" style="margin-bottom: 80px !important">
    <div class="box inner">
     <div class="detail">
        <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_1.jpg" style="max-width : 100%"></a>
@@ -256,7 +256,7 @@ function touch_end(event) {
 </div>
 
 <!--캠핑카구매 -->
-<div class="aboutWrap">
+<div class="aboutWrap" style="margin-bottom: 80px !important">
    <div class="box inner">
         <div class="detail">
        <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_2.jpg" style="max-width : 100%"></a>
@@ -447,6 +447,48 @@ function touch_end(event) {
 	</div>
 </div>
 
+<!--신규입점 -->
+<div class="aboutWrap_mo">
+   <div class="box inner">
+		<div class="main_title">
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자캠핑 신규입점</h2>
+			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+        </div>
+        <div class="detail">
+       <?php
+        echo latest('theme/splide33', '2222', 4, 15);
+         ?>
+	    </div>
+	</div>
+</div>
+
+<!--창업문의 -->
+<div class="aboutWrap_mo" style="margin-bottom: 20px !important">
+   <div class="box inner">
+    <div class="detail">
+       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_1.jpg" style="max-width : 100%"></a>
+        </div>
+  </div>
+</div>
+
+<!--캠핑카구매 -->
+<div class="aboutWrap_mo" style="margin-bottom: 20px !important">
+   <div class="box inner">
+        <div class="detail">
+       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_2.jpg" style="max-width : 100%"></a>
+        </div>
+  </div>
+</div>
+
+<!--서비스센터 -->
+<div class="aboutWrap_mo">
+   <div class="box inner">
+        <div class="detail">
+       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/customer.png" style="max-width : 100%"></a>
+        </div>
+  </div>
+</div>
+
 <!-- 유듀브 -->
 <br>
 <br>
@@ -460,14 +502,7 @@ function touch_end(event) {
     </div>
 </div>
 
-<!--창업문의 -->
-<div class="aboutWrap_mo">
-   <div class="box inner">
-    <div class="detail">
-       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_1.jpg" style="max-width : 100%"></a>
-        </div>
-  </div>
-</div>
+
 
 <!--공지사항 -->
 <div class="aboutWrap_mo">
@@ -486,32 +521,6 @@ function touch_end(event) {
 
 
 
-<!--캠핑카구매 -->
-<div class="aboutWrap_mo">
-   <div class="box inner">
-        <div class="detail">
-       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/business_2.jpg" style="max-width : 100%"></a>
-        </div>
-  </div>
-</div>
-
-
-
-<!--신규입점 -->
-<div class="aboutWrap_mo">
-   <div class="box inner">
-		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자캠핑 신규입점</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
-        </div>
-        <div class="detail">
-       <?php
-        echo latest('theme/splide33', '2222', 4, 15);      
-         ?>
-	    </div>	    
-	</div>
-</div>
-
 <!--NEWS -->
 <div class="aboutWrap_mo">
    <div class="box inner">
@@ -524,19 +533,6 @@ function touch_end(event) {
          ?>
 	    </div>	    
 	</div>
-</div>
-
-
-
-
-
-<!--서비스센터 -->
-<div class="aboutWrap_mo">
-   <div class="box inner">
-        <div class="detail">
-       <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=53"><img src="<?php echo G5_THEME_IMG_URL ?>/customer.png" style="max-width : 100%"></a>
-        </div>
-  </div>
 </div>
 
  </div>
