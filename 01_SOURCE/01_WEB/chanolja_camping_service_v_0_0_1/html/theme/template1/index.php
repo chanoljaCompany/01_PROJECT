@@ -154,19 +154,19 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="detail">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="margin-right : 40px; width:208px;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="margin-right : 40px; width:208px;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="margin-right : 40px; width:208px;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=43"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/goods.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=43"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/goods.png" style="margin-right : 40px; width:208px;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=43"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/meal.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=43"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/meal.png" style="width:208px;" ></a>
                 </li>
             </ul>
         </div>

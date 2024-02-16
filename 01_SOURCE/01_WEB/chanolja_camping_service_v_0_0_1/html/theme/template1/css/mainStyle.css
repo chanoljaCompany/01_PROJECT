@@ -50,7 +50,7 @@ button { background:#F2F2F2; }
 .bannerWrap > div > div{width: 37px; height: 192px; position: absolute; font-size: 100px; color: #fff; z-index: 10; top: 30px; background: url(../img/main/square_bracket1.png); background-size: 100% 100%;}
 .bannerWrap > div > div.square_bracket1{left: 100px;}
 .bannerWrap > div > div.square_bracket2{background-image: url(../img/main/square_bracket2.png); right: 100px;}
-.inner.box{padding: 0 0px 80px;} 
+.inner.box{}
 .main_title{padding: 0px 0;}
 .main_title h2{font-size: 30px; line-height: 1.0; color: #000; text-align: left; font-weight: 700; padding: 20px 0;}
 /*.main_title h2::after{content: ""; display: block; width: 1px; height: 35px; background: #223040; margin: 55px auto;} */
@@ -58,7 +58,7 @@ button { background:#F2F2F2; }
 .main_title p{width: 70%; margin: 0 auto; text-align: center; font-size: 24px; line-height: 1.5; font-weight: 500;}
 .main_title h5{font-size: 15px; line-height: 1.0; color: #36688f; text-align: right; font-weight: 700; padding-bottom: 20px ; ;margin-top : -40px;}
 .detail{width: 100%; margin: 0 auto;}
-.detail > ul{width: 99%; height: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; padding : 0; }
+.detail > ul{width: 100%; height: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: center; padding : 0; }
 .detail > ul li{float: left; }
 .detail > ul li.second{margin: 0 2%;}
 .detail > ul li img{margin: 30px auto 35px;}
