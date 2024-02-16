@@ -89,7 +89,7 @@ $g5['sub-text']="캠핑카여행고민, 차놀자에서 해결해 드립니다."
                                         <img src="<?php echo G5_THEME_URL?>/img/sub/052.jpg" alt="sub">
                                     </div>
                                     <dl class="busi-info">
-                                        <dt>어려운 캠핑카 구매, 손쉽개 해결합니다</dt>
+                                        <dt>어려운 캠핑카 구매, 손쉽게 해결합니다</dt>
                                         <dd>차놀자캠핑과 제휴를 통한 제조사와 다양한 구매플랜<br>으로 부담없이 캠핑카를 구매할 수 있습니다.</dd>
                                     </dl>
                                                             
@@ -214,10 +214,7 @@ $g5['sub-text']="캠핑카여행고민, 차놀자에서 해결해 드립니다."
         let wScroll=$(window).scrollTop();
         let con=$(".sec1-lt ul li");
 
-        if(wScroll>=$('.business-con').eq(6).offset().top-$('.business-con').height()/2){
-            con.removeClass('on')
-            con.eq(6).addClass('on')
-        }else if(wScroll>=$('.business-con').eq(5).offset().top-$('.business-con').height()/2){
+        if(wScroll>=$('.business-con').eq(5).offset().top-$('.business-con').height()/2){
             con.removeClass('on')
             con.eq(5).addClass('on')
         }else if(wScroll>=$('.business-con').eq(4).offset().top-$('.business-con').height()/2){
