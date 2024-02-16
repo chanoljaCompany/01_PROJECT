@@ -850,7 +850,7 @@
     overflow:hidden;
 }
 #board_gallery01 .listForm li {
-    width:32%; /*갤러리 한줄 갯수 조절*/
+    width:90%; /*갤러리 한줄 갯수 조절*/
     margin-right:1.33%;
     margin-bottom:5%;
     height:330px;
@@ -897,7 +897,7 @@
 
 @media screen and (max-width:960px) {
     #board_gallery01 .listForm li {
-        width:48%; /*갤러리 한줄 갯수 조절*/
+        width:90%; /*갤러리 한줄 갯수 조절*/
         margin-right:0;
         margin-bottom:4%;
         height:330px;

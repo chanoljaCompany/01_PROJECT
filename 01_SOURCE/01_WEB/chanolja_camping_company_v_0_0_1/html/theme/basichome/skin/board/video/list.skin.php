@@ -127,7 +127,7 @@ $g5['title'] = "유튜브 게시판";
             <!-- 페이지 -->
 
             <?php if ($list_href || $is_checkbox || $write_href) { ?>
-            <div class="bo_fx">
+            <!-- <div class="bo_fx">
                 <?php if ($list_href || $write_href) { ?>
                 <ul class="btn_bo_user">
                     <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn" title="관리자"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
@@ -135,7 +135,7 @@ $g5['title'] = "유튜브 게시판";
                     <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01 btn" title="글쓰기"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
                 </ul>	
                 <?php } ?>
-            </div>
+            </div> !-->
             <?php } ?>   
             </form>
 
