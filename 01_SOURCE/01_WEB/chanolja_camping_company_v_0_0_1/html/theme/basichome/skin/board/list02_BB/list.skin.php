@@ -162,6 +162,7 @@ $g5['title'] = "전국지점안내";
                         </tbody>
                         </table>
                     </div>
+
                 <!-- 페이지 -->
                 <?php echo $write_pages; ?>
                 <!-- 페이지 -->
