@@ -6,8 +6,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 ?>
 
 <!-- 로그인 시작 { -->
-<div id="mb_login" class="mbskin">
-    <div id="back_btn" onclick="window.location.href='http://www.chanolja.co.kr/'">◤</div>
+<div id="mb_login" class="mbskin"
+    style="position:absolute; top:40%; left:50%; transform: translate(-50%, -50%);"
+    >
+
+    <a href=“http://www.chanolja.co.kr”>
+    	<img style="position:absolute; top: -95px; right:55px;" class=“logo_i” src=http://www.chanolja.co.kr/theme/template1/img/logo.png>
+    </a>
     <style>
         #back_btn{
             color: #3a8afd;
