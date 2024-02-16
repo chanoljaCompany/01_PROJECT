@@ -6,8 +6,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 ?>
 
 <!-- 로그인 시작 { -->
-<div id="mb_login" class="mbskin">
-    <div class="mbskin_box">
+<div id="mb_login" class="mbskin"
+    style="position: absolute; top:37%; left:50%; transform: translate(-50%, -50%);">
+    <a href="http://www.chanolja.co.kr/">
+        <img style="margin-bottom: 30px;" class="logo_i"
+        src="http://company.chanolja.co.kr/theme/basichome/img/logo.png" >
+    </a>
+    <div class="mbskin_box" style="box-shadow: 0px 0px 10px 0px #b6a3a3">
         <h1><?php echo $g5['title'] ?></h1>
         <div class="mb_log_cate">
             <h2><span class="sound_only">회원</span>로그인</h2>

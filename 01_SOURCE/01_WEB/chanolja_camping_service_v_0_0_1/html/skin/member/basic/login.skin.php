@@ -10,7 +10,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     style="position:absolute; top:40%; left:50%; transform: translate(-50%, -50%);"
     >
 
-    <a href=“http://www.chanolja.co.kr”>
+    <a href='http://www.chanolja.co.kr'>
     	<img style="position:absolute; top: -95px; right:55px;" class=“logo_i” src=http://www.chanolja.co.kr/theme/template1/img/logo.png>
     </a>
     <style>
