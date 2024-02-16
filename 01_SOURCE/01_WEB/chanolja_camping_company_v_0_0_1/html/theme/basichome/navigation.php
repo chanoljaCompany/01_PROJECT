@@ -154,7 +154,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
     @media screen and (max-width:600px) {
         .visual .text_box h2 {
-            font-size: 50px;
+            font-size: 30px;
         }
     }
 </style>

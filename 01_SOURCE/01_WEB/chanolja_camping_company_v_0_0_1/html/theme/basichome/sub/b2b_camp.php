@@ -18,7 +18,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/jw-sub.css">')
 
 <?php
 $g5['navTitle'] = "사업영역";
-$g5['title'] = "기업형캠핑카플랜";
+$g5['title'] = "기업형 캠핑카플랜";
 $g5['sub-text']="우수기업을 위한 임직원 복지형 서비스";
 ?>
 
