@@ -8,7 +8,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 <!-- 로그인 시작 { -->
 <div id="mb_login" class="mbskin"
     style="position: absolute; top:37%; left:50%; transform: translate(-50%, -50%);">
-    <a href="http://www.chanolja.co.kr/">
+    <a href="http://www.chanolja.co.kr">
         <img style="margin-bottom: 30px;" class="logo_i"
         src="http://company.chanolja.co.kr/theme/basichome/img/logo.png" >
     </a>

@@ -6,7 +6,30 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 ?>
 
 <!-- 로그인 시작 { -->
-<div id="mb_login" class="mbskin">
+<div id="mb_login" class="mbskin"
+    style="position:absolute; top:40%; left:50%; transform: translate(-50%, -50%);"
+    >
+
+    <a href='http://www.chanolja.co.kr'>
+    	<img style="position:absolute; top: -95px; right:55px;" class=“logo_i” src=http://www.chanolja.co.kr/theme/template1/img/logo.png>
+    </a>
+    <style>
+        #back_btn{
+            color: #3a8afd;
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            border-radius: 40px;
+            left: -50px;
+            top: -100px;
+            line-height: 40px;
+            text-shadow: 0px 0px 7px #999;
+            padding: 20px;
+            cursor: pointer;
+        }
+    </style>
     <div class="mbskin_box">
         <h1><?php echo $g5['title'] ?></h1>
         <div class="mb_log_cate">
@@ -39,7 +62,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     </div>
 
     <?php // 쇼핑몰 사용시 여기부터 ?>
-    <?php if ($default['de_level_sell'] == 1) { // 상품구입 권한 ?>
+    <?php if (isset($default['de_level_sell']) && $default['de_level_sell'] == 1) { // 상품구입 권한 ?>
 
 	<!-- 주문하기, 신청하기 -->
 	<?php if (preg_match("/orderform.php/", $url)) { ?>
@@ -87,7 +110,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
             <form name="forderinquiry" method="post" action="<?php echo urldecode($url); ?>" autocomplete="off">
 
             <label for="od_id" class="od_id sound_only">주문서번호<strong class="sound_only"> 필수</strong></label>
-            <input type="text" name="od_id" value="<?php echo get_text($od_id); ?>" id="od_id" required class="frm_input required" size="20" placeholder="주문서번호">
+            <input type="text" name="od_id" value="<?php echo $od_id; ?>" id="od_id" required class="frm_input required" size="20" placeholder="주문서번호">
             <label for="od_pwd" class="od_pwd sound_only">비밀번호 <strong>필수</strong></label>
             <input type="password" name="od_pwd" size="20" id="od_pwd" required class="frm_input required" placeholder="비밀번호">
             <button type="submit" class="btn_submit">확인</button>
@@ -125,3 +148,4 @@ function flogin_submit(f)
 }
 </script>
 <!-- } 로그인 끝 -->
+

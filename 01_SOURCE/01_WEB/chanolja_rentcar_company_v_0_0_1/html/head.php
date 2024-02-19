@@ -163,39 +163,36 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 
 <script>
-    // all_menu
-
-    $(document).ready(function(){
-        $('.hamburger').click(function(target){
-
-
-            console.log(target);
-
-            if($(target.currentTarget).hasClass('on')){
-                console.log('on ham');
-                $('.userBox').css('display', 'block');
-                $('#header .inner').css('background-color', '#ffffff');
-
-                $('#all_menu').toggleClass('on');
-                $(this).find('.hamburger_container').toggleClass('on');
-                $(this).toggleClass('on');
-
-            }else{
-                console.log('off ham');
-                $('.userBox').css('display', 'none');
-                $('#header .inner').css('background-color', '#00000000');
-
-                $('#all_menu').toggleClass('on');
-                $(this).find('.hamburger_container').toggleClass('on');
-                $(this).toggleClass('on');
-
-            }
-
-        });
-    });
 </script>
 <script>
+    $(document).ready(function(){
+            $('.hamburger').click(function(target){
 
+
+                console.log(target);
+
+                if($(target.currentTarget).hasClass('on')){
+                    console.log('on ham');
+                    $('.userBox').css('display', 'block');
+                    $('#header .inner').css('background-color', '#ffffff');
+
+                    $('#all_menu').toggleClass('on');
+                    $(this).find('.hamburger_container').toggleClass('on');
+                    $(this).toggleClass('on');
+
+                }else{
+                    console.log('off ham');
+                    $('.userBox').css('display', 'none');
+                    $('#header .inner').css('background-color', '#00000000');
+
+                    $('#all_menu').toggleClass('on');
+                    $(this).find('.hamburger_container').toggleClass('on');
+                    $(this).toggleClass('on');
+
+                }
+
+            });
+        });
 </script>
 <script>
      $(document).ready(function(){

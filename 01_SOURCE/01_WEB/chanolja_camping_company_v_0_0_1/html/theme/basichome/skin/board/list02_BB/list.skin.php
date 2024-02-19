@@ -163,6 +163,13 @@ $g5['title'] = "전국지점안내";
                         </table>
                     </div>
 
+                    <style>
+                        @media screen and (max-width: 600px) {
+                            .#bo_list .bo_tit {
+                                font-size: 12px;
+                            }
+                        }
+                    </style>
                 <!-- 페이지 -->
                 <?php echo $write_pages; ?>
                 <!-- 페이지 -->

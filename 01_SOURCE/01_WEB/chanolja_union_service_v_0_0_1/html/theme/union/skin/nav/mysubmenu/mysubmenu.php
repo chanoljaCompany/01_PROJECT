@@ -1,5 +1,5 @@
 ﻿<script type="text/javascript">
-    function display_submenu(num) {
+    function display_submenu(num) { 
          document.getElementById("mysub"+num).style.display="block";
     }
 </script>

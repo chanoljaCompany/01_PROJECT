@@ -112,7 +112,7 @@ $g5['visual_txt'] = "All progress takes place outside the comfort zone.";
                                 </label>
                             </th>
                             <?php } ?>
-                            <th scope="col">번호</th>
+                            <th scope="col">번호!</th>
                             <th scope="col">제목</th>
                             <th scope="col">글쓴이</th>
                             <th scope="col"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?>조회 </a></th>

@@ -128,10 +128,10 @@ if (G5_IS_MOBILE) {
     <div id="ft_wr">
        <div id="ft_sns">
             <ul>
-                <li><a href="javascirpt:;">naver blog</a></li>
+                <li><a href="https://blog.naver.com/m_chanolja">naver blog</a></li>
                 <li class="ft_sns2"><a href="javascirpt:;">daum cafe</a></li>
                 <li class="ft_sns3"><a href="javascirpt:;">facebook</a></li>
-                <li class="ft_sns4"><a href="javascirpt:;">instagram</a></li>
+                <li class="ft_sns4"><a href="https://www.instagram.com/chanolja.camping">instagram</a></li>
             </ul>
         </div>
         <div id="ft_contact">
