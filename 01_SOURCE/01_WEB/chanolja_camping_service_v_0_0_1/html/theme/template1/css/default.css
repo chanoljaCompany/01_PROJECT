@@ -90,7 +90,7 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}
 #gnb_empty a {text-decoration:underline}
 
 /* 중간 레이아웃 */
-#wrapper {z-index:5;margin:0 auto; border-right:0px solid #dde4e9;border-left:0px solid #dde4e9;zoom:1 ;padding : 10px; margin-top: 90px}
+#wrapper {max-width:100% z-index:5;margin:0 auto; border-right:0px solid #dde4e9;border-left:0px solid #dde4e9;zoom:1 ;padding : 10px; margin-top: 90px}
 #wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 @media screen and (max-width:767px){
   #wrapper {z-index:5;margin:0 auto; border-right:0px solid #dde4e9;border-left:0px solid #dde4e9;zoom:1 ;padding : 10px; margin-top: 60px}
