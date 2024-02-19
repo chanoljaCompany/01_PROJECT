@@ -35,19 +35,19 @@ header("Pragma: no-cache"); // HTTP/1.0
 <html lang="ko">
 <head>
 <meta charset="utf-8"/>
-    <meta name="naver-site-verification" content="99a83febd1681482da8ff2e6cb8e47658f5a2e14" />
+    <meta name="naver-site-verification" content="7d1970c1eb2461bbb4f69e5276e109c806ffebd8" />
 
     <meta name="viewport" content="width=device-width">
     <link rel="canonical" href="http://gsrent.kr">
-    <meta name="description" content="렌트카창업/사업 (지점,영업소모집) ·전국최대 120개지점 보유·렌트사관학교 설립">
+    <meta name="description" content="자동차토탈솔루션 차놀자협동조합, 렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카, 지에스렌트카,지에스렌터카, 장기렌트, 오토리스, 오토캐피탈, 세차, 자동차용품, 공업사, 차량수리, 캠핑카, 렌터카창업스쿨">
     <meta name="keywords" content="렌트카, 렌트카창업, 렌트창업, 차놀자, 캠핑카, 캠핑카렌트, 렌터카, 렌트비용, 렌트상담, 창업상담 , 천안렌트, 지에스렌트카">
 
     <link rel="icon" href="http://gsrent.kr/theme/c_rentcar/img/main_favicon.ico" />
 
     <!---오픈그래프-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="지에스렌트카">
-    <meta property="og:description" content="렌트카창업/사업 (지점,영업소모집) ·전국최대 120개지점 보유·렌트사관학교 설립">
+    <meta property="og:title" content="차놀자렌트카">
+    <meta property="og:description" content="자동차토탈솔루션 차놀자협동조합, 렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카, 지에스렌트카,지에스렌터카, 장기렌트, 오토리스, 오토캐피탈, 세차, 자동차용품, 공업사, 차량수리, 캠핑카, 렌터카창업스쿨">
     <meta property="og:image" content="http://gsrent.kr/img/opimg.png">
     <meta property="og:url" content="http://gsrent.kr">
 <?php

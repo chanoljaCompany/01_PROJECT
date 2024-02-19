@@ -35,7 +35,11 @@ header("Pragma: no-cache"); // HTTP/1.0
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta property="og:type" content="website">
 <meta property="og:title" content="차놀자협동조합">
+<meta property="og:image" content="http://www.chanolja-union.kr/img/opimg.png">
+<meta property="og:description" content="자동차토탈솔루션 차놀자협동조합, 렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카, 지에스렌트카,지에스렌터카, 장기렌트, 오토리스, 오토캐피탈, 세차, 자동차용품, 공업사, 차량수리, 캠핑카, 렌터카창업스쿨">
 <meta property="og:url" content="http://www.chanolja-union.kr">
+<meta name="naver-site-verification" content="30fbe0b072b45fd748706acac39c976af65e743c" />
+<meta name="description" content="자동차토탈솔루션 차놀자협동조합, 렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카, 지에스렌트카,지에스렌터카, 장기렌트, 오토리스, 오토캐피탈, 세차, 자동차용품, 공업사, 차량수리, 캠핑카, 렌터카창업스쿨">
 <link rel="icon" href="http://chanolja-union.kr/theme/union/img/favicon.ico" />
 
 <?php
