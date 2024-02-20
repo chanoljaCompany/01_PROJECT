@@ -59,9 +59,9 @@ a.btn_b02:hover, .btn_b02:hover {background:#000}
 #bo_cate>ul>li:nth-child(1){display: none;}
 .bo_cate_link{display: none;}
 #bo_cate{border: none; width: 100%; background: transparent; padding: 0; margin: 0; text-align: center; margin-top: 20px; }
-#bo_cate li{border: 1px solid #ccc;  -webkit-transition: .2s;  transition: .2s; padding: 0; border-radius : 5px; margin: 4px;}
-#bo_cate li:nth-child(3){border-left: none;}
-#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active{background: none; border: 2px solid #52C3F1;}
+#bo_cate li{border: 1px solid #ccc;  -webkit-transition: .2s;  transition: .2s; padding: 0; border-radius : 5px; margin: 4px; width:120px; height:40px;}
+#bo_cate li:nth-child(3){}
+#bo_cate li:focus, #bo_cate li:hover, #bo_cate li:active{background: none; border: 2px solid #52C3F1;}
 #bo_cate a:hover{}
 #bo_cate a{padding: 8px 0;}
 #bo_cate #bo_cate_on{-webkit-box-shadow:none;box-shadow:none;  background-color: #52C3F1; color: #fff;}
