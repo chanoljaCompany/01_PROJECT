@@ -43,7 +43,7 @@
 .pg_start{display: none;}
 .pg_end{display: none;}
 /*검색*/
-#bo_sch{position:relative; width: 480px; border: none; margin-bottom: 60px; padding: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);}
+#bo_sch{position:relative; width: 510px; border: none; margin-bottom: 60px; padding: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);}
 #bo_sch>form{width: 100%; }
 #bo_sch #sfl{width: 129px; height: 40px;margin: 0; border: 1px solid #ddd;}
 #bo_sch .sch_input{width: 249px; height: 40px; background-color: #fff; border: 1px solid #ddd; }
