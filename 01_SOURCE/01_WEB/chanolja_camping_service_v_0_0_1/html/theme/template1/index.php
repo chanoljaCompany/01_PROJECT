@@ -718,6 +718,23 @@ function touch_end(event) {
         }
     }
 
+    @media screen and (max-width: 360px) {
+            .pop_up_spans{
+                bottom:68%;
+                font-size:10px;
+            }
+
+            .clearfix2{
+                display:flex !important;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .clearfix2 li{
+                width: 70% !important;
+            }
+        }
+
 </style>
 <script>
 
