@@ -133,10 +133,19 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 <!-- 검색바 -->
-<div class="aboutWrap" style="margin-bottom: 8px !important">
+<div class="aboutWrap" style="margin-bottom: 20px !important; margin-top: 20px;">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/serch_bar.jpg" style="max-width : 100%"></a>
+              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
+                <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
+                <span
+                    style="position:absolute; font-size:19px; top:30%; left:7%; font-weight:bold;"
+                >캠핑여행 일정을 세워볼까요 ?</span>
+                <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; margin-left:25px;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
+                <span
+                    style="position:absolute; right:3%; color:#fff; font-size: 25px; font-weight:bold; top: 20%; letter-spacing:1px;"
+                >Search</span>
+              </a>
         </div>
   </div>
 </div>
@@ -569,8 +578,8 @@ function touch_end(event) {
          <image src="http://www.chanolja.co.kr/theme/template1/img/hashtag_popup.jpg" />
          <div class="pop_up_spans">
               <div class="pop_up_btns">
-                  <span onClick="Pop_up_no_Display_1()" style="color:#888">오늘 그만 보기</span>
-                  <span onClick="Pop_up_no()" style="font-weight:bold">닫기</span>
+                  <span onClick="Pop_up_no_Display_1()" style="color:#888; cursor:pointer;">오늘 그만 보기</span>
+                  <span onClick="Pop_up_no()" style="font-weight:bold; cursor:pointer;">닫기</span>
               </div>
            </div>
 

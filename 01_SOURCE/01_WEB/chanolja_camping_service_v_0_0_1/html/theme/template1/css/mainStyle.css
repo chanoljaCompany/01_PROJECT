@@ -52,7 +52,7 @@ button { background:#F2F2F2; }
 .bannerWrap > div > div.square_bracket2{background-image: url(../img/main/square_bracket2.png); right: 100px;}
 .inner.box{}
 .main_title{padding: 0px 0;}
-.main_title h2{font-size: 30px; line-height: 1.0; color: #000; text-align: left; font-weight: 700; padding: 20px 0;}
+.main_title h2{font-size: 3em; line-height: 1.0; color: #000; text-align: left; font-weight: 700; padding: 20px 0;}
 /*.main_title h2::after{content: ""; display: block; width: 1px; height: 35px; background: #223040; margin: 55px auto;} */
 .main_title h2 span{color: #d40424; font-weight: 600; margin-right: 20px;}
 .main_title p{width: 70%; margin: 0 auto; text-align: center; font-size: 24px; line-height: 1.5; font-weight: 500;}
