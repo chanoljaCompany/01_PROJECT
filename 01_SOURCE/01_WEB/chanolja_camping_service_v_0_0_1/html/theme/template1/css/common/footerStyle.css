@@ -9,7 +9,6 @@
 #ft_sns ul li a{width: 100%; height: 100%; background: url(../../img/common/ft_sns1.png); background-size: 100% auto; }
 #ft_sns ul li.ft_sns2 a{background-image: url(../../img/common/ft_sns2.png);}
 #ft_sns ul li.ft_sns3 a{background-image: url(../../img/common/ft_sns3.png);}
-#ft_sns ul li.ft_sns4 a{background-image: url(../../img/common/ft_sns4.png);}
 #ft_contact{width: 40%; text-align: right; margin-top: 10px;}
 #ft_contact strong{font-size: 36px; font-weight: 600; line-height: 50px;}
 #ft_link{width: 30%; height: 20px; margin-top: -40px; margin-bottom: 30px;}

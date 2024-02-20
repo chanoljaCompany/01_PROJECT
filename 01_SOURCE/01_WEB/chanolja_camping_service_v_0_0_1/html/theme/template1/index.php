@@ -213,11 +213,11 @@ include_once(G5_THEME_PATH.'/head.php');
     }
 </style>
 
-<!-- 상단아이콘 PC -->
+<!-- 문의하기 PC -->
 <div class="coreComWrap">
    <div class="box inner">
         <div class="detail">
-            <ul class="clearfix">
+            <ul class="clearfix2">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
@@ -380,7 +380,7 @@ function touch_end(event) {
         </div>
         <div class="detail">
        <?php
-        echo latest('theme/basic_news', '51', 4, 4);
+        echo latest('theme/basic_news', '51', 4, 120);
          ?>
 	    </div>
 	</div>
@@ -399,7 +399,7 @@ function touch_end(event) {
 			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
-        <?php echo latest('theme/basic_news', '14', 4, 4);
+        <?php echo latest('theme/basic_news', '14', 4, 120);
          ?>
 	    </div>
 	</div>
@@ -455,6 +455,32 @@ function touch_end(event) {
             </ul>
         </div>
 
+    </div>
+</div>
+
+<!-- 문의하기 모바일 -->
+<div class="coreComWrap_mo">
+   <div class="box inner">
+        <div class="detail">
+            <ul class="clearfix2">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
@@ -526,7 +552,8 @@ function touch_end(event) {
 	</div>
 </div>
 
-<!--창업문의 -->
+<!--
+ !--창업문의 --
 <div class="aboutWrap_mo" style="margin-bottom: 20px !important">
    <div class="box inner">
     <div class="detail">
@@ -535,7 +562,7 @@ function touch_end(event) {
   </div>
 </div>
 
-<!--캠핑카구매 -->
+ !--캠핑카구매 --
 <div class="aboutWrap_mo" style="margin-bottom: 20px !important">
    <div class="box inner">
         <div class="detail">
@@ -544,7 +571,7 @@ function touch_end(event) {
   </div>
 </div>
 
-<!--서비스센터 -->
+ !--서비스센터 --
 <div class="aboutWrap_mo">
    <div class="box inner">
         <div class="detail">
@@ -552,7 +579,7 @@ function touch_end(event) {
         </div>
   </div>
 </div>
-
+-->
 <!-- 유듀브 -->
 <br>
 <br>
@@ -671,6 +698,23 @@ function touch_end(event) {
         .pop_up_spans{
             bottom:67%;
             font-size:10px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .pop_up_spans{
+            bottom:53%;
+            font-size:10px;
+        }
+
+        .clearfix2{
+            display:flex !important;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .clearfix2 li{
+            width: 70% !important;
         }
     }
 

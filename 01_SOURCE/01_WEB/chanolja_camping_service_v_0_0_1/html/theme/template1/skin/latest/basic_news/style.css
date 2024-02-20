@@ -115,7 +115,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 80%;
+        width: 200px;
         display: block;
     }
     
