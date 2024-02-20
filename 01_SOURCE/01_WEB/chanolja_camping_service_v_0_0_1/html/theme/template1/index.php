@@ -38,11 +38,15 @@ include_once(G5_THEME_PATH.'/head.php');
 
     .utube_wrap h2 {
         font-size: 3em;
+        font-weight:700;
+        color:#000;
     }
 
     .utube_wrap h3 {
         font-size: 3em;
         position: relative;
+        font-weight:700;
+        color:#000;
     }
 
     .utube_wrap h3:before {
@@ -137,13 +141,13 @@ include_once(G5_THEME_PATH.'/head.php');
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
               <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
-                <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
+                <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
-                    style="position:absolute; font-size:19px; top:30%; left:7%; font-weight:bold;"
+                    style="position:absolute; font-size:19px; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
                 >캠핑여행 일정을 세워볼까요 ?</span>
                 <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; margin-left:25px;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
                 <span
-                    style="position:absolute; right:3%; color:#fff; font-size: 25px; font-weight:bold; top: 20%; letter-spacing:1px;"
+                    style="font-size:19px; position:absolute; right:43px; color:#fff;  top: 50%; transform: translateY(-50%);  letter-spacing:1px;"
                 >Search</span>
               </a>
         </div>
@@ -209,7 +213,31 @@ include_once(G5_THEME_PATH.'/head.php');
     }
 </style>
 
+<!-- 상단아이콘 PC -->
+<div class="coreComWrap">
+   <div class="box inner">
+        <div class="detail">
+            <ul class="clearfix">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
 
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <!-- 캠핑 추천 슬라이드 스크립트  -->
 <script>
@@ -281,7 +309,8 @@ function touch_end(event) {
 	</div>
 </div>
 
-<!--창업문의 -->
+<!--
+ !--창업문의 --
 <div class="aboutWrap" style="margin-bottom: 80px !important">
    <div class="box inner">
     <div class="detail">
@@ -290,7 +319,7 @@ function touch_end(event) {
   </div>
 </div>
 
-<!--캠핑카구매 -->
+ !--캠핑카구매 --
 <div class="aboutWrap" style="margin-bottom: 80px !important">
    <div class="box inner">
         <div class="detail">
@@ -299,7 +328,7 @@ function touch_end(event) {
   </div>
 </div>
 
-<!--서비스센터 -->
+ !--서비스센터 --
 <div class="aboutWrap">
    <div class="box inner">
         <div class="detail">
@@ -307,7 +336,7 @@ function touch_end(event) {
         </div>
   </div>
 </div>
-
+-->
 
 <!-- 유듀브 -->
 

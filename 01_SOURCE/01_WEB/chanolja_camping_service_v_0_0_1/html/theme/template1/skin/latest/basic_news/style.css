@@ -120,11 +120,11 @@
     }
     
     .p2_tit {
-        border-left: 3px solid #FEBE18;
+        border-left: 3px solid #54C3F1;
         color: #aaa;
         font-size: 18px;
         font-weight: bold;
-        padding-left: 15px;
+        padding-left: 15px !important;
         line-height: 20px;
         margin-bottom: 20px;
     }
