@@ -12,6 +12,12 @@ include_once(G5_THEME_PATH.'/head.php');
 
   <script>
     new WOW().init();
+
+   $(document).ready(function () {
+        if(document.cookie.indexOf("pop_up") < 0 ) {
+            $('.pop_up_back').css('display', 'block');
+        }
+   });
   </script>
 
 <!-- 추가 css 영역-->
@@ -558,11 +564,18 @@ function touch_end(event) {
  </div>
 
 
-<div class="pop_up_back">
+<div class="pop_up_back" style="display:none;" >
     <div class="pop_up">
          <image src="http://www.chanolja.co.kr/theme/template1/img/hashtag_popup.jpg" />
-          <div class="pop_up_x">✕</div>
+         <div class="pop_up_spans">
+              <div class="pop_up_btns">
+                  <span onClick="Pop_up_no_Display_1()" style="color:#888">오늘 그만 보기</span>
+                  <span onClick="Pop_up_no()" style="font-weight:bold">닫기</span>
+              </div>
+           </div>
+
     </div>
+
 
 </div>
 
@@ -601,11 +614,51 @@ function touch_end(event) {
     font-weight: bold;
     cursor:pointer;
   }
+
+   .pop_up_spans{
+        position:absolute;
+        bottom:37%;
+        left:0px;
+        width:100%;
+        max-width:500px;
+        font-size:15px;
+   }
+
+  .pop_up_btns {
+    display:flex;
+    justify-content: space-around;
+  }
+
+    @media screen and (max-width: 600px) {
+        .pop_up_spans{
+            bottom:67%;
+            font-size:10px;
+        }
+    }
+
 </style>
 <script>
+
+
+/*
   $('.pop_up_x').click(()=>{
     $('.pop_up_back').css('display', 'none');
-  })
+  }) */
+
+  function setCookie(name, value, exDay) {
+    var todayDate = new Date();
+    todayDate.setDate(todayDate.getDate() + exDay);
+    document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+  }
+
+  function Pop_up_no_Display_1() {
+    setCookie("pop_up", "done", "1");
+    $('.pop_up_back').css('display', 'none');
+  }
+
+  function Pop_up_no() {
+    $('.pop_up_back').css('display', 'none');
+  }
 </script>
 
 
