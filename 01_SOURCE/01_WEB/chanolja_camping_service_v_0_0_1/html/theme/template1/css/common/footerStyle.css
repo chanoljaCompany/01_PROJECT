@@ -39,7 +39,7 @@
     #ft_link,
     #ft_company,
     #ft_copy{overflow: hidden; width: 100%;}  
-    #ft_sns ul{float: none; width: 264px; margin: 0 auto;}
+    #ft_sns ul{float: none; width: 264px; margin: 0 auto; display:flex; justify-content:center;}
     #ft_sns ul li{margin: 0; width: 25%;}
     #ft_sns ul li a{background-size: 40px auto; background-position: center; background-repeat: no-repeat;}
     #ft_contact{margin-top: 20px; text-align: center; padding-bottom: 40px; border-bottom: 1px solid #888;}
