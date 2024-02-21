@@ -11,4 +11,5 @@
         android:src="@drawable/loading"
         android:layout_gravity="center"
         />
+
 </LinearLayout>
