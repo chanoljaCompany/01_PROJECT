@@ -8,7 +8,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 <div id="splide3" class="splide">
-	<div class="splide__track">
+	<div class="splide__track" style="opacity:.8;">
 		<ul class="splide__list">
     <?php
     for ($i=0; $i<$list_count; $i++) {
@@ -20,7 +20,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         $img = G5_IMG_URL.'/no_img.png';
         $thumb['alt'] = '이미지가 없습니다.';
     }
-    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
+    $img_content = '<img style="border-radius:20px;" src="'.$img.'" alt="'.$thumb['alt'].'" >';
     // $img_content = '<img src="" alt="'.$thumb['alt'].'" >';
     $wr_href = get_pretty_url($bo_table, $list[$i]['wr_id']);
     ?>

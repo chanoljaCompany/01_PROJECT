@@ -22,7 +22,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         $img = G5_IMG_URL.'/no_img.png';
         $thumb['alt'] = '이미지가 없습니다.';
     }
-    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" style="max-witdh:100%;">';
+    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" style="max-witdh:100%; border-radius:20px;">';
     $wr_href = get_pretty_url($bo_table, $list[$i]['wr_id']);
     ?>
         <li class="splide__slide">

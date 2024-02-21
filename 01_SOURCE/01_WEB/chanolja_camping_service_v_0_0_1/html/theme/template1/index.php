@@ -611,7 +611,7 @@ function touch_end(event) {
         <div class="utube_wrap"  style="max-width : 100%" >
                        <center> <font size=5><bold> 차놀자캠핑 미디어 </bold></font></br>
                        <font size=3>#차놀자캠핑 #캠핑카여행 #캠핑 #여행</font>  </center>
-                       <iframe width="100%" height="280px" src="https://www.youtube.com/embed/3zUGRMQQ4P0?si=_-a4o3aUVp-2hfW-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                                    </div>
+                       <iframe style="border-radius:20px;" width="100%" height="280px" src="https://www.youtube.com/embed/3zUGRMQQ4P0?si=_-a4o3aUVp-2hfW-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                                    </div>
     </div>
 </div>
 
