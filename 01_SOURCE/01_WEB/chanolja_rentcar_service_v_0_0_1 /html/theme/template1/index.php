@@ -180,7 +180,8 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 -->
 <div class="slider" style="max-witdh : 100%;  position: relative;">
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpseserg" style="border-radius: 20px; "></div>
+      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpg" style="border-radius: 20px; "></div>
+      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.png" style="border-radius: 20px; "></div>
 </div>
 
 <!-- 상단아이콘 PC -->

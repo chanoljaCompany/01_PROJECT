@@ -362,7 +362,6 @@ function touch_end(event) {
         <div class="utube_wrap">
             <table>
                     <td width="40%">
-                       <h2>MEDIA</h2>
                        <h3>차놀자캠핑<br> 미디어</h3>
                        <h4>#차놀자캠핑 #캠핑카여행 #캠핑 #여행</h4>
                      </td>
@@ -412,7 +411,7 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 PRESS</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스</h2>
 			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -638,7 +637,7 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 PRESS</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스</h2>
 			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -658,8 +657,8 @@ function touch_end(event) {
         </div>
          <div  class="pop_up_spans">
               <div class="pop_up_btns">
-                  <span onClick="Pop_up_no_Display_1()" style="color:#fff; cursor:pointer; font-weight:900;">오늘 그만 보기</span>
-                  <span onClick="Pop_up_no()" style="font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
+                  <span onClick="Pop_up_no_Display_1()" style="cursor:pointer; font-weight:900;">오늘 그만 보기</span>
+                  <span onClick="Pop_up_no()" style="color:#fff;  font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
               </div>
            </div>
 

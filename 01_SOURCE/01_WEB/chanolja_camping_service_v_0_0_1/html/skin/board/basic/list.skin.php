@@ -12,7 +12,7 @@ if ($is_nogood) $colspan++;
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<!-- 게시판 목록 시작 { -->
+<!-- 게시판 목록 시작 - 캠핑카 위탁 운영 안내 및 설명 { -->
 <div id="bo_list" style="width:<?php echo $width; ?>">
 
     <!-- 게시판 카테고리 시작 { -->

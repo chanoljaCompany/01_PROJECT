@@ -54,7 +54,7 @@
 #bo_sch .sch_input{padding: 0 10px; box-shadow: none; -webkit-box-shadow: none;  outline: none;}
 /*버튼*/
 a.btn_b01.notice_btn01{display: none;}
-a.btn_b02:hover, .btn_b02:hover {background:#000}
+a.btn_b02:hover, .btn_b02:hover {}
 /*카테고리*/
 #bo_cate>ul>li:nth-child(1){display: none;}
 .bo_cate_link{display: none;}
@@ -69,15 +69,15 @@ a.btn_b02:hover, .btn_b02:hover {background:#000}
 #bo_w{padding-bottom: 80px;}
 /* 버튼 제어 */
 a.btn, .btn{padding: 0 30px; height: 40px; line-height: 40px; text-align: center; font-weight: 300; font-size: 17px;}
-a.btn_admin, .btn_admin{height: 40px; line-height: 40px; text-align: center; background: #fff;} /*관리자, 복사, 이동*/
-a.btn_admin:hover, .btn_admin:hover{background: #444;}
-a.btn_b02, .btn_b02{height: 40px; line-height: 40px; text-align: center; background: #444; font-weight: 300;} /*글쓰기*/
-a.btn_b02:hover, .btn_b02:hover {background:#c80e21;}
-a.btn_b01, .btn_b01{height: 40px; line-height: 40px; background: #4beaff8e;} /*수정, 삭제, 목록, 답변*/
-a.btn_b01:hover, .btn_b01:hover{background: #c80e21;}
-.btn_submit{background: #52C3F1; height: 40px; text-align: center; color:#fff} /*댓글등록*/
-.btn_submit:hover{background: #444;}
-.bo_vc_w .btn_submit{border-radius: 0; font-weight: 300; font-size: 17px;}
+a.btn_admin, .btn_admin{border-radius:10px; height: 40px; line-height: 40px; text-align: center; background: #fff; border:1px solid #eee;} /*관리자, 복사, 이동*/
+a.btn_admin:hover, .btn_admin:hover{border:2px solid #52C3F1;}
+a.btn_b02, .btn_b02{height: 40px; line-height: 40px; text-align: center; border:1px solid #eee; font-weight: 300; border-radius:10px; background:#fff; color:black;} /*글쓰기*/
+a.btn_b02:hover, .btn_b02:hover {border:2px solid #52C3F1;}
+a.btn_b01, .btn_b01{height: 40px; line-height: 40px; background: #fff; border:1px solid #eee; border-radius:10px;} /*수정, 삭제, 목록, 답변*/
+a.btn_b01:hover, .btn_b01:hover{border:2px solid #52C3F1; }
+.btn_submit{border-radius:10px; background: #fff; height: 40px; text-align: center; color:black; border:1px solid #eee;} /*댓글등록*/
+.btn_submit:hover{border:2px solid #52C3F1; background: #fff ; color:black;}
+.bo_vc_w .btn_submit{border-radius: 10px; font-weight: 300; font-size: 17px;}
 a.btn_cancel{background: #0e4d4d; height: 40px; line-height: 40px; text-align: center;}
 .btn .fa{display: none;} /*버튼 픽토그램*/
 .cmt_btn{background-position: 67px 10px; font-size: 16px;}
