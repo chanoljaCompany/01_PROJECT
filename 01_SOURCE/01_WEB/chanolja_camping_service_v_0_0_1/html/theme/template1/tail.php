@@ -129,8 +129,8 @@ if (G5_IS_MOBILE) {
        <div id="ft_sns">
             <ul>
                 <li><a href="https://blog.naver.com/m_chanolja">youtube</a></li>
-                <li class="ft_sns2"><a style="width:100%; background-size: auto 90%; background-repeat: no-repeat;" href="javascirpt:;">instagram</a></li>
-                <li class="ft_sns3"><a href="javascirpt:;">naver blog</a></li>
+                <li class="ft_sns2"><a style="width:100%; background-size: auto 90%; background-repeat: no-repeat;" href="https://www.instagram.com/chanolja.camping/">instagram</a></li>
+                <li class="ft_sns3"><a href="https://blog.naver.com/m_chanolja">naver blog</a></li>
             </ul>
         </div>
         <div id="ft_contact">

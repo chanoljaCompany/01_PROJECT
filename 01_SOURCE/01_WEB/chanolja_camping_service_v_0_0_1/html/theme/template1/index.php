@@ -247,7 +247,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24">
+                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>
@@ -360,13 +360,15 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
         <div class="utube_wrap">
-            <table>
+            <table style="width:100%;">
                     <td width="40%">
                        <h3>차놀자캠핑<br> 미디어</h3>
                        <h4>#차놀자캠핑 #캠핑카여행 #캠핑 #여행</h4>
                      </td>
                      <td width="60%">
-                        <?php echo latest('theme/youtube_latest','91',1,50) ?>
+                       <!--  <?php echo latest('theme/youtube_latest','91',1,50) ?> -->
+                        <iframe style="border-radius:20px;" width="100%" height="400px" src="https://www.youtube.com/embed/-hBJW-ZgL0I?si=fZBO3WeF02q3yMpi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                      </td>
                 </tr>
              </table>
@@ -496,7 +498,7 @@ function touch_end(event) {
                 <ul class="clearfix2" style="align-items:flex-start;">
                     <li class="wow bounceInUp" data-wow-delay="0.5s"
                         style="visibility: visible; width:38% !important; animation-delay: 0.5s; margin-left:20px;">
-                        <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24">
+                        <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                         </a>
                     </li>
@@ -610,7 +612,12 @@ function touch_end(event) {
         <div class="utube_wrap"  style="max-width : 100%" >
                        <center> <font size=5><bold> 차놀자캠핑 미디어 </bold></font></br>
                        <font size=3>#차놀자캠핑 #캠핑카여행 #캠핑 #여행</font>  </center>
-                       <iframe style="border-radius:20px;" width="100%" height="280px" src="https://www.youtube.com/embed/3zUGRMQQ4P0?si=_-a4o3aUVp-2hfW-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                                    </div>
+                       <div style="position:relative;height:0;padding-bottom:56.25%">
+                           <iframe src="https://www.youtube.com/embed/-hBJW-ZgL0I?si=fZBO3WeF02q3yMpi"
+                           style="position:absolute;width:100%;height:100%;left:0; border-radius:20px;"
+                           frameborder="0" allowfullscreen></iframe>
+                       </div>
+        </div>
     </div>
 </div>
 
