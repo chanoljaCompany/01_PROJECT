@@ -59,9 +59,9 @@ a.btn_b02:hover, .btn_b02:hover {}
 #bo_cate>ul>li:nth-child(1){display: none;}
 .bo_cate_link{display: none;}
 #bo_cate{border: none; width: 100%; background: transparent; padding: 0; margin: 0; text-align: center; margin-top: 20px; }
-#bo_cate li{border: 1px solid #ccc;  -webkit-transition: .2s;  transition: .2s; padding: 0; border-radius : 5px; margin: 4px; width:120px; height:40px;}
+#bo_cate li{border: 1px solid #ccc; padding: 0; border-radius : 5px; margin: 4px; width:120px; height:40px;}
 #bo_cate li:nth-child(3){}
-#bo_cate li:focus, #bo_cate li:hover, #bo_cate li:active{background: none; border: 2px solid #52C3F1;}
+#bo_cate li:focus, #bo_cate li:hover, #bo_cate li:active{background: none; outline: 2px solid #52C3F1;}
 #bo_cate a:hover{}
 #bo_cate a{padding: 8px 0;}
 #bo_cate #bo_cate_on{-webkit-box-shadow:none;box-shadow:none;  background-color: #52C3F1; color: #fff;}
@@ -72,7 +72,7 @@ a.btn, .btn{padding: 0 30px; height: 40px; line-height: 40px; text-align: center
 a.btn_admin, .btn_admin{border-radius:10px; height: 40px; line-height: 40px; text-align: center; background: #fff; border:1px solid #eee;} /*관리자, 복사, 이동*/
 a.btn_admin:hover, .btn_admin:hover{border:2px solid #52C3F1;}
 a.btn_b02, .btn_b02{height: 40px; line-height: 40px; text-align: center; border:1px solid #eee; font-weight: 300; border-radius:10px; background:#fff; color:black;} /*글쓰기*/
-a.btn_b02:hover, .btn_b02:hover {border:2px solid #52C3F1;}
+a.btn_b02:hover, .btn_b02:hover {outline:2px solid #52C3F1;}
 a.btn_b01, .btn_b01{height: 40px; line-height: 40px; background: #fff; border:1px solid #eee; border-radius:10px;} /*수정, 삭제, 목록, 답변*/
 a.btn_b01:hover, .btn_b01:hover{border:2px solid #52C3F1; }
 .btn_submit{border-radius:10px; background: #fff; height: 40px; text-align: center; color:black; border:1px solid #eee;} /*댓글등록*/
