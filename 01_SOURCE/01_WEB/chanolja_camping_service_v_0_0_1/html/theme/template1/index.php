@@ -447,7 +447,7 @@ function touch_end(event) {
 <!-- 상단아이콘 모바일 -->
 <div class="coreComWrap_mo">
    <div class="box inner">
-        <div class="detail">
+        <div class="detail" style="display:flex; justify-content: center;">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:10px;">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
@@ -462,10 +462,10 @@ function touch_end(event) {
         </div>
         <div class="detail">
             <ul class="clearfix" style="margin-bottom: 20px; margin-top:20px;" >
-                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:10px;">
+                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:20px;">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=43"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/goods.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
                 </li>
-                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                <li style="margin-right:30%;" class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=43"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/meal.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
                 </li>
             </ul>

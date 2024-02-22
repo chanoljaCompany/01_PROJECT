@@ -13,6 +13,26 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <!-- 게시판 목록 시작 - 캠핑카 위탁 운영 안내 및 설명 { -->
+
+<style>
+    .youtube_div {
+        margin-top:150px;
+        display:flex;
+        justify-content:center;
+    }
+
+    .youtube_a {
+        font-size:35px;
+        width:max-content;
+        text-decoration:none !important;
+        margin-bottom:20px;
+    }
+
+    .youtube_a:hover{
+        border-bottom:2px solid black;
+    }
+</style>
+
 <div id="bo_list" style="width:<?php echo $width; ?>">
 
     <!-- 게시판 카테고리 시작 { -->
