@@ -247,7 +247,7 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="detail">
             <ul class="clearfix2">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                    <a href="http://gsrent.kr/">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>
@@ -258,7 +258,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24">
+                    <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>
@@ -403,7 +403,7 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 정보마당</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 공지사항</h2>
 			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -423,7 +423,7 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 PRESS</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스룸</h2>
 			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -492,7 +492,7 @@ function touch_end(event) {
         <div class="detail">
             <ul class="clearfix2" style="flex-direction: row;">
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                    <a href="http://gsrent.kr/">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>
@@ -508,7 +508,7 @@ function touch_end(event) {
                 <ul class="clearfix2" style="align-items:flex-start;">
                     <li class="wow bounceInUp" data-wow-delay="0.5s"
                         style="visibility: visible; width:38% !important; animation-delay: 0.5s; margin-left:20px;">
-                        <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24">
+                        <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                         </a>
                     </li>
@@ -637,7 +637,7 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 정보마당</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 공지사항</h2>
 			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -654,7 +654,7 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 PRESS</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스룸</h2>
 			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">

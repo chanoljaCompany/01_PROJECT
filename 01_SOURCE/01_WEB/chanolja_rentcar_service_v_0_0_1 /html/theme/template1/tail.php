@@ -145,12 +145,11 @@ if (G5_IS_MOBILE) {
         
         <div id="ft_company">
             <ul>
-                <li class="ft_company1">상호 : 엠제이이노베이션 주식회사</li>
-                <li class="ft_company2">대표 : 문 준</li>
-                <li class="ft_company3">주소 : 인천 연수구 센트럴로 263, IBS 타워 23층 </li>
-                <li class="ft_company4">메일 : m_chanolja@daum.net</li>
-                <li class="ft_company5">사업자등록번호 : 625-87-01871</li>
-                <li class="ft_company6">통신판매업 신고번호 제2022-인천부평1361호 : <a href="javascript:;">[사업자정보확인]</a></li>
+                <li class="ft_company1">상호 : 차놀자렌트카(주)&지에스렌트카(주)</li>
+                <li class="ft_company3">주소 : 충청남도 천안시 동남구 충절로 224 1층 차놀자 </li>
+                <li class="ft_company4">지에스렌트카(주) 사업자등록번호 : 312-81-36863</li>
+                <li class="ft_company5">차놀자렌트카(주) 사업자등록번호 : 369-86-01538</li>
+                <li class="ft_company6">대표전화 041-522-7000 월~금 09:00 - 18:00</li>
             </ul>
         </div>
         
