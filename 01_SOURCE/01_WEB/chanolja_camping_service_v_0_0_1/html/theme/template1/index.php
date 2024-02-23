@@ -162,10 +162,12 @@ include_once(G5_THEME_PATH.'/head.php');
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
                 >캠핑여행 일정을 세워볼까요 ?</span>
-                <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:25%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
-                <span
-                    style="position:absolute; right:28px; color:#fff;  top: 50%; transform: translateY(-50%);  letter-spacing:1px;"
-                >Search</span>
+                <div style="position: relative;">
+                    <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:100%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
+                    <span
+                        style="position:absolute; left:50%; color:#fff;  top: 50%; transform: translate(-50%, -50%);  letter-spacing:1px;"
+                    >Search</span>
+                </div>
               </a>
         </div>
   </div>

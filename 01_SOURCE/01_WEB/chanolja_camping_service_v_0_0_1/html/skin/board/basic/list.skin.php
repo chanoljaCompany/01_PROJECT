@@ -22,15 +22,19 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     }
 
     .youtube_a {
-        font-size:35px;
-        width:max-content;
-        text-decoration:none !important;
-        margin-bottom:20px;
+        background-color: #51C3F1;
+        padding: 15px;
+        border-radius: 20px;
+        color: white !important;
+        font-weight: bold;
+        position: relative;
+        left: -49%;
+        transform: translateX(50%);
+        font-size: 20px;
+        box-shadow: 0px 0px 9px 7px #52c3f138;
+        text-decoration: none !important;
     }
 
-    .youtube_a:hover{
-        border-bottom:2px solid black;
-    }
 </style>
 
 <div id="bo_list" style="width:<?php echo $width; ?>">
