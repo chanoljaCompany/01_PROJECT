@@ -120,7 +120,7 @@ $g5['title'] = "공지사항";
                         if ($list[$i]['is_notice']) // 공지사항
                             echo '<strong class="notice_icon">공지</strong>';
                         else
-                            echo $list[$i]['num'];
+                            echo $list[$i]['wr_num'];
                         ?>
                         </td>
 
