@@ -198,6 +198,7 @@
     display:block;
     border:1px solid #ccc;
     box-sizing:border-box;
+    border-radius:15px;
 }
 .tbl_wrap {
     padding:20px 0;
