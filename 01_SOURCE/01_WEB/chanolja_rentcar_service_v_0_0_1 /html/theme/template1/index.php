@@ -178,9 +178,27 @@ include_once(G5_THEME_PATH.'/head.php');
         border:2px solid #54C3FE;
     }
 
+
+
     @media screen and (max-width:480px){
         .splide__slide strong{
             font-size:10px;
+        }
+
+        .splide__arrow--prev{
+            left:1em !important;
+            height:2em !important;
+            width:2em !important;
+            background:#ddd !important;
+            border-radius:5px !important;
+        }
+
+        .splide__arrow--next{
+            right:1em !important;
+            height:2em !important;
+            width:2em !important;
+            background:#ddd !important;
+            border-radius:5px !important;
         }
     }
 </style>

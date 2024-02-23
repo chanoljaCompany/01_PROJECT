@@ -133,6 +133,74 @@ include_once(G5_THEME_PATH.'/head.php');
     .ptn_wrap h3{font-size:1.2em; text-align: center; }
     .ptn_wrap p{text-align: center; }
     .ptn_wrap p img{width:100%; }
+
+    .splide__slide{
+        padding-top:10px !important;
+        padding-bottom: 30px !important;
+        text-align:center;
+
+    }
+
+    .splide__slide a {
+        display:flex;
+        justify-content:center;
+    }
+
+    .splide__slide strong{
+        font-size:20px;
+    }
+
+    .splide__arrow--prev{
+        left:-1.5em !important;
+        height:3em !important;
+        width:3em !important;
+        border-radius:10px !important;
+        background:#fff !important;
+        box-shadow:0 10px 30px -10px rgba(0,0,0,1);
+        opacity:1 !important;
+    }
+
+    .splide__arrow--next{
+        right:-1.5em !important;
+        height:3em !important;
+        width:3em !important;
+        border-radius:10px !important;
+        background:#fff !important;
+        box-shadow:0 10px 30px -10px rgba(0,0,0,1);
+        opacity:1 !important;
+    }
+
+    .splide__arrow--prev:hover{
+        border:2px solid #54C3FE;
+    }
+
+    .splide__arrow--next:hover{
+        border:2px solid #54C3FE;
+    }
+
+
+
+    @media screen and (max-width:480px){
+        .splide__slide strong{
+            font-size:10px;
+        }
+
+        .splide__arrow--prev{
+            left:1em !important;
+            height:2em !important;
+            width:2em !important;
+            background:#ddd !important;
+            border-radius:5px !important;
+        }
+
+        .splide__arrow--next{
+            right:1em !important;
+            height:2em !important;
+            width:2em !important;
+            background:#ddd !important;
+            border-radius:5px !important;
+        }
+    }
 </style>
 
 
