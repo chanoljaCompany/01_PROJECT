@@ -6,7 +6,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 ?>
 
 <!-- 회원가입약관 동의 시작 { -->
-<div class="register">
+<div class="register" style="margin-top:100px; width:1200px;">
 
     <form  name="fregister" id="fregister" action="<?php echo $register_action_url ?>" onsubmit="return fregister_submit(this);" method="POST" autocomplete="off">
 
@@ -63,7 +63,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <label for="chk_all"><span></span>회원가입 약관에 모두 동의합니다</label>
     </div>
 	    
-    <div class="btn_confirm">
+    <div class="btn_confirm" style="display:flex; justify-content:space-between;">
     	<a href="<?php echo G5_URL ?>" class="btn_close">취소</a>
         <button type="submit" class="btn_submit">회원가입</button>
     </div>
