@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Four Boxes Slideshow | Demo 3</title>
+		<meta name="description" content="Four Boxes Slideshow: Recreating the background image slideshow seen on Atelier Serge Thoroval's website" />
+		<meta name="keywords" content="background slideshow, boxes, background image, four panels, css, tutorial" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+    <div id="img-wrap">
+		<div class="container">
+			<div id="boxgallery" class="boxgallery" data-effect="effect-2">
+				<div class="panel"><img src="img/2.jpg" alt="Image 2"/></div>
+				<div class="panel"><img src="img/3.jpg" alt="Image 3"/></div>
+				<div class="panel"><img src="img/1.jpg" alt="Image 1"/></div>
+				<div class="panel"><img src="img/4.jpg" alt="Image 4"/></div>	
+			</div>
+			<!--
+			<header class="codrops-header">
+				<h1>추천보일러<span></span></h1>
+				<nav class="codrops-demos">
+					<a href="index.html">린나이</a>
+					<a href="index2.html">경동 나비엔</a>
+					<a class="current-demo" href="index3.html">귀뚜라미</a>
+   				    <a href="index.html">대성 쎌틱</a>
+				</nav>
+			</header>
+			-->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/boxesFx.js"></script>
+		<script>
+			new BoxesFx( document.getElementById( 'boxgallery' ) );
+		</script>
+		</div>
+	</body>
+</html>
