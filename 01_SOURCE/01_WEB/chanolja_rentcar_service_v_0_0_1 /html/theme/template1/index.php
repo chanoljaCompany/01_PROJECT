@@ -222,6 +222,7 @@ include_once(G5_THEME_PATH.'/head.php');
   </div>
 </div>
 
+
 <div class="aboutWrap_mo" style="margin-bottom: 20px !important; ">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
@@ -229,11 +230,13 @@ include_once(G5_THEME_PATH.'/head.php');
                 <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
-                >고객이 필요한 모든 렌트카 서비스 제공</span>
-                <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:25%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
-                <span
-                    style="position:absolute; right:28px; color:#fff;  top: 50%; transform: translateY(-50%);  letter-spacing:1px;"
-                >Search</span>
+                >캠핑여행 일정을 세워볼까요 ?</span>
+                <div style="position: relative;">
+                    <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:100%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
+                    <span
+                        style="position:absolute; left:50%; color:#fff;  top: 50%; transform: translate(-50%, -50%);  letter-spacing:1px;"
+                    >Search</span>
+                </div>
               </a>
         </div>
   </div>
@@ -248,8 +251,8 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 -->
 <div class="slider" style="max-witdh : 100%;  position: relative;">
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpg" style="border-radius: 20px; "></div>
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.png" style="border-radius: 20px; "></div>
+      <div><img class="slider_img1" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpg" style="border-radius: 20px; "></div>
+      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.png" style="border-radius: 20px; "></div>
 </div>
 
 <!-- 상단아이콘 PC -->
@@ -547,30 +550,38 @@ function touch_end(event) {
 <div class="coreComWrap_mo">
    <div class="box inner">
         <div class="detail">
-            <ul class="clearfix2" style="flex-direction: row;">
-                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;">
+            <ul class="clearfix2" >
+                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;  width:88% !important;">
                     <a href="http://gsrent.kr/">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>
-                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;">
+                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px; width:88% !important;">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
 
                 </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-delay: 0.5s; width:88% !important; ">
+                    <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
             </ul>
         </div>
+        <!--
         <div class="detail">
-                <ul class="clearfix2" style="align-items:flex-start;">
-                    <li class="wow bounceInUp" data-wow-delay="0.5s"
-                        style="visibility: visible; width:38% !important; animation-delay: 0.5s; margin-left:20px;">
-                        <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
-                            <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="clearfix2" style="align-items:flex-start;">
+                <li class="wow bounceInUp" data-wow-delay="0.5s"
+                    style="visibility: visible; width:38% !important; animation-delay: 0.5s; margin-left:20px;">
+                    <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+         -->
     </div>
 </div>
 
@@ -740,6 +751,15 @@ function touch_end(event) {
 
 </div>
 -->
+
+<script>
+    // 모바일 화면일 때 이미지 경로 변경
+    if (window.innerWidth <= 600) {
+        document.querySelector('.slider_img1').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo1.png";
+        document.querySelector('.slider_img2').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo2.png";
+    }
+</script>
+
 <style>
   .pop_up_back{
     z-index: 1000;
@@ -797,6 +817,15 @@ function touch_end(event) {
          .pop_up_spans{
             font-size:14px;
         }
+
+         .slider_img1{
+             border-radius: 10px !important;
+         }
+
+         .slider_img2{
+            border-radius: 10px !important;
+         }
+
     }
 
     @media screen and (max-width: 480px) {

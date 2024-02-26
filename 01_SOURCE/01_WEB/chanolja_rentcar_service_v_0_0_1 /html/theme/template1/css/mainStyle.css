@@ -250,7 +250,7 @@ button { background:#F2F2F2; }
     .main_title h2::after{width: 1px; height: 13px; margin: 20px auto;}
     .main_title h2 span{margin-right: 10px;}
     .main_title p{width: 100%; font-size: 12px; padding: 0 20px;} 
-    .detail > ul{width: 98% }
+    .detail > ul{width: 100% }
     .detail > ul li{width: 100%; height: auto ; }
     .detail > ul li img{max-width: 100%; margin: 0px auto } 
     .detail > ul li p{font-size: 16px;}
