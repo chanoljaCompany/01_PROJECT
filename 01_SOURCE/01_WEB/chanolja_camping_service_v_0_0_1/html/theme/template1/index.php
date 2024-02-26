@@ -250,8 +250,8 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 -->
 <div class="slider" style="max-witdh : 100%;  position: relative;">
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_1.png" style="border-radius: 20px; "></div>
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_2.png" style="border-radius: 20px; "></div>
+      <div><img class="slider_img1" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpg" style="border-radius: 20px; "></div>
+      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.png" style="border-radius: 20px; "></div>
 </div>
 
 <!-- 상단아이콘 PC -->
@@ -550,30 +550,38 @@ function touch_end(event) {
 <div class="coreComWrap_mo">
    <div class="box inner">
         <div class="detail">
-            <ul class="clearfix2" style="flex-direction: row;">
-                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+            <ul class="clearfix2" >
+                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;  width:88% !important;">
+                    <a href="http://gsrent.kr/">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>
-                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;">
+                <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px; width:88% !important;">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
 
                 </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-delay: 0.5s; width:88% !important; ">
+                    <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
             </ul>
         </div>
+        <!--
         <div class="detail">
-                <ul class="clearfix2" style="align-items:flex-start;">
-                    <li class="wow bounceInUp" data-wow-delay="0.5s"
-                        style="visibility: visible; width:38% !important; animation-delay: 0.5s; margin-left:20px;">
-                        <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52">
-                            <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="clearfix2" style="align-items:flex-start;">
+                <li class="wow bounceInUp" data-wow-delay="0.5s"
+                    style="visibility: visible; width:38% !important; animation-delay: 0.5s; margin-left:20px;">
+                    <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+         -->
     </div>
 </div>
 
@@ -744,6 +752,14 @@ function touch_end(event) {
 
 </div>
 
+<script>
+    // 모바일 화면일 때 이미지 경로 변경
+    if (window.innerWidth <= 600) {
+        document.querySelector('.slider_img1').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo1.png";
+        document.querySelector('.slider_img2').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo2.png";
+    }
+</script>
+
 <style>
   .pop_up_back{
     z-index: 1000;
@@ -801,6 +817,13 @@ function touch_end(event) {
          .pop_up_spans{
             font-size:14px;
         }
+        .slider_img1{
+             border-radius: 10px !important;
+         }
+
+         .slider_img2{
+            border-radius: 10px !important;
+         }
     }
 
     @media screen and (max-width: 480px) {
