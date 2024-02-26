@@ -158,6 +158,7 @@ include_once(G5_THEME_PATH.'/head.php');
         background:#fff !important;
         box-shadow:0 10px 30px -10px rgba(0,0,0,1);
         opacity:1 !important;
+        top: 33% !important;
     }
 
     .splide__arrow--next{
@@ -168,6 +169,7 @@ include_once(G5_THEME_PATH.'/head.php');
         background:#fff !important;
         box-shadow:0 10px 30px -10px rgba(0,0,0,1);
         opacity:1 !important;
+        top: 33% !important;
     }
 
     .splide__arrow--prev:hover{

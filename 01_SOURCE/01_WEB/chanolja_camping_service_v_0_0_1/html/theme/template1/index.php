@@ -191,6 +191,7 @@ include_once(G5_THEME_PATH.'/head.php');
             width:2em !important;
             background:#ddd !important;
             border-radius:5px !important;
+            top: 33% !important;
         }
 
         .splide__arrow--next{
@@ -199,6 +200,7 @@ include_once(G5_THEME_PATH.'/head.php');
             width:2em !important;
             background:#ddd !important;
             border-radius:5px !important;
+            top: 33% !important;
         }
     }
 </style>
@@ -824,6 +826,8 @@ function touch_end(event) {
          .slider_img2{
             border-radius: 10px !important;
          }
+
+
     }
 
     @media screen and (max-width: 480px) {
