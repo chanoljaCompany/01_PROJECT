@@ -105,7 +105,19 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
             ?>
             <li class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
+                <?php
+                    if($row['me_name']=='파트너스센터')  {
+                        echo "<a class='menu_tit' href='http://www.chanolja.co.kr/real_reservation/'>". $row['me_name'] ."</a>";
+                    }
+                    else if($row['me_name']=='캠핑카예약')  {
+                       echo "<a class='menu_tit' href='http://www.chanolja.co.kr/bbs/board.php?bo_table=70'>". $row['me_name'] ."</a>";
+                    }else {
+                ?>
+
                 <a class="menu_tit"><?php echo $row['me_name'] ?></a>
+                <?php
+                    }
+                ?>
                     <!-- s:하위 gnb -->
                     <?php
                         $k = 0;
