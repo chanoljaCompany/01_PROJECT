@@ -71,7 +71,7 @@
                             </div>
                         </div>
                     </li>
-<!--
+
                     <li class="col-md-4 col-sm-6 col-xs-12">
                         <div class="list_form" id="list_form_subdetail">
                             <h3>세부검색</h3>
@@ -82,7 +82,7 @@
                                 <div class="list_scroll">
                                     <div>
                                         <h4>차량 및 업체명으로 검색</h4>
-                                        <input type="text" name='com_name'>
+                                        <input type="text" name='guestroom_code' >
                                     </div>
                                     <div>
                                         <h4>동승인원수</h4>
@@ -134,7 +134,7 @@
                                 <div class="check_btn"><a href='javascript:void(0);' onclick="selecthide('list_form_subdetail');">선택완료</a></div>
                             </div>
                         </div>
-                    </li>-->
+                    </li>
                 </ul>
             </div>
 

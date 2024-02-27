@@ -103,6 +103,7 @@ if($config['cf_add_meta'])
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL;?>/common/animate.css">
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/common/jquery.bxslider.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <!--[if IE]> 
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL?>/ie.css">

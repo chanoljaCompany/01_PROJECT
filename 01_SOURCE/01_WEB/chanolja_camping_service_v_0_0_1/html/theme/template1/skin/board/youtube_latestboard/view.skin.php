@@ -167,8 +167,8 @@ $v_height = '377';  // 동영상 높이 지정
 		<!-- video start -->
 		<!-- youtube -->
 		<?php if($view['wr_1']){ ?>
-		<div style="margin:0 0 10px 0;"> 
-			<iframe width="<?php echo $v_width?>" height="<?php echo $v_height?>" src="http://www.youtube.com/embed/<?php echo $view[wr_1]?>?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+		<div style="margin:0 0 10px 0;">
+                <iframe width="<?php echo $v_width?>" height="<?php echo $v_height?>" src="http://www.youtube.com/embed/<?php echo $view[wr_1]?>?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<?php } ?>
 

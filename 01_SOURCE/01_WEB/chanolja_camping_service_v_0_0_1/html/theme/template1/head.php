@@ -13,7 +13,9 @@ include_once(G5_LIB_PATH.'/poll.lib.php');
 include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
+include_once(G5_THEME_PATH.'/quoteContent.php');
 ?>
+
 
 <script>
     new WOW().init();
@@ -91,7 +93,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 </ul>
             </div>
 
-           
+
 
             <nav id="gnb">
                 <h2>메인메뉴</h2>

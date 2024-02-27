@@ -16,6 +16,7 @@ include_once(G5_THEME_PATH.'/head.php');
    $(document).ready(function () {
         if(document.cookie.indexOf("pop_up") < 0 ) {
             $('.pop_up_back').css('display', 'block');
+            $('body').css('position', 'fixed');
         }
    });
   </script>
@@ -252,8 +253,8 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 -->
 <div class="slider" style="max-witdh : 100%;  position: relative;">
-      <div><img class="slider_img1" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpg" style="border-radius: 20px; "></div>
-      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.png" style="border-radius: 20px; "></div>
+      <div><img class="slider_img1" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_1.png" style="border-radius: 20px; "></div>
+      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_2.png" style="border-radius: 20px; "></div>
 </div>
 
 <!-- 상단아이콘 PC -->
@@ -768,7 +769,7 @@ function touch_end(event) {
     background: rgb(0 0 0 / 50%);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
   }
@@ -880,10 +881,12 @@ function touch_end(event) {
   function Pop_up_no_Display_1() {
     setCookie("pop_up", "done", "1");
     $('.pop_up_back').css('display', 'none');
+    $('body').css('position', 'relative');
   }
 
   function Pop_up_no() {
     $('.pop_up_back').css('display', 'none');
+    $('body').css('position', 'relative');
   }
 </script>
 

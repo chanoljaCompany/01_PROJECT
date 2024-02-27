@@ -100,7 +100,7 @@ include_once(G5_THEME_PATH."/common/board.header.php");
     <!-- } 관련링크 끝 -->
     <?php } ?>
 
-    <!-- 게시물 상단 버튼 시작 { -->
+    <!-- 게시물 상단 버튼 시작! { -->
     <div id="bo_v_top">
         <?php
         ob_start();

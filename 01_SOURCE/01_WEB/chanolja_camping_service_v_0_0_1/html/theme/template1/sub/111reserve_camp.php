@@ -121,7 +121,7 @@ include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
     <div class="sch_box">
 
         <div class="sch_tit">
-            <b><font size="6" bold >예약문의 1811-6526</font></b>
+            <b><font size="6" bold >!!예약문의 1811-6526</font></b>
         </div>
 
         <div class="sch_content">

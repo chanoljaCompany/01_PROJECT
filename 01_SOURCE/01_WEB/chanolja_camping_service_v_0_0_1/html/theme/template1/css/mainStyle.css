@@ -1,9 +1,9 @@
 /*mainStyle.css*/
 @font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
 }
 body.dark-mode { background:#333; }
 body.dark-mode h1, h2 , h3, p { color:#fff; }
@@ -23,7 +23,7 @@ body.light-mode button {
 }
 button { background:#F2F2F2; }
 #darkLight {
-    width:70px; height:90px;
+    width:70px; height:90px; 
     font-size:3em;
     padding-left:0.5%;
     position:fixed;
@@ -64,7 +64,7 @@ button { background:#F2F2F2; }
 .detail > ul li img{margin: 40px auto 40px;}
 .detail > ul li p{color: #666; font-size: 28px; margin-bottom: 26px;}
 .detail > ul li p span{display: block;}
-.detail > ul li strong{display: block; font-size: 35px; line-height: 1.5; color: #333; margin: 0 auto; text-align: center;}
+.detail > ul li strong{display: block; font-size: 35px; line-height: 1.5; color: #333; margin: 0 auto; text-align: center;} 
 .detail > ul li strong span{font-size: 44px; color: #223040; display: inline-block; font-weight: bold; margin-right: 10px;}
 .detail > ul li p{text-align: center;}
 
@@ -103,11 +103,11 @@ button { background:#F2F2F2; }
 .portfolioWrap .port_go a{color: #fff; text-align: center; font-size: 18px; width: 100%; border: 1px solid #fff; padding: 15px 0px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;  -webokit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition: 0.3s; -0-transition-duration: 0.3s;margin: 0 auto;}
 .portfolioWrap .port_go a:hover{background: #fff; color: #223040;}
 .pic_lt .lat_title, .pic_lt .lt_more, .pic_lt li .new_icon, .pic_lt .lt_date{display: none;}
-.portfolioWrap .mainPage{display: block;}
+.portfolioWrap .mainPage{display: block;}  
 .portfolioWrap .latest_wr{display: none;}
 .portfolioWrap .latest_wr2{display: block;}
 .portfolioWrap .pic_lt .empty_li{width: 100%; height: 500px; background: #fff; line-height: 500px; text-align: center;}
-.portfolioWrap .pic_lt{width: 100%; background: none; border: none; margin-bottom: 0;}
+.portfolioWrap .pic_lt{width: 100%; background: none; border: none; margin-bottom: 0;} 
 .portfolioWrap .pic_lt ul{padding: 0;}
 .portfolioWrap .pic_lt li{padding: 0; margin:0.6%; height:347px; overflow: hidden;}
 .portfolioWrap .pic_lt li .lt_img{  }
@@ -152,36 +152,36 @@ button { background:#F2F2F2; }
 .contactWrap .root_daum_roughmap{height: 100%;}
 .contactWrap .root_daum_roughmap .wrap_map{height: 100%;}
 @media screen and (max-width: 1199px){
-    .bannerWrap > div img{width:110px;}
+    .bannerWrap > div img{width:110px;}   
     .bannerWrap > div h2{font-size: 30px;}
     .bannerWrap > div p{width: 90%; margin: 0 auto; font-size: 18px;}
     .bannerWrap > div > div{top: 20px;}
     .bannerWrap > div > div.square_bracket1{left: 160px;}
     .bannerWrap > div > div.square_bracket2{right: 160px;}
-    .inner{width: 100%; padding: 0 20px 60px;}
+    .inner{width: 100%; padding: 0 20px 60px;} 
     .main_title{padding: 60px 0;}
     .main_title h2{font-size: 42px;}
     .main_title h2::after{width: 1px; height: 24px; margin: 35px auto;}
     .main_title h2 span{margin-right: 15px;}
-    .main_title p{width: 100%; font-size: 16px; padding: 0 30px;}
+    .main_title p{width: 100%; font-size: 16px; padding: 0 30px;} 
     .detail > ul li p{font-size: 20px; margin-bottom: 0;}
-    .detail > ul li strong{font-size: 26px;}
+    .detail > ul li strong{font-size: 26px;} 
     .detail > ul li strong span{font-size: 30px;}
-    .detail > ul li, .detail > ul li img{-webkit-transition-duration: 0.3s;transition-duration: 0.3s; -webokit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition: 0.3s; -0-transition-duration: 0.3s;}
+    .detail > ul li, .detail > ul li img{-webkit-transition-duration: 0.3s;transition-duration: 0.3s; -webokit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition: 0.3s; -0-transition-duration: 0.3s;} 
     .aboutWrap .detail > ul li:hover img{-webkit-transition-delay: 0.2s;transition-delay: 0.2s;}
     .coreComWrap{background-size: auto 100%;}
     .coreComWrap .main_title h2{letter-spacing: -2px;}
     .coreComWrap .detail ul li strong{margin-bottom: 0; font-size: 26px;}
-    .coreComWrap .detail ul li p{padding: 0 20px; font-size: 20px;}
+    .coreComWrap .detail ul li p{padding: 0 20px; font-size: 20px;}  
     .portfolioWrap .port_go a{width: 100%; margin-top: 35px;}
     .portfolioWrap .port_go a{font-size: 16px;}
     .contactWrap .inner{padding-bottom: 100px;}
-    .contactWrap .main_title{padding-bottom: 50px;}
+    .contactWrap .main_title{padding-bottom: 50px;}  
 }
 @media screen and (min-width:481px){
     .portfolioWrap .mainPagewrap{width: 100%; position: relative;}
     .portfolioWrap .latest_wr{display: none;}
-    .portfolioWrap .latest_wr2{display: block; width: 100%; height: auto; margin: 0 auto;}
+    .portfolioWrap .latest_wr2{display: block; width: 100%; height: auto; margin: 0 auto;} 
     .portfolioWrap .pic_lt ul{display: inherit; width: 100%; overflow: hidden; margin-bottom: 32px; padding: 0;}
     .portfolioWrap .pic_lt li{padding: 0; width: 32%;  padding: 0;}
     .portfolioWrap .pic_lt li .lt_img{margin: 0; width: 100%; overflow: hidden;}
@@ -191,7 +191,7 @@ button { background:#F2F2F2; }
     .bannerWrap{height: 800px;}
 }
 @media screen and (max-width:1024px){
-    .consertWrap .latest_wr > div{width: 49%;}
+    .consertWrap .latest_wr > div{width: 49%;} 
     .consertWrap .lat .lat_title a{font-size: 20px;}
     .consertWrap .lat .lt_more{font-size: 30px;}
     .consertWrap .lat li a, .consertWrap .lat .lt_date{font-size: 16px;}
@@ -205,10 +205,10 @@ button { background:#F2F2F2; }
     .detail > ul li{width: 100%;}
     .detail > ul li.second{margin: 0;}
     .detail > ul li p{font-size: 20px; margin-bottom: 0;}
-    .detail > ul li strong{font-size: 26px;}
+    .detail > ul li strong{font-size: 26px;} 
     .detail > ul li strong span{font-size: 30px;}
     .consertWrap .inner{padding-bottom: 80px;}
-    .consertWrap .main_title{padding-bottom: 0;}
+    .consertWrap .main_title{padding-bottom: 0;} 
     .consertWrap .latest_wr > div{float: left; width: 100%;}
     .consertWrap .latest_wr > div.ing_projects{margin-bottom: 5%;}
     .consertWrap .lat{padding: 40px;}
@@ -238,7 +238,7 @@ button { background:#F2F2F2; }
 @media screen and (max-width: 480px){
     .bannerWrap{height: 700px;}
     .bannerWrap > div{width: 320px;}
-    .bannerWrap > div img{width: 63px; height: 42px; margin: 30px auto 20px;}
+    .bannerWrap > div img{width: 63px; height: 42px; margin: 30px auto 20px;}   
     .bannerWrap > div h2{font-size: 20px;}
     .bannerWrap > div p{font-size: 12px;}
     .bannerWrap > div > div{width: 20px; height: 104px;}
@@ -246,22 +246,22 @@ button { background:#F2F2F2; }
     .bannerWrap > div > div.square_bracket2{right: 20px;}
     .main_title{padding: 10px 0;}
     .main_title h2{font-size: 20px; weight : 700}
-    .main_title h5 {font-size: 10px; color: #36688f; font-weight: 700; padding-bottom: 6px; margin-top: -30px; }
+	.main_title h5 {font-size: 10px; color: #36688f; font-weight: 700; padding-bottom: 6px; margin-top: -30px; }
     .main_title h2::after{width: 1px; height: 13px; margin: 20px auto;}
     .main_title h2 span{margin-right: 10px;}
-    .main_title p{width: 100%; font-size: 12px; padding: 0 20px;}
-    .detail > ul{width: 100% }
+    .main_title p{width: 100%; font-size: 12px; padding: 0 20px;} 
+    .detail > ul{width: 98% }
     .detail > ul li{width: 100%; height: auto ; }
-    .detail > ul li img{max-width: 100%; margin: 0px auto }
+    .detail > ul li img{max-width: 100%; margin: 0px auto } 
     .detail > ul li p{font-size: 16px;}
-    .detail > ul li strong{font-size: 23px; line-height: 1.5; margin: 0 auto; text-align: left; line-height: 1.0;}
-    .detail > ul li strong span{font-size: 35px; color: #223040; display: inline-block; font-weight: bold; margin-right: 10px;}
+    .detail > ul li strong{font-size: 23px; line-height: 1.5; margin: 0 auto; text-align: left; line-height: 1.0;} 
+    .detail > ul li strong span{font-size: 35px; color: #223040; display: inline-block; font-weight: bold; margin-right: 10px;} 
     .detail > ul li p, .detail > ul li strong{text-align: left; width: 152px; margin-right: 0px;}
     .aboutWrap .detail > ul li img{float: left;}
     .aboutWrap .detail > ul li p{float: right;}
-    .aboutWrap .detail > ul li strong{float: right;}
+    .aboutWrap .detail > ul li strong{float: right;} 
     .aboutWrap .detail > ul li strong{text-align: left;}
-    .inner.box {padding: 0px;}
+	.inner.box {padding: 0px;}
 
     .coreComWrap_mo  {width :100%; display : block ;}
     .coreComWrap_mo .detail a {padding : 0 ;}
@@ -269,7 +269,7 @@ button { background:#F2F2F2; }
     .coreComWrap_mo .detail > ul li.second{margin: 15px 0;}
     .coreComWrap_mo .detail ul li strong, .coreComWrap_mo .detail ul li p{width: 100%;}
 
-    .coreComWrap {display : none ;}
+	.coreComWrap {display : none ;}
 
 
     .aboutWrap_mo {display : block;}
@@ -285,7 +285,7 @@ button { background:#F2F2F2; }
     .consertWrap .lat .empty_li{line-height: 240px; font-size: 14px;}
     .contactWrap .inner{padding-bottom: 50px;}
     .contactWrap .main_title{padding-bottom: 30px;}
-    .contactWrap .detail{height: 220px; overflow: hidden;}
+    .contactWrap .detail{height: 220px; overflow: hidden;}  
     .portfolioWrap .pic_lt li .lt_img {height: 220px;}
 }
 
