@@ -210,7 +210,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap" style="margin-bottom: 20px !important; margin-top: 20px;">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
+              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; font-size:19px; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -228,7 +228,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap_mo" style="margin-bottom: 20px !important; ">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
+              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
