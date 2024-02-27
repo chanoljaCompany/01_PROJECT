@@ -145,11 +145,15 @@ if (G5_IS_MOBILE) {
         
         <div id="ft_company">
             <ul>
-                <li class="ft_company1">상호 : 차놀자렌트카(주)&지에스렌트카(주)</li>
+                <li class="ft_company1">상호 : 차놀자렌트카(주)</li>
+                <li class="ft_company2">대표 : 전은택 </li>
                 <li class="ft_company3">주소 : 충청남도 천안시 동남구 충절로 224 1층 차놀자 </li>
-                <li class="ft_company4">지에스렌트카(주) 사업자등록번호 : 312-81-36863</li>
-                <li class="ft_company5">차놀자렌트카(주) 사업자등록번호 : 369-86-01538</li>
-                <li class="ft_company6">대표전화 041-522-7000 월~금 09:00 - 18:00</li>
+                <li class="ft_company4">차놀자렌트카(주) 사업자등록번호 : 000-00-0000</li>
+                <li class="ft_company5">상호 : 지에스렌트카(주)</li>
+                <li class="ft_company6">대표 : 이정숙 </li>
+                <li class="ft_company7">주소 : 충남 천안시 서북구 서부대로 717, 3층 301호 </li>
+                <li class="ft_company8">지에스렌트카(주) 사업자등록번호 : 000-00-00000</li>
+                <li class="ft_company9">대표전화 041-522-7000 월~금 09:00 - 18:00</li>
             </ul>
         </div>
         
