@@ -314,7 +314,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     </a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                    <a href="#">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
 
@@ -560,7 +560,7 @@ function touch_end(event) {
                     </a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px; width:88% !important;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70">
+                    <a href="#">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
 

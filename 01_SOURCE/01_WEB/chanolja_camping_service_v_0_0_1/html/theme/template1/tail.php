@@ -128,7 +128,7 @@ if (G5_IS_MOBILE) {
     <div id="ft_wr">
        <div id="ft_sns">
             <ul>
-                <li><a href="https://blog.naver.com/m_chanolja">youtube</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7FJhmXFPC0w">youtube</a></li>
                 <li class="ft_sns2"><a style="width:100%; background-size: auto 90%; background-repeat: no-repeat;" href="https://www.instagram.com/chanolja.camping/">instagram</a></li>
                 <li class="ft_sns3"><a href="https://blog.naver.com/m_chanolja">naver blog</a></li>
             </ul>
@@ -138,7 +138,7 @@ if (G5_IS_MOBILE) {
             고객센터 운영시간 09:00 - 18:00 <br> (점심시간 12:00 - 13:00)
         </div>
         <div id="ft_link">
-            <a href="<?php echo G5_THEME_URL ?>/company/introduce.php">회사소개</a>
+            <a href="http://company.chanolja.co.kr/theme/basichome/sub/ch-company.php">회사소개</a>
             <a href="<?php echo G5_BBS_URL; ?>/content.php?co_id=privacy">개인정보보호정책</a>
             <a class="ft_link3" href="<?php echo G5_BBS_URL; ?>/content.php?co_id=provision">이메일무단수집거부</a>
         </div>
