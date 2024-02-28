@@ -78,4 +78,7 @@ if ($w == "" && $receive_number)
 ?>
 <script>
     alert ("접수완료되었습니다.\n빠른 시간안에 답변드리겠습니다.");
+    location.href = "http://chanolja.co.kr/";
+
+
 </script>

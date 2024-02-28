@@ -138,6 +138,14 @@ include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
                             <i class="fas fa-angle-down"></i>
                         </span>-->
 
+                        <style>
+                            @media screen and (max-width:480px) {
+                                .flatpickr-input{
+                                    font-size:17px !important;
+                                }
+                            }
+                        </style>
+
                     </div>
 
                    <!-- <div class="sch_pop sch_calendar list_select_calendar">

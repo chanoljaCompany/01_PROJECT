@@ -74,7 +74,7 @@ a.btn_admin:hover, .btn_admin:hover{border:2px solid #52C3F1;}
 a.btn_b02, .btn_b02{height: 40px; line-height: 40px; text-align: center; border:1px solid #eee; font-weight: 300; border-radius:10px; background:#fff; color:black;} /*글쓰기*/
 a.btn_b02:hover, .btn_b02:hover {outline:2px solid #52C3F1;}
 a.btn_b01, .btn_b01{height: 40px; line-height: 40px; background: #fff; border:1px solid #eee; border-radius:10px;} /*수정, 삭제, 목록, 답변*/
-a.btn_b01:hover, .btn_b01:hover{border:2px solid #52C3F1; }
+a.btn_b01:hover, .btn_b01:hover{outline:2px solid #52C3F1; }
 .btn_submit{border-radius:10px; background: #fff; height: 40px; text-align: center; color:black; border:1px solid #eee;} /*댓글등록*/
 .btn_submit:hover{border:2px solid #52C3F1; background: #fff ; color:black;}
 .bo_vc_w .btn_submit{border-radius: 10px; font-weight: 300; font-size: 17px;}
