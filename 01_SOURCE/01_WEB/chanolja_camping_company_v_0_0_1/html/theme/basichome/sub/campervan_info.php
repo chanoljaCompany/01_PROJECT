@@ -179,7 +179,9 @@ $g5['sub-text']="친환경 차박부터 모터홈까지, 모든 캠핑카 대여
                         <BR>
                         <BR>
                         <font size="10px">
-                        <a href="http://camping.dothome.co.kr/bbs/board.php?bo_table=purc"><STRONG>▶▶▶ 캠핑카 구매 문의</STRONG></H3></a>
+                        <a href="http://camping.dothome.co.kr/bbs/board.php?bo_table=purc"><STRONG class="pure_str">▶▶▶ 캠핑카 구매 문의</STRONG></H3></a>
+
+
                         </font>
                     </div>
                 </div>

@@ -1277,6 +1277,9 @@
         #history .sec2 .his-con{
             width:100%;
         }
-        
+
+        .pure_str{
+            font-size:30px !important;
+        }
     }
 /* history end */
