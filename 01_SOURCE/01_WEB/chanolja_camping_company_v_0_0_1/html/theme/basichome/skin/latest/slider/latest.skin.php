@@ -7,7 +7,7 @@ $thumb_width = 407;
 $thumb_height = 195;
 ?>
 	
-<ul data-aos="fade-up">
+<ul data-aos="fade-up" style="opacity:1;">
 <?php
             for ($i=0; $i<count($list); $i++) {
             $thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);

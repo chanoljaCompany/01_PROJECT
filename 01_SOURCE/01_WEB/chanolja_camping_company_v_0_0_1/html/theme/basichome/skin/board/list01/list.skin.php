@@ -17,8 +17,8 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/board.css">', 
 
 
 <?php
-$g5['navTitle'] = "BOARD";
-$g5['title'] = "list01";
+$g5['navTitle'] = "사업영역";
+$g5['title'] = "개인캠핑카위탁운영";
 ?>
 
 <div class="sub" id="board_list01">
@@ -26,7 +26,7 @@ $g5['title'] = "list01";
     <?php include_once(G5_THEME_PATH.'/sub/sub_visual.php');?>
     <?php  include_once(G5_THEME_PATH.'/navigation.php'); ?>
     <section class="listSkin">
-        <div class="inner">
+        <div class="inner" style="margin-bottom:100px;">
             <!-- 게시판 목록 시작 { -->
             <div id="bo_list" style="width:<?php echo $width; ?>">
 

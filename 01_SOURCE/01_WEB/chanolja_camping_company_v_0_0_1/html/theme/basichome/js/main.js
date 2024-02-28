@@ -345,12 +345,12 @@ $(document).ready(function(){
 
 
 
-    $('.family-tab').click(function(){
-        $('.f-tab').stop().slideToggle();
-    });
-    $('.family-tab').mouseleave(function(){
-        $('.f-tab').stop().slideUp();
-    });
+    // $('.family-tab').click(function(){
+    //     $('.f-tab').stop().slideToggle();
+    // });
+    // $('.family-tab').mouseleave(function(){
+    //     $('.f-tab').stop().slideUp();
+    // });
 
 
 
