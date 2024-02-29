@@ -17,7 +17,7 @@ $board['bo_gallery_height']= 300;
 
 <?php
 $g5['navTitle'] = "고객센터";
-$g5['title'] = "온라인문의";
+$g5['title'] = "기업제휴문의";
 ?>
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>

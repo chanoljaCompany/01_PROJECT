@@ -10,8 +10,8 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/board.css">', 
 ?>
 
 <?php
-$g5['navTitle'] = "Board";
-$g5['title'] = "list01";
+$g5['navTitle'] = "사업영역";
+$g5['title'] = "개인캠핑카위탁운영";
 ?>
 
 

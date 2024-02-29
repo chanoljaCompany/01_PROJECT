@@ -16,7 +16,7 @@
                 <!-- 오른쪽 영역 끝 -->
 
                 <!-- 왼쪽 시작 -->
-                <div id="sit_info_wrap">
+                <div id="sit_info_wrap" style="margin-top: 30px;">
                     <!-- 제목, 탭 영역 -->
                     <h3 id="room_subject">[카올라] 카니발 캠퍼밴 (2인승)</h3>
                     <span>프리미엄 풀옵션 차박</span>

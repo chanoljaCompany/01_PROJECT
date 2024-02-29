@@ -13,7 +13,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <?php
 $g5['navTitle'] = "고객센터";
-$g5['title'] = "온라인문의";
+$g5['title'] = "창업 및 제휴문의";
 ?>
 
 <!-- 게시물 읽기 시작 { -->

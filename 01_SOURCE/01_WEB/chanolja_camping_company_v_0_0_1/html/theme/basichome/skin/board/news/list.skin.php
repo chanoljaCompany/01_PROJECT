@@ -18,7 +18,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/board.css">', 
 
 <?php
 $g5['navTitle'] = "차놀자캠핑";
-$g5['title'] = "NEWSROOM";
+$g5['title'] = "뉴스룸";
 ?>
 
 <div class="sub" id="board_list01">
