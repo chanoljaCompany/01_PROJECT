@@ -16,7 +16,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <style>
     .youtube_div {
-        margin-top:150px;
+        margin:0 auto;
+        max-width:1200px;
+        margin-top:150px !important;
         display:flex;
         justify-content:center;
     }
@@ -37,7 +39,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 </style>
 
-<div id="bo_list" style="width:<?php echo $width; ?>">
+<div id="bo_list" style="max-width:1200px; margin:0 auto;">
 
     <!-- 게시판 카테고리 시작 { -->
     <?php if ($is_category) { ?>

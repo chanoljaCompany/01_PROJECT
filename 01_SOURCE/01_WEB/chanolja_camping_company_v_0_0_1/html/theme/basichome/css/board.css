@@ -852,7 +852,7 @@
     overflow:hidden;
 }
 #board_gallery01 .listForm li {
-    width:90%; /*갤러리 한줄 갯수 조절*/
+    width:30%; /*갤러리 한줄 갯수 조절*/
     margin-right:1.33%;
     margin-bottom:5%;
     height:330px;

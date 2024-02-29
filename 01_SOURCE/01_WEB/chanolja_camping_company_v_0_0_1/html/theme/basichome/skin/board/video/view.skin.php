@@ -98,7 +98,7 @@ $g5['title'] = "유튜브 게시판";
                     ?>
                 </div>
                  <!-- 동영상 시작 { -->
-                <?php// echo get_hostis($view['wr_link1']);?>
+                <?php // echo get_hostis($view['wr_link1']);?>
                 <?php
                 $movie_company = $view['wr_1'];
                 $movie_id = $view['wr_2'];

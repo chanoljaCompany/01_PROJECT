@@ -196,7 +196,7 @@ ul, li { margin: 0; padding: 0; list-style: none; }
 .sct_wrap .sct_cost {margin:5px 0 10px;font-size:1.25em;font-weight:bold}
 .sct_wrap .sct_dict {display:block;text-decoration:line-through;font-weight:normal;font-size:0.85em;color:#858a8d}
 
-.sct_wrap .sct_op_btn {position:absolute;right:20px;top: 5px;}
+.sct_wrap .sct_op_btn {position:absolute;right:6%;top: 5px;}
 .sct_wrap .sct_op_btn>button {border:0;width:25px;height:25px;font-size:1.25em;text-align:center;color:#fff;background:transparent;transition: all 0.3s;}
 /*.sct_wrap .sct_op_btn:hover>button { color: #2f9cdf; }*/
 .sct_wrap .sct_op_btn:hover>button { color: crimson; }
