@@ -11,7 +11,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 </div>
 <div style="width:100%; height:100vh; position: relative;">
         <div class="new_win_con"
-            style="position: absolute; top: calc(50% - 82px); left: 50%; transform: translate(-50%,-50%);">
+            style="position: absolute; top: calc(50% - 82px); left: 50%; transform: translate(-50%,-50%); border: 1px solid #ddd; padding:30px;">
             <form name="fpasswordlost" action="<?php echo $action_url ?>" onsubmit="return fpasswordlost_submit(this);" method="post" autocomplete="off"
                 style="display:flex; flex-direction:column; align-items:center;">
             <fieldset id="info_fs" style="margin-bottom: 30px;">
@@ -27,9 +27,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
             </fieldset>
             <?php echo captcha_html();  ?>
 
-            <div class="win_btn" style="display:flex; justify-content: space-between; width:187px;">
-                <button style="width:85px; border-radius:15px;" type="submit" class="btn_submit">확인</button>
-                <button style="width:85px; height:40px; border-radius: 20px;" type="button" onclick="window.close();" class="btn_close">창닫기</button>
+            <div class="win_btn" style="display:flex; justify-content: space-between; width:274px;">
+                <button style="width:115px; border-radius:15px;" type="submit" class="btn_submit">확인</button>
+                <button style="width:115px; height:40px; border-radius: 20px;" type="button" onclick="window.close();" class="btn_close">창닫기</button>
             </div>
             </form>
         </div>
