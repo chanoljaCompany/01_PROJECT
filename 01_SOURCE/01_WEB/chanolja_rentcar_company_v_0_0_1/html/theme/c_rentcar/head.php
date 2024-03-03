@@ -109,7 +109,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     if( empty($row) ) continue;
                 $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
             ?>
-            <li class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
+            <li class="menu_li <?php echo $add_class; ?>" style="word-break: auto-phrase; z-index:<?php echo $gnb_zindex--; ?>">
                 <?php
                     if($gnb_zindex == 995) {
                         echo "
