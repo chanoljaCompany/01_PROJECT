@@ -256,21 +256,21 @@ $filesLimitNum = $filesLimitNumSet - $roomImageNum;
 									<input type="checkbox" name="camping_able" id="camping_able" <? if ($rows['camping_able'] == 'Y') { ?> checked <? } ?> value="Y">
 								</td>
 							</tr>
-							<tr>
+<!--							<tr>
 								<th scope="row">반려견 동승가능 여부</th>
 								<td>
 									<input type="checkbox" name="pet_able" id="pet_able" <? if ($rows['pet_able'] == 'Y') { ?> checked <? } ?> value="Y">
 								</td>
-								<!-- <th scope="row">상품수</th>
+								!-- <th scope="row">상품수</th>
 								<td>
 									<input type="number" name="guestroom_quantity" id ="guestroom_quantity"  class="input input_full" placeholder="*필수) 상품수를 숫자만 입력하세요"  value="<?= $rows['guestroom_quantity'] ?>">
-								</td> -->
+								</td> --
 								<th scope="row">딜리버리 가능여부</th>
 								<td>
 									<input type="checkbox" name="delivery_able" id="delivery_able" <? if ($rows['delivery_able'] == 'Y') { ?> checked <? } ?> value="Y">
 
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th scope="row">딜리버리(탁송)가능지역</th>
 								<td>

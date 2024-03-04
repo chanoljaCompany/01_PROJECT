@@ -158,7 +158,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                             필요한 곳에 위탁운영을 실시하여 수익을 안겨드립니다.
                                         </dd>
                                     </dl>
-                                    <a href="<?php echo G5_THEME_URL?>/sub/sub/sandbox.php"><span>MORE VIEW</span></a>
+                                    <a href="http://chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng"><span>MORE VIEW</span></a>
                                 </div>
                             </div>
                             <div class="progressWrap">

@@ -47,8 +47,19 @@ if (G5_IS_MOBILE) {
                     foreach( $menu_datas as $row ){
                         if( empty($row) ) continue; 
                     ?>
+
                     <li class="mobile-list">
-                        <a class="gnb_1da"><?php echo $row['me_name'] ?></a>
+
+                        <?php
+                            if ($row['me_name'] != '렌트카 예약하기') {
+                                echo '<a class="gnb_1da">' . $row['me_name'] . '</a>';
+                            } else {
+                                echo '<a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=70" target="_blank" class="gnb_1da">' . $row['me_name'] . '</a>';
+                            }
+                        ?>
+
+
+
                         
                         <?php
                         $k = 0;

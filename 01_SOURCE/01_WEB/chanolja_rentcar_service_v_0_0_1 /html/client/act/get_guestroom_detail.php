@@ -68,16 +68,20 @@ $html = "";
                                 <div class='info_all info_con2'>
                                     <h5>■ 상세 정보</h5>
                                     <ul class=''>
-                                        <li><i class='far fa-user'></i> <span>동승가능인원 : ".$room_info_array_etc['0']['guestroom_personnel']."명</span></li>
-                                        <li><i class='far fa-user'></i> <span>취침가능인원 : ".$room_info_array_etc['0']['guestroom_max_personnel']."명</span></li>
-                                        <li><i class='far fa-clock'></i> <span>출차가능시간 ".$guestroom_start_hour."시 부터</span></li>
-                                        <li><i class='far fa-clock'></i> <span>반납가능시간 ".$guestroom_end_hour."시 까지</span></li>
-                                        <li><i class='fas fa-money-check'></i> <span>평일 가격 : ".number_format($room_info_array_etc['0']['guestroom_low_season_fee_weekday'])."원 /박</span></li>
-                                        <li><i class='fas fa-money-check'></i> <span>주말 가격 : ".number_format($room_info_array_etc['0']['guestroom_low_season_fee_weekend'])."원 /박</span></li>
-                                        <li><i class='fas fa-check'></i> <span>만 ".$room_info_array_etc['0']['driver_age']."세 이상</span></li>
+                                        <!--
+                                        <li><i class='far fa-user'></i> <span>인승 : ".$room_info_array_etc['0']['guestroom_personnel']."인승</span></li>
+                                        <li><i class='far fa-user'></i> <span>주행거리 : ".$room_info_array_etc['0']['guestroom_max_personnel']."km</span></li>
+                                        <li><i class='far fa-clock'></i> <span>차종 ".$guestroom_start_hour."</span></li>
+                                        <li><i class='far fa-clock'></i> <span>배기량 ".$guestroom_end_hour."</span></li>
+                                        <li><i class='fas fa-money-check'></i> <span>연식 : ".number_format($room_info_array_etc['0']['guestroom_low_season_fee_weekday'])."</span></li>
+                                        <li><i class='fas fa-money-check'></i> <span>연료 : ".number_format($room_info_array_etc['0']['guestroom_low_season_fee_weekend'])."</span></li>
+                                        <li><i class='fas fa-check'></i> <span>색상 ".$room_info_array_etc['0']['driver_age']."</span></li>
+                                        <li><i class='fas fa-car'></i> <span>변속기 ".$room_info_array_etc['0']['driver_carrer']."</span></li>
+                                        <li><i class='fas fa-map-marker-alt'></i> <span>구동방식 : ".$room_info_array_etc['0']['address']."</span></li>
+                                        0304 필요한 것 : 제조사, 연식, 유종, 등급분류, 배기량, 변속기, 주행거리
+                                        롯데 - 차량번호, 주행거리, 차종, 배기량, 연식, 가솔린, 색상, 변속기, 인승, 구동방식
+                                        -->
                                         <li><i class='far fa-address-card'></i> <span>".$room_info_array_etc['0']['driver_license']." 이상</span></li>
-                                        <li><i class='fas fa-car'></i> <span>운전 경력 ".$room_info_array_etc['0']['driver_carrer']."년 이상</span></li>
-                                        <li><i class='fas fa-map-marker-alt'></i> <span>주소 : ".$room_info_array_etc['0']['address']."</span></li>
                                     </ul>
                                 </div>
 

@@ -81,10 +81,9 @@ if($division == 'getData'){
                   <ul class='sct_sub_ul'>
                       <!--<li><span> <i class='fas fa-map-marker-alt'></i> 차고지 : ".$value['guestroom_address']."</span></li>-->
                       <li><span> <i class='fas fa-address-card'></i>".$value['driver_license']."</span></li>
-                      <li><span> <i class='fas fa-user-friends'></i> 동승 ".$value['guestroom_personnel']."명</span></li>
-                      <li><span> <i class='fas fa-bed'></i> 취침 ".$value['guestroom_max_personnel']."명</span></li>
-                      <li><span> <i class='fas fa-dog'></i>".$pet_able_str."</span></li>
-                      <li><span> <i class='fas fa-bolt'></i>".$delivery_able_str."</span></li>
+                      <li><span> <i class='fas'></i>2021/05</span></li>
+                      <li><span> <i class='fas'></i>59.305km</span></li>
+                      <li><span> <i class='fas'></i>가솔린</span></li>
                   </ul>
                   <div class='sct_sub_txt'><span><i class='far fa-calendar-check'>정상가: <s></i> ".number_format($value['room_fee_all'])."원(".$value['dateintval']."박)</span></s></div>
                   <div class='sct_sub_txt'><span><i class='far fa-calendar-check'>할인가: </i> ".number_format($value['room_fee'])."원(".$value['dateintval']."박)</span></div>
