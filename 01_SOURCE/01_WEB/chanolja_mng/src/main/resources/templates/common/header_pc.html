@@ -1,0 +1,98 @@
+<style>
+  #header #header_pc_left{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #FFF;
+    border: none;
+    border-right: #E6EFF5 1px solid;
+  }
+
+  #header #header_pc_right{
+    position: fixed;
+    top: 0px;
+    left: 251px;
+    width: calc(100% - 251px);
+    height: 100px;
+    border: none;
+    background: #FFF;
+    border-bottom: #E6EFF5 1px solid;
+  }
+
+  #header #header_pc_left #header_pc_logo{
+    height: 38px;
+    width: auto;
+    margin-top: calc(50px - 19px);
+    margin-left: calc(125px - 80.5px);
+    margin-bottom: calc(50px - 19px);
+  }
+
+
+
+
+  #header_pc_left #header_slider{
+    width: 100%;
+    position: relative;
+    left: -2px;
+  }
+
+  #header_pc_left .slider_line{
+    width: 6px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 0px 10px 10px 0px;
+    background: transparent;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  #header_pc_left #header_slider tr{
+    height: 60px;
+    position: relative;
+    color: #B1B1B1;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  #header_pc_left #header_slider tr:hover .slider_line{
+    background: #13568D;
+  }
+
+  #header_pc_left #header_slider tr:hover{
+    color: #13568D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #header_pc_left #header_slider .slider_menu_icon{
+    margin-top: 19px;
+    margin-left: 30px;
+  }
+</style>
+<div id="header_pc">
+  <div id="header_pc_left">
+    <img id="header_pc_logo" src="/chanolja_mng/static/img/chanolja_logo.png">
+    <table id="header_slider">
+      <tbody>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-house"></td> <td>대시보드</td></tr>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-user"></td> <td>회원관리</td></tr>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-users"></td> <td>파트너쉽 관리</td></tr>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-shop"></td> <td>대리점 관리</td></tr>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-list-check"></td> <td>상품 관리</td></tr>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-calendar-days"></td> <td>구매/예약 관리</td></tr>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-circle-dollar"></td> <td>정산 관리</td></tr>
+        <tr> <td><div class="slider_line"></div></td> <td class="slider_menu_icon fa-solid fa-gear"></td> <td>설정</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="header_pc_right">
+
+  </div>
+</div>
