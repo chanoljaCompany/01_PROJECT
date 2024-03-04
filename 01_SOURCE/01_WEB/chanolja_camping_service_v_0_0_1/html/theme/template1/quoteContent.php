@@ -48,10 +48,9 @@
     @media screen and (max-width: 480px) {
 
         .banner-container {
-            display:none;
             right:50%  !important;
-            transform: translateX(50%);
-            width:280px !important;
+            transform: translateX(50%) !important;
+            width:260px !important;
         }
     }
 
