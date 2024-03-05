@@ -19,12 +19,12 @@
 
 /* 쓰기 버튼 */
 #bo_w .btn_confirm {} /* 서식단계 진행 */
-#bo_w .btn_submit {padding:0 20px}
+#bo_w .btn_submit {padding:0 20px; border-radius:20px;}
 #bo_w button.btn_submit {}
 #bo_w fieldset .btn_submit {}
-#bo_w .btn_cancel {}
+#bo_w .btn_cancel { border-radius:20px;}
 #bo_w button.btn_cancel {}
-#bo_w .btn_cancel:focus, #bo_w .btn_cancel:hover {}
+#bo_w .btn_cancel:focus, #bo_w .btn_cancel:hover {outline: 2px solid #52C3FD;}
 #bo_w a.btn_frmline, #bo_w button.btn_frmline {} /* 우편번호검색버튼 등 */
 #bo_w button.btn_frmline {}
 

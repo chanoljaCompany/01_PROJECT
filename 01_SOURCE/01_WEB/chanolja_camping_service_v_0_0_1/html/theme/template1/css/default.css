@@ -179,7 +179,7 @@ button.btn02 {display:inline-block;margin:0;padding:7px;border:1px solid #3b3c3f
 
 .btn_submit {border: 1px solid #f3eaea; border-radius: 30px;color: #333; cursor: pointer; display: inline-block; font-size: 13px; font-weight: 500; margin: 0 5px 10px; vertical-align: middle; letter-spacing: 2px; padding: 6px 27px; text-transform: uppercase; background-color:white}
 /* fieldset .btn_submit {border: 1px solid #f3eaea; border-radius: 30px;color: #333; cursor: pointer; display: inline-block; font-size: 13px; font-weight: 500; margin: 0 5px 10px; vertical-align: middle; letter-spacing: 2px; padding: 6px 27px; text-transform: uppercase; background-color:white} */
-.btn_submit:focus, .btn_submit:hover {border: 1px solid #f3eaea; border-radius: 30px;color: #fff; cursor: pointer; display: inline-block; font-size: 13px; font-weight: 500; margin: 0 5px 10px; vertical-align: middle; letter-spacing: 2px; padding: 6px 27px; text-transform: uppercase; background-color:#eb1b2b}
+.btn_submit:focus, .btn_submit:hover {border: 1px solid #f3eaea; color: #fff; cursor: pointer; display: inline-block; margin: 0 5px 10px; vertical-align: middle; letter-spacing: 2px; padding: 6px 27px; text-transform: uppercase; background-color:#eb1b2b}
 /* fieldset .btn_submit:focus, fieldset .btn_submit:hover {border: 1px solid #f3eaea; border-radius: 30px;color: #333; cursor: pointer; display: inline-block; font-size: 13px; font-weight: 500; margin: 0 5px 10px; vertical-align: middle; letter-spacing: 2px; padding: 6px 27px; text-transform: uppercase; background-color:white} */
 
 a.btn_cancel {display:inline-block;padding:7px;border:1px solid #ccc;background:#fafafa;color:#000;text-decoration:none;vertical-align:middle}
