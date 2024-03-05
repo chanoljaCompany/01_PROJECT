@@ -50,6 +50,8 @@ header("Pragma: no-cache"); // HTTP/1.0
     <meta property="og:description" content="자동차토탈솔루션 차놀자협동조합, 렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카, 지에스렌트카,지에스렌터카, 장기렌트, 오토리스, 오토캐피탈, 세차, 자동차용품, 공업사, 차량수리, 캠핑카, 렌터카창업스쿨">
     <meta property="og:image" content="http://gsrent.kr/img/opimg.png">
     <meta property="og:url" content="http://gsrent.kr">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;

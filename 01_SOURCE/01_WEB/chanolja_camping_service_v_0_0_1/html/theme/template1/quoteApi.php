@@ -12,7 +12,7 @@ include_once(G5_LIB_PATH.'/icode.sms.lib.php');
 //----------------------------------------------------------
 // SMS 문자전송 시작
 //----------------------------------------------------------
-$sms_contents = $first_name.'님이 '.$email_from.' 차량의 문의를 하셨습니다. 연락처 '.$telephone.' 희망지역 및 날짜: '.$comments ;  // 문자 내용
+$sms_contents = '[캠핑카 문의] '.$first_name.'님, 연락처 : '.$email_from.'. 희망지역 및 날짜 : '.$telephone.'. 희망차종 및 인원 : '.$comments ;  // 문자 내용
 
 echo '<script>';
 echo 'console.log("' . $sms_contents . '")';
@@ -78,7 +78,7 @@ if ($w == "" && $receive_number)
 ?>
 <script>
     alert ("접수완료되었습니다.\n빠른 시간안에 답변드리겠습니다.");
-    location.href = "http://chanolja.co.kr/";
+    location.href = "http://gsrent.kr/";
 
 
 </script>

@@ -66,7 +66,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
     </section>
     <?php } ?>
 
-    <!-- 게시물 상단 버튼 시작 !{ -->
+    <!-- 게시물 상단 버튼 시작 { -->
     <div id="bo_v_top">
         <?php
         ob_start();
