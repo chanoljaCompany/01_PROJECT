@@ -13,12 +13,12 @@ include_once(G5_THEME_PATH.'/head.php');
   <script>
     new WOW().init();
 
-   $(document).ready(function () {
-        if(document.cookie.indexOf("pop_up") < 0 ) {
-            $('.pop_up_back').css('display', 'block');
-            $('body').css('position', 'fixed');
-        }
-   });
+//    $(document).ready(function () {
+//         if(document.cookie.indexOf("pop_up") < 0 ) {
+//             $('.pop_up_back').css('display', 'block');
+//             $('body').css('position', 'fixed');
+//         }
+//    });
   </script>
 
 <!-- 추가 css 영역-->
