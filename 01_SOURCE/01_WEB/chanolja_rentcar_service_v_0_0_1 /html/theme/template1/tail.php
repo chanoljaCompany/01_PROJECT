@@ -14,7 +14,7 @@ if (G5_IS_MOBILE) {
            <div class="close_menu" id="mobile_menu_close">
                 <span class="close-line1"></span>
                 <span class="close-line2"></span>
-            </div>   
+            </div>
             <div class="mobile_menu">
                 <ul>
                     <?php
@@ -45,7 +45,7 @@ if (G5_IS_MOBILE) {
 
                     $i = 0;
                     foreach( $menu_datas as $row ){
-                        if( empty($row) ) continue; 
+                        if( empty($row) ) continue;
                     ?>
 
                     <li class="mobile-list">
@@ -54,23 +54,23 @@ if (G5_IS_MOBILE) {
                             if ($row['me_name'] != '렌트카 예약하기') {
                                 echo '<a class="gnb_1da">' . $row['me_name'] . '</a>';
                             } else {
-                                echo '<a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=70" target="_blank" class="gnb_1da">' . $row['me_name'] . '</a>';
+                                echo '<a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=70" class="gnb_1da">' . $row['me_name'] . '</a>';
                             }
                         ?>
 
 
 
-                        
+
                         <?php
                         $k = 0;
                         foreach( (array) $row['sub'] as $row2 ){
 
-                            if( empty($row2) ) continue; 
+                            if( empty($row2) ) continue;
 
                             if($k == 0)
                                 echo '<ul class="mb-sub-ul">'.PHP_EOL;
                         ?>
-                            <li><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a></li>
+                            <li><a href="<?php echo $row2['me_link']; ?>" ><?php echo $row2['me_name'] ?></a></li>
                         <?php
                         $k++;
                         }   //end foreach $row2
@@ -92,7 +92,7 @@ if (G5_IS_MOBILE) {
         <div class="mask"></div>
         <script type="text/javascript">
             $( document ).ready(function(){
-                
+
                 $(function () {
                     $('.mobile_menu > ul > li > a').click(function () {
                     $( this ).parent().find('ul').slideToggle();
@@ -134,7 +134,7 @@ if (G5_IS_MOBILE) {
 
 <!-- 하단 시작 { -->
 
-<div id="ft">   
+<div id="ft">
 <div class="box inner">
     <div id="ft_wr">
        <div id="ft_sns">

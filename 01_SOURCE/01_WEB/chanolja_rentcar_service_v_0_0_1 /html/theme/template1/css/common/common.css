@@ -75,10 +75,10 @@ a.btn_b02, .btn_b02{height: 40px; line-height: 40px; text-align: center; backgro
 a.btn_b02:hover, .btn_b02:hover {background:#c80e21;}
 a.btn_b01, .btn_b01{height: 40px; line-height: 40px; background: #4beaff8e;} /*수정, 삭제, 목록, 답변*/
 a.btn_b01:hover, .btn_b01:hover{background: #c80e21;}
-.btn_submit{background: #52C3F1; height: 40px; text-align: center; color:#fff} /*댓글등록*/
-.btn_submit:hover{background: #444;}
+.btn_submit{border-radius:10px; background: #fff; height: 40px; text-align: center; color:black; border:1px solid #ccc;} /*댓글등록*/
+.btn_submit:hover{ outline:2px solid #52C3F1; background: #fff ; color:black;}
 .bo_vc_w .btn_submit{border-radius: 0; font-weight: 300; font-size: 17px;}
-a.btn_cancel{background: #0e4d4d; height: 40px; line-height: 40px; text-align: center;}
+a.btn_cancel{height: 40px; line-height: 40px; text-align: center;}
 .btn .fa{display: none;} /*버튼 픽토그램*/
 .cmt_btn{background-position: 67px 10px; font-size: 16px;}
 .cmt_btn_op{background-position: 67px -20px;}
