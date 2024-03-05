@@ -59,7 +59,7 @@ if (G5_IS_MOBILE) {
                             if($k == 0)
                                 echo '<ul class="mb-sub-ul">'.PHP_EOL;
                         ?>
-                            <li><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a></li>
+                            <li><a href="<?php echo $row2['me_link']; ?>" ><?php echo $row2['me_name'] ?></a></li>
                         <?php
                         $k++;
                         }   //end foreach $row2
