@@ -99,7 +99,7 @@ if(G5_COMMUNITY_USE === false) {
                         </div>
                     </div>
                 </footer>
-                <div id="qna_btn">
+                <div id="qna_btn" style="display:none;">
                     <a href="/bbs/write.php?bo_table=qanda"><i class="fa fa-commenting-o" aria-hidden="true"></i> 문의하기</a>
                 </div>
                 <style>

@@ -2261,21 +2261,4 @@ AJAX.registerOnload('server/status/monitor.js', function () {
       gridCopy[key] = {};
       gridCopy[key].nodes = elem.nodes;
       gridCopy[key].settings = elem.settings;
-      gridCopy[key].title = elem.title;
-      gridCopy[key].series = elem.series;
-      gridCopy[key].maxYLabel = elem.maxYLabel;
-    });
-
-    if (isStorageSupported('localStorage')) {
-      window.localStorage.monitorCharts = JSON.stringify(gridCopy);
-      window.localStorage.monitorSettings = JSON.stringify(monitorSettings);
-      window.localStorage.monitorVersion = monitorProtocolVersion;
-    }
-
-    $('a[href="#clearMonitorConfig"]').show();
-  }
-}); // Run the monitor once loaded
-
-AJAX.registerOnload('server/status/monitor.js', function () {
-  $('a[href="#pauseCharts"]').trigger('click');
-});
+      gridCopy[key

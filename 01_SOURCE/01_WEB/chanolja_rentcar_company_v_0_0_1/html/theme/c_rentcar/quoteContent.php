@@ -40,9 +40,11 @@
     </div>
 </div>
 
+<!--
 <div class="help" style="cursor:pointer; display:none; position:fixed; z-index:999; bottom: 10%; right: 20px; transform: translateY(50%);">
     <img src="http://cmtest.dothome.co.kr/theme/template1/img/help.png" />
 </div>
+-->
 
 <style>
     @media screen and (max-width: 480px) {
@@ -59,11 +61,11 @@
 <script>
       $('.close-button0').click(()=>{
         $('.banner-container').css('display', 'none');
-        $('.help').css('display', 'block');
+        $('#qna_btn').css('display', 'block');
       })
 
-      $('.help').click(()=>{
+/*       $('.help').click(()=>{
            $('.banner-container').css('display', 'block');
            $('.help').css('display', 'none');
-      });
+      }); */
 </script>

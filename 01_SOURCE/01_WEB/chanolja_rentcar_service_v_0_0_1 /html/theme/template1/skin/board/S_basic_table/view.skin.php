@@ -302,12 +302,4 @@ function excute_good(href, $el, $tx)
                     $tx.text("이 글을 비추천하셨습니다.");
                     $tx.fadeIn(200).delay(2500).fadeOut(200);
                 } else {
-                    $tx.text("이 글을 추천하셨습니다.");
-                    $tx.fadeIn(200).delay(2500).fadeOut(200);
-                }
-            }
-        }, "json"
-    );
-}
-</script>
-<!-- } 게시글 읽기 끝 -->
+                    $tx.text("이 글을 추천하�
