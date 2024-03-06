@@ -14,7 +14,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <?php
 $g5['navTitle'] = "차놀자네트워크";
-$g5['title'] = "개설절차";
+$g5['title'] = "지사&지점창업";
 ?>
 
 <!DOCTYPE html>
@@ -950,7 +950,13 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
    <div id="step">
     <div class="gs_eu">
     	<div class="txt_box">
-        	<h3>렌터카 창업, 차놀자와 손잡으세요.</h3>
+        	<h3>지사&영업소 입점안내</h3> <h4>한솔네트웍스에서 지사&영업소 사업주를 모집합니다.</h4>
+        	</br> <h4>한솔네트웍스 렌트카 사업부 | 010-5134-7200</h4>
+        	</br> <h3>개점절차</h3>
+        	</br> <h3>영업소 입점 절차</h3>
+        	</br> <h4>영업소 설립시</h4>
+        	</br> <h4>사무실 집기/차고지 준비 -> 필수 차량 차종 선택 -> 설립 및 임대차 통장 발급</h4>
+        	</br> <h4>-> 차량 인도금 납부 후 차량 등록 및 탁송 -> 영업개시</h4>
             <table style="    display: flex;
     justify-content: center;">
             	<tr style="font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';">

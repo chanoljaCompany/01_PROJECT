@@ -932,12 +932,12 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
             </div>
             <div id="pro">
             	<div id="num">04</div>
-                <div id="bac">12인승, 15인승 승합차 : 1종 보통면허 이상</div>
+                <div id="bac">11인승 이상 승합차 : 면허취득일 1년 이상, 차종에 따라 1종 보통면허 이상</div>
                 <div id="clbt"></div>
             </div>
             <div id="pro">
             	<div id="num">05</div>
-                <div id="bac">외국인 : 국제 운전면허 소지자</div>
+                <div id="bac">외국인 : 내국인 보증 및 국제 운전면허 소지자</div>
                 <div id="clbt"></div>
             </div>
         <div id="h80"></div>
