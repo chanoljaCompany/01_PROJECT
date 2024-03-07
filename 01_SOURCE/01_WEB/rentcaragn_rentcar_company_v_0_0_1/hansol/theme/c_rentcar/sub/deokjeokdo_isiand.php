@@ -13,8 +13,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
 <?php
-$g5['navTitle'] = "일반렌트";
-$g5['title'] = "일반대여";
+$g5['navTitle'] = "인천 섬투어";
+$g5['title'] = "덕적도";
 ?>
 
 <!DOCTYPE html>
@@ -445,7 +445,7 @@ body{
         z-index: 999;
         right:150px
     }
- 
+
     .sec2 .box,
     .sec4 .box{
         left: -150px;
@@ -554,7 +554,7 @@ body{
     .sec6-inner p{
         width:80%;
     }
-    
+
     .sec7{
         height: 1000px;
     }
@@ -927,63 +927,84 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
  <br>
  <br>
  <div id="st_title">
-	<h3>온라인 예약/지점, 영업소 방문/전화예약 등으로 사전 예약 하실 수 있습니다.</h3>
-    <p>·예약시 다음 사항을 알려주시면 차량대여시 고객의 귀중한 시간이 절약됩니다.<br>-성명,주민등록번호,운전면허 번호,전화번호, 이용차종, 사용일자, 시간 등</p></br></br>
-    <h3>이후 계약일자에 지점방문 및 차량 배,회차 서비스를 통하여 계약서 작성과 대여료 결제, 차량 외간 점검과 유류점검을 합니다.</h3>
-    <p>·반납시 차량외관과 유류점검을 통하여 이상이 없을 시 계약이 종료됩니다.</p>
+	<h3>트렌디한 휴가를 즐길 수 있는 매력적인 추억 만들기</h3>
 </div>
 
-<h2 id="tit" class="mt80">차량보험</h2>
+<div style="margin: 0 auto; width:1200px; margin-top:50px;">
+    <div class="lf_box">
+        <img style="width:300px;" src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
+    </div>
+    <div class="rt_box" style="font-size:26px;">
+        <div class="text_box">
+            <h1 class="tit">
+            덕적도
+            </h1>
+            <dl>
+                <dt>
+                    <strong>
+                        <span>2인승 초소형전기창 트위지 3D VR</span>
+                    </strong>
+                    <button style="
+                        background: #54C3FD;
+                        border: solid 1px #eee;
+                        padding: 10px;
+                        border-radius: 20px;
+                        height: 50px;
+                        font-size: 20px;
+                        color: #fff;
+                    " onclick="location.href='https://my.matterport.com/show/?m=dcHYYvj2e4F'">3D View</button>
+                </dt>
+            </dl>
+        </div>
+    </div>
+</div>
+
+
+<h2 id="tit" class="mt80">덕적도 선착장에 도착시 선착장으로 픽업 나가는 시스템입니다</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac"> 저희 한솔렌트카는 차량 대여 사업법에 의거 모든 차량은 종합보험에 가입이 되어있습니다.<br></div>
+    <div id="bac">덕적도 차도선은 예약이 불가능하여 새벽부터 선착순으로 줄을 서는 불편함과 매진의 위험이 있습니다.<br></div>
      <div id="clbt"></div>
 </div>
 <div id="pro">
     <div id="num">02</div>
-    <div id="bac"><b class="cl_navy">대인 : 무한대</b><br><b class="cl_navy">대물 : 사고건당 5천만원에서 1억</b><br><b class="cl_navy">자손 : 개인당 1천5백만원</b></div>
+    <div id="bac">줄을 서야 하며 선착순 마감되면 기다리다 집으로 가야합니다</br> (인천항에서 차량 선적시 덕적도에서 돌아오는 가격+추가비용이 발생합니다)</div>
     <div id="clbt"></div>
 </div>
 <div id="pro">
     <div id="num">03</div>
-    <div id="bac">단, 계약서상 등록되지 않은 운전자의 경우, 종합보험 및 자차손해 면책제도의 </br> 보험 혜택을 받으실 수 없습니다. </div>
+    <div id="bac">인천으로 나오는 차도선 역시 주중에 들어온 모든 차량이 일요일에 몰려 나오기때문에 차량을 가지고 나오지 못하는 경우가 발생합니다</div>
+    <div id="clbt"></div>
+</div>
+<div id="pro" >
+    <div id="num">04</div>
+    <div id="bac">쾌속선(사람만 탑승)은 운행 시간도 짧으며(약 한시간 이내) 예약이 가능합니다</div>
     <div id="clbt"></div>
 </div>
 <div id="pro" class="bdb1">
-    <div id="num">04</div>
-    <div id="bac">차량 대여중에 발생되는 모든 차량의 손해(손,망실)는 계약기간동안 고객분의 책임입니다.</br>
-        단 차량손해보상제도(자차)에 가입하시면 고객의 실수로 발생한 자차 사고에 대한 보호를</br> 받으실 수 있으며, 차량손해보상제도 가입은 고객님의 선택사항입니다.
-    </div>
+    <div id="num">05</div>
+    <div id="bac">덕적도 배편 예약은 구글 앱 가보고 싶은 섬에서 가능합니다 (인천시민 80% 할인 혜택)</div>
     <div id="clbt"></div>
 </div>
- 
-<h2 id="tit" class="mt80">차량수리비</h2>
+
+<h2 id="tit" class="mt80">자주하는 질문</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac">차량대여중 발생하는 귀책사유로 인한 당사 차량손해는 고객님께서 수리비를 지불하셔야 합니다. </div>
+    <div id="bac"><b class="cl_navy">덕적도는 어떻게 가나요?</b></br>인천항 연안 여객터미널 or 대부도 방아다리 선착장에서 배를 타고 오시면 됩니다. </br> 예약 click! -> 가보고싶은섬 </br> 위 사이트나 구글 앱 가보고싶은섬에서 예약 가능합니다</div>
      <div id="clbt"></div>
 </div>
 <div id="pro">
     <div id="num">02</div>
-    <div id="bac">단, 차량손해보상제도 가입자는 자차사고에 대한 보호를 받으실 수 있습니다.</div>
+    <div id="bac"><b class="cl_navy">차량 대여 시간 및 장소는 어디인가요? (차량 대여 및 반납 장소)</b></br>배를 타고 덕적도에 도착 시 예약 일정에 따라 픽업 차량이 서포터님을 픽업하여 차고지로 이동합니다. </br>
+        덕적도에서 방아머리 선착장으로 나가는 배 시간 한시간 전 마을기업으로 방문 하시면 픽업하여 선착장으로 이동합니다
+    </div>
     <div id="clbt"></div>
 </div>
-
-<h2 id="tit" class="mt80">휴차보상</h2>
-<div id="pro">
-    <div id="num">01</div>
-    <div id="bac">대여중 자차사고로 인한 수리 발생시 </br> 수리기간동안 실피해 금액은 고객님이 부담을 하셔야 합니다.</div>
+<div id="pro" class="bdb1">
+    <div id="num">03</div>
+    <div id="bac"><b class="cl_navy">운행중 차량 손상은 어떻게 처리 되나요?</b></br>자차 가입은 별고 1일단 추가비용이 차종별로 발생하며 사고 발생 시 렌터카공제조합 자기부담금은 50만원입니다.</div>
     <div id="clbt"></div>
 </div>
-
-<h2 id="tit" class="mt80">대여요금</h2>
-<div id="pro">
-    <div id="num">01</div>
-    <div id="bac">유튜브 <button onclick="location.href='https://www.youtube.com/c/Hansolscamplife'"> 바로가기 </button> </br> 카카오채널 <button onclick="location.href='https://pf.kakao.com/_hYxltxj'"> 바로가기 </button> </br> 인스타그램 <button onclick="location.href='https://www.instagram.com/hansol_rent/'"> 바로가기 </button>
-    </br> 연락처 1811-9632/010-5134-7200 </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </div>
-    <div id="clbt"></div>
-</div>
-
 
     </div>
 </body>
@@ -1010,8 +1031,8 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 
             if (wintop >= (topcoords - (winheight * 0.5))) {
                 $elm.addClass('on');
-               
-            } 
+
+            }
         });
     }; // end animate_elems
 });//end

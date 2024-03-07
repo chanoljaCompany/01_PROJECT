@@ -14,7 +14,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <?php
 $g5['navTitle'] = "일반렌트";
-$g5['title'] = "일반대여";
+$g5['title'] = "장기대여";
 ?>
 
 <!DOCTYPE html>
@@ -927,63 +927,76 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
  <br>
  <br>
  <div id="st_title">
-	<h3>온라인 예약/지점, 영업소 방문/전화예약 등으로 사전 예약 하실 수 있습니다.</h3>
-    <p>·예약시 다음 사항을 알려주시면 차량대여시 고객의 귀중한 시간이 절약됩니다.<br>-성명,주민등록번호,운전면허 번호,전화번호, 이용차종, 사용일자, 시간 등</p></br></br>
-    <h3>이후 계약일자에 지점방문 및 차량 배,회차 서비스를 통하여 계약서 작성과 대여료 결제, 차량 외간 점검과 유류점검을 합니다.</h3>
-    <p>·반납시 차량외관과 유류점검을 통하여 이상이 없을 시 계약이 종료됩니다.</p>
+	<h3>연월간 계약을 통해 대여료만 지불하시면 차량구매,등록,보험,정비,세금,사고, </br> 매각등의 모든 차량 관련 업무를 책임지고 처리 해드리는 서비스입니다.</h3>
+    <p>·1년 미만 사용하실 경우 기존에 보유하고 있는 차량으로 대여를 해드립니다.</p>
 </div>
 
-<h2 id="tit" class="mt80">차량보험</h2>
+<h2 id="tit" class="mt80">초기비용</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac"> 저희 한솔렌트카는 차량 대여 사업법에 의거 모든 차량은 종합보험에 가입이 되어있습니다.<br></div>
+    <div id="bac"> 초기 비용이 적게 든다.<br></div>
      <div id="clbt"></div>
 </div>
 <div id="pro">
     <div id="num">02</div>
-    <div id="bac"><b class="cl_navy">대인 : 무한대</b><br><b class="cl_navy">대물 : 사고건당 5천만원에서 1억</b><br><b class="cl_navy">자손 : 개인당 1천5백만원</b></div>
+    <div id="bac">대여료 전액 손비처리 가능하여 세금 부담이 경감된다.</div>
     <div id="clbt"></div>
 </div>
 <div id="pro">
     <div id="num">03</div>
-    <div id="bac">단, 계약서상 등록되지 않은 운전자의 경우, 종합보험 및 자차손해 면책제도의 </br> 보험 혜택을 받으실 수 없습니다. </div>
+    <div id="bac">차량관리에 따르는 직,간접의 인건비와 회계,경리 등 유/무형의 관리비 및 인건비가 절감된다. </div>
     <div id="clbt"></div>
 </div>
 <div id="pro" class="bdb1">
     <div id="num">04</div>
-    <div id="bac">차량 대여중에 발생되는 모든 차량의 손해(손,망실)는 계약기간동안 고객분의 책임입니다.</br>
-        단 차량손해보상제도(자차)에 가입하시면 고객의 실수로 발생한 자차 사고에 대한 보호를</br> 받으실 수 있으며, 차량손해보상제도 가입은 고객님의 선택사항입니다.
-    </div>
+    <div id="bac">LPG 연료 이용이 가능하여 유류비를 절감할 수 있다.</div>
     <div id="clbt"></div>
 </div>
  
-<h2 id="tit" class="mt80">차량수리비</h2>
+<h2 id="tit" class="mt80">재무회계</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac">차량대여중 발생하는 귀책사유로 인한 당사 차량손해는 고객님께서 수리비를 지불하셔야 합니다. </div>
+    <div id="bac">매월 일정액의 대여료만 납부하면 되므로 회계처리가 간편하다.</div>
      <div id="clbt"></div>
 </div>
 <div id="pro">
     <div id="num">02</div>
-    <div id="bac">단, 차량손해보상제도 가입자는 자차사고에 대한 보호를 받으실 수 있습니다.</div>
+    <div id="bac">차량구입에 따른 차입금 발생 효과가 없으므로 부채 비율이 감소한다.</div>
+    <div id="clbt"></div>
+</div>
+<div id="pro">
+    <div id="num">03</div>
+    <div id="bac">예산 수립,자금 계획 수립 및 손익 추정이 용이하다.</div>
     <div id="clbt"></div>
 </div>
 
-<h2 id="tit" class="mt80">휴차보상</h2>
+<h2 id="tit" class="mt80">차량관리</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac">대여중 자차사고로 인한 수리 발생시 </br> 수리기간동안 실피해 금액은 고객님이 부담을 하셔야 합니다.</div>
+    <div id="bac">차량구입,등록,보험가입 등 번거로운 구입절차를 거치지 않는다.</div>
+    <div id="clbt"></div>
+</div>
+<div id="pro">
+    <div id="num">02</div>
+    <div id="bac">차량 보유에 따르는 자동차세 납부,보험료납부,정기검사 등의 업무가 없어진다.</div>
+    <div id="clbt"></div>
+</div>
+<div id="pro">
+    <div id="num">03</div>
+    <div id="bac">정비비,수리비,소모품비 등 차량 유지 비용처리에 따르는 복잡한 용무가 없다.</div>
     <div id="clbt"></div>
 </div>
 
 <h2 id="tit" class="mt80">대여요금</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac">유튜브 <button onclick="location.href='https://www.youtube.com/c/Hansolscamplife'"> 바로가기 </button> </br> 카카오채널 <button onclick="location.href='https://pf.kakao.com/_hYxltxj'"> 바로가기 </button> </br> 인스타그램 <button onclick="location.href='https://www.instagram.com/hansol_rent/'"> 바로가기 </button>
-    </br> 연락처 1811-9632/010-5134-7200 </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </div>
+    <div id="bac">차량의 종류와 컨디션, 여러가지 조건에 따라 가격이 달라집니다. </br> 구체적인 부분은 한솔렌트카 고객센터로 전화주셔서 상담 받아보세요!</br>한솔렌트카 고객센터 1811-9632 | 09:00 ~ 18:00 | 연중무휴</div>
+    <div id="clbt"></div>
+
+    <div id="num">01</div>
+    <div id="bac">카카오채널 <button onclick="location.href='https://pf.kakao.com/_hYxltxj'"> 바로가기 </button> </br> 연락처 1811-9632/010-5134-7200 </div>
     <div id="clbt"></div>
 </div>
-
 
     </div>
 </body>
