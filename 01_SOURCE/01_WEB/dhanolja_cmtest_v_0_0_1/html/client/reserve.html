@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0" />
+    <title>펜션 예약</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+    <link rel="stylesheet" type="text/css" href="reserve.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+</head>
+
+<body>
+
+    <h1>펜션 예약</h1>
+
+    <div class="main_wrap">
+
+        <section class="main_sec_wrap">
+               <h2 class="hide">section wrap</h2>
+            <div class="section_wrap">
+                <!--<article id="tabs" class="travel_scroll_tab">-->
+
+                    <section id="tabHeader" class="travel_scroll_tab_header">
+                       <h3 class="hide">tab header</h3>
+                        <div class="tab_header_wrapper">
+                            <ul class="travel_scroll_tab_headers">
+                                <li class="selected"><a href="#tabHeader">객실 선택</a></li>
+                                <li><a href="#">인원 및<br class="mo_br"> 옵션선택</a></li>
+                                <li><a href="#">고객정보<br class="mo_br"> 입력</a></li>
+                                <li><a href="#">예약 확인</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="roomsPanel">
+                       <h3 class="hide">rooms panel</h3>
+                        <form name="form" id="reserveForm">
+
+                            <section id="sec1">
+                               <h4 class="hide">section 1</h4>
+                                <div class="input_box">
+                                    <input type="hidden" name="dateStr" id="dateStr" value="2022-02-23~2022-02-24">
+                                    <input type="hidden" name="select_guestroom_code" id="select_guestroom_code">
+                                    <input type="hidden" name="select_guestroom_fee" id="select_guestroom_fee">
+                                    <input type="hidden" name="select_option_array" id="select_option_array">
+                                    <!--<input type="text" class="selector flatpickr-input" placeholder="날짜를 선택하세요." readonly="readonly">-->
+                                    <input type="date" class="selector flatpickr-input" value="2022-03-02">
+                                    <!--<a class="input-button" title="toggle" data-toggle=""><i class="far fa-calendar-alt"></i></a>-->
+                                    <select name="cnt_adult" class="select_box">
+                                        <option value="1">성인 1명</option>
+                                        <option value="2">성인 2명</option>
+                                        <option value="3">성인 3명</option>
+                                        <option value="4">성인 4명</option>
+                                    </select>
+                                    <select name="cnt_child" class="select_box">
+                                        <option value="0">아동 0명</option>
+                                        <option value="1">아동 1명</option>
+                                        <option value="2">아동 2명</option>
+                                    </select>
+                                    <select name="cnt_baby" class="select_box">
+                                        <option value="0">유아 0명</option>
+                                        <option value="1">유아 1명</option>
+                                        <option value="2">유아 2명</option>
+                                    </select>
+                                    <span><a href="#" class="btn_lookup">객실조회</a></span>
+                                </div>
+
+                                <div id="room_info_area">
+                                   
+                                    <!-- pc table 시작 -->
+                                    <div class="table_wrap_pc">
+                                        <table border="1" class="tbroom" id="tb_9416914189" style="display: table; width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">수입4인카라반-9416914189</th>
+                                                    <th>인원</th>
+                                                    <th>요금</th>
+                                                    <th>예약</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614431181112.jpeg" alt="image">
+                                                    </td>
+                                                    <td>
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                            <li>변경가능</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>기준 4인 / 최대 6인</td>
+                                                    <td>
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">150,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type="button" name="reserveBtn" onclick="reserve_first('9416914189')" value="예약"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table border="1" class="tbroom" id="tb_9640944241" style="display: table; width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">수입2인카라반-9640944241</th>
+                                                    <th>인원</th>
+                                                    <th>요금</th>
+                                                    <th>예약</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614450810062.png" alt="image"></td>
+                                                    <td>
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>기준 2인 / 최대 2인</td>
+                                                    <td>
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">120,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type="button" name="reserveBtn" value="예약불가"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table border="1" class="tbroom" id="tb_9441306269" style="display: table; width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">국산2인카라반-9441306269</th>
+                                                    <th>인원</th>
+                                                    <th>요금</th>
+                                                    <th>예약</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614461517537.jpg" alt="image"></td>
+                                                    <td>
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>기준 2인 / 최대 2인</td>
+                                                    <td>
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">100,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type="button" name="reserveBtn" onclick="reserve_first('9441306269')" value="예약"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table border="1" class="tbroom" id="tb_4199346901" style="display: table; width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">펜션-4199346901</th>
+                                                    <th>인원</th>
+                                                    <th>요금</th>
+                                                    <th>예약</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614474813642.jpeg" alt="image"></td>
+                                                    <td>
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>기준 4인 / 최대 4인</td>
+                                                    <td>
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">150,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td><input type="button" name="reserveBtn" onclick="reserve_first('4199346901')" value="예약"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- pc table 끝 -->
+
+                                    <!-- 모바일 table 시작 -->
+                                    <div class="mo_table_wrap">
+                                        <table border="1" class="tbroom_mo" id="tb_4199346901" style="width: 100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th colspan="2"><img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614431181112.jpeg" alt="image"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">수입4인카라반-9416914189</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                            <li>변경가능</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">기준 4인 / 최대 6인</td>
+                                                    <td class="right">
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">150,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"><input type="button" name="reserveBtn" onclick="reserve_first('4199346901')" value="예약"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table border="1" class="tbroom_mo" id="tb_4199346901" style="width: 100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th colspan="2"><img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614450810062.png" alt="image"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">수입2인카라반-9640944241</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">기준 2인 / 최대 2인</td>
+                                                    <td class="right">
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">120,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"><input type="button" name="reserveBtn" onclick="reserve_first('4199346901')" value="예약"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table border="1" class="tbroom_mo" id="tb_4199346901" style="width: 100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th colspan="2"><img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614461517537.jpg" alt="image"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">국산2인카라반-9441306269</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">기준 4인 / 최대 4인</td>
+                                                    <td class="right">
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">100,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"><input type="button" name="reserveBtn" onclick="reserve_first('4199346901')" value="예약"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table border="1" class="tbroom_mo" id="tb_4199346901" style="width: 100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th colspan="2"><img src="http://choriforest.visithappy.co.kr/real_reservation/pension_img/thumb_img/2022021614474813642.jpeg" alt="image"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">펜션-4199346901</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <ul class="td_2nd_ul">
+                                                            <li>환불불가</li>
+                                                            <li>변경가능</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">기준 4인 / 최대 4인</td>
+                                                    <td class="right">
+                                                        <ul class="td_4th_ul">
+                                                            <li><span class="cancle">200,000원</span></li>
+                                                            <li><span class="red">150,000원</span></li>
+                                                            <li>세금/봉사료 포함</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"><input type="button" name="reserveBtn" onclick="reserve_first('4199346901')" value="예약"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 모바일 table 끝 -->
+
+                                </div>
+                            </section>
+
+                            <section id="sec2" class="">
+                                <h4 class="hide">section 2</h4>
+                                <div id="room_reseve_select" style="">
+                                    <h5>옵션 및 인원선택</h5>
+
+                                    <table class="table_1">
+                                        <!-- <tr>
+                                        <td>객실수 (최대 : 3)</td>
+                                        <td><input type='text' name='gu' id = 'reserve_name'></td>
+                                     </tr> -->
+                                        <tbody>
+                                            <tr>
+                                                <th>성인 (만 18세 이상)</th>
+                                                <td>
+                                                    <button type="button" onclick="fnCalCount('m', 'adultPerson');">-</button>
+                                                    <input type="text" id="adultPerson" value="1" readonly="readonly" style="text-align:center;">
+                                                    <button type="button" onclick="fnCalCount('p','adultPerson');">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>아동</th>
+                                                <td>
+                                                    <button type="button" onclick="fnCalCount('m', 'childPerson');">-</button>
+                                                    <input type="text" id="childPerson" value="0" readonly="readonly" style="text-align:center;">
+                                                    <button type="button" onclick="fnCalCount('p','childPerson');">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>유아 (12개월~48개월미만)</th>
+                                                <td>
+                                                    <button type="button" onclick="fnCalCount('m', 'babyPerson');">-</button>
+                                                    <input type="text" id="babyPerson" value="0" readonly="readonly" style="text-align:center;">
+                                                    <button type="button" onclick="fnCalCount('p','babyPerson');">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="table_2">
+                                        <thead>
+                                            <tr>
+                                                <th>옵션명</th>
+                                                <th>옵션가격</th>
+                                                <th>수량</th>
+                                                <th>금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="room_reseve_option_area">
+                                            <tr>
+                                                <td>조식</td>
+                                                <td>120,000 원</td>
+                                                <td>
+                                                    <button type="button" onclick="fnCalCount('m', 'optid_1');">-</button>
+                                                    <input type="text" name="optname_1" id="optid_1" value="1" readonly="readonly" style="text-align:center;">
+                                                    <!--<input type="hidden" name="opthname_1" id="optid_1" value="1369039644" readonly="readonly" style="text-align:center;">-->
+                                                    <button type="button" onclick="fnCalCount('p','optid_1');">+</button>
+                                                </td>
+                                                <td>120,000 원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>숯+그릴</td>
+                                                <td>25,000 원</td>
+                                                <td>
+                                                    <button type="button" onclick="fnCalCount('m', 'optid_2');">-</button>
+                                                    <input type="text" name="optname_2" id="optid_2" value="1" readonly="readonly" style="text-align:center;">
+                                                    <!--<input type="hidden" name="opthname_2" id="optid_2" value="7942192946" readonly="readonly" style="text-align:center;">-->
+                                                    <button type="button" onclick="fnCalCount('p','optid_2');">+</button>
+                                                </td>
+                                                <td>25,000 원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>테스트</td>
+                                                <td>3,000 원</td>
+                                                <td>
+                                                    <button type="button" onclick="fnCalCount('m', 'optid_2');">-</button>
+                                                    <input type="text" name="optname_2" id="optid_2" value="1" readonly="readonly" style="text-align:center;">
+                                                    <!--<input type="hidden" name="opthname_2" id="optid_2" value="7942192946" readonly="readonly" style="text-align:center;">-->
+                                                    <button type="button" onclick="fnCalCount('p','optid_2');">+</button>
+                                                </td>
+                                                <td>3,000 원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="table_3">
+                                        <tbody>
+                                            <tr>
+                                                <th>객실요금합계</th>
+                                                <td><input type="text" value="150000" name="room_fee" id="room_fee"> 원</td>
+                                            </tr>
+                                            <tr>
+                                                <th>옵션요금합계</th>
+                                                <td><input type="text" value="178000" name="option_fee" id="option_fee"> 원</td>
+                                            </tr>
+                                            <tr>
+                                                <th>총요금합계</th>
+                                                <td><input type="text" value="378000" name="total_fee" id="total_fee"> 원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="button_box">
+                                        <input type="button" name="room_reseve_pay_btn_pre" id="room_reseve_pay_btn_pre" class="room_reseve_pay_btn" value="이전단계" onclick="">
+                                        <input type="button" name="room_reseve_pay_btn" id="room_reseve_pay_btn" class="room_reseve_pay_btn" value="다음단계" onclick="reserve_third();">
+                                    </div>
+                                </div>
+
+                            </section>
+
+
+                            <section id="sec3">
+                               <h4 class="hide">section 3</h4>
+                                <div id="room_guide_info" style="">
+                                    <!--여기는 가이드 안내 지역입니다. <br>-->
+                                    <h5>추가정보</h5>
+
+                                    <div class="sec3_wrap">
+
+                                        <div class="con_wrap con_1_wrap">
+                                            <p>
+                                                원활한 예약과 숙소 규정을 적어두었습니다. 모든 질문에 답변을 주셔야 예약이 다음단계로 넘어갑니다.<br class="pc_br">
+                                                중요사항 안내와 공지를 위함이니 <span style="font-weight: 700;">추가답변</span>과 투숙객 손님께서 반드시 아셔야 할 부분은 읽고 <span style="font-weight: 700;">동의합니다</span>로 답변 부탁드립니다. :)<br class="pc_br">
+                                                예약신청시 시스템상 중복예약이 되는경우가 있습니다. 예약신청이 예약확정이 아닙니다.<br class="pc_br">
+                                                모든 예약신청의 경우 선착순 입금으로 확정되며, 입금하셨어도 늦게 예약한 손님께는 전액 환불됩니다. <span>(필수)</span>
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." required class="sec3_input_box">
+                                        </div>
+
+                                        <div class="con_wrap con_2_wrap">
+                                            <p>
+                                                입금계좌/신한/조현옥/110-481-226246 원활한 예약 확정을 위하여, 결제금액 전액 입금완료가 되어야 예약이 확정됩니다.<br class="pc_br">
+                                                입금이 안될 경우 예약이 자동 취소될 수 있습니다.<br class="pc_br">
+                                                카드결제 원할시 체크인 할때 현장에서 카드결제가능하며, 입금금액은 환불해드립니다. (현장에서 말씀주세요.)<br class="pc_br">
+                                                추가 요금은 현장결제 가능합니다. ^^
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." class="sec3_input_box">
+                                        </div>
+
+                                        <div class="con_wrap con_3_wrap">
+                                            <p>
+                                                총 인원수 와 아동/성인 인원수 적어주세요.<br>
+                                                예시)) 4명/아동2/성인2 <span>(필수)</span>
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." required class="sec3_input_box">
+                                        </div>
+
+                                        <div class="con_wrap con_4_wrap">
+                                            <p>
+                                                숙박이용시 예약과 다르게 인원이 오실경우 입실이 안되시며 환불금액 없이 퇴실조치 됩니다.
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." class="sec3_input_box">
+                                        </div>
+
+                                        <div class="con_wrap con_5_wrap">
+                                            <p>
+                                                귀중품은 따로 보관않되시니 고객님이 직접 챙기셔야 합니다.<br class="pc_br">
+                                                어린자녀가 있으신 이용자분들은 아이와 늘 동행하여 주세요~<br class="pc_br">
+                                                저희는 책임지지 않습니다.
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." class="sec3_input_box">
+                                        </div>
+
+                                        <div class="con_wrap con_6_wrap">
+                                            <p>
+                                                글램핑의 경우 오로지 숯만 가능하며 장작은 사용불가합니다.<br class="pc_br">
+                                                천으로 되어있어 화재의 위험이 있습니다. 장작 사용불가 동의하십니까? <span>(필수)</span>
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." required class="sec3_input_box">
+                                        </div>
+
+                                        <div class="con_wrap con_7_wrap">
+                                            <p>
+                                                초리 포레스트에서는 숙박 시 다자녀, 할머니, 할아버지 등 한가족과 다자녀, 연인, 조부모님 추가만 가능합니다.<br class="pc_br">
+                                                (평상이용시는 한가족에 해당없습니다.)<br class="pc_br">
+                                                조용하고, 쾌적한 숙박을 위하여 지인, 동반 합숙, 방문객, 반려동물이 모두 불가능합니다.<br class="pc_br">
+                                                가족 중심의 캠핑장입니다.<br class="pc_br">
+                                                오로지 가족을 위해 소규모로 운영하는 캠핑장입니다. 이 부분 동의하십니까? <span>(필수)</span>
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." required class="sec3_input_box">
+                                        </div>
+
+                                        <div class="con_wrap con_8_wrap">
+                                            <p>
+                                                우천시 날짜변경이나 취소가 가능한지 문의가 많습니다.<br class="pc_br">
+                                                안전에 문제가 되어 이용이 불가할 경우 저희 캠핑장도 영업을 하지 않고 100% 환불해드립니다.<br class="pc_br">
+                                                단 우천시에는 정상운영을 하며 날짜변경, 환불이 불가하니 양해부탁드립니다.
+                                            </p>
+                                            <input type="text" placeholder="내용을 입력해주세요." class="sec3_input_box">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="button_box">
+                                        <input type="button" name="room_guide_info_btn_pre" id="room_guide_info_btn_pre" class="room_guide_info_btn" value="이전단계" onclick="">
+                                        <input type="button" name="room_guide_info_btn" id="room_guide_info_btn" class="room_guide_info_btn" value="다음단계" onclick="reserve_second();">
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="sec4" class="">
+                               <h4 class="hide">section 4</h4>
+                                <div id="room_reseve_pay" style="">
+                                    <!--여기는 예약정보입력과 결제버튼 지역입니다.<br>-->
+                                    <h5>고객정보</h5>
+
+                                    <table class="reser_pay_table1">
+                                        <thead>
+                                            <tr>
+                                                <th>옵션명</th>
+                                                <th>수량</th>
+                                                <th>옵션가격</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="room_reseve_option_area_section4">
+                                            <tr class="">
+                                                <td>옵션1 내용 </td>
+                                                <td>1</td>
+                                                <td>120,000 원</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>옵션2 내용 </td>
+                                                <td>1</td>
+                                                <td>25,000 원</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>옵션3 내용 </td>
+                                                <td>1</td>
+                                                <td>3,000 원</td>
+                                            </tr>
+                                            <tr class="last_tr">
+                                                <th colspan="2">옵션 합계</th>
+                                                <td>148,000 원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="reser_pay_table2">
+                                        <tbody>
+                                            <tr>
+                                                <th>결제금액</th>
+                                                <td id="pay_total"> 298,000 원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="reser_pay_table3">
+                                        <tbody>
+                                            <tr>
+                                                <th>예약자명</th>
+                                                <td>
+                                                    <input type="text" name="reserve_name" id="reserve_name">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>핸드폰번호</th>
+                                                <td>
+                                                    <input type="text" name="reserve_phone" id="reserve_phone">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이메일</th>
+                                                <td>
+                                                    <input type="text" name="reserve_email" id="reserve_email">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>요청사항</th>
+                                                <td>
+                                                    <textarea name="reserve_comment" id="reserve_comment" cols="24" rows="10"></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table><br>
+
+                                    <table class="reser_pay_table4">
+                                        <tbody>
+                                            <tr>
+                                                <th>결제방법</th>
+                                                <td>
+                                                    <label class="p_cursor"><input type="radio" name="guestroom_paymthod" value="1" checked=""> 무통장입금</label>
+                                                    <label class="p_cursor"><input type="radio" name="guestroom_paymthod" value="2"> 신용카드</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>입금계좌</th>
+                                                <td>
+                                                    <input type="text" name="account_info" id="account_info" value="우리은행:1002238625460:김유혁" class="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>입금자명</th>
+                                                <td>
+                                                    <input type="text" name="depositor" id="depositor" value="어하둥둥이" class="">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="button_box">
+                                        <input type="button" name="room_reseve_pay_btn_pre" id="room_reseve_pay_btn_pre" class="room_reseve_pay_btn" value="이전단계" onclick="">
+                                        <input type="button" name="room_reseve_pay_btn" id="room_reseve_pay_btn" value="결제하기" onclick="reserve_fourth();">
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="sec5" class="">
+                               <h4 class="hide">section 5</h4>
+                                <div id="room_reseve_end" style="">
+                                    <!--여기는 결제완료후 보여지는 예약완료 화면입니다.<br>-->
+                                    <h5>예약 완료</h5>
+
+                                    <div class="top_notice">
+                                        <h3>예약신청이 완료되었습니다.</h3>
+                                        <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 2022년03월02일 17시까지 입금을 완료하지 않을경우 자동취소 됩니다.</p>
+                                        <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 인터넷 예약 특성상 입금시간이 지체되면 예약이 중복될수 있어 빠른입금 부탁드립니다.</p>
+                                        <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i> 입금완료 후 미리 준비할 수 있도록 이용전 통화하시는것이 좋습니다.</p>
+                                    </div>
+
+                                    <!-- pc table 시작 -->
+                                    <div class="table_wrap_pc">
+
+                                        <table class="table_1">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="7">객실정보</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>객실명</th>
+                                                    <th>이용일자</th>
+                                                    <th>기간</th>
+                                                    <th>인원</th>
+                                                    <th>객실요금</th>
+                                                    <th>추가요금</th>
+                                                    <th>합계</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>수입4인카라반-9416914189</td>
+                                                    <td>03/03(목) ~ 03/04(금)</td>
+                                                    <td>1박 2일</td>
+                                                    <td>성인(1)</td>
+                                                    <td>150,000 원</td>
+                                                    <td>148,000 원</td>
+                                                    <td>298,000 원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">합계</td>
+                                                    <td>150,000 원</td>
+                                                    <td>148,000 원</td>
+                                                    <td>298,000 원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                    <!-- pc table 끝 -->
+
+                                    <!-- 모바일 table 시작 -->
+                                    <div class="table_wrap_mo">
+
+                                        <table class="table_1">
+
+                                            <tbody>
+                                                <tr>
+                                                    <th colspan="2">객실정보</th>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">객실명</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">수입4인카라반-9416914189</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">이용일자</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">03/03(목) ~ 03/04(금)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>기간</th>
+                                                    <th>인원</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1박 2일</td>
+                                                    <td>성인(1)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>객실요금</th>
+                                                    <th>추가요금</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>150,000 원</td>
+                                                    <td>148,000 원</td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">합계</th>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">298,000 원</td>
+                                                </tr>
+                                                <!--<tr>
+                                                    <td colspan="1">합계</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>150,000 원</td>
+                                                    <td>148,000 원</td>
+                                                    <td>298,000 원</td>
+                                                </tr>-->
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+                                    <!-- 모바일 table 끝 -->
+
+                                    <table class="table_2">
+
+                                        <thead>
+                                            <tr>
+                                                <th>예약자 정보</th>
+                                                <td>테스트</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>결제방법</th>
+                                                <td>무통장</td>
+                                            </tr>
+                                            <tr>
+                                                <th>입금정보</th>
+                                                <td>입금자명 : 테스트 입금계좌 : 신한은행 333-333-33333 초리</td>
+                                            </tr>
+                                            <tr>
+                                                <th>예약상태</th>
+                                                <td>대기</td>
+                                            </tr>
+                                            <tr>
+                                                <th>예약번호</th>
+                                                <td>1220302112514762</td>
+                                            </tr>
+                                            <tr>
+                                                <th>예약일시</th>
+                                                <td>2022-03-02 11:55:30</td>
+                                            </tr>
+                                            <tr>
+                                                <th>예약자명</th>
+                                                <td>테스트</td>
+                                            </tr>
+                                            <tr>
+                                                <th>생년월일</th>
+                                                <td>1978. 93. 02.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>핸드폰</th>
+                                                <td>010-9876-5432</td>
+                                            </tr>
+                                            <tr>
+                                                <th>이메일</th>
+                                                <td>test@test.co.kr</td>
+                                            </tr>
+                                            <tr>
+                                                <th>요청사항</th>
+                                                <td>
+                                                    테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항 테스트 요청사항
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="button_box" style="text-align: center;">
+                                        <input type="button" name="room_reseve_end_btn" id="room_reseve_end_btn" value="확인" onclick="reserve_fourth();">
+                                    </div>
+                                </div>
+                            </section>
+
+                        </form>
+                    </section>
+
+                <!--</article>-->
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0" />
+
+    <title>모바일 페이지</title>
+
+    <link rel="stylesheet" type="text/css" href="real_reservation_mobile.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js" integrity="sha512-kmrY+BFhi6ywgfK8hW1ySM/KYU3xPd4elbMhORq3DhacwqmitFrf3GB2HpLj3srV1zFsqxvAcZ4qU+y+ym1Eeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+<!-- 수정 페이지 시작 -->
+<form name="guestroom" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="top_menu_id" id="top_menu_id" value="<?=$top_menu_id?>">
+  <input type="hidden" name="left_menu_id" id="left_menu_id" value="<?=$left_menu_id?>">
+  <input type="hidden" name="division" id="division" value="<?=$division?>">
+  <!-- <input type="hidden" name="guestroom_code" id="guestroom_code" value="<?=$guestroom_code?>"> -->
+  <input type="hidden" name="val" id="val" value="<?=$val?>">
+  <input type="hidden" name="guestroom_reserve_code" id="guestroom_reserve_code" value="<?=$guestroom_reserve_code?>">
+  <input type="hidden" name="guestroom_reserve_payment_method" id="guestroom_reserve_payment_method" value="">
+  <table class="tbl_row multi_shop">
+    <caption class="hidden">직접등록</caption>
+    <colgroup>
+      <col style="width:15%">
+      <col style="width:85%">
+    </colgroup>
+      <th scope="row">예약번호</th>
+      <td>
+        <?=$guestroom_reserve_code?>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <? if($conType == '1'){//모바일접속?>
+    <table class='tbl_row multi_shop table2'>
+        <caption class='hidden'>회원 조회 리스트</caption>
+        <thead>
+            <tr>
+                <th scope='col' colspan='2'>상품명</th>
+            </tr>
+            <tr>
+                <td colspan='2'><?=$reserveData['guestroom_name']?></td>
+            </tr>
+            <tr>
+                <th scope='col'>예약일자</th>
+                <th scope='col'>인원</th>
+            </tr>
+            <tr>
+                <td style='text-align: center;'><?=$reserveData['guestroom_reserve_date']?><br>(<?=$get_date_str?>)</td>
+                <td style='text-align: center;'>성인<?=$personnel_exp['0']?>,아동<?=$personnel_exp['1']?>,유아<?=$personnel_exp['2']?></td>
+            </tr>
+            <tr>
+                <th scope='col'>객실요금</th>
+                <th scope='col'>추가요금</th>
+            </tr>
+            <tr>
+                <td style='text-align: center;'><?=number_format($reserveData['guestroom_fee'])?>원</td>
+                <td style='text-align: center;'><?=number_format($reserveData['guestroom_add_fee'])?>원</td>
+            </tr>
+            <tr>
+                <th scope='col'>옵션요금</th>
+                <th scope='col'>합계</th>
+            </tr>
+            <tr>
+                <td style='text-align: center;'><?=number_format($reserveData['option_fee'])?>원</td>
+                <td style='text-align: center;'><?=number_format($reserveData['guestroom_reserve_payment_total'])?>원</td>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                  선택옵션 : <br>
+                  <?
+                  foreach ($get_option_data as $key=>$value) {
+                  ?>
+                  옵션명 : <?=$value['option_name']?>
+                  수량: <?=$value['option_amount']?>
+                  <br>
+                  <?}?>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <table class='tbl_row multi_shop table3'>
+        <caption class='hidden'>직접등록</caption>
+        <tbody>
+            <tr>
+                <th scope='row'>예약상태</th>
+                <th scope='row'>결제상태</th>
+            </tr>
+            <tr>
+                <td class='select_td'>
+                    <select id='guestroom_reserve_status' name='guestroom_reserve_status'>
+                      <option <? if($reserveData['guestroom_reserve_status'] == '2'){?> selected <?}?> value="2">예약신청</option>
+                      <option <? if($reserveData['guestroom_reserve_status'] == '3'){?> selected <?}?> value="3">예약완료</option>
+                      <option <? if($reserveData['guestroom_reserve_status'] == '4'){?> selected <?}?> value="4">취소요청</option>
+                      <option <? if($reserveData['guestroom_reserve_status'] == '5'){?> selected <?}?> value="5">취소완료</option>
+                    </select>
+                </td>
+                <td class='select_td'>
+                    <select id='guestroom_reserve_payment_status' name='guestroom_reserve_payment_status'>
+                     <option <? if($reserveData['guestroom_reserve_payment_status'] == '1'){?> selected <?}?> value="1">결제대기</option>
+                     <option <? if($reserveData['guestroom_reserve_payment_status'] == '2'){?> selected <?}?> value="2">결제완료</option>
+                     <option <? if($reserveData['guestroom_reserve_payment_status'] == '3'){?> selected <?}?> value="3">결제취소</option>
+                     <option <? if($reserveData['guestroom_reserve_payment_status'] == '4'){?> selected <?}?> value="4">환불요청</option>
+                     <option <? if($reserveData['guestroom_reserve_payment_status'] == '5'){?> selected <?}?> value="5">환불완료</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>예약자</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <input type='text' name='guestroom_reserve_user_name' id='guestroom_reserve_user_name' class='input' size='30' placeholder='*필수) 예약자' value='<?=$reserveData['guestroom_reserve_user_name']?>' readonly style='border: 0;'>
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>연락처(이메일)</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <input type='text' name='guestroom_reserve_user_phone' id='guestroom_reserve_user_phone' class='input' size='11' placeholder='*필수) 휴대폰번호' value='<?=$reserveData['guestroom_reserve_user_phone']?>' readonly style='border: 0;'>
+                    (<?=$reserveData['guestroom_reserve_user_email']?>)
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>접수일</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <?=$reserveData['guestroom_reception_date']?></td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>예약일</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <i class='fa fa-calendar'></i>
+                  <?=$reserveData['guestroom_reserve_date']?>
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>결제일</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <i class='fa fa-calendar'></i>
+
+                    <input class='input' size='20' type='text' name='guestroom_reserve_payment_date' id='guestroom_reserve_payment_date' value='<?=$reserveData['guestroom_reserve_payment_date']?>' readonly>
+                    <button type='button' class='btn btn-primary btn-sm btn' id='guestroom_reserve_payment_date_reset_btn'>초기화</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>취소일</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <i class='fa fa-calendar'></i>
+                    <input class='input' size='20' type='text' name='guestroom_cancel_date' id='guestroom_cancel_date' value='<?=$reserveData['guestroom_cancel_date']?>' readonly>
+                    <button type='button' class='btn btn-primary btn-sm btn' id='guestroom_cancel_date_reset_btn'>초기화</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>결제수단</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <?=$get_paymethod_type_str?></td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>결제금액</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <input type='number' name='guestroom_reserve_payment_total' id='guestroom_reserve_payment_total' class='input' placeholder='*필수) 숫자만 입력하세요' value='<?=$reserveData['guestroom_reserve_payment_total']?>'>
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>요청사항</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <input type='text' name='guestroom_reserve_user_request' id='guestroom_reserve_user_request' class='input' size='40' value='<?=$reserveData['guestroom_reserve_user_request']?>'>
+                </td>
+            </tr>
+            <tr>
+                <th scope='row' colspan='2'>관리자메모</th>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <input type='text' name='guestroom_reserve_memo' id='guestroom_reserve_memo' class='input' size='40' value='<?=$reserveData['guestroom_reserve_memo']?>'>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<?  }
+  else{?>
+    <table class="tbl_row multi_shop">
+      <caption class="hidden">회원 조회 리스트</caption>
+      <thead>
+        <tr>
+          <th scope="col" width="15%">상품명</th>
+          <th scope="col" width="15%">예약일자</th>
+          <th scope="col" width="15%">인원</th>
+          <th scope="col" width="8%">객실요금</th>
+          <th scope="col" width="8%">추가요금</th>
+          <th scope="col" width="8%">옵션요금</th>
+          <th scope="col" width="8%">합계</th>
+        </tr>
+        <tr>
+        <td><?=$reserveData['guestroom_name']?></td>
+        <td align="center"><?=$reserveData['guestroom_reserve_date']?><br>(<?=$get_date_str?>)</td>
+        <td align="center">성인<?=$personnel_exp['0']?>,아동<?=$personnel_exp['1']?>,유아<?=$personnel_exp['2']?>
+        </td>
+        <td align="center"><?=number_format($reserveData['guestroom_fee'])?></td>
+        <td align="center"><?=number_format($reserveData['guestroom_add_fee'])?></td>
+        <td align="center"><?=number_format($reserveData['option_fee'])?></td>
+        <td align="center"><?=number_format($reserveData['guestroom_reserve_payment_total'])?></td>
+        </tr>
+        <tr>
+        <td colspan="7">
+          선택옵션 : <br>
+          <?
+          foreach ($get_option_data as $key=>$value) {
+          ?>
+          옵션명 : <?=$value['option_name']?>
+          수량: <?=$value['option_amount']?>
+          <br>
+          <?}?>
+        </td>
+        </tr>
+      </thead>
+  </table>
+  <br>
+  <table class="tbl_row multi_shop">
+    <caption class="hidden">직접등록</caption>
+    <colgroup>
+      <col style="width:15%">
+      <col style="width:35%">
+      <col style="width:15%">
+      <col style="width:35%">
+    </colgroup>
+    <th scope="row">예약상태</th>
+    <td>
+      <select id="guestroom_reserve_status" name="guestroom_reserve_status">
+         <option <? if($reserveData['guestroom_reserve_status'] == '2'){?> selected <?}?> value="2">예약신청</option>
+         <option <? if($reserveData['guestroom_reserve_status'] == '3'){?> selected <?}?> value="3">예약완료</option>
+         <option <? if($reserveData['guestroom_reserve_status'] == '4'){?> selected <?}?> value="4">취소요청</option>
+         <option <? if($reserveData['guestroom_reserve_status'] == '5'){?> selected <?}?> value="5">취소완료</option>
+      </select>
+    </td>
+    <th scope="row">결제상태</th>
+    <td>
+      <select id="guestroom_reserve_payment_status" name="guestroom_reserve_payment_status">
+         <option <? if($reserveData['guestroom_reserve_payment_status'] == '1'){?> selected <?}?> value="1">결제대기</option>
+         <option <? if($reserveData['guestroom_reserve_payment_status'] == '2'){?> selected <?}?> value="2">결제완료</option>
+         <option <? if($reserveData['guestroom_reserve_payment_status'] == '3'){?> selected <?}?> value="3">결제취소</option>
+         <option <? if($reserveData['guestroom_reserve_payment_status'] == '4'){?> selected <?}?> value="4">환불요청</option>
+         <option <? if($reserveData['guestroom_reserve_payment_status'] == '5'){?> selected <?}?> value="5">환불완료</option>
+      </select>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">예약자</th>
+      <td>
+        <input type="text" name="guestroom_reserve_user_name" id ="guestroom_reserve_user_name" class="input" size="30" placeholder="*필수) 예약자" value="<?=$reserveData['guestroom_reserve_user_name']?>" readonly style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+      </td>
+      <th scope="row">연락처(이메일)</th>
+      <td>
+        <input type="text" name="guestroom_reserve_user_phone" id ="guestroom_reserve_user_phone"   class="input" size="11"  placeholder="*필수) 휴대폰번호"   value="<?=$reserveData['guestroom_reserve_user_phone']?>" readonly style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+        (<?=$reserveData['guestroom_reserve_user_email']?>)
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">접수일</th>
+      <td>
+      <?=$reserveData['guestroom_reception_date']?>
+      </td>
+      <th scope="row">예약일</th>
+      <td>
+      <i class="fa fa-calendar"></i>
+      <?=$reserveData['guestroom_reserve_date']?>
+      <!-- <input  class="input" size="30" type="text"  name= "guestroom_reserve_date" id= "guestroom_reserve_date"  value="<?=$startday?> - <?=$endday?>" readonly> -->
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">결제일</th>
+      <td>
+      <i class="fa fa-calendar"></i>
+
+      <input  class="input" size="20" type="text"  name= "guestroom_reserve_payment_date" id= "guestroom_reserve_payment_date"  value="<?=$reserveData['guestroom_reserve_payment_date']?>" readonly>
+      <button type="button" class="btn btn-primary btn-sm" id="guestroom_reserve_payment_date_reset_btn">초기화</button>
+      </td>
+      <th scope="row">취소일</th>
+      <td>
+      <i class="fa fa-calendar"></i>
+      <input  class="input" size="20" type="text"  name= "guestroom_cancel_date" id= "guestroom_cancel_date"  value="<?=$reserveData['guestroom_cancel_date']?>" readonly>
+      <button type="button" class="btn btn-primary btn-sm" id="guestroom_cancel_date_reset_btn">초기화</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">결제수단</th>
+      <td>
+       <?=$get_paymethod_type_str?>
+      </td>
+      <th scope="row">결제금액</th>
+      <td>
+        <input type="number" name="guestroom_reserve_payment_total" id ="guestroom_reserve_payment_total" class="input" size="30" placeholder="*필수) 숫자만 입력하세요"  value="<?=$reserveData['guestroom_reserve_payment_total']?>">
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">요청사항</th>
+      <td>
+        <input type="text" name="guestroom_reserve_user_request" id ="guestroom_reserve_user_request" class="input" size="40" value="<?=$reserveData['guestroom_reserve_user_request']?>">
+      </td>
+      <th scope="row">관리자메모</th>
+      <td>
+        <input type="text" name="guestroom_reserve_memo" id ="guestroom_reserve_memo" class="input" size="40" value="<?=$reserveData['guestroom_reserve_memo']?>">
+      </td>
+    </tr>
+  </table>
+<?    }//PC끝?>
+
+</form>
+    <!-- 수정 페이지 끝 -->
+
+    <!-- 모달 스크립트 시작 -->
+    <script>
+        ;(function($) {
+            $(function() {
+                $('.btn-success').bind('click', function(e) {
+                    console.log('click');
+                    e.preventDefault();
+                    $('#reserveModifyModal').bPopup({
+
+                    });
+                });
+            });
+        })(jQuery);
+    </script>
+    <!-- 모달 스크립트 끝 -->
+</body>
+
+</html>
