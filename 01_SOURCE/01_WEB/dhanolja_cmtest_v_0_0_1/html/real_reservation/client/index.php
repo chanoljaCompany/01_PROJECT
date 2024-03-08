@@ -109,7 +109,7 @@ if($mangement_array['semi_peak_season_whether'] == 'Y'){
               </td>
             </tr>
             <tr class="info">
-              <th hight="30" width="14.2%">일</td>
+              <th height="30" width="14.2%">일</td>
               <th width="14.2%">월</th>
               <th width="14.2%">화</th>
               <th width="14.2%">수</th>

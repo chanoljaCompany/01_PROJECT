@@ -2261,12 +2261,62 @@ body .ui-tooltip {max-width:570px; padding:10px 15px; border:1px solid #c9c9c9;}
 
 @media screen and (max-width: 480px){
 	
-/*	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
 	{
 		font-size: 20px;		
 	}
-    
-	.input_full { width: 100%;}
+
+	h2, th, td, a, input{
+		font-size: 36px !important;
+	}
+
+	font{
+		font-size: 50px !important;
+	}
+
+	#adminHeader .menu {
+		position: relative;
+		height: 50px;
+	}
+
+	#adminHeader .menu .area {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: calc(100% - 40px);
+		height: 100px;
+	}
+
+	#adminHeader .logo h1 a {
+		width: 250px;
+	}
+
+	#adminHeader .logo {
+		width: 250px;
+	}
+
+	#navigation {
+		background-color: #313842;
+		width: 250px;
+	}
+
+	#manageSideMenu .sideSmall li {
+		background-color: #313842;
+	}
+
+	#manageSideMenu .sideSmall{
+		padding: 0px;
+	}
+
+	#contentArea {
+		margin-left: 250px;
+	}
+
+	body {
+		background:none !important;
+	}
+
+	/*.input_full { width: 100%;}
 	
 	.box_title .title {
 		font-size: 30px;
@@ -2297,9 +2347,4 @@ body .ui-tooltip {max-width:570px; padding:10px 15px; border:1px solid #c9c9c9;}
 		line-height: 1;
 		letter-spacing: -1px;
 	}*/
-
-	.info th{
-		font-size:40px !important;
-	}
-
 }

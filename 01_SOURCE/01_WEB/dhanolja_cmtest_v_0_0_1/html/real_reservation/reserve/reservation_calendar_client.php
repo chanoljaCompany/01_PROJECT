@@ -135,14 +135,6 @@ var r_currency_list = new layerWindow('config@reference_currency.exe');
               <th width="14.2%">토</th>
             </tr>
 
-            <style>
-                @media screen and (max-width: 480px){
-                    .info .test{
-                        font-size:40px !important;
-                    }
-                }
-            </style>
-
             <?php
               // 5. 화면에 표시할 화면의 초기값을 1로 설정
               $day=1;
