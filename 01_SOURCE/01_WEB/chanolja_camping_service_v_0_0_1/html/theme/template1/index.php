@@ -13,12 +13,12 @@ include_once(G5_THEME_PATH.'/head.php');
   <script>
     new WOW().init();
 
-//    $(document).ready(function () {
-//         if(document.cookie.indexOf("pop_up") < 0 ) {
-//             $('.pop_up_back').css('display', 'block');
-//             $('body').css('position', 'fixed');
-//         }
-//    });
+   $(document).ready(function () {
+        if(document.cookie.indexOf("pop_up") < 0 ) {
+            $('.pop_up_back').css('display', 'block');
+            $('body').css('position', 'fixed');
+        }
+   });
   </script>
 
 <!-- 추가 css 영역-->
@@ -740,8 +740,8 @@ function touch_end(event) {
 
 <div class="pop_up_back" style="display:none;" >
     <div class="pop_up">
-        <div>
-            <image style="width:100%;" src="http://www.chanolja.co.kr/theme/template1/img/hashtag_popup.jpg" />
+        <div style="cursor:pointer;" onclick="location.href='http://chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=8'">
+            <image style="width:100%;" src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.png" />
         </div>
          <div  class="pop_up_spans">
               <div class="pop_up_btns">
@@ -778,7 +778,7 @@ function touch_end(event) {
       position: relative;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -73%);
       max-height: 500px;
       max-width: 500px;
       width: 80%;
@@ -812,8 +812,9 @@ function touch_end(event) {
   .pop_up_btns {
     display:flex;
     justify-content: space-around;
-    background:#446fe6;
+    background:#a0d25d;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
 
     @media screen and (max-width: 600px) {
@@ -828,7 +829,9 @@ function touch_end(event) {
             border-radius: 10px !important;
          }
 
-
+        .pop_up {
+            transform: translate(-50%, -55%);
+        }
     }
 
     @media screen and (max-width: 480px) {
