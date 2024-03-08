@@ -1,3 +1,4 @@
+
 <?php
 // 이 파일은 새로운 파일 생성시 반드시 포함되어야 함
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
@@ -42,7 +43,7 @@ header("Pragma: no-cache"); // HTTP/1.0
     <meta name="description" content="자동차토탈솔루션 차놀자협동조합, 렌트사관학교 설립, 차놀자, 차놀자렌트카, 차놀자렌터카, GS렌트카, 지에스렌트카,지에스렌터카, 장기렌트, 오토리스, 오토캐피탈, 세차, 자동차용품, 공업사, 차량수리, 캠핑카, 렌터카창업스쿨">
     <meta name="keywords" content="렌트카, 렌트카창업, 렌트창업, 차놀자, 캠핑카, 캠핑카렌트, 렌터카, 렌트비용, 렌트상담, 창업상담 , 천안렌트, 지에스렌트카">
 
-    <link rel="icon" href="http://gsrent.kr/theme/c_rentcar/img/main_favicon.ico" />
+    <link rel="icon" href="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/main_favicon.ico" />
 
     <!---오픈그래프-->
     <meta property="og:type" content="website">
