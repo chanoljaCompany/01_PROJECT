@@ -6,12 +6,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 ?>
 
 <!-- 회원가입약관 동의 시작 { -->
-<div class="register">
+<div class="register" style="max-width:1200px">
 
-    <form  name="fregister" id="fregister" action="<?php echo $register_action_url ?>" onsubmit="return fregister_submit(this);" method="POST" autocomplete="off">
+    <form style="margin-top:100px;" name="fregister" id="fregister" action="<?php echo $register_action_url ?>" onsubmit="return fregister_submit(this);" method="POST" autocomplete="off">
 
-    <p><i class="fa fa-check-circle" aria-hidden="true"></i> 회원가입약관 및 개인정보 수집 및 이용의 내용에 동의하셔야 회원가입 하실 수 있습니다.</p>
-    
+    <p><i class="fa fa-check-circle" aria-hidden="true"></i> 회원가입약관 및 개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.</p>
+
     <?php
     // 소셜로그인 사용시 소셜로그인 버튼
     @include_once(get_social_skin_path().'/social_register.skin.php');
@@ -26,10 +26,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     </section>
 
     <section id="fregister_private">
-        <h2>개인정보 수집 및 이용</h2>
+        <h2>개인정보처리방침안내</h2>
         <div>
             <table>
-                <caption>개인정보 수집 및 이용</caption>
+                <caption>개인정보처리방침안내</caption>
                 <thead>
                 <tr>
                     <th>목적</th>
@@ -40,7 +40,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 <tbody>
                 <tr>
                     <td>이용자 식별 및 본인여부 확인</td>
-                    <td>아이디, 이름, 비밀번호<?php echo ($config['cf_cert_use'])? ", 생년월일, 휴대폰 번호(본인인증 할 때만, 아이핀 제외), 암호화된 개인식별부호(CI)" : ""; ?></td>
+                    <td>아이디, 이름, 비밀번호</td>
                     <td>회원 탈퇴 시까지</td>
                 </tr>
                 <tr>
@@ -54,15 +54,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
         <fieldset class="fregister_agree">
             <input type="checkbox" name="agree2" value="1" id="agree21" class="selec_chk">
-            <label for="agree21"><span></span><b class="sound_only">개인정보 수집 및 이용의 내용에 동의합니다.</b></label>
+            <label for="agree21"><span></span><b class="sound_only">개인정보처리방침안내의 내용에 동의합니다.</b></label>
        </fieldset>
     </section>
-	
+
 	<div id="fregister_chkall" class="chk_all fregister_agree">
         <input type="checkbox" name="chk_all" id="chk_all" class="selec_chk">
         <label for="chk_all"><span></span>회원가입 약관에 모두 동의합니다</label>
     </div>
-	    
+
     <div class="btn_confirm">
     	<a href="<?php echo G5_URL ?>" class="btn_close">취소</a>
         <button type="submit" class="btn_submit">회원가입</button>
@@ -80,7 +80,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         }
 
         if (!f.agree2.checked) {
-            alert("개인정보 수집 및 이용의 내용에 동의하셔야 회원가입 하실 수 있습니다.");
+            alert("개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.");
             f.agree2.focus();
             return false;
         }

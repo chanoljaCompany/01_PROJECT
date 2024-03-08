@@ -6,7 +6,30 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 ?>
 
 <!-- 로그인 시작 { -->
-<div id="mb_login" class="mbskin">
+<div id="mb_login" class="mbskin"
+    style="position:absolute; top:40%; left:50%; transform: translate(-50%, -50%);"
+    >
+
+    <a href='http://rentcaragn.dothome.co.kr/branch/hansol'>
+    	<img style="position:absolute; top: -95px; right:55px;" class=“logo_i” src=http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/face/text_logo_black.png>
+    </a>
+    <style>
+        #back_btn{
+            color: #3a8afd;
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            border-radius: 40px;
+            left: -50px;
+            top: -100px;
+            line-height: 40px;
+            text-shadow: 0px 0px 7px #999;
+            padding: 20px;
+            cursor: pointer;
+        }
+    </style>
     <div class="mbskin_box">
         <h1><?php echo $g5['title'] ?></h1>
         <div class="mb_log_cate">
@@ -15,7 +38,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         </div>
         <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post">
         <input type="hidden" name="url" value="<?php echo $login_url ?>">
-        
+
         <fieldset id="login_fs">
             <legend>회원로그인</legend>
             <label for="login_id" class="sound_only">회원아이디<strong class="sound_only"> 필수</strong></label>
@@ -23,14 +46,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
             <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
             <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
             <button type="submit" class="btn_submit">로그인</button>
-            
+
             <div id="login_info">
                 <div class="login_if_auto chk_box">
                     <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">
-                    <label for="login_auto_login"><span></span> 자동로그인</label>  
+                    <label for="login_auto_login"><span></span> 자동로그인</label>
                 </div>
                 <div class="login_if_lpl">
-                    <a href="<?php echo G5_BBS_URL ?>/password_lost.php">아이디/비밀번호 찾기</a>  
+                    <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost">정보찾기</a>
                 </div>
             </div>
         </fieldset> 

@@ -27,13 +27,13 @@ if(G5_COMMUNITY_USE === false) {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="<?php echo G5_THEME_URL?>/sub/gs-company.php">
+                                        <a href="<?php echo G5_THEME_URL?>/sub/ceo_a.php">
                                             회사소개
                                         </a>
                                     </li>
                                     <li>
                                         <a href="<?php echo G5_BBS_URL?>/content.php?co_id=provision">
-                                            이용약관
+                                            이메일무단수집거부
                                         </a>
                                     </li>
                                 </ul>
@@ -57,24 +57,24 @@ if(G5_COMMUNITY_USE === false) {
                                 <div class="foo-lt">
                                     <ul>
                                         <li>
-                                            차놀자렌트카(주)&지에스렌트카(주), <br>
-											충청남도 천안시 동남구 충절로 224 1층 차놀자
+                                            <h3>(주)한솔 네트웍스</h3>
                                         </li>
                                         <li>
-                                            지에스렌트카(주) 사업자등록번호 : 312-81-36863 / 차놀자렌트카(주) 사업자등록번호 : 369-86-01538
+                                            주소 : 인천광역시 부평구 세월천로 11, 2층 사업자번호 : 102-81-45637 대표자 : 부수현 </br>
+                                            TEL : 1811-9632 FAX : 0303-3441-7205 E-mail : bsh2671@naver.com
                                         </li>
                                         <li>
-                                            Copyright © Chanolja Innovation All Rights Reserved.
+                                            Copyright © 2020 (주)한솔네트웍스 All Rights Reserved.
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="foo-rt">
                                     <ul class="phone">
                                         <li>
-                                            대표전화 041-522-7000~1
+                                            (주)한솔네트웍스 대표전화
                                         </li>
                                         <li>
-                                            월~금 09:00 - 18:00
+                                            1811-9632
                                         </li>
                                     </ul>
                                     <ul class="sns">

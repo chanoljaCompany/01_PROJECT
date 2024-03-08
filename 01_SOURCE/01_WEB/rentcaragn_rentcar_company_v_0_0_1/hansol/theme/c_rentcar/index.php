@@ -33,15 +33,12 @@ include_once(G5_THEME_PATH.'/head.php');
 
     <style>
         @media screen and (max-width: 400px) {
-            .main-slick div:nth-child(1) .bg {
+/*             .main-slick div:nth-child(1) .bg {
                 background-image: url('<?php echo G5_THEME_URL?>/img/mainbanner1_mobile.png') !important;
             }
             .main-slick div:nth-child(2) .bg {
                 background-image: url('<?php echo G5_THEME_URL?>/img/mainbanner2_mobile.png') !important;
-            }
-            .main-slick div:nth-child(3) .bg {
-                background-image: url('<?php echo G5_THEME_URL?>/img/mainbanner3_mobile.png') !important;
-            }
+            } */
         }
 
         center{
@@ -60,15 +57,11 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section main-section">
                 <div class="main-slick">
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/mainbanner1.jpeg')">							
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/mainbanner1.png')">
                         </div>
                     </div>
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/mainbanner2.jpeg')">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/mainbanner3.jpeg')">
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/mainbanner2.png')">
                         </div>
                     </div>
                 </div>
