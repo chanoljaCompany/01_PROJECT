@@ -72,9 +72,7 @@ span {
 .visual .text_box {
     width: 100%;
     position:absolute;
-    top:60%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    top:50%;
     text-align:center;
     z-index:9;
 }

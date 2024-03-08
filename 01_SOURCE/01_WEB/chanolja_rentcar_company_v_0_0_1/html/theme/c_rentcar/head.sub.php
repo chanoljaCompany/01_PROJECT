@@ -43,7 +43,7 @@ header("Pragma: no-cache"); // HTTP/1.0
     <meta name="keywords" content="렌트카, 렌트카창업, 렌트창업, 차놀자, 캠핑카, 캠핑카렌트, 렌터카, 렌트비용, 렌트상담, 창업상담 , 천안렌트, 지에스렌트카">
 
     <link rel="icon" href="http://gsrent.kr/theme/c_rentcar/img/main_favicon.ico" />
-
+    <link rel="stylesheet" href="https://kit.fontawesome.com/f1ca3de2c6.css" crossorigin="anonymous">
     <!---오픈그래프-->
     <meta property="og:type" content="website">
     <meta property="og:title" content="차놀자렌트카">
