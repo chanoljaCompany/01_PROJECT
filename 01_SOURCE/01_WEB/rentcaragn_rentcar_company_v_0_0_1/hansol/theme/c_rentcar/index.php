@@ -32,7 +32,11 @@ include_once(G5_THEME_PATH.'/head.php');
         document.addEventListener("contextmenu",function(e){"IMG"===e.target.nodeName&&e.preventDefault()},!1);/*]]>*/</script>
 
     <style>
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 480px) {
+            .main-slick .slick-current .bg {
+                transform: none;
+                transition: none;
+            }
 /*             .main-slick div:nth-child(1) .bg {
                 background-image: url('<?php echo G5_THEME_URL?>/img/mainbanner1_mobile.png') !important;
             }
@@ -337,9 +341,9 @@ include_once(G5_THEME_PATH.'/head.php');
                     </div>
 
                 </div>
-        <div class="slider" style="max-width : 100%">
+<!--        <div class="slider" style="max-width : 100%">
             <div><img src="<?php echo G5_THEME_IMG_URL ?>/mnkim/bt_banner.jpg" style="width: 100%; position: relative; left: 0px; bottom: 0px;" > </div>
-        </div>
+        </div> -->
     </div>
 
 

@@ -79,18 +79,18 @@ if(G5_COMMUNITY_USE === false) {
                                     </ul>
                                     <ul class="sns">
                                         <li>
-                                            <a href="#">
+                                            <a href="https://www.instagram.com/hansol_rent/">
                                                 <i class="xi-instagram"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="https://www.youtube.com/channel/UCBXEWxTndoNyJb1JRaAft3g">
                                                 <i class="xi-youtube-play"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i class="xi-facebook-official"></i>
+                                            <a href="https://pf.kakao.com/_ZIxcxnT">
+                                                <img style="padding-bottom: 10px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" />
                                             </a>
                                         </li>
                                     </ul>

@@ -979,7 +979,9 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 <h2 id="tit" class="mt80">대여요금</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac">유튜브 <button onclick="location.href='https://www.youtube.com/c/Hansolscamplife'"> 바로가기 </button> </br> 카카오채널 <button onclick="location.href='https://pf.kakao.com/_hYxltxj'"> 바로가기 </button> </br> 인스타그램 <button onclick="location.href='https://www.instagram.com/hansol_rent/'"> 바로가기 </button>
+    <div id="bac">유튜브 <a href="https://www.youtube.com/c/Hansolscamplife"><i class="xi-youtube-play" style="font-size:30px; color:#666;"></i></a>
+        </br> 카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a> </br>
+        인스타그램  <a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:30px; color:#666;" class="xi-instagram"></i> </a>
     </br> 연락처 1811-9632/010-5134-7200 </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </div>
     <div id="clbt"></div>
 </div>
