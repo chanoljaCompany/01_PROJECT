@@ -18,8 +18,8 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/sub.css">')
 
 
 <?php
-$g5['navTitle'] = "차놀자네트워크";
-$g5['title'] = "인천공항&김포공항";
+$g5['navTitle'] = "한솔 네트워크";
+$g5['title'] = "의전&픽업 서비스";
 ?>
 
     <script type="text/javascript">/*<![CDATA[*/
@@ -31,7 +31,7 @@ $g5['title'] = "인천공항&김포공항";
         <?php include_once(G5_THEME_PATH.'/sub/sub_visual.php');?>
         <?php  include_once(G5_THEME_PATH.'/navigation.php'); ?>
         <section class="sec sec1">
-            <h1 class="blind">인천공항&김포공항</h1>
+            <h1 class="blind">의전&픽업 서비스</h1>
             <div class="inner">
                 <div class="lf_box">
                     <img src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
@@ -39,7 +39,7 @@ $g5['title'] = "인천공항&김포공항";
                 <div class="rt_box">
                     <div class="text_box">
                         <h1 class="tit">
-                        의전&픽업
+                        인천공항·김포공항 의전,픽업 서비스
                         </h1>
                         <dl>
                             <dt>

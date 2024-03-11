@@ -945,7 +945,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                         <span>2인승 초소형전기창 트위지 3D VR</span>
                     </strong>
                     <button style="
-                        background: #54C3FD;
+                        background: #207ad1;
                         border: solid 1px #eee;
                         padding: 10px;
                         border-radius: 20px;

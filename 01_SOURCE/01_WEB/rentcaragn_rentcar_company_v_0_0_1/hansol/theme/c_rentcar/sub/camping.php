@@ -48,7 +48,7 @@ $g5['title'] = "캠핑카";
                                 </strong>
                             </dt>
                             <button style="
-                                background: #54C3FD;
+                                background: #207ad1;
                                 border: solid 1px #eee;
                                 padding: 10px;
                                 border-radius: 20px;
@@ -77,7 +77,7 @@ $g5['title'] = "캠핑카";
                                 </strong>
                             </dt>
                             <button style="
-                                background: #54C3FD;
+                                background: #207ad1;
                                 border: solid 1px #eee;
                                 padding: 10px;
                                 border-radius: 20px;
@@ -106,7 +106,7 @@ $g5['title'] = "캠핑카";
                                 </strong>
                             </dt>
                             <button style="
-                                background: #54C3FD;
+                                background: #207ad1;
                                 border: solid 1px #eee;
                                 padding: 10px;
                                 border-radius: 20px;

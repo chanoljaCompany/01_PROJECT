@@ -13,8 +13,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
 <?php
-$g5['navTitle'] = "차놀자네트워크";
-$g5['title'] = "지사&지점창업";
+$g5['navTitle'] = "한솔 네트워크";
+$g5['title'] = "지사&지점 창업";
 ?>
 
 <!DOCTYPE html>

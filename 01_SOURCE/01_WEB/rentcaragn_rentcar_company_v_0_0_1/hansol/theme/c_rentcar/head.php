@@ -86,7 +86,6 @@ include_once(G5_THEME_PATH.'/quoteContent.php');
                         <li><a href="<?php echo G5_BBS_URL ?>/login.php"><i style="color:#363636; font-size:25px;" class="fa-solid fa-user"></i></a></li>
                         <li><a href="<?php echo G5_BBS_URL ?>/register.php"><i style="color:#363636; font-size:25px;" class="fa-solid fa-user-plus"></i></a></li>
                         <?php }  ?>
-                        <li><a href="https://www.youtube.com/@TV-ph5rs"><button style="border: none; background-color: transparent;"><img src="http://gsrent.dothome.co.kr/theme/c_rentcar/img/pngegg.png" style="width: 30px;"></button></a></li>
                     </ul>
             </div>
         </div>
