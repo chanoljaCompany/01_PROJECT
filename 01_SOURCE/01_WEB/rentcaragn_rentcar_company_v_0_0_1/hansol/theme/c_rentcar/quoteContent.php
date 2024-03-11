@@ -3,7 +3,7 @@
 ">
     <div class="banner" id="scrollBanner" >
         <div class="banner-content" style="
-            border: #13568d 3px solid;
+            border: #207ad1 3px solid;
             background: #fff;
             border-radius: 20px;
         " >
@@ -12,16 +12,16 @@
             <center style="margin-top: 6px;">
                 <br>
 
-                <font style="font-size:24px; color:#13568d; font-weight: 600; margin-bottom : 5px;" >렌트카 종합 문의</font><br>
+                <font style="font-size:24px; color:#207ad1; font-weight: 600; margin-bottom : 5px;" >렌트카 종합 문의</font><br>
                 <!--<img src="<?php echo G5_THEME_IMG_URL ?>/qna.png" alt="견적문의" style="width:119px; margin-bottom:10px; justify-content: center;" class="banner-image;"> -->
             </center>
             <form name="contactform" method="post" action="<?php echo G5_THEME_URL ?>/quoteApi.php">
                 <!--<form id="contactForm" action="send_email.php" method="POST">-->
                 <div class="input-row" style="text-align: center;">
-                    <input name="first_name"  type="text" placeholder="이름" class="ipt" style="width:186px; height:32px; margin-top : 21px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
-                    <input name="email_from"  type="text" placeholder="전화번호" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
-                    <input name="telephone"  type="text" placeholder="문의내용" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
-                    <input name="comments"  type="text" placeholder="기타" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
+                    <input name="first_name"  type="text" placeholder="이름" class="ipt" style="width:186px; height:32px; margin-top : 21px; border: 1px solid #207ad1; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
+                    <input name="email_from"  type="text" placeholder="전화번호" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #207ad1; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
+                    <input name="telephone"  type="text" placeholder="문의내용" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #207ad1; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
+                    <input name="comments"  type="text" placeholder="기타" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #207ad1; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
                 </div>
                 <div class="input-row" style="margin-top: 21px;">
                     <center style="margin:0px;">

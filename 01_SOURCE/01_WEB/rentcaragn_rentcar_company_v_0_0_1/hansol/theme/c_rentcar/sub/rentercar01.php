@@ -596,7 +596,7 @@ body{
 
 /* 인사말 */
 #company {position:relative; idth:100%; max-height:740px; padding:80px 90px; background:url('/img/page/ceo_bg.jpg') no-repeat right;}
-#company .greeting h1 {font-size:35px; line-height:50px; color:#13568D; font-family: 'S-CoreDream-4Regular';}
+#company .greeting h1 {font-size:35px; line-height:50px; color:#207ad1; font-family: 'S-CoreDream-4Regular';}
 #company .greeting h2 {font-size:24px; line-height:35px; color:#000; margin:50px 0; font-weight:normal;}
 #company .greeting p {font-size:18px; line-height:32px; color:#888;}
 #company .greeting p b {color:#333;}
@@ -621,7 +621,7 @@ body{
 #about table td {text-align:left; font-size:18px; padding:10px 20px; border-bottom:1px solid #ddd; font-family: 'S-CoreDream-3Light';}
 #about ul.drv {width:100%; display:flex; flex-wrap:wrap;}
 #about ul.drv li {width:330px; margin:10px; border:1px solid #e7e7e7; text-align:center; padding:30px 0; font-size:18px; color:#555;}
-#about ul.drv li h4 {font-size:20px; color:#13568D; margin-bottom:10px;}
+#about ul.drv li h4 {font-size:20px; color:#207ad1; margin-bottom:10px;}
 #about ul.drv li span {font-size:16px;}
 
 /* 연혁 */
@@ -629,17 +629,17 @@ body{
 
 /* 오시는길 */
 #mapArea {width:900px; float:left;}
-#mapInfo {width:480px; float:left; margin-left:20px; min-height:500px; border-top:2px solid #13568D; border-bottom:2px solid #13568D; box-sizing:border-box; padding:50px 30px 10px;}
-#mapInfo h2 {font-size:24px; color:#13568D;}
+#mapInfo {width:480px; float:left; margin-left:20px; min-height:500px; border-top:2px solid #207ad1; border-bottom:2px solid #207ad1; box-sizing:border-box; padding:50px 30px 10px;}
+#mapInfo h2 {font-size:24px; color:#207ad1;}
 #mapInfo p {margin-top:28px; color:#888; font-size:18px; line-height:30px;}
 #mapInfo p b {color:#000;}
-#mapInfo a {border:1px solid #13568D; color:#13568D; font-weight:bold; width:100%; padding:10px; font-size:18px; margin-top:30px; display:inline-block; text-align:center;transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; -o-transition:all 0.3s;}
-#mapInfo a:hover {background:#13568D; color:#fff;}
+#mapInfo a {border:1px solid #207ad1; color:#207ad1; font-weight:bold; width:100%; padding:10px; font-size:18px; margin-top:30px; display:inline-block; text-align:center;transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; -o-transition:all 0.3s;}
+#mapInfo a:hover {background:#207ad1; color:#fff;}
 
 /* 개설절차 */
 #step .gs_eu {width:100%; max-height:400px; padding:20px; display:flex; justify-content:flex-end; background:url('/img/page/step_bg.jpg') #bfced1 left center no-repeat;}
 #step .gs_eu .txt_box {width:720px; padding:55px 70px; background:rgba(255,255,255,0.6);}
-#step .gs_eu .txt_box h3 {font-size:30px; color:#13568D; margin-bottom:40px;}
+#step .gs_eu .txt_box h3 {font-size:30px; color:#207ad1; margin-bottom:40px;}
 #step .gs_eu .txt_box ul li {font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';}
 #step .gs_eu .txt_box ul li img {margin-right:15px;}
 #step h2.step_title {font-size:30px; margin:80px 0 50px; text-align:center;}
@@ -662,9 +662,9 @@ body{
 #pro {width:80%; border-top:1px solid #ddd; padding:30px 0;margin : 0 auto;}
 #pro:last-child {border-bottom:1px solid #ddd;}
 .bdb1 {border-bottom:1px solid #ddd;}
-#pro #num {width:100px;float:left;font-size:30px;line-height:35px;color:#13568D; font-weight:bold; text-align:center;}
+#pro #num {width:100px;float:left;font-size:30px;line-height:35px;color:#207ad1; font-weight:bold; text-align:center;}
 #pro #bac {width:90%;float:right;font-size:20px;line-height:35px;color:#888; word-break:keep-all;}
-#pro #bac b {color:#13568D;}
+#pro #bac b {color:#207ad1;}
 #pro #clbt {clear:both;}
 #pro #center {margin-top:30px;width:100%;text-align:center;}
 #pro #rental03 {width:900px; margin:30px auto 0;}
@@ -688,8 +688,8 @@ body{
 #pro #again03 span {color:#0eb0c2; font-size:24px;}
 
 #pro #van01 {width:1020px; margin:30px auto 0;}
-#pro #van01 div { border:2px solid #13568D; border-radius:20px; padding:30px 0; box-sizing:border-box; width:320px; min-height:300px; text-align:center; float:left; margin:0 10px; font-size:18px; line-height:35px; color:#888;}
-#pro #van01 div:last-child {margin-right:none; color:#fff; background:#13568D;}
+#pro #van01 div { border:2px solid #207ad1; border-radius:20px; padding:30px 0; box-sizing:border-box; width:320px; min-height:300px; text-align:center; float:left; margin:0 10px; font-size:18px; line-height:35px; color:#888;}
+#pro #van01 div:last-child {margin-right:none; color:#fff; background:#207ad1;}
 #pro #van01 div:last-child h2 {color:#fff;}
 #pro #van01 div h2 {color:#222; font-size:24px; margin-bottom:20px;}
 
@@ -703,11 +703,11 @@ body{
 
 #srTab {width:100%; }
 #srTab li {width:50%;float:left;text-align:center;border:1px solid #ddd; line-height:50px; font-size:18px;margin-bottom:50px; color:#222;transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; -o-transition:all 0.3s;}
-#srTab .on {background:#13568D !important; color:#fff !important;}
+#srTab .on {background:#207ad1 !important; color:#fff !important;}
 #srTab li:hover {background:#f5f5f5; color:#222;}
 
 #pro #sr01 {width:1230px; margin:30px auto 0;}
-#pro #sr01 div { border:2px solid #13568D; border-radius:20px; padding:30px 20px; box-sizing:border-box; width:390px; min-height:390px; float:left; margin:10px; font-size:18px; line-height:35px; color:#888;}
+#pro #sr01 div { border:2px solid #207ad1; border-radius:20px; padding:30px 20px; box-sizing:border-box; width:390px; min-height:390px; float:left; margin:10px; font-size:18px; line-height:35px; color:#888;}
 #pro #sr01 div h2 {text-align:center; color:#222; font-size:24px; margin-bottom:20px;}
 #pro #sr01 div h2 img {margin-bottom:30px; opacity:0.4;}
 
@@ -752,7 +752,7 @@ body{
 #pro #lr01 tbody td:first-child {background:#f3fbfc; color:#111;}
 
 #pro #lr02 {width:1360px; margin:30px auto 0; display:flex; flex-wrap:wrap; justify-content:center;}
-#pro #lr02 div { border:2px solid #13568D; border-radius:20px; padding:30px 20px; box-sizing:border-box; width:320px; float:left; margin:10px; font-size:18px; text-align:center; word-break:keep-all; line-height:30px; color:#888;}
+#pro #lr02 div { border:2px solid #207ad1; border-radius:20px; padding:30px 20px; box-sizing:border-box; width:320px; float:left; margin:10px; font-size:18px; text-align:center; word-break:keep-all; line-height:30px; color:#888;}
 #pro #lr02 div h2 {color:#222; font-size:24px; margin-bottom:20px;}
 #pro #lr02 div h2 img {margin-bottom:30px; opacity:0.4;}
 

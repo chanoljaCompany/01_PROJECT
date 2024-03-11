@@ -113,7 +113,7 @@ span {
 #company .sec01 article {width:1800px;margin:0 auto;padding:100px 0 0 0;}
 #company .sec01 .wrap {}
 #company .sec01 .txt_box {text-align:center;}
-#company .sec01 .txt_box p {font-size:14px;color:#13568D;font-weight:400;}
+#company .sec01 .txt_box p {font-size:14px;color:#207ad1;font-weight:400;}
 #company .sec01 .txt_box h2 {padding-top:10px;font-size:32px;}
 #company .sec01 .txt_box h2 .mo_br {display:block;}
 #company .sec01 .txt_box strong {padding:20px 0 50px 0;display:block;font-size:14px;color:#6f6f6f;font-weight:400;}
@@ -126,7 +126,7 @@ span {
 #company .sec02 {}
 #company .sec02 .wrap {padding:100px 0 350px 0;width:1200px;margin:0 auto;}
 #company .sec02 .wrap .txt_box {text-align:center;}
-#company .sec02 .wrap .txt_box p {font-size:14px;color:#13568D;font-weight:400;}
+#company .sec02 .wrap .txt_box p {font-size:14px;color:#207ad1;font-weight:400;}
 #company .sec02 .wrap .txt_box h2 {padding-top:10px;font-size:32px;}
 #company .sec02 .wrap .icon_box {padding-top:77px;}
 #company .sec02 .wrap .icon_box ul {}
@@ -220,7 +220,7 @@ span {
   text-align: left;
 }
 #company .question:hover {
-  color: #13568D;
+  color: #207ad1;
 }
 [id$="-toggle"] {
   margin-right: 15px;
@@ -504,7 +504,7 @@ span {
 }
 
 .history_wrap .historyBox .history_right .history_00.on .year:after {
-    background-color:#13568D;
+    background-color:#207ad1;
 }
 
 .history_wrap .historyBox .history_right .history_00 .year>span {
@@ -545,7 +545,7 @@ span {
     display: block;
     width: 2px;
     height: 0;
-    background-color:#13568D;
+    background-color:#207ad1;
     -webkit-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
@@ -581,7 +581,7 @@ span {
     width:270px;
     height:270px;
     border-radius:50%;
-    background-color:#13568D;
+    background-color:#207ad1;
     position:absolute;
     top:50%;
     left:50%;
@@ -624,7 +624,7 @@ span {
     width:240px;
     height:240px;
     border-radius:50%;
-    background-color:#13568D;
+    background-color:#207ad1;
     position:absolute;
     top:50%;
     left:50%;
@@ -690,7 +690,7 @@ span {
     text-align:center;
 }
 #vision .sec1 .titBox div {
-    border:2px solid #13568D;
+    border:2px solid #207ad1;
     box-sizing:border-box;
     width:130px;
     height:130px;
@@ -710,7 +710,7 @@ span {
     display:block;
     font-size:18px;
     font-weight:bold;
-    color:#13568D;
+    color:#207ad1;
 }
 #vision .sec1 .titBox span {
     display:block;
@@ -846,7 +846,7 @@ span {
     padding-left:10px;
 }
 #map .timapBox {
-    border:1px solid #13568D;
+    border:1px solid #207ad1;
     position:absolute;
     top:-10%;
     right:10%;
@@ -995,7 +995,7 @@ span {
     bottom:5px;
     width:150px;
     height:2px;
-    background-color:#13568D;
+    background-color:#207ad1;
     z-index:1;
     opacity:0;
 }
@@ -1098,7 +1098,7 @@ span {
     bottom:5px;
     width:150px;
     height:10px;
-    background-color:#13568D;
+    background-color:#207ad1;
     z-index:-1;
 }
 #business01 .sec3 .text_box p {
@@ -1159,7 +1159,7 @@ span {
 }
 #business01 .sec4 .inner a:hover {
     border:none;
-    background-color:#13568D
+    background-color:#207ad1
 }
 #business01 .sec4 .inner a:hover span {
     font-weight:bold;
@@ -1201,7 +1201,7 @@ span {
     bottom:5px;
     width:150px;
     height:10px;
-    background-color:#13568D;
+    background-color:#207ad1;
     z-index:-1;
 }
 #business01 .sec5 .text_box p {
@@ -1329,7 +1329,7 @@ span {
 }
 #business02 .sec2 .icon_box .tit strong {
     display:inline-block;
-    color:#13568D;
+    color:#207ad1;
 }
 #business02 .sec2 .icon_box ul {
     overflow: hidden;
@@ -1486,7 +1486,7 @@ span {
     bottom:10px;
     width:55%;
     height:2px;
-    background-color:#13568D;
+    background-color:#207ad1;
     z-index:1;
 }
 #business02 .sec4 dl dd {
@@ -1623,7 +1623,7 @@ span {
     width:200px;
     height:200px;
     border-radius:50%;
-    background: linear-gradient(to right bottom, #13568D, #13568D 40%, #13568D);
+    background: linear-gradient(to right bottom, #207ad1, #207ad1 40%, #207ad1);
     box-sizing:border-box;
     margin:0 auto;
 }
@@ -1651,7 +1651,7 @@ span {
     margin-right:0;
 }
 #organizations .sec1 .org_list li .tit {
-    background-color:#13568D;
+    background-color:#207ad1;
     color:#fff;
 }
 #organizations .sec1 .org_list li p {
@@ -2110,7 +2110,7 @@ span {
         right: 0;
         width:70px;
         height:10px;
-        background-color: #13568D;
+        background-color: #207ad1;
         left: 50%;
         transform: translateX(-50%);
         z-index:1;
@@ -2438,7 +2438,7 @@ span {
         bottom:20px;
         width:35px;
         height:2px;
-        background-color:#13568D;
+        background-color:#207ad1;
         opacity:0.5;
     }
     .mo_visionBox .infoBox p {
