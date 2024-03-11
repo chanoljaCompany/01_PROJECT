@@ -120,9 +120,14 @@ $g5['title'] = "캠핑카";
                 </div>
             </div>
 
-            <div id="bac">유튜브 <button onclick="location.href='https://www.youtube.com/c/Hansolscamplife'"> 바로가기 </button> </br> 카카오채널 <button onclick="location.href='https://pf.kakao.com/_hYxltxj'"> 바로가기 </button> </br> 인스타그램 <button onclick="location.href='https://www.instagram.com/hansol_rent/'"> 바로가기 </button>
-                </br> 연락처 1811-9632/010-5134-7200 </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </div>
-            <button onclick="location.href='https://pf.kakao.com/_ZIxcxnT/chat'">대여 실시간 문의</button>
+            <div style="margin:0 auto; max-width:1200px; font-size:20px;">유튜브 <a href="https://www.youtube.com/c/Hansolscamplife"><i class="xi-youtube-play" style="font-size:30px; color:#666;"></i></a>
+                </br> 카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a> </br>
+                인스타그램  <a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:30px; color:#666;" class="xi-instagram"></i> </a>
+                </br> 연락처 1811-9632/010-5134-7200 </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </br>
+                <button style="width:250px; height:40px; margin-top:20px; margin-bottom:50px; background-color: #207ad1; color:#fff; border: none; border-radius:20px;"
+                    onclick="location.href='https://pf.kakao.com/_ZIxcxnT/chat'">대여 실시간 문의</button>
+            </div>
+
         </section>
 
     </div>
