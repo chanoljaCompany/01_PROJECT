@@ -14,8 +14,8 @@ $board['bo_gallery_height']= 300;
 ?>
 
 <?php
-$g5['navTitle'] = "board";
-$g5['title'] = "리스트02";
+$g5['navTitle'] = "한솔 네트워크";
+$g5['title'] = "지점현황";
 ?>
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>

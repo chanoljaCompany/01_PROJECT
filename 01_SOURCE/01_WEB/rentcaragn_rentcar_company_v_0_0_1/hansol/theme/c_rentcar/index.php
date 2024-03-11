@@ -76,10 +76,6 @@ include_once(G5_THEME_PATH.'/head.php');
                                 <h3>02</h3>
                                 <span data-slick-index="1" class="progressBar"></span>
                             </div>
-                            <div class="item">
-                                <h3>03</h3>
-                                <span data-slick-index="2" class="progressBar"></span>
-                            </div>
                     </div>
                     <div class="slick-btn">
                         <div class="pause-btn">
