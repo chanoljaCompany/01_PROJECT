@@ -186,11 +186,11 @@
 }
 
 #board_cate ul li a:hover{
-    border:2px solid #52C3F1;
+    border:2px solid #207ad1;
 }
 
 #bo_cate_on {
-    background-color:#52C3F1;
+    background-color:#207ad1;
     color:#fff;
     font-weight:bold;
     border-radius: 5px;
