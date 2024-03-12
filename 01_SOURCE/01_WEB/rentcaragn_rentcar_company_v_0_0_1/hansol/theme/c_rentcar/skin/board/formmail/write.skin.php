@@ -91,15 +91,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <label for="wr_subject" class="sound_only">제목<strong>필수</strong></label>
         
         <div id="autosave_wrapper" class="write_div">
-            <select id="wr_subject" style="width:100%; height:40px; margin-bottom:20px; margin-top:20px;">
+            <select name="ca_name" id="ca_name" style="width:100%; height:40px; margin-bottom:20px; margin-top:20px;">
                     <option value="사고대차">사고대차</option>
                     <option value="단기렌트">단기렌트</option>
                     <option value="장기렌트">장기렌트</option>
                     <option value="신차렌트">신차렌트</option>
                 </select>
-            <input style="margin-bottom:10px;" type="text" name="wr_subject" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="예약날짜">
-            <input style="margin-bottom:10px;" type="text" name="wr_subject" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="장소">
-            <input style="margin-bottom:50px;" type="text" name="wr_subject" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="연락처">
+            <input style="margin-bottom:10px;" type="text" name="wr_name" id="wr_name" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="예약날짜">
+            <input style="margin-bottom:10px;" type="text" name="wr_password" id="wr_wassword" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="장소">
+            <input style="margin-bottom:50px;" type="text" name="wr_email" id="wr_email" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="연락처">
         </div>
         
     </div>
