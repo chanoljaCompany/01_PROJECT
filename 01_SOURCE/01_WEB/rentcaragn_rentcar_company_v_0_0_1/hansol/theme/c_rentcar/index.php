@@ -37,12 +37,12 @@ include_once(G5_THEME_PATH.'/head.php');
                 transform: none;
                 transition: none;
             }
-/*             .main-slick div:nth-child(1) .bg {
+             .main-slick div:nth-child(1) .bg {
                 background-image: url('<?php echo G5_THEME_URL?>/img/mainbanner1_mobile.png') !important;
             }
             .main-slick div:nth-child(2) .bg {
                 background-image: url('<?php echo G5_THEME_URL?>/img/mainbanner2_mobile.png') !important;
-            } */
+            }
         }
 
         center{

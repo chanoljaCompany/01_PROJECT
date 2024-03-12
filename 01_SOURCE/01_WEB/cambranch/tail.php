@@ -27,13 +27,13 @@ if(G5_COMMUNITY_USE === false) {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="<?php echo G5_THEME_URL?>/sub/ceo_a.php">
+                                        <a href="<?php echo G5_THEME_URL?>/theme/basichome/sub/ch-company.php">
                                             회사소개
                                         </a>
                                     </li>
                                     <li>
                                         <a href="<?php echo G5_BBS_URL?>/content.php?co_id=provision">
-                                            이메일무단수집거부
+                                            이용약관
                                         </a>
                                     </li>
                                 </ul>
@@ -42,13 +42,13 @@ if(G5_COMMUNITY_USE === false) {
                                     <i class="xi-angle-right"></i>
                                     <ul class="f-tab">
                                         <li>
-                                            <a style="display:block" href="http://www.chanolja-union.kr/">차놀자협동조합</a>
+                                            <a href="http://www.chanolja-union.kr/">차놀자협동조합</a>
                                         </li>
                                         <li>
-                                            <a style="display:block" href="http://chanolja.co.kr/">차놀자캠핑</a>
+                                            <a href="http://www.gsrent.kr/">차놀자렌트카</a>
                                         </li>
                                         <li>
-                                            <a style="display:block" href="https://www.youtube.com/channel/UCjBtbct7aCsJ4fo0S4g5bRQ/">차놀자TV</a>
+                                            <a href="https://smartstore.naver.com/chanolja">차놀자캠핑스마트스토어</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -57,87 +57,49 @@ if(G5_COMMUNITY_USE === false) {
                                 <div class="foo-lt">
                                     <ul>
                                         <li>
-                                            <h3>(주)한솔 네트웍스</h3>
+                                            인천 중구 운남동 476-21
                                         </li>
                                         <li>
-                                            주소 : 인천광역시 부평구 세월천로 11, 2층 사업자번호 : 102-81-45637 대표자 : 부수현 </br>
-                                            TEL : 1811-9632 FAX : 0303-3441-7205 E-mail : bsh2671@naver.com
+                                            사업자등록번호 : 538-85-02228
                                         </li>
                                         <li>
-                                            Copyright © 2020 (주)한솔네트웍스 All Rights Reserved.
+                                            Copyright © Chanolja All Rights Reserved.
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="foo-rt">
                                     <ul class="phone">
                                         <li>
-                                            (주)한솔네트웍스 대표전화
+                                            대표전화 02-6442-7873
                                         </li>
                                         <li>
-                                            1811-9632
+                                            월~금 09:00 - 18:00
                                         </li>
                                     </ul>
+                                    <!--
                                     <ul class="sns">
                                         <li>
-                                            <a href="https://pf.kakao.com/_ZIxcxnT">
-                                                <img style="padding-bottom: 10px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" />
-                                            </a>
+                                            <a href="#">
+                                                <i class="xi-instagram"></i>
+                                            </a>         
                                         </li>
                                         <li>
-                                            <a href="https://www.youtube.com/channel/UCBXEWxTndoNyJb1JRaAft3g">
+                                            <a href="#">
                                                 <i class="xi-youtube-play"></i>
                                             </a>
                                         </li>
                                         <li>
-
-                                            <a href="https://www.instagram.com/hansol_rent/">
-                                                <i class="xi-instagram"></i>
+                                            <a href="#">
+                                                <i class="xi-facebook-official"></i>
                                             </a>
                                         </li>
                                     </ul>
+-->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </footer>
-                <div id="qna_btn" style="display:none;">
-                    <a href="/bbs/write.php?bo_table=qanda"><i class="fa fa-commenting-o" aria-hidden="true"></i> 문의하기</a>
-                </div>
-                <style>
-                    #qna_btn {
-                        position: fixed;
-                        right: 50%;
-                        margin-right: -140px;
-                        bottom: 30px;
-                        z-index: 99999;
-                    }
-                    #qna_btn a {
-                        transition: all 0.5s;
-                        display: block;
-                        width: 280px;
-                        font-size: 22px;
-                        padding: 10px 0;
-                        text-align: center;
-                        line-height: 50px;
-                        border-radius: 5px;
-                        color: #fff;
-                        background: #15668E;
-                        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-                        animation-name: topmove;
-                        animation-duration: 0.8s;
-                        animation-timing-function: linear;
-                        animation-iteration-count: infinite;
-                        animation-direction: alternate;
-                        position: relative;
-                    }
-
-                    #qna_btn a:hover{
-                        background-color: #ffffff;
-                        color: #15668E;
-                        border: 3px solid #15668E;
-                    }
-
-                </style>
 
 <?php
 if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>
@@ -157,8 +119,6 @@ if ($config['cf_analytics']) {
 
     $('.family-tab').click(function(){
         $('.f-tab').stop().slideUp();
-
-        $('.f-tab').css("display", "block"); // 슬라이드 보이게 수정
     });
 
 
