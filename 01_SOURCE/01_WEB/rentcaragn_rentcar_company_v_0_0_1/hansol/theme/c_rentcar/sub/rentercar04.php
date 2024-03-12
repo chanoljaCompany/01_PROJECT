@@ -1210,7 +1210,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                         </div>
 
                         <div class="cont_txt_box cont_txt_bot_right">
-                            <h2><img src="/img/page/sharingCon03.png"><br>사회적 기여</h2>
+                            <h2><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/sharingCon03.png"><br>사회적 기여</h2>
                             <div class="cont_txt_bot_left_list">
                                 <div class="cont_txt_bot_left_list_row">
                                     - 커뮤니티 내 유휴 차량 공유
@@ -1283,21 +1283,21 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 
                     <div class="cont_txt_bot">
                         <div class="s3_cont_txt_box cont_txt_bot_left">
-                            <h2><img src="/img/page/delcarCase01.png"><br>수도권</h2>
+                            <h2><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/delcarCase01.png"><br>수도권</h2>
                             <div class="s3_cont_txt">
                             원하는 곳으로<br>
                             배달받고 바로 출발!<br>
                             반납도 자유롭게!</div>
                         </div>
                         <div class="s3_cont_txt_box cont_txt_bot_middle">
-                        <h2><img src="/img/page/delcarCase02.png"><br>KTX 픽업존</h2>
+                        <h2><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/delcarCase02.png"><br>KTX 픽업존</h2>
                         <div class="s3_cont_txt">
                             전국 19개 KTX<br>
                             픽업존에서 찾고<br>
                             내 차처럼 편하게 여행!</div>
                         </div>
                         <div class="s3_cont_txt_box cont_txt_bot_right">
-                            <h2><img src="/img/page/delcarCase03.png"><br>제주도</h2>
+                            <h2><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/delcarCase03.png"><br>제주도</h2>
                             <div class="s3_cont_txt">
                             비행기 탈 때 예약!<br>
                             서류 작성없이<br>

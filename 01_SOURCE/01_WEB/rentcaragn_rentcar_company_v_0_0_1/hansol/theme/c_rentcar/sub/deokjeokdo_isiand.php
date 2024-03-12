@@ -932,7 +932,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 
 <div style="margin: 0 auto; width:1200px; margin-top:50px;">
     <div class="lf_box">
-        <img style="width:300px;" src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
+        <img style="width:300px;" src="<?php echo G5_THEME_URL?>/img/sub/deokjeokdo_img.jpeg">
     </div>
     <div class="rt_box" style="font-size:26px;">
         <div class="text_box">

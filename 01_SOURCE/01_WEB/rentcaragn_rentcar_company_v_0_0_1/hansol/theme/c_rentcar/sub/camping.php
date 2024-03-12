@@ -34,13 +34,10 @@ $g5['title'] = "캠핑카";
             <h1 class="blind">캠핑카</h1>
             <div class="inner">
                 <div class="lf_box">
-                    <img src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
+                    <img src="<?php echo G5_THEME_URL?>/img/sub/camper_page_img01.jpeg">
                 </div>
                 <div class="rt_box">
                     <div class="text_box">
-                        <h1 class="tit">
-                        캠핑카
-                        </h1>
                         <dl>
                             <dt>
                                 <strong>
@@ -63,13 +60,10 @@ $g5['title'] = "캠핑카";
 
             <div class="inner">
                 <div class="lf_box">
-                    <img src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
+                    <img src="<?php echo G5_THEME_URL?>/img/sub/camper_page_img02.jpeg">
                 </div>
                 <div class="rt_box">
                     <div class="text_box">
-                        <h1 class="tit">
-                        캠핑카
-                        </h1>
                         <dl>
                             <dt>
                                 <strong>
@@ -92,13 +86,10 @@ $g5['title'] = "캠핑카";
 
             <div class="inner">
                 <div class="lf_box">
-                    <img src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
+                    <img src="<?php echo G5_THEME_URL?>/img/sub/camper_page_img03.jpeg">
                 </div>
                 <div class="rt_box">
                     <div class="text_box">
-                        <h1 class="tit">
-                        캠핑카
-                        </h1>
                         <dl>
                             <dt>
                                 <strong>
@@ -123,7 +114,7 @@ $g5['title'] = "캠핑카";
             <div style="margin:0 auto; max-width:1200px; font-size:20px;">유튜브 <a href="https://www.youtube.com/c/Hansolscamplife"><i class="xi-youtube-play" style="font-size:30px; color:#666;"></i></a>
                 </br> 카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a> </br>
                 인스타그램  <a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:30px; color:#666;" class="xi-instagram"></i> </a>
-                </br> 연락처 1811-9632/010-5134-7200 </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </br>
+                </br> 연락처 <span style="font-weight:bold"> 1811-9632 </span> </br> <span style="padding-left:60px; font-weight:bold"> 010-5134-7200 </span> </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </br>
                 <button style="width:250px; height:40px; margin-top:20px; margin-bottom:50px; background-color: #207ad1; color:#fff; border: none; border-radius:20px;"
                     onclick="location.href='https://pf.kakao.com/_ZIxcxnT/chat'">대여 실시간 문의</button>
             </div>

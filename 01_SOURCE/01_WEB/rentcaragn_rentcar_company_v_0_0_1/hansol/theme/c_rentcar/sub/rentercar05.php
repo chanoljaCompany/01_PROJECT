@@ -993,7 +993,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
     <div id="bac">차량의 종류와 컨디션, 여러가지 조건에 따라 가격이 달라집니다. </br> 구체적인 부분은 한솔렌트카 고객센터로 전화주셔서 상담 받아보세요!</br>한솔렌트카 고객센터 1811-9632 | 09:00 ~ 18:00 | 연중무휴</div>
     <div id="clbt"></div>
 
-    <div id="num">01</div>
+    <div id="num">02</div>
     <div id="bac">카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a>
     </br> 연락처 <span style="font-weight:bold"> 1811-9632 </span> </br> <span style="padding-left:60px; font-weight:bold;"> 010-5134-7200 </span> </div>
     <div id="clbt"></div>
