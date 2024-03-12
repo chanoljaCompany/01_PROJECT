@@ -10,6 +10,8 @@ include_once(G5_LIB_PATH.'/poll.lib.php');
 include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
+
+add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/sub.css">')
 ?>
 
 <?php
@@ -648,7 +650,7 @@ body{
 }
 #step .gs_eu .txt_box {width:100%; padding:30px 31px; background:rgba(255,255,255,0.6);}
 #step .gs_eu .txt_box h3 {font-size:40px; color:#007cff; margin-bottom:40px; text-align: center;}
-#step .gs_eu .txt_box ul li {font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';}
+#step .gs_eu .txt_box ul li {font-size:20px; font-family: 'S-CoreDream-3Light';}
 #step .gs_eu .txt_box ul li img {margin-right:15px;}
 #step h2.step_title {font-size:30px; margin:80px 0 50px; text-align:center;}
 #step ul.step_box {display:flex; justify-content:center; flex-wrap:wrap; max-width:1200px; margin:0 auto;}
@@ -948,50 +950,49 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
  <br>
  <br>
    <div id="step">
+   <div class="inner" style="width:1240px; margin:0 auto;">
+       <div class="lf_box" style="width:50%; float:left;">
+           <img style="width:100%" src="<?php echo G5_THEME_URL?>/img/sub/step_img.jpg">
+       </div>
+       <div class="rt_box" style="padding-left: 2%; width: 48%; float: right;">
+           <div class="text_box">
+               <dl>
+                   <dt style="margin-bottom:20px;">
+                       <strong>
+                           <span style="color:#007cff; font-size:5.5em; margin-bottom:20px;">지사&영업소 입점안내</span>
+                       </strong>
+                   </dt>
+                   <p style="font-size:20px;">
+                    한솔네트웍스에서 지사&영업소 사업주를 모집합니다. </br> 한솔네트웍스 렌트카 사업부 | 010-5134-7200
+                   </p>
+               </dl>
+           </div>
+       </div>
+   </div>
     <div class="gs_eu">
     	<div class="txt_box">
-        	<h3>지사&영업소 입점안내</h3> <h4>한솔네트웍스에서 지사&영업소 사업주를 모집합니다.</h4>
-        	</br> <h4>한솔네트웍스 렌트카 사업부 | 010-5134-7200</h4>
-        	</br> <h3>개점절차</h3>
-        	</br> <h3>영업소 입점 절차</h3>
-        	</br> <h4>영업소 설립시</h4>
-        	</br> <h4>사무실 집기/차고지 준비 -> 필수 차량 차종 선택 -> 설립 및 임대차 통장 발급</h4>
-        	</br> <h4>-> 차량 인도금 납부 후 차량 등록 및 탁송 -> 영업개시</h4>
-            <table style="    display: flex;
-    justify-content: center;">
-            	<tr style="font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';">
-                    <td><img src="/img/page/check.png" style="margin-right: 15px; width: 30px;"></td>
-                    <td style="font-size: 25px;">시장이 확대되고 있습니다.</td>
-                </tr>
-                <tr style="font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';">
-                    <td><img src="/img/page/check.png" style="margin-right: 15px; width: 30px;"></td>
-                    <td style="font-size: 25px;">자동차라는 한가지 아이템입니다.</td>
-                </tr>
-                <tr style="font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';">
-                    <td><img src="/img/page/check.png" style="margin-right: 15px; width: 30px;"></td>
-                    <td style="font-size: 25px;">유행에 민감하지 않아 사업의 기복이 없습니다.</td>
-                </tr>
-                <tr style="font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';">
-                    <td><img src="/img/page/check.png" style="margin-right: 15px; width: 30px;"></td>
-                    <td style="font-size: 25px;">소자본으로 시작 할 수 있습니다.</td>
-                </tr>
-                <tr style="font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';">
-                    <td><img src="/img/page/check.png" style="margin-right: 15px; width: 30px;"></td>
-                    <td style="font-size: 25px;">전국 최다 지점보유(메이저사 제외) 이유가 있습니다.</td>
-                </tr>
-            </table>
+        	</br> <h3 style="margin-top:50px;">개점절차</h3>
+        	<ul class="step_box">
+                <li><h4>STEP 01</h4><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/step_icon01.png"><p>문의</p></li>
+                <li><h4>STEP 02</h4><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/step_icon02.png"><p>상담</p></li>
+                <li><h4>STEP 03</h4><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/step_icon03.png"><p>계약</p></li>
+                <li><h4>STEP 04</h4><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/step_icon04.png"><p>지점설치</p></li>
+                <li><h4>STEP 05</h4><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/step_icon05.png"><p>지점등기</p></li>
+                <li><h4>STEP 06</h4><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/step_icon06.png"><p>차량구매</p></li>
+                <li><h4>STEP 07</h4><img src="http://rentcaragn.dothome.co.kr/branch/hansol/img/page/step_icon07.png"><p>출고&amp;영업</p></li>
+            </ul>
+
+            <h3 style="margin-top:70px;">영업소 입점 절차</h3>
+            <ul class="step_box">
+                <li><h4>STEP 01</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">사무실 집기/차고지 준비</p></li>
+                <li><h4>STEP 02</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">필수 차량 차종 선택</p></li>
+                <li><h4>STEP 03</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">설립 및 임대차 통장 발급</p></li>
+                <li><h4>STEP 04</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">차량 인도금 납부 후 차량 등록 및 탁송</p></li>
+                <li><h4>STEP 05</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">영업 개시</p></li>
+            </ul>
         </div>
     </div>
-    <h2 class="step_title">지점 개설절차</h2>
-    <ul class="step_box">
-    	<li><h4>STEP 01</h4><img src="/img/page/step_icon01.png"><p>문의</p></li>
-    	<li><h4>STEP 02</h4><img src="/img/page/step_icon02.png"><p>상담</p></li>
-    	<li><h4>STEP 03</h4><img src="/img/page/step_icon03.png"><p>계약</p></li>
-    	<li><h4>STEP 04</h4><img src="/img/page/step_icon04.png"><p>지점설치</p></li>
-    	<li><h4>STEP 05</h4><img src="/img/page/step_icon05.png"><p>지점등기</p></li>
-    	<li><h4>STEP 06</h4><img src="/img/page/step_icon06.png"><p>차량구매</p></li>
-    	<li><h4>STEP 07</h4><img src="/img/page/step_icon07.png"><p>출고&amp;영업</p></li>
-    </ul>
+
   </div>
 
     </div>
