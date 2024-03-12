@@ -25,6 +25,11 @@ $g5['title'] = "캠핑카";
     <script type="text/javascript">/*<![CDATA[*/
         document.addEventListener("contextmenu",function(e){"IMG"===e.target.nodeName&&e.preventDefault()},!1);/*]]>*/</script>
 
+    <style>
+        #ceo .sec1 .inner{
+            padding: 50px  30px !important;
+        }
+    </style>
 
     <div class="sub sub01" id="ceo">
         <?php include_once(G5_THEME_PATH.'/head.php'); ?>
@@ -49,7 +54,8 @@ $g5['title'] = "캠핑카";
                                 border: solid 1px #eee;
                                 padding: 10px;
                                 border-radius: 20px;
-                                height: 50px;
+                                height: 60px;
+                                width:200px;
                                 font-size: 20px;
                                 color: #fff;
                             " onclick="location.href='https://my.matterport.com/show/?m=z59P7VWF3mV'">3D View</button>
@@ -75,7 +81,8 @@ $g5['title'] = "캠핑카";
                                 border: solid 1px #eee;
                                 padding: 10px;
                                 border-radius: 20px;
-                                height: 50px;
+                                height: 60px;
+                                width: 200px;
                                 font-size: 20px;
                                 color: #fff;
                             " onclick="location.href='https://my.matterport.com/show/?m=2rT6RWEQkVL'">3D View</button>
@@ -101,7 +108,8 @@ $g5['title'] = "캠핑카";
                                 border: solid 1px #eee;
                                 padding: 10px;
                                 border-radius: 20px;
-                                height: 50px;
+                                height: 60px;
+                                width:200px;
                                 font-size: 20px;
                                 color: #fff;
                             "
@@ -115,7 +123,7 @@ $g5['title'] = "캠핑카";
                 </br> 카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a> </br>
                 인스타그램  <a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:30px; color:#666;" class="xi-instagram"></i> </a>
                 </br> 연락처 <span style="font-weight:bold"> 1811-9632 </span> </br> <span style="padding-left:60px; font-weight:bold"> 010-5134-7200 </span> </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </br>
-                <button style="width:250px; height:40px; margin-top:20px; margin-bottom:50px; background-color: #207ad1; color:#fff; border: none; border-radius:20px;"
+                <button style="width:200px; height:60px; margin-top:20px; margin-bottom:50px; background-color: #207ad1; color:#fff; border: none; border-radius:20px;"
                     onclick="location.href='https://pf.kakao.com/_ZIxcxnT/chat'">대여 실시간 문의</button>
             </div>
 

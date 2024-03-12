@@ -930,35 +930,28 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 	<h3>트렌디한 휴가를 즐길 수 있는 매력적인 추억 만들기</h3>
 </div>
 
-<div style="margin: 0 auto; width:1200px; margin-top:50px;">
-    <div class="lf_box">
-        <img style="width:300px;" src="<?php echo G5_THEME_URL?>/img/sub/deokjeokdo_img.jpeg">
-    </div>
-    <div class="rt_box" style="font-size:26px;">
-        <div class="text_box">
-            <h1 class="tit">
-            덕적도
-            </h1>
-            <dl>
-                <dt>
-                    <strong>
-                        <span>2인승 초소형전기창 트위지 3D VR</span>
-                    </strong>
-                    <button style="
-                        background: #207ad1;
-                        border: solid 1px #eee;
-                        padding: 10px;
-                        border-radius: 20px;
-                        height: 50px;
-                        font-size: 20px;
-                        color: #fff;
-                    " onclick="location.href='https://my.matterport.com/show/?m=dcHYYvj2e4F'">3D View</button>
-                </dt>
-            </dl>
-        </div>
-    </div>
-</div>
+<div class="inner" style="width:1240px; margin:0 auto; margin-top:70px;">
+   <div class="lf_box" style="width:50%; float:left; margin-bottom:70px;">
+       <img style="width:100%" src="<?php echo G5_THEME_URL?>/img/sub/deokjeokdo_img.jpeg">
+   </div>
+   <div class="rt_box" style="padding-left: 2%; width: 48%; float: right;">
+       <div class="text_box">
+           <dl>
+               <dt style="margin-bottom:20px;">
+                   <strong>
+                       <span style="color:#007cff; font-size:5.5em; margin-bottom:20px;">덕적도</span>
+                   </strong>
+               </dt>
+               <p style="font-size:20px;">
+                    2인승 초소형전기창 트위지 3D VR </br>
 
+                    <button style="margin-top: 20px; background: #207ad1; border: solid 1px #eee; padding: 10px; border-radius: 20px;
+                        height: 60px; width:200px; font-size: 20px; color: #fff; " onclick="location.href='https://my.matterport.com/show/?m=dcHYYvj2e4F'">3D View</button>
+               </p>
+           </dl>
+       </div>
+   </div>
+</div>
 
 <h2 id="tit" class="mt80">덕적도 선착장에 도착시 선착장으로 픽업 나가는 시스템입니다</h2>
 <div id="pro">

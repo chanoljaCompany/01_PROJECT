@@ -963,7 +963,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                        </strong>
                    </dt>
                    <p style="font-size:20px;">
-                    한솔네트웍스에서 지사&영업소 사업주를 모집합니다. </br> 한솔네트웍스 렌트카 사업부 | 010-5134-7200
+                    한솔네트웍스에서 지사&영업소 사업주를 모집합니다. </br> 한솔네트웍스 렌트카 사업부 | <span style="font-weight:bold">010-5134-7200</span>
                    </p>
                </dl>
            </div>
