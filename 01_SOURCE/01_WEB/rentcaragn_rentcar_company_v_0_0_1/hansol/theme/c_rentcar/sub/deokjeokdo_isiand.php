@@ -990,7 +990,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 <h2 id="tit" class="mt80">자주하는 질문</h2>
 <div id="pro">
     <div id="num">01</div>
-    <div id="bac"><b class="cl_navy">덕적도는 어떻게 가나요?</b></br>인천항 연안 여객터미널 or 대부도 방아다리 선착장에서 배를 타고 오시면 됩니다. </br> 예약 click! -> <a href="https://island.haewoon.co.kr/ " target="_blank" style="color:red;font-weight:bold;">가보고싶은섬</a> </br> 위 사이트나 구글 앱 가보고싶은섬에서 예약 가능합니다</div>
+    <div id="bac"><b class="cl_navy">덕적도는 어떻게 가나요?</b></br>인천항 연안 여객터미널 or 대부도 방아다리 선착장에서 배를 타고 오시면 됩니다. </br> 예약 click! -> <a href="https://island.haewoon.co.kr/ " target="_blank" style="FONT-SIZE: x-large; color: #FF7600; font-weight:bold;">가보고 싶은 섬</a> </br> 위 사이트나 구글 앱 가보고싶은섬에서 예약 가능합니다</div>
      <div id="clbt"></div>
 </div>
 <div id="pro">

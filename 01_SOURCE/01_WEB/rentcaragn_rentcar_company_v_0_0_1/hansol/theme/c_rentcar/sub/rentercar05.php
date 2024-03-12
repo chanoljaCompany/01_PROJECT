@@ -994,7 +994,8 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
     <div id="clbt"></div>
 
     <div id="num">01</div>
-    <div id="bac">카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a> </br> 연락처 1811-9632/010-5134-7200 </div>
+    <div id="bac">카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a>
+    </br> 연락처 <span style="font-weight:bold"> 1811-9632 </span> </br> <span style="padding-left:60px; font-weight:bold;"> 010-5134-7200 </span> </div>
     <div id="clbt"></div>
 </div>
 

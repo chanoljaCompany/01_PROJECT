@@ -927,9 +927,9 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
  <br>
  <br>
  <div id="st_title">
-	<h3>온라인 예약/지점, 영업소 방문/전화예약 등으로 사전 예약 하실 수 있습니다.</h3>
-    <p>·예약시 다음 사항을 알려주시면 차량대여시 고객의 귀중한 시간이 절약됩니다.<br>-성명,주민등록번호,운전면허 번호,전화번호, 이용차종, 사용일자, 시간 등</p></br></br>
-    <h3>이후 계약일자에 지점방문 및 차량 배,회차 서비스를 통하여 계약서 작성과 대여료 결제, 차량 외간 점검과 유류점검을 합니다.</h3>
+	<h3>온라인 예약/지점, 영업소 방문/전화예약 등으로 </br> 사전 예약 하실 수 있습니다.</h3>
+    <p>·예약시 다음 사항을 알려주시면 차량대여시 고객의 귀중한 시간이 절약됩니다.<br>(성명,주민등록번호,운전면허 번호,전화번호, 이용차종, 사용일자, 시간 등)</p></br></br>
+    <h3>이후 계약일자에 지점방문 및 차량 배,회차 서비스를 통하여 </br> 계약서 작성과 대여료 결제, 차량 외간 점검과 유류점검을 합니다.</h3>
     <p>·반납시 차량외관과 유류점검을 통하여 이상이 없을 시 계약이 종료됩니다.</p>
 </div>
 
@@ -982,7 +982,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
     <div id="bac">유튜브 <a href="https://www.youtube.com/c/Hansolscamplife"><i class="xi-youtube-play" style="font-size:30px; color:#666;"></i></a>
         </br> 카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a> </br>
         인스타그램  <a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:30px; color:#666;" class="xi-instagram"></i> </a>
-    </br> 연락처 1811-9632/010-5134-7200 </br> 카카오톡 플러스친구 @한솔네트웍스주식회사 </div>
+    </br>  연락처 <span style="font-weight:bold"> 1811-9632 </span> </br> <span style="padding-left:60px; font-weight:bold"> 010-5134-7200 </span> </br> 카카오톡 플러스친구 @<span style="font-weight:bold;">한솔네트웍스주식회사</span> </div>
     <div id="clbt"></div>
 </div>
 
