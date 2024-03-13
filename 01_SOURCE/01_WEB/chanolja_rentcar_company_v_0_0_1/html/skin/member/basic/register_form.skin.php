@@ -297,8 +297,12 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 	    </div>
 	</div>
 	<div class="btn_confirm" style="max-width : 1200px; margin: 0 auto;">
-	    <a href="<?php echo G5_URL ?>" class="btn_close">취소</a>
+	    <!--<a href="<?php echo G5_URL ?>" class="btn_close">취소</a>-->
 	    <button type="submit" id="btn_submit" class="btn_submit" accesskey="s"><?php echo $w==''?'회원가입':'정보수정'; ?></button>
+	    <?php if($w != '') { ?>
+            <a href="javascript:member_leave();" class="btn_close">회원탈퇴</a>
+            <!-- <button class="btn_cancel" onclick="member_leave();">회원탈퇴</button> -->
+        <?php } // tto?>
 	</div>
 	</form>
 </div>
@@ -508,6 +512,14 @@ jQuery(function($){
         $(this).next(".tooltip").fadeOut();
     });
 });
+
+function member_leave() {  // 회원 탈퇴 tto
+
+    if (confirm("회원에서 탈퇴 하시겠습니까?"))
+
+        location.href = '<?php echo G5_BBS_URL ?>/member_confirm.php?url=member_leave.php';
+
+ }
 
 </script>
 
