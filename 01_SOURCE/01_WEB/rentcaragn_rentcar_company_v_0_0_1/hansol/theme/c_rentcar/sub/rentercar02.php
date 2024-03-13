@@ -662,7 +662,7 @@ body{
 #step .gs_eu .txt_box ul li img {margin-right:15px;}
 #step h2.step_title {font-size:30px; margin:80px 0 50px; text-align:center;}
 #step ul.step_box {display:flex; justify-content:center; flex-wrap:wrap; max-width:1200px; margin:0 auto;}
-#step ul.step_box li {position:relative; width:230px; height:230px; text-align:center; margin:10px 35px; padding-top:35px; border-radius:50%; background:#fff; border:1px solid #ddd;}
+#step ul.step_box li {position:relative; width:230px; height:230px; text-align:center; margin:10px 35px; padding-top:35px; border-radius:20px; background:#fff; border:1px solid #ddd;}
 #step ul.step_box li:after {position:absolute; right:-45px; top:110px; content:"▶"; color:#ddd;}
 #step ul.step_box li:last-child:after {display:none;}
 #step ul.step_box li h4 {font-size:20px; color:#999; font-family: 'S-CoreDream-2ExtraLight';}
@@ -816,6 +816,11 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 #brc table #ckbx a {margin-left:10px;}
 #brc table #ckbx .checkbox {margin-right:10px; height:20px;}
 
+.step_box {display:flex; justify-content:center; flex-wrap:wrap; max-width:1200px; margin:0 auto; margin-top:50px; margin-bottom:50px;}
+.step_box li {position:relative; width:170px; height:170px; text-align:center; margin:10px 35px; padding-top:35px; border-radius:20px; background:#fff; border:1px solid #ddd; font-size:18px;}
+.step_box li h4 {font-size:20px; color:#999; font-family: 'S-CoreDream-2ExtraLight';}
+.step_box li img {margin:10px 0;}
+.step_box li p {font-size:16px; color:#111;}
 
 
 @media screen and (max-width:600px) {
@@ -976,17 +981,14 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
     <div id="clbt"></div>
 </div>
 
-<h2 id="tit" class="mt80">대여요금</h2>
-<div id="pro">
-    <div id="num">01</div>
-    <div id="bac">유튜브 <a href="https://www.youtube.com/c/Hansolscamplife"><i class="xi-youtube-play" style="font-size:30px; color:#666;"></i></a>
-        </br> 카카오채널 <a href="https://pf.kakao.com/_hYxltxj"> <img style="padding-bottom: 10px; width:30px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a> </br>
-        인스타그램  <a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:30px; color:#666;" class="xi-instagram"></i> </a>
-    </br>  연락처 <span style="font-weight:bold"> 1811-9632 </span> </br> <span style="padding-left:60px; font-weight:bold"> 010-5134-7200 </span> </br> 카카오톡 플러스친구 @<span style="font-weight:bold;">한솔네트웍스주식회사</span> </div>
-    <div id="clbt"></div>
-</div>
-
-
+<h1 style="font-size:50px; text-align: center; margin: 20px 0px; color:#207ad1;">문의 하기</h1>
+<ul class="step_box">
+    <li><a href="https://www.youtube.com/c/Hansolscamplife"><i class="xi-youtube-play" style="font-size:50px; color:#666; margin:10px 0px;"></i></a><p>유튜브</p></li>
+    <li><a href="https://pf.kakao.com/_hYxltxj"> <img style="width:50px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a><p>카카오채널</p></li>
+    <li><a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:50px; color:#666; margin:10px 0px;" class="xi-instagram"></i> </a><p>인스타그램</p></li>
+    <li style="padding-top:60px"><p style="padding-bottom:15px;">연락처</p> <span style="font-weight:bold; font-size:18px;"> 1811-9632 </br> 010-5134-7200 </span></li>
+    <li style="padding-top:60px;"><p style="padding-bottom:15px;">카카오톡 플러스친구</p> <span style="font-weight:bold; font-size:14px;">@ 한솔네트웍스주식회사</span></li>
+</ul>
     </div>
 </body>
 </html>
