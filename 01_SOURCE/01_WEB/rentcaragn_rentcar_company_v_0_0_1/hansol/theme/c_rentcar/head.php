@@ -111,18 +111,9 @@ include_once(G5_THEME_PATH.'/quoteContent.php');
             ?>
             <li class="menu_li <?php echo $add_class; ?>" style="word-break: auto-phrase; z-index:<?php echo $gnb_zindex--; ?>">
                 <?php
-                    if($gnb_zindex == 995) {
-                        echo "
-                            <a href='http://chatour.dothome.co.kr/' class='menu_tit'>" . $row['me_name'] . "</a>
-
-                        ";
-
-                    }
-                    else {
                         echo "
                             <a class='menu_tit'>" . $row['me_name'] . "</a>
                        ";
-                    }
                 ?>
 
                     <!-- s:하위 gnb -->

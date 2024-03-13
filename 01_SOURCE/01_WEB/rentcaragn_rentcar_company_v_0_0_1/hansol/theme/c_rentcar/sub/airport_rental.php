@@ -34,7 +34,7 @@ $g5['title'] = "의전&픽업 서비스";
             <h1 class="blind">의전&픽업 서비스</h1>
             <div class="inner">
                 <div class="lf_box">
-                    <img src="<?php echo G5_THEME_URL?>/img/sub/ceo_img01.jpeg">
+                    <img src="<?php echo G5_THEME_URL?>/img/sub/sub0913.png">
                 </div>
                 <div class="rt_box">
                     <div class="text_box">

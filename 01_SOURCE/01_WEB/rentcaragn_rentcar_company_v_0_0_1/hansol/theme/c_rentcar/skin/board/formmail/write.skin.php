@@ -55,26 +55,30 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     </div>
     <?php } ?>
 
-    <div class="bo_w_info write_div">
+    <div class="bo_w_info write_div" style="margin-top:70px;">
 	    <?php if ($is_name) { ?>
-	        <label for="wr_name" class="sound_only">이름<strong>필수</strong></label>
-	        <input type="text" name="wr_name" value="<?php echo $name ?>" id="wr_name" required class="frm_input half_input required" placeholder="이름">
+	        <label for="wr_name" class="sound_only">사고대차<strong>필수</strong></label>
+	        <select name="wr_name" value="<?php echo $name ?>" id="wr_name" required class="frm_input half_input required">
+                <option value="사고대차">사고대차</option>
+                <option value="단기렌트">단기렌트</option>
+                <option value="장기렌트">장기렌트</option>
+                <option value="신차렌트">신차렌트</option>
+            </select>
 	    <?php } ?>
 	
 	    <?php if ($is_password) { ?>
-	        <label for="wr_password" class="sound_only">비밀번호<strong>필수</strong></label>
-	        <input type="password" name="wr_password" id="wr_password" <?php echo $password_required ?> class="frm_input half_input <?php echo $password_required ?>" placeholder="비밀번호">
+	        <label for="wr_password" class="sound_only">예약날짜<strong>필수</strong></label>
+	        <input type="password" name="wr_password" id="wr_password" <?php echo $password_required ?> class="frm_input half_input <?php echo $password_required ?>" placeholder="예약날짜">
 	    <?php } ?>
 	
 	    <?php if ($is_email) { ?>
-			<label for="wr_email" class="sound_only">이메일</label>
-			<input type="text" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="frm_input half_input email " placeholder="이메일">
+			<label for="wr_email" class="sound_only">장소</label>
+			<input type="text" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="frm_input half_input email " placeholder="장소">
 	    <?php } ?>
-	    
-	
+
 	    <?php if ($is_homepage) { ?>
-	        <label for="wr_homepage" class="sound_only">홈페이지</label>
-	        <input type="text" name="wr_homepage" value="<?php echo $homepage ?>" id="wr_homepage" class="frm_input half_input" size="50" placeholder="홈페이지">
+	        <label for="wr_homepage" class="sound_only">연락처</label>
+	        <input type="text" name="wr_homepage" value="<?php echo $homepage ?>" id="wr_homepage" class="frm_input half_input" size="50" placeholder="연락처">
 	    <?php } ?>
 	</div>
 	
@@ -86,23 +90,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         </ul>
     </div>
     <?php } ?>
-
-    <div class="bo_w_tit write_div">
-        <label for="wr_subject" class="sound_only">제목<strong>필수</strong></label>
-        
-        <div id="autosave_wrapper" class="write_div">
-            <select name="ca_name" id="ca_name" style="width:100%; height:40px; margin-bottom:20px; margin-top:20px;">
-                    <option value="사고대차">사고대차</option>
-                    <option value="단기렌트">단기렌트</option>
-                    <option value="장기렌트">장기렌트</option>
-                    <option value="신차렌트">신차렌트</option>
-                </select>
-            <input style="margin-bottom:10px;" type="text" name="wr_name" id="wr_name" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="예약날짜">
-            <input style="margin-bottom:10px;" type="text" name="wr_password" id="wr_wassword" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="장소">
-            <input style="margin-bottom:50px;" type="text" name="wr_email" id="wr_email" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input full_input required" size="50" maxlength="255" placeholder="연락처">
-        </div>
-        
-    </div>
 
     <div class="write_div">
         <label for="wr_content" class="sound_only">내용<strong>필수</strong></label>
