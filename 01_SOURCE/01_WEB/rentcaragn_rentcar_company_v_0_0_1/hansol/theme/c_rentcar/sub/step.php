@@ -590,6 +590,16 @@ body{
     .slick-current .sec8-con span{
         left:30px;
     }
+
+    .lf_box{
+        width:100% !important;
+        float:none !important;
+    }
+
+    .rt_box{
+        width:100% !important;
+        float:none !important;
+    }
 }
 
 /* 페이지 */
@@ -950,7 +960,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
  <br>
  <br>
    <div id="step">
-   <div class="inner" style="width:1240px; margin:0 auto;">
+   <div class="inner" style="max-width:1240px; margin:0 auto;">
        <div class="lf_box" style="width:50%; float:left;">
            <img style="width:100%" src="<?php echo G5_THEME_URL?>/img/sub/step_img.jpg">
        </div>
@@ -984,11 +994,11 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 
             <h3 style="margin-top:70px;">영업소 입점 절차</h3>
             <ul class="step_box">
-                <li><h4>STEP 01</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">사무실 집기/차고지 준비</p></li>
-                <li><h4>STEP 02</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">필수 차량 차종 선택</p></li>
-                <li><h4>STEP 03</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">설립 및 임대차 통장 발급</p></li>
-                <li><h4>STEP 04</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">차량 인도금 납부 후 차량 등록 및 탁송</p></li>
-                <li><h4>STEP 05</h4><p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">영업 개시</p></li>
+                <li style="border-radius: 20px; width:170px; height:170px;"><h4>STEP 01</h4><p style="font-size:18px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">사무실 집기/차고지 준비</p></li>
+                <li style="border-radius: 20px; width:170px; height:170px;"><h4>STEP 02</h4><p style="font-size:18px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">필수 차량 차종 선택</p></li>
+                <li style="border-radius: 20px; width:170px; height:170px;"><h4>STEP 03</h4><p style="font-size:18px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">설립 및 임대차 통장 발급</p></li>
+                <li style="border-radius: 20px; width:170px; height:170px;"><h4>STEP 04</h4><p style="font-size:18px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">차량 인도금 납부 후 차량 등록 및 탁송</p></li>
+                <li style="border-radius: 20px; width:170px; height:170px;"><h4>STEP 05</h4><p style="font-size:18px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -30%);">영업 개시</p></li>
             </ul>
         </div>
     </div>

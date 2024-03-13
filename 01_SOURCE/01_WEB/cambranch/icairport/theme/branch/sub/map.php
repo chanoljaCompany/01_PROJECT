@@ -15,7 +15,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/sub.css">', 1)
 
 <?php
 $g5['navTitle'] = "인천공항지점";
-$g5['title'] = "오시는 길";
+$g5['title'] = "오시는길";
 ?>
 
 <div class="sub sub01" id="map">

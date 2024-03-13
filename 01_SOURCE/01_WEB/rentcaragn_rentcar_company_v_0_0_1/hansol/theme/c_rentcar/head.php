@@ -83,7 +83,7 @@ include_once(G5_THEME_PATH.'/quoteContent.php');
                         <li class="tnb_admin"><a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>">관리자</a></li>
                         <?php }  ?>
                         <?php } else {  ?>
-                        <li><a href="<?php echo G5_BBS_URL ?>/login.php"><i style="color:#207AD1; font-size:25px;" class="fa-solid fa-user"></i></a></li>
+                        <li><a href="<?php echo G5_BBS_URL ?>/login.php"><i style="color:#207AD1; font-size:25px; margin-right:10px;" class="fa-solid fa-user"></i></a></li>
                         <li><a href="<?php echo G5_BBS_URL ?>/register.php"><i style="color:#207AD1; font-size:25px;" class="fa-solid fa-user-plus"></i></a></li>
                         <?php }  ?>
                     </ul>
@@ -207,12 +207,12 @@ include_once(G5_THEME_PATH.'/quoteContent.php');
          //                  $(this).children('.gnb_box').hide();
          //                  $('.menu_tit').removeClass('on');
          //              });
-                     $('#all_menu .menu_tit').mouseenter(function(){
+                  /*    $('#all_menu .menu_tit').mouseenter(function(){
                           $(this).nextAll('.all_box').addClass('on');
                       }); 
                       $('#all_menu .menu_li').mouseleave(function(){
                           $('.all_box').removeClass('on');
-                      });
+                      }); */
                       $('#all_menu .menu_li').click(function(){
                    $(this).toggleClass('on');
                           $(this).find('.all_box').toggleClass('on');

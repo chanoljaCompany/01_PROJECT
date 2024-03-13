@@ -17,8 +17,8 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/jw-sub.css">')
 
 
 <?php
-$g5['navTitle'] = "이용안내";
-$g5['title'] = "캠핑카이용안내";
+$g5['navTitle'] = "캠핑카서비스";
+$g5['title'] = "이용안내";
 
 ?>
 

@@ -28,14 +28,6 @@ $g5['title'] = "덕적도";
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/slick.css" />
 </head>
 
-<script>
-    $(document).ready(function(){
-        $('.navi').click(function(){
-            $('#mysub2').css('display', 'block');
-        });
-    })
-</script>
-
 <style>
     * {
     padding:0;
@@ -596,6 +588,16 @@ body{
     .slick-current .sec8-con span{
         left:30px;
     }
+
+    .lf_box{
+        width:100% !important;
+        float:none !important;
+    }
+
+    .rt_box{
+        width:100% !important;
+        float:none !important;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -608,7 +610,7 @@ body{
 }
 
 /* 페이지 */
-#tit {width:1240px; margin : 0 auto; background:url('/img/page/icon.png') 0px 0px no-repeat; padding-left:35px; min-height:30px; font-size:26px; color:#000; font-family: 'S-CoreDream-3Light'; margin-bottom:20px; clear:both;background-color:#fff;}
+#tit {max-width:1240px; margin : 0 auto; background:url('/img/page/icon.png') 0px 0px no-repeat; padding-left:35px; min-height:30px; font-size:26px; color:#000; font-family: 'S-CoreDream-3Light'; margin-bottom:20px; clear:both;background-color:#fff;}
 .mt30 {margin-top:30px !important;}
 .mt80 {margin-top:80px !important;}
 
@@ -915,6 +917,15 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
         border-radius: 0px 100px 0px 0px;
     }
 
+    .lf_box {
+        width: 100%;
+        float: none;
+    }
+
+    .rt_box {
+        width: 100%;
+        float: none;
+    }
 }
 </style>
 <body>
@@ -930,7 +941,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 	<h3>트렌디한 휴가를 즐길 수 있는 매력적인 추억 만들기</h3>
 </div>
 
-<div class="inner" style="width:1240px; margin:0 auto; margin-top:70px;">
+<div class="inner" style="max-width:1240px; margin:0 auto; margin-top:70px;">
    <div class="lf_box" style="width:50%; float:left; margin-bottom:70px;">
        <img style="width:100%" src="<?php echo G5_THEME_URL?>/img/sub/deokjeokdo_img.jpeg">
    </div>

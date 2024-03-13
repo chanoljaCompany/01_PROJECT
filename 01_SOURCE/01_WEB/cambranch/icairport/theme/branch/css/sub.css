@@ -390,9 +390,13 @@ span {
     #company .sec07 h2 {font-size:25px;padding-top:377px;}
     /* sec07 : end */
 
+    .visual .text_box{
+        width:80%;
+    }
 
-
-
+    .visual .text_box h2{
+        font-size:55px;
+    }
 }
 
 

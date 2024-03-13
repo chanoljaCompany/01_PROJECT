@@ -21,7 +21,7 @@ $board['bo_gallery_height']= 320;
 
 <?php
 $g5['navTitle'] = "캠핑카서비스";
-$g5['title'] = "지점보유차량";
+$g5['title'] = "보유차량";
 ?>
 
 
