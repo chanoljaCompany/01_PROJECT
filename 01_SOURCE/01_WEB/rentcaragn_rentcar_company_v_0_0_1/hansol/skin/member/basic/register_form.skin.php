@@ -10,7 +10,7 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 
 <!-- 회원정보 입력/수정 시작 { -->
 
-<div class="register">
+<div class="register" style="max-width:1200px; margin-top:100px;">
 	<form id="fregisterform" name="fregisterform" action="<?php echo $register_action_url ?>" onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
 	<input type="hidden" name="w" value="<?php echo $w ?>">
 	<input type="hidden" name="url" value="<?php echo $urlencode ?>">
@@ -296,7 +296,7 @@ gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_
 	        </ul>
 	    </div>
 	</div>
-	<div class="btn_confirm">
+	<div class="btn_confirm" style="display:flex; justify-content:center;">
 	    <!--<a href="<?php echo G5_URL ?>" class="btn_close">취소</a>-->
 	    <button type="submit" id="btn_submit" class="btn_submit" accesskey="s"><?php echo $w==''?'회원가입':'정보수정'; ?></button>
 	    <?php if($w != '') { ?>

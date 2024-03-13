@@ -5,7 +5,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<section id="bo_w" style="margin: 0 auto; margin-top : 150px; width: 1200px;">
+<section id="bo_w" style="margin: 0 auto; margin-top : 150px; max-width: 1200px;">
 
     <h2 style="font-size:30px; text-align: center;">예약신청</h2>
 
@@ -56,7 +56,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php } ?>
 
     <div class="bo_w_info write_div" style="margin-top:70px;">
-	    <?php if ($is_name) { ?>
 	        <label for="wr_name" class="sound_only">사고대차<strong>필수</strong></label>
 	        <select name="wr_name" value="<?php echo $name ?>" id="wr_name" required class="frm_input half_input required">
                 <option value="사고대차">사고대차</option>
@@ -64,22 +63,17 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <option value="장기렌트">장기렌트</option>
                 <option value="신차렌트">신차렌트</option>
             </select>
-	    <?php } ?>
-	
-	    <?php if ($is_password) { ?>
-	        <label for="wr_password" class="sound_only">예약날짜<strong>필수</strong></label>
-	        <input type="password" name="wr_password" id="wr_password" <?php echo $password_required ?> class="frm_input half_input <?php echo $password_required ?>" placeholder="예약날짜">
-	    <?php } ?>
-	
-	    <?php if ($is_email) { ?>
-			<label for="wr_email" class="sound_only">장소</label>
-			<input type="text" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="frm_input half_input email " placeholder="장소">
-	    <?php } ?>
 
-	    <?php if ($is_homepage) { ?>
+	        <label for="wr_password" class="sound_only">예약날짜<strong>필수</strong></label>
+	        <input type="text" name="wr_password" id="wr_password" class="frm_input half_input password " placeholder="예약날짜">
+
+			<label for="wr_email" class="sound_only">장소</label>
+			<input type="text" name="wr_email" id="wr_email" class="frm_input half_input email " placeholder="장소">
+
+
 	        <label for="wr_homepage" class="sound_only">연락처</label>
-	        <input type="text" name="wr_homepage" value="<?php echo $homepage ?>" id="wr_homepage" class="frm_input half_input" size="50" placeholder="연락처">
-	    <?php } ?>
+	        <input type="text" name="wr_homepage" id="wr_homepage" class="frm_input half_input" size="50" placeholder="연락처">
+
 	</div>
 	
     <?php if ($option) { ?>
