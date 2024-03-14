@@ -135,8 +135,8 @@ $g5['title'] = "캠핑카";
                 <li><a href="https://www.youtube.com/c/Hansolscamplife"><i class="xi-youtube-play" style="font-size:50px; color:#666; margin:10px 0px;"></i></a><p>유튜브</p></li>
                 <li><a href="https://pf.kakao.com/_hYxltxj"> <img style="width:50px;" src="http://rentcaragn.dothome.co.kr/branch/hansol/theme/c_rentcar/img/kakao.png" /> </a><p>카카오채널</p></li>
                 <li><a href="https://www.instagram.com/hansol_rent/"> <i style="font-size:50px; color:#666; margin:10px 0px;" class="xi-instagram"></i> </a><p>인스타그램</p></li>
-                <li style="padding-top:50px"><p style="padding-bottom:15px;">연락처</p> <span style="font-weight:bold; font-size:18px; color:#207ad1;"> 1811-9632 </br> 010-5134-7200 </span></li>
-                <li style="padding-top:50px;"><p style="padding-bottom:15px;">카카오톡 플러스친구</p> <span style="font-weight:bold; font-size:14px; background-color:f9e000;">@ 한솔네트웍스주식회사</span></li>
+                <li><i style="font-size:40px; color:#666; margin:10px 0px;" class="fa-solid fa-phone"></i></br><span style="font-weight:bold; font-size:18px; color:#207ad1;"> 1811-9632 </br> 010-5134-7200 </span></li>
+                <li style="padding-top:50px;"><p style="padding-bottom:15px;">카카오톡 플러스친구</p> <span style="font-weight:bold; font-size:14px; background-color:#f9e000;">@ 한솔네트웍스주식회사</span></li>
             </ul>
 
 

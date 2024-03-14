@@ -213,10 +213,14 @@ include_once(G5_THEME_PATH.'/quoteContent.php');
                       $('#all_menu .menu_li').mouseleave(function(){
                           $('.all_box').removeClass('on');
                       }); */
-                      $('#all_menu .menu_li').click(function(){
-                   $(this).toggleClass('on');
-                          $(this).find('.all_box').toggleClass('on');
-                  });  
+              $('#all_menu .menu_li').click(function(){
+
+                  // 모든 .all_box 요소에서 'on' 클래스를 제거
+                  $('.all_box').removeClass('on');
+
+                  $(this).toggleClass('on');
+                    $(this).find('.all_box').toggleClass('on');
+              });
 
              $('#nav .menu_li').mouseover(function(){
                  $('.gnb_ul').stop().slideDown();
