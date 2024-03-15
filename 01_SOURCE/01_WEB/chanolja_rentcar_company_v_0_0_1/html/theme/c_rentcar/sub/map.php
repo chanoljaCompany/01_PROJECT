@@ -52,20 +52,36 @@ $g5['title'] = "오시는길";
                     </span>
                 </div>
                 <div class="rt_box">
-                    <strong>자동차 토탈 플랫폼 차놀자</strong>
-                    <strong>차놀자렌트카 주식회사 <br/> & <br/> 지에스렌트카 주식회사</strong>
-                    <p>
-                        <span>ADDRESS</span>
-                        <span>충남 천안시 동남구 충절로 224, 1층</span>
-                    </p>
-                    <p>
-                        <span>Tel</span>
-                        <span>041-522-7000</span>
-                    </p>
-                    <p>
-                        <span>지점・영업소 문의</span>                        
-                        <span>010-3470-0001</span>
-                    </p>
+
+                    <table>
+
+                        <tr>
+                            <td><strong>자동차 토탈 플랫폼 차놀자</strong></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>차놀자렌트카 주식회사  & 지에스렌트카 주식회사</strong></td>
+                            <td></td>
+                        </tr>
+
+                        <tr style="font-size:20px;">
+                            <td>ADDRESS</td>
+                            <td>충남 천안시 동남구 충절로 224, 1층</td>
+                        </tr>
+
+                        <tr style="font-size:20px;">
+                            <td>Tel</td>
+                            <td>041-522-7000</td>
+                        </tr>
+
+                        <tr style="font-size:20px;">
+                            <td>지점・영업소 문의</td>
+                            <td>010-3470-0001</td>
+                        </tr>
+                    </table>
+
+
                 </div>
             </div>
 
