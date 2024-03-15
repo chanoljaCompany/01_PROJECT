@@ -56,7 +56,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <i class="xi-angle-up"></i>
 
         </div>
-        <div id="fullpage" style="margin-top:160px;">
+        <div id="fullpage" style="margin-top:80px;">
             <div class="section main-section">
                 <div class="main-slick">
                     <div>
