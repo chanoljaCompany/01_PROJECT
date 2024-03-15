@@ -252,10 +252,17 @@ include_once(G5_THEME_PATH.'/head.php');
   </div>
 </div>
 -->
+
+<!--
 <div class="slider" style="max-witdh : 100%;  position: relative;">
       <div><img class="slider_img1" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_1.png" style="border-radius: 20px; "></div>
       <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_2.png" style="border-radius: 20px; "></div>
 </div>
+-->
+<!--
+<video style="width:100vw; max-height:800px; margin:0 auto" loop muted autoplay src="http://cmtest.dothome.co.kr/theme/template1/img/mainbanner.mp4">메인동영상
+</video>
+-->
 
 <!-- 상단아이콘 PC -->
 <div class="coreComWrap">

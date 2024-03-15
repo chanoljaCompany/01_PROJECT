@@ -56,7 +56,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <i class="xi-angle-up"></i>
 
         </div>
-        <div id="fullpage">
+        <div id="fullpage" style="margin-top:160px;">
             <div class="section main-section">
                 <div class="main-slick">
                     <div>
@@ -322,12 +322,39 @@ include_once(G5_THEME_PATH.'/head.php');
                                 <a href="http://www.chanolja.co.kr/" style="width: 100%; max-width: 500px; height:150px;" ><h3 style="font-size:30px;">캠핑카 예약하기</h3></a>
                             </h1>
                         </div>
-                    </div>-->
+                    </div>
 
                 </div>
-            </div>
+            </div>-->
 
 			<!-- main #6 -->
+
+        <div class="section section6" style="position: relative">
+    				<center>
+
+                     <h2 style="word-break: auto-phrase;">차놀자가 여러분께 이야기 드립니다.</h2>
+                    </center>
+
+                    <div class="sec6-inner" style="width:100%; flex-wrap: wrap;">
+
+
+                         <div class="sec6-lt" style="position : static">
+                            <div>
+                                <?php echo latest('theme/basic_news', 'notice', 4, 100);  ?>
+                            </div>
+                         </div>
+
+                        <div class="sec6-rt" style="position : static">
+                            <div>
+                                <?php echo latest('theme/basic_news', 'news', 4, 100);  ?>
+                            </div>
+                        </div>
+
+                    </div>
+            <div class="slider" style="max-width : 100%">
+                <div><img src="<?php echo G5_THEME_IMG_URL ?>/mnkim/bt_banner.jpg" style="width: 100%; position: relative; left: 0px; bottom: 0px;" > </div>
+            </div>
+        </div>
 
     <script>
       $(document).ready(function(){
@@ -336,37 +363,13 @@ include_once(G5_THEME_PATH.'/head.php');
     </script>
 			
                     
-    <div class="section section6" style="position: relative">
-				<center>
-
-                 <h2 style="word-break: auto-phrase;">차놀자가 여러분께 이야기 드립니다.</h2>
-                </center>
-                      
-                <div class="sec6-inner" style="width:100%; flex-wrap: wrap;">
-
-
-                     <div class="sec6-lt" style="position : static">
-                        <div>
-                            <?php echo latest('theme/basic_news', 'notice', 4, 100);  ?>
-                        </div>
-                     </div>
-
-                    <div class="sec6-rt" style="position : static">
-                        <div>
-                            <?php echo latest('theme/basic_news', 'news', 4, 100);  ?>
-                        </div>
-                    </div>
-
-                </div>
-        <div class="slider" style="max-width : 100%">
-            <div><img src="<?php echo G5_THEME_IMG_URL ?>/mnkim/bt_banner.jpg" style="width: 100%; position: relative; left: 0px; bottom: 0px;" > </div>
-        </div>
-    </div>
 
 
 
 
-            <?php include_once(G5_THEME_PATH.'/tail.php'); ?>
+<?php
+ include_once(G5_THEME_PATH.'/tail.php');
+ ?>
 
             <div class="section fp-auto-height">
                 
@@ -389,7 +392,7 @@ include_once(G5_THEME_PATH.'/head.php');
     </script>
     
 <?php
- include_once(G5_THEME_PATH.'/tail.sub.php');
+ include_once(G5_THEME_PATH.'/tail.php');
  ?>
 <style>
     body {

@@ -31,7 +31,13 @@ include_once(G5_THEME_PATH.'/head.php');
 
         </div>
         <div id="fullpage">
+
+
             <div class="section main-section">
+
+
+
+
                 <div class="main-slick">
                     <div>
                         <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/메인_04.jpg')"></div>
