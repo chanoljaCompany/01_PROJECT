@@ -301,7 +301,8 @@ $g5['title'] = "공지사항";
         </div>
     </section>
 </div>
-
+<!--
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
 ?>
+-->
