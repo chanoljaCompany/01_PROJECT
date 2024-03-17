@@ -50,7 +50,7 @@ $g5['title'] = "의전&픽업 서비스";
                             <dd class="txt">
                                 <p>
                                 인천공항,김포공항 의전 서비스 카니발 하이리무진과 수입 대형 차종 의전 <span class="mo_br"></span>
-                                웨딩카 서비스 문의 010-5134-7200
+                                웨딩카 서비스 문의 | <span style="font-weight:bold;"> 010-5134-7200 </span>
                                 <span class="mo_br"></span>
                                 </p>
                                

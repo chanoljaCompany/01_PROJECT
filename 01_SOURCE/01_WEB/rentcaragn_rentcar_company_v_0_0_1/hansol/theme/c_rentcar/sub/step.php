@@ -664,7 +664,7 @@ body{
 #step .gs_eu .txt_box ul li img {}
 #step h2.step_title {font-size:30px; margin:80px 0 50px; text-align:center;}
 #step ul.step_box {display:flex; justify-content:center; flex-wrap:wrap; max-width:1200px; margin:0 auto;}
-#step ul.step_box li {position:relative; width:230px; height:230px; text-align:center; margin:10px 35px; padding-top:35px; border-radius:50%; background:#fff; border:1px solid #ddd;}
+#step ul.step_box li {position:relative; max-width:230px; width:100%; min-width:185px; aspect-ratio: 1/1; text-align:center; margin:10px 35px; padding-top:35px; border-radius:50%; background:#fff; border:1px solid #ddd;}
 #step ul.step_box li:after {position:absolute; right:-45px; top:110px; content:"▶"; color:#ddd;}
 #step ul.step_box li:last-child:after {display:none;}
 #step ul.step_box li h4 {font-size:20px; color:#999; font-family: 'S-CoreDream-2ExtraLight';}
@@ -969,7 +969,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                <dl>
                    <dt style="margin-bottom:20px;">
                        <strong>
-                           <span style="color:#007cff; font-size:5.5em; margin-bottom:20px;">지사&영업소 입점안내</span>
+                           <span style="color:#007cff; font-size:5.5em; margin-bottom:20px;">지사 & 영업소 입점안내</span>
                        </strong>
                    </dt>
                    <p style="font-size:20px;">
