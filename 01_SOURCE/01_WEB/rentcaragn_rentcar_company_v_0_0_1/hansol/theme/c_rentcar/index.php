@@ -102,7 +102,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section section1">
 				<center>
 
-                 <h2 style="word-break: auto-phrase;">고객이 원하는 차량을 시간만큼, 고객이 필요한 <span>모든 렌터카 서비스</span> 제공  </h2>
+                 <h2 style="word-break: auto-phrase;">고객이 원하는 차량을 시간만큼, 고객이 필요한 <span>모든 렌트카 서비스</span> 제공  </h2>
 
 <br>
 <br>
@@ -150,7 +150,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section section2">
 				<center>
 
-                 <h2 style="word-break: auto-phrase;">렌터카 창업! <span>차놀자 렌트카</span>와 함께하세요.</h2>
+                 <h2 style="word-break: auto-phrase;">렌트카 창업! <span>차놀자 렌트카</span>와 함께하세요.</h2>
 
 <br>
 <br>
@@ -186,7 +186,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                 align-items: center;
                                 justify-content: center;
                                 margin-top: 20px;">
-                                <div style="font-size: 30px; font-weight: bold; margin-bottom: 20px; text-align: center;">렌터카 창업 자동차 <span style="font-size: 30px;">토탈 플랫폼 차놀자</span>와 함께 하세요.</div>
+                                <div style="font-size: 30px; font-weight: bold; margin-bottom: 20px; text-align: center;">렌트카 창업 자동차 <span style="font-size: 30px;">토탈 플랫폼 차놀자</span>와 함께 하세요.</div>
                                 <div style="font-size: 20px; text-align: center">
                                     <div>이제는 자동차도 공유의 시대!</div>
                                     <div>자동차라는 한 가지 아이템으로 소자본 창업이 가능하며</div>
@@ -305,7 +305,7 @@ include_once(G5_THEME_PATH.'/head.php');
     min-width: 320px;">
                         <div>
 						
-                            <h2>캠핑카 여행도 이제<br><span>합리적인 가격</span>의<br><span>렌터카</span>로 떠날 수 있습니다.  </h2>
+                            <h2>캠핑카 여행도 이제<br><span>합리적인 가격</span>의<br><span>렌트카</span>로 떠날 수 있습니다.  </h2>
 						    <h1>캠핑카구매, 개조, 렌트, 수익형 렌트, 캠핑장 예약 등<br>모든 캠핑여행 서비스가 한 곳에서!
                                 <a href="http://www.chanolja.co.kr/" style="width: 100%; max-width: 500px; height:150px;" ><h3 style="font-size:30px;">캠핑카 예약하기</h3></a>
                             </h1>

@@ -74,6 +74,7 @@ if($left_menu_id == '001' || $left_menu_id == ''){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>차놀자캠핑 관리자</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="<?=$file_url?>/css/manage.css?time=<?=time()?>">
 <link rel="stylesheet" type="text/css" href="<?=$file_url?>/css/jquery-ui.min.css">
 <link rel="stylesheet" type="text/css" href="<?=$file_url?>/css/xeicon.min.css">
