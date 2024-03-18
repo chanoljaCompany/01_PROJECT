@@ -909,7 +909,7 @@ $g5['title'] = "규정 및 Q&A";
          <br>
          <br>
 
-            <div style="width:1200px; margin: 0 auto;">
+            <div style="max-width:1200px; margin: 0 auto;">
                 <h1 id="list1" class="tit2">환불 및 지연 반납규정</h1>
                 <h2 id="tit">환불규정</h2>
                 <div id="pro">
@@ -918,19 +918,19 @@ $g5['title'] = "규정 및 Q&A";
                         <table>
                             <tr>
                                 <td style="color:#207AD1">여행 10일전</td>
-                                <td>총 <span style="font-weight:bold"> 이용금액의 90% </span> 환불</td>
+                                <td><span style="font-weight:bold"> 이용금액의 90% </span> 환불</td>
                             </tr>
                             <tr>
                                 <td style="color:#207AD1">여행 7일전</td>
-                                <td>총 <span style="font-weight:bold"> 이용금액의 70% </span> 환불 </td>
+                                <td><span style="font-weight:bold"> 이용금액의 70% </span> 환불 </td>
                             </tr>
                             <tr>
                                 <td style="color:#207AD1">여행 5일전</td>
-                                <td>총 <span style="font-weight:bold"> 이용금액의 50% </span> 환불</td>
+                                <td><span style="font-weight:bold"> 이용금액의 50% </span> 환불</td>
                             </tr>
                             <tr>
                                 <td style="color:#207AD1; padding-right: 100px;">여행 4일전 ~ 당일</td>
-                                <td>총 <span style="font-weight:bold"> 이용금액의 0% </span> 환불</td>
+                                <td><span style="font-weight:bold"> 이용금액의 0% </span> 환불</td>
                             </tr>
                         </table>
                     </div>

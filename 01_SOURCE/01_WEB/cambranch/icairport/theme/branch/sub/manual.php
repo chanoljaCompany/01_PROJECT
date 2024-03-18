@@ -909,7 +909,7 @@ $g5['title'] = "캠핑카이용안내";
          <br>
          <br>
 
-            <div style="width: 1200px; margin: 0 auto;">
+            <div style="max-width: 1200px; margin: 0 auto;">
                 <h1 id="list1" class="tit2">캠핑카 이용안내(렌트카 규정과 동일)</h1>
                 <h2 id="tit">운전자격</h2>
                 	<div id="pro">

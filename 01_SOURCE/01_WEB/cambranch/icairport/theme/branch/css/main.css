@@ -1103,7 +1103,8 @@
     }
     .sec2-con>a{
         font-size: 15px;
-        width:135px;
+        width:180px;
+        height:50px;
     }
     .sec2-contents{
         flex-flow: row wrap;
