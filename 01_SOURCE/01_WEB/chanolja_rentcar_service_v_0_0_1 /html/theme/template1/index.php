@@ -274,7 +274,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="#"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
@@ -530,7 +530,7 @@ function touch_end(event) {
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=70"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon2.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="#"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
                 </li>
                     </ul>
         </div>

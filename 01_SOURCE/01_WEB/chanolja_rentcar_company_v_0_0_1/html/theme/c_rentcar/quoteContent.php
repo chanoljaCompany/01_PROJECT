@@ -59,9 +59,19 @@
 </style>
 
 <script>
+
+      if(sessionStorage.getItem('quote') == 'off') {
+        $('.banner-container').css('display', 'none');
+        $('#qna_btn').css('display', 'block');
+      }else {
+        $('#qna_btn').css('display', 'none');
+
+      }
+
       $('.close-button0').click(()=>{
         $('.banner-container').css('display', 'none');
         $('#qna_btn').css('display', 'block');
+        sessionStorage.setItem('quote', 'off');
       })
 
 /*       $('.help').click(()=>{

@@ -79,18 +79,18 @@ if(G5_COMMUNITY_USE === false) {
                                     </ul>
                                     <ul class="sns">
                                         <li>
-                                            <a href="#">
+                                            <a href="https://www.instagram.com/chanolja_7000/">
                                                 <i class="xi-instagram"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i class="xi-youtube-play"></i>
+                                            <a href="https://m.blog.naver.com/PostList.naver?blogId=m_chanolja&tab=1">
+                                                <img style="padding-top:20px;" src="http://gsrent.kr/theme/c_rentcar/img/blog.png" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i class="xi-facebook-official"></i>
+                                            <a href="https://cafe.naver.com/chanolja">
+                                                <img src="http://gsrent.kr/theme/c_rentcar/img/cafe.png" />
                                             </a>
                                         </li>
                                     </ul>
@@ -160,6 +160,9 @@ if ($config['cf_analytics']) {
         $('.f-tab').css("display", "block"); // 슬라이드 보이게 수정
     });
 
+    if(sessionStorage.getItem('quote') == 'off') {
+        $('#qna_btn').css('display', 'block');
+      }
 
 </script>
 <script>
