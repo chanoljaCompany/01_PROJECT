@@ -896,7 +896,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
 
 <?php
 $g5['navTitle'] = "캠핑카서비스";
-$g5['title'] = "캠핑카이용안내";
+$g5['title'] = "규정 및 Q&A";
 
 ?>
 
@@ -909,159 +909,97 @@ $g5['title'] = "캠핑카이용안내";
          <br>
          <br>
 
-            <div style="width: 1200px; margin: 0 auto;">
-                <h1 id="list1" class="tit2">캠핑카 이용안내(렌트카 규정과 동일)</h1>
-                <h2 id="tit">운전자격</h2>
-                	<div id="pro">
-                    	<div id="num">01</div>
-                        <div id="bac">전차종 오토메틱: 2종 보통면허 소지자, 만 26세 이상</div>
-                        <div id="clbt"></div>
+            <div style="width:1200px; margin: 0 auto;">
+                <h1 id="list1" class="tit2">환불 및 지연 반납규정</h1>
+                <h2 id="tit">환불규정</h2>
+                <div id="pro">
+                    <div id="num">01</div>
+                    <div id="bac">
+                        <table>
+                            <tr>
+                                <td style="color:#207AD1">여행 10일전</td>
+                                <td>총 <span style="font-weight:bold"> 이용금액의 90% </span> 환불</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#207AD1">여행 7일전</td>
+                                <td>총 <span style="font-weight:bold"> 이용금액의 70% </span> 환불 </td>
+                            </tr>
+                            <tr>
+                                <td style="color:#207AD1">여행 5일전</td>
+                                <td>총 <span style="font-weight:bold"> 이용금액의 50% </span> 환불</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#207AD1; padding-right: 100px;">여행 4일전 ~ 당일</td>
+                                <td>총 <span style="font-weight:bold"> 이용금액의 0% </span> 환불</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div id="pro">
-                    	<div id="num">02</div>
-                        <div id="bac">모든 차량 정원 초과 탑승 시 보험처리가 되지 않으니 유의 바랍니다.</div>
-                        <div id="clbt"></div>
-                    </div>
+                    <div id="clbt"></div>
+                </div>
+
+                <div id="pro">
+                    <div id="num">02</div>
+                    <div id="bac">예약은 완납 기준이며, 예약 취소에 의한 환불은 위 규정과 같습니다.</div>
+                    <div id="clbt"></div>
+                </div>
+
+                <div id="pro">
+                    <div id="num">03</div>
+                    <div id="bac">교통사고 또는 고장, 자연재해 등 불가피한 사정으로 차량 운행 불가 시 예약금은 전액 환불됩니다.
+                    </br> (캠핑카 예약금 외 고객님의 캠핑자 예약금 환불 등 추가 피해 보상은 없음을 양해 바랍니다.)</div>
+                    <div id="clbt"></div>
+                </div>
+
+                <div id="pro">
+                    <div id="num">04</div>
+                    <div id="bac">이용 당일 면허증 미 제출 시 예약 취소될 수 있으며 그에 대한 책임은 본인에게 있습니다. </div>
+                    <div id="clbt"></div>
+                </div>
+
+                <div id="pro">
+                    <div id="num">05</div>
+                    <div id="bac">이용 후 남은 기간 및 시간에 대해서 환불 되지 않습니다. </div>
+                    <div id="clbt"></div>
+                </div>
                 <div id="h80"></div>
 
-                <h2 id="tit">보험 가입 안내</h2>
+                <h2 id="tit">지연 반납 규정</h2>
                 	<div id="pro">
                     	<div id="num">01</div>
-                        <div id="bac">대인(무한), 대물(1억), 자손 등에 가입되어 있습니다. </br> (계약서상 대여자 이외의 운전자 보험 불가)</div>
+                        <div id="bac">반납 지연은 최대 2시간까지만 가능하며 레이 캠핑카(소형) 시간당 10,000원, </br>
+                        스타렉스, 봉고3 650 모터홈(대형) 시간당 20,000원의 추가요금이 발생되오니 주의 바랍니다.</div>
                         <div id="clbt"></div>
                     </div>
                     <div id="pro">
                     	<div id="num">02</div>
-                        <div id="bac">자차 가입은 되어있지 않습니다. 자차가입시 24시간 기준</div>
-                        <div id="clbt"></div>
-                    </div>
-                    <div id="pro">
-                    	<div id="num">03</div>
-                        <div id="bac">계약서상 대여자 이외의 운전에 의한 사고는 보험적용이 되지 않습니다.</div>
+                        <div id="bac">반납 지연 2시간 초과 시 다음 예약자의 이용요금 전액을 부담하셔야 하오니 참고 바랍니다.</div>
                         <div id="clbt"></div>
                     </div>
                  <div id="h80"></div>
 
-                <h2 id="tit">주의 사항</h2>
+                <h1 id="list1" class="tit2">Q&A</h1>
+                <h2 id="tit">자주 묻는 질문</h2>
                 <div id="pro">
                     <div id="num">01</div>
-                     <div id="bac">캠핑카 차량 파손 시 부품 가격과 수리공임이 청구됩니다.</div>
+                     <div id="bac"><span style="color: #207AD1; font-weight:bold;">사용법이 궁금해요</span> </br>
+                     차량 인수 시 담당자가 직접 배정되어 약 30분간 차량 사용방법 및 유의사항 교육을 도와드리고 있습니다. </br>
+                     차량 예약 확정시 유튜브 동영상 링크 주소를 발송해드리니 참고 바랍니다.</div>
                      <div id="clbt"></div>
                  </div>
                  <div id="pro">
                     <div id="num">02</div>
-                     <div id="bac">파손 및 사고 발생시 차량 수리 기간동안의 휴차 보상료가 발생되며 비용은 임차인에게 부담되므로 주의 바랍니다.</div>
+                     <div id="bac"><span style="color: #207AD1; font-weight:bold;">탁송도 가능한가요?</span> </br>
+                     캠핑카를 처음 이용하시는 고객님이시라면 첫 이용시에는 현장 출차가 기준입니다. </br>
+                     - 단, 두 번째 이용부터는 탁송이 가능하나 탁송비용은 별도로 청구되고 유류비가 발생하오니 이점 참고하시길 바랍니다.</div>
                      <div id="clbt"></div>
                  </div>
                  <div id="pro">
                     <div id="num">03</div>
-                     <div id="bac">차량높이 3M이므로 높이제한에 주의하여 운전하세요. </br> * 지하주차장 이용불가, 터널, 톨게이트(화물차 차로 진입), 나뭇가지, 간판 등 </div>
+                     <div id="bac"><span style="color: #207AD1; font-weight:bold;">대여시 차량 주차는 가능한가요?</span> </br>
+                      차량을 렌트하시는 기간동안 고객님의 차량은 무료주차가 가능합니다.</div>
                      <div id="clbt"></div>
                  </div>
-                 <div id="pro">
-                     <div id="num">04</div>
-                     <div id="bac">주행전 모든 창문, 출입문 잠금 상태 확인 후 운전 당부 드립니다.  </br> (루프텐트, 어닝핸들, 출입문 발판, 해키장 확인 필수!) </div>
-                     <div id="clbt"></div>
-                 </div>
-                  <div id="pro">
-                      <div id="num">05</div>
-                      <div id="bac">실내 절대금연 및 위험물 반입금지! 미 준수 시 벌금(30만원) 발생 </div>
-                      <div id="clbt"></div>
-                  </div>
-                  <div id="pro">
-                      <div id="num">06</div>
-                      <div id="bac">반려동물은 사전에 문의 후에 탑승 가능 (무단탑승 적발시 출장청소업체 비용 일괄 청구)</div>
-                      <div id="clbt"></div>
-                  </div>
-                  <div id="pro">
-                        <div id="num">07</div>
-                        <div id="bac">차량 법규 위반, 범칙금 과태료는 계약서 운전자에게 부과됩니다.</div>
-                        <div id="clbt"></div>
-                  </div>
-                  <div id="pro">
-                     <div id="num">08</div>
-                      <div id="bac">차량 주행 중 벙커베드나 침대에 올라가지 마세요. 급 출발, 급 제동시 추락의 위험이 있습니다.</div>
-                      <div id="clbt"></div>
-                  </div>
-                  <div id="pro">
-                      <div id="num">09</div>
-                       <div id="bac">반납시에는 오물통과 오수를 비우고 집기등을 깨끗이 청소 해주셔야 합니다.
-                        </br>* 침구류, 시트등이 과도하게 오염되었을경우 청소비용 청구 </br>
-                        * 오물 및 오수 대리처리 비용 : 10만원</div>
-                       <div id="clbt"></div>
-                   </div>
-                   <div id="pro">
-                       <div id="num">10</div>
-                        <div id="bac">본 차량은 버스 전용 차선을 이용할 수 없습니다. </br>
-                        차량 운행시 안전을 위하여 시속 90km 이상 과속 금지 (규정속도 80~90km)
-                        </br>* 코너운행시 속도를 최대한 줄여주세요 </br>* 방지턱(요철) 지날 시, 반드시 서다시피 지나갈 것!!
-                        </br>* 브레이크는 미리미리 잡아주세요 </br> (캠핑카 뒤쪽이 많이 무겁습니다. 함께하는 분의 안전과
-                         다음대여자를 배려하여 '내차'처럼 조심히 운전해주세요)</div>
-                        <div id="clbt"></div>
-                    </div>
               <div id="h80"></div>
-
-              <h1 id="list2" class="tit2">캠핑카 이용안내 | 대형모터홈 </h1>
-
-                  <h2 id="tit">주의 사항</h2>
-                  <div id="pro">
-                      <div id="num">01</div>
-                       <div id="bac">차량 내부에서는 절대 금연입니다. </br> - 미준수 시 벌금(30만원) 및 크리닉 비용 일체 청구</div>
-                       <div id="clbt"></div>
-                   </div>
-                   <div id="pro">
-                      <div id="num">02</div>
-                       <div id="bac">고기, 생선은 실내조리 불가입니다. </br> - 쾌적한 내부환경을 위해 냄새가 많이 나는 음식 조리는 자제 해주세요. </div>
-                       <div id="clbt"></div>
-                   </div>
-                   <div id="pro">
-                      <div id="num">03</div>
-                       <div id="bac">반려동물은 사전 문의 후에 탑승 가능합니다. </br> - 무단으로 반려동물 탑승하여 적발 시 출장청소업체 비용 (털청소, 냄새제거, 소독청소 등)이 청구됩니다. </div>
-                       <div id="clbt"></div>
-                   </div>
-                   <div id="pro">
-                       <div id="num">04</div>
-                       <div id="bac">캠핑카 내부 시설물 파손시 일체의 비용이 부과 됩니다.</br> - 캠핑카의 경우 차량 제외 외관 시설물(7천만원대) 총 1억 상당 고가 차량입니다. </br> 차량 시설물을 내 물건처럼 소중하게 사용해 주세요.</div>
-                       <div id="clbt"></div>
-                   </div>
-                    <div id="pro">
-                        <div id="num">05</div>
-                        <div id="bac">반납 시간은 꼭 준수해 주시길 바랍니다. </br> - 반납 지연은 최대 2시간까지만 가능하며 (초과요금 발생) </br> 다음 예약 고객님을 위해서 반납 시간을 꼭 지켜주세요.</div>
-                        <div id="clbt"></div>
-                    </div>
-                    <div id="pro">
-                        <div id="num">06</div>
-                        <div id="bac">차량 주행 중 벙커베드나 침대에 올라가지 마세요. </br> - 급 출발, 급 제동시 추락의 위험이 있습니다.</div>
-                        <div id="clbt"></div>
-                    </div>
-                    <div id="pro">
-                          <div id="num">07</div>
-                          <div id="bac">주행 전 모든 창문, 출입문 잠금 상태 확인 후 운전 당부 부탁드립니다. </br> - 어닝 상태 확인, 출입문 발판 확인 필수!</div>
-                          <div id="clbt"></div>
-                    </div>
-                    <div id="pro">
-                       <div id="num">08</div>
-                        <div id="bac">반납 시 오물통과 오수를 비우고 집기류 등을 깨끗이 청소해주셔야 합니다.
-                        </br>- 침구류, 시트 등이 과도하게 오염되었을 경우 크리닉 비용 청구
-                        </br>* 오물 및 오수 대리처리 비용 : 10만원 발생</div>
-                        <div id="clbt"></div>
-                    </div>
-                    <div id="pro">
-                        <div id="num">09</div>
-                         <div id="bac">차량 높이 3M이므로 높이 제한에 주의하여 운전하세요.
-                          </br>- 지하주차장 이용 불가, 터널, 톨게이트 (화물차진입로 이용), 나뭇가지, 간판 주의!</div>
-                         <div id="clbt"></div>
-                     </div>
-                     <div id="pro">
-                         <div id="num">10</div>
-                          <div id="bac">본 차량은 안전을 위하여 시속 90km이상 과속을 금하고 있습니다. </br>
-                          - 차량 롤링 현상(흔들림), 대형 트럭이나 버스가 지나갈 때 밀림현상, 방지턱(15km이하주행)으로 운행 시 각별한 주의가 필요합니다.
-                          </br>- 주차 시 확장형 캠핑카는 사이드 미러, 후방 카메라 왜곡 현상이 있습니다. </br>
-                          넓은 공간에 주차하거나, 탑승객이 동행하여 오부환경을 충분히 살핀 뒤 주차해주세요.</div>
-                          <div id="clbt"></div>
-                      </div>
-                <div id="h80"></div>
-
             </div>
     </div>
 
