@@ -740,8 +740,8 @@ function touch_end(event) {
 
 <div class="pop_up_back" style="display:none;" >
     <div class="pop_up">
-        <div style="cursor:pointer; width: auto; height:80vh; display:flex; justify-content: center;" onclick="location.href='http://chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=8'">
-            <image style="width:auto; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.png" />
+        <div style="cursor:pointer; width: auto; height:80vh; display:flex; justify-content: center;" >
+            <img onclick="location.href='http://chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=8'" style="width:80%; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.png" />
         </div>
          <div  class="pop_up_spans">
               <div class="pop_up_btns">
@@ -778,7 +778,7 @@ function touch_end(event) {
       position: relative;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -80%);
       max-height: 700px;
       max-width: 500px;
       width: 80%;

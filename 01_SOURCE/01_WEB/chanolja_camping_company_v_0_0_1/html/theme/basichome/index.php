@@ -277,7 +277,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         <li>
                            <!-- <i class="icofont-dna"></i> -->
                             <dl>
-                                <dt>지역과 상생하는 Maas형 캠핑여행 패키지</dt>
+                                <!--<dt>지역과 상생하는 Maas형 캠핑여행 패키지</dt>-->
+                                <dt>Maas형 캠핑여행 패키지</dt>
                                 <dd>대중교통 및 지역관광상품과 연계를 통해 캠핑카와 결합된 관광상품을 개발하고 지역발전에 이바지 하고 있습니다.</dd>
                             </dl>
                         </li>
