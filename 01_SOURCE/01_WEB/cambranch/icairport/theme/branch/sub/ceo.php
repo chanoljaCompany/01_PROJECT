@@ -37,7 +37,7 @@ $g5['title'] = "인사말";
                 </div>
                 <div class="rt_box">
                     <div class="text_box">
-                        <h1 class="tit">
+                        <h1 class="tit" style="color:#13568D; font-weight:800;">
                         누구나 꿈꾸던 캠핑카여행<br>
                         차놀자캠핑이 실현합니다.
                         </h1>

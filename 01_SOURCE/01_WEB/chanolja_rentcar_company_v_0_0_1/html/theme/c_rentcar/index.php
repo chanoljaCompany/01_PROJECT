@@ -45,7 +45,7 @@ include_once(G5_THEME_PATH.'/head.php');
         }
 
         center{
-            margin-top: 60px;
+            margin-top: 30px;
         }
     </style>
 
@@ -144,7 +144,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
                <div style="max-width:1200px; margin: 0 auto;">
                     <center>
-                         <a style="max-width:300px; width:100%; height:80px; border-radius: 10px 10px 10px 10px; font-size: 18px; font-weight: 500; margin-top: 30px; display: inline-flex; align-items: center; justify-content: center;  background-color: #207ad1;  color: #fff;
+                         <a style="max-width:300px; width:100%; height:80px; border-radius: 10px 10px 10px 10px; font-size: 18px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center;  background-color: #54C3FD;  color: #fff;
                             position: relative;" href="<?php echo G5_THEME_URL?>/sub/jw-business2.php"><h3 style="font-size:30px;">일반렌트카 문의</h3></a>
                      </center>
                 </div>
