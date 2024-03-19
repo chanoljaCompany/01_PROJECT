@@ -1,0 +1,18 @@
+CRITICAL - 2024-03-19 06:39:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/pages.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/pages.php')
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('pages/pages', [], true)
+ 3 APPPATH/Controllers/Pages.php(22): view('pages/pages')
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Pages->view('pages')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-19 06:53:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "welcome_message!.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message!.php')
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('welcome_message!', [], true)
+ 3 APPPATH/Controllers/Pages.php(8): view('welcome_message!')
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
