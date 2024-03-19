@@ -8,7 +8,7 @@ class Pages extends BaseController {
         return view('welcome_message');
     }
 
-    public function view($page = 'home')
+    public function view($page = '')
     {
 
         if (! is_file(APPPATH . 'Views/pages/' . $page . '.php')) {
