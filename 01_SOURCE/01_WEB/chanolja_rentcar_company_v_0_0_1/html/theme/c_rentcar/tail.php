@@ -85,7 +85,7 @@ if(G5_COMMUNITY_USE === false) {
                                         </li>
                                         <li>
                                             <a href="https://m.blog.naver.com/PostList.naver?blogId=m_chanolja&tab=1">
-                                                <img style="padding-top:20px;" src="http://gsrent.kr/theme/c_rentcar/img/blog.png" />
+                                                <img style="" src="http://gsrent.kr/theme/c_rentcar/img/blog.png" />
                                             </a>
                                         </li>
                                         <li>
@@ -160,10 +160,9 @@ if ($config['cf_analytics']) {
         $('.f-tab').css("display", "block"); // 슬라이드 보이게 수정
     });
 
-    if(sessionStorage.getItem('quote') == 'off') {
+    if(getCookie('quote') == 'off') {
         $('#qna_btn').css('display', 'block');
       }
-
 </script>
 <script>
 $(function() {

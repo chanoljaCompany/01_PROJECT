@@ -162,7 +162,7 @@
         text-align: left;
     }
     .foo-rt .sns{
-        justify-content: flex-start;
+        justify-content: center;
     }
     .foo-rt .phone li{
         font-size: 15px;
