@@ -651,7 +651,7 @@ body{
 #step .gs_eu .txt_box ul li {font-size:20px; margin:10px 0; font-family: 'S-CoreDream-3Light';}
 #step .gs_eu .txt_box ul li img {margin-right:15px;}
 #step h2.step_title {font-size:30px; margin:80px 0 50px; text-align:center;}
-#step ul.step_box {display:flex; justify-content:center; flex-wrap:wrap; max-width:1200px; margin:0 auto;}
+#step ul.step_box {display:flex; justify-content:center; flex-wrap:wrap; max-width:1200px; margin:0 auto; margin-bottom: 100px;}
 #step ul.step_box li {position:relative; width:230px; height:230px; text-align:center; margin:10px 35px; padding-top:35px; border-radius:50%; background:#fff; border:1px solid #ddd;}
 #step ul.step_box li:after {position:absolute; right:-45px; top:110px; content:"▶"; color:#ddd;}
 #step ul.step_box li:last-child:after {display:none;}
