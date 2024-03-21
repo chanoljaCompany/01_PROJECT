@@ -7,7 +7,7 @@ import lombok.*;
 import java.io.Serializable;
 
 @Embeddable
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 @EqualsAndHashCode // equals와 hashCode 메소드를 자동 생성해줌
 public class LoginHstPK implements Serializable {
     private String login_datetime;

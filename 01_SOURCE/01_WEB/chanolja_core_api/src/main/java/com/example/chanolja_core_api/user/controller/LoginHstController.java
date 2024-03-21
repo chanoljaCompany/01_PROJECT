@@ -5,6 +5,8 @@ import com.example.chanolja_core_api.user.service.LoginHstService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/login_hst")
 public class LoginHstController {
@@ -19,10 +21,10 @@ public class LoginHstController {
         return result;
     }
 
-    // 로그인 로그 읽기
+    // 로그인 로그 전체 읽기
     @GetMapping("/get")
-    public LoginHstDto loginhstGet(@RequestBody LoginHstDto loginHstDto) {
-        LoginHstDto result = loginHstService.loginhstGet(loginHstDto);
+    public List<LoginHstDto> loginhstGet() {
+        List<LoginHstDto> result = loginHstService.loginhstGet();
         return result;
     }
 

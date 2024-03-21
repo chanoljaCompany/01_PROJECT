@@ -1,6 +1,7 @@
 package com.example.chanolja_core_api.user.model.dto;
 
 import com.example.chanolja_core_api.user.model.entity.LoginHstEntity;
+import com.example.chanolja_core_api.user.model.entity.LoginHstPK;
 import lombok.*;
 
 @NoArgsConstructor @AllArgsConstructor
@@ -17,8 +18,7 @@ public class LoginHstDto {
 
     public LoginHstEntity toLoginHstEntity(){
         return LoginHstEntity.builder()
-                .login_datetime(this.login_datetime)
-                .user_seq(this.user_seq)
+                .loginhst_id(LoginHstPK.builder().login_datetime(this.login_datetime).user_seq(this.user_seq).build())
                 .user_ip(this.user_ip)
                 .user_browser(this.user_browser)
                 .user_language(this.user_language)

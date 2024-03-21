@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/f1ca3de2c6.css" crossorigin="anonymous">
+    <style>
+        * {
+            list-style: none;
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            font-size: 12px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background: #f5f5f5;
+        }
+
+        .btn_submit{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            height: 84px;
+            padding: 27px 200px;
+            background-color: #54C3F1;
+            border-radius: 5px;
+            margin-top: 121px;
+        }
+
+        td p{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        /*
+                input[type="checkbox"] {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #c4c4c4;
+                    accent-color: #54C3F1;
+                    border-radius: 50%;
+                    appearance: none;
+                    margin-top: 5px;
+                    margin-right: 10px;
+                }
+
+                input[type="checkbox"]::before {
+                    content: '\2713';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #54C3F1;
+                    color: white;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    text-align: center;
+                }
+
+                input[type="checkbox"]:checked::before {
+                    opacity: 1;
+                }
+
+         */
+
+        input[type="checkbox"] {
+            display:none;
+        }
+        input[type=checkbox] + label {
+            display: block;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('img/img_1.png');
+            margin-top: 3px;
+            margin-right: 10px;
+        }
+        input[type=checkbox]:checked + label {
+            background-image: url('img/img.png');
+        }
+        input[type=checkbox]:disabled + label {
+            background-image: url('img/img.png');
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .td-input {
+            vertical-align: top;
+        }
+
+        .td-p{
+            text-align: left;
+            font-weight: 200;
+            width: 100%;
+        }
+
+        .rqd_use {
+            font-size: 18px;
+            color: #54C3F1;
+            font-weight: 300;
+        }
+
+        .sel_use {
+            font-size: 18px;
+            color: #c4c4c4;
+            font-weight: 300;
+        }
+
+        .fa-chevron-right {
+            color:#54C3F1;
+            font-size: 16px;
+            font-weight: 900;
+            margin-left: 7px;
+        }
+
+    </style>
+</head>
+<body>
+<div style="text-align: center; position:absolute; top: 50%; left: 50%; transform:translate(-50%,-50%); max-width: 440px;">
+
+    <img style="width:178px; height: 43px; margin-bottom: 94px" src="img/logo.png" alt="차놀자 로고"/>
+    <table>
+        <tr>
+            <td class="td-input"><input type="checkbox" id="check1" /><label for="check1"></label></td>
+            <td class="td-p"><h2 style="font-weight: bold; margin-bottom: 10px;">전체 동의하기</h2>
+                <p>
+                    실명 인증된 아이디로 가입, 위치기반 서비스 이용약관(선택), </br>
+                    이벤트·혜택 정보 수신(선택) 동의를 포함합니다.
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td-input"><input type="checkbox" id="check2" /><label for="check2"></label></td>
+            <td class="td-p">
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <h2>이용약관 동의 <span class="rqd_use"> (필수) </span></h2>
+                    </div>
+                    <div style="display: flex; align-items: center; font-weight: 200;">
+                        약관보기 <i class="fa-thin fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td-input"><input type="checkbox" id="check3" /><label for="check3"></label></td>
+            <td class="td-p">
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <h2>개인정보·수신 이용 동의<span class="rqd_use"> (필수) </span></h2>
+                    </div>
+                    <div style="display: flex; align-items: center; font-weight: 200;">
+                        약관보기 <i class="fa-thin fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td-input"><input type="checkbox" id="check4" /><label for="check4"></label></td>
+            <td class="td-p">
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <h2>실명 인증 된 아이디로 가입<span class="rqd_use"> (필수) </span></h2>
+                    </div>
+                    <div style="display: flex; align-items: center; font-weight: 200;">
+                        약관보기 <i class="fa-thin fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td-input"><input type="checkbox" id="check5" /><label for="check5"></label></td>
+            <td class="td-p">
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <h2>위치기반서비스 이용약관<span class="sel_use"> (선택) </span></h2>
+                    </div>
+                    <div style="display: flex; align-items: center; font-weight: 200;">
+                        약관보기 <i class="fa-thin fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td-input"><input type="checkbox" id="check6" /><label for="check6"></label></td>
+            <td class="td-p">
+                <div>
+                    <h2 style="margin-bottom: 7px;">개인정보 수집 및 이용 <span class="sel_use"> (선택) </span></h2>
+                    <p style="font-size: 13px;">이벤트·혜택 정보 수신</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <button type="submit" class="btn_submit">확인</button>
+</div>
+</body>
+</html>

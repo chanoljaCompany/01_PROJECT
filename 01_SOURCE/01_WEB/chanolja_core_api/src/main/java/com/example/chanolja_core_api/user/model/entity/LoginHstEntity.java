@@ -14,11 +14,7 @@ import lombok.*;
 public class LoginHstEntity {
 
     @Id
-    private String login_datetime; // 컬럼 생성일자
-
-    @Id
-    @Column(name="user_seq", columnDefinition = "char(16)")
-    private String user_seq; // 사용자 고유번호
+    private LoginHstPK loginhst_id;
     @Column(name="user_os", length = 32)
     private String user_os; // 사용자 os
     @Column(name="user_ip", length = 32)
@@ -36,9 +32,9 @@ public class LoginHstEntity {
 
     public LoginHstDto toLoginHstDto() {
         return LoginHstDto.builder()
-                .login_datetime(this.login_datetime)
+                .login_datetime(this.loginhst_id.getLogin_datetime())
                 .user_os(this.user_os)
-                .user_seq(this.user_seq)
+                .user_seq(this.loginhst_id.getUser_seq())
                 .user_ip(this.user_ip)
                 .user_language(this.user_language)
                 .user_browser(this.user_browser)

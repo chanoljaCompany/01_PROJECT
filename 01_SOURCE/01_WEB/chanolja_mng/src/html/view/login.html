@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 화면</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            list-style: none;
+            text-decoration: none;
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            font-size: 12px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background: #f5f5f5;
+        }
+
+        .login-text{
+            position:relative;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        .login-text::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -82%;
+            width: 75px;
+            height: 1px;
+            background-color: #c4c4c4;
+            transform: translateY(-50%);
+        }
+
+        .login-text::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -82%;
+            width: 75px;
+            height: 1px;
+            background-color: #c4c4c4;
+            transform: translateY(-50%);
+
+        }
+
+        .sns-icons{
+            display: flex;
+            justify-content: center;
+            margin-top: 17px;
+        }
+
+        .sns-icons li {
+            margin-left:20px;
+        }
+
+        .sns-icons li:first-child {
+            margin-left: 0px;
+        }
+
+        input{
+            font-size: 15px;
+            border-bottom: 1px solid #c4c4c4;
+            width: 97%;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            height: 35px;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #c4c4c4;
+        }
+
+        input[type="checkbox"]:checked {
+            accent-color: #54C3F1;
+        }
+        input[type="checkbox"]::before,  input[type="checkbox"]::after{
+            background-color: #ffffff;
+        }
+
+
+        .btn_submit{
+            color:#54C3F1;
+            border: 1px solid #54C3F1;
+            padding: 14px 117px;
+            background-color: white;
+            font-size: 15px;
+            margin-top: 33px;
+            margin-bottom: 20px;
+        }
+
+        .login-menu{
+            margin-bottom:65px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-menu li{
+            border-right: 1px solid #c4c4c4;
+            padding-right: 6px;
+            margin-left: 6px;
+        }
+
+        .login-menu li:last-child{
+            border-right: none;
+            padding-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; position:absolute; top: 50%; left: 50%; transform:translate(-50%,-50%); width: 280px;">
+
+        <img style="width:130px; height: 31px; margin-bottom: 58px" src="img/logo.png" alt="차놀자 로고"/>
+
+        <div>
+            <form>
+                <input type="text" placeholder="이메일 주소 또는 아이디"/>
+                <input type="text" placeholder="비밀번호"/>
+
+                <div style="display: flex;">
+                    <input style="width:17px; height: 17px;  margin: 0px 12px" type="checkbox" /> 로그인 상태 유지
+                </div>
+
+                <button type="submit" class="btn_submit">로그인</button>
+            </form>
+
+            <ul class="login-menu">
+                <li>아이디 찾기</li>
+                <li>비밀번호 찾기</li>
+                <li>회원가입</li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="login-text"> SNS 계정으로 로그인 </span>
+            <ul class="sns-icons">
+                <li><img src="img/facebook.png" alt="facebook"/></li>
+                <li><img src="img/kakao.png" alt="kakao"/></li>
+                <li><img src="img/naver.png" alt="naver"/></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
