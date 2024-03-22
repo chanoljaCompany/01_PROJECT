@@ -14,10 +14,22 @@ include_once(G5_THEME_PATH.'/head.php');
     new WOW().init();
 
    $(document).ready(function () {
-        if(document.cookie.indexOf("pop_up") < 0 ) {
-            $('.pop_up_back').css('display', 'block');
-            $('body').css('position', 'fixed');
-        }
+
+       console.log(document.cookie.indexOf("pop_up1"));
+       console.log(document.cookie.indexOf("pop_up2"));
+       if(document.cookie.indexOf("pop_up1") === -1 || document.cookie.indexOf("pop_up2") === -1 ){
+
+           $('.pop_up_back').css('display', 'block');
+           $('body').css('position', 'fixed');
+           if(document.cookie.indexOf("pop_up1") !== -1 ) {
+               $('.pop_up1').css('display', 'none');
+           }
+
+           if(document.cookie.indexOf("pop_up2") !== -1 ) {
+               $('.pop_up2').css('display', 'none');
+           }
+       }
+
    });
   </script>
 
@@ -739,21 +751,31 @@ function touch_end(event) {
 
 
 <div class="pop_up_back" style="display:none;" >
-    <div class="pop_up">
+    <div class="pop_up1">
         <div style="cursor:pointer; width: auto; height:80vh; display:flex; justify-content: center;" >
             <img onclick="location.href='http://chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=8'" style="width:80%; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.png" />
         </div>
          <div  class="pop_up_spans">
               <div class="pop_up_btns">
-                  <span onClick="Pop_up_no_Display_1()" style="cursor:pointer; font-weight:900;">오늘 그만 보기</span>
-                  <span onClick="Pop_up_no()" style="color:#fff;  font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
+                  <span onClick="Pop_up_no_Display_1(1)" style="cursor:pointer; font-weight:900;">오늘 그만 보기</span>
+                  <span onClick="Pop_up_no(1)" style="color:#fff;  font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
               </div>
-           </div>
-
+         </div>
     </div>
 
-
+    <div class="pop_up2">
+        <div style="cursor:pointer; width: auto; display:flex; justify-content: center;" >
+            <img onclick="location.href='https://www.wadiz.kr/web/campaign/detail/272507'" style="width:80%; " src="http://www.chanolja.co.kr/theme/template1/img/wadiz_popup.jpg" />
+        </div>
+        <div  class="pop_up_spans">
+            <div class="pop_up_btns" style="background: #fef4d2;">
+                <span onClick="Pop_up_no_Display_1(2)" style="cursor:pointer; font-weight:900;">오늘 그만 보기</span>
+                <span onClick="Pop_up_no(2)" style="color:#888888;  font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <script>
     // 모바일 화면일 때 이미지 경로 변경
@@ -774,12 +796,30 @@ function touch_end(event) {
     left: 0px;
   }
 
-  .pop_up{
+  .pop_up1{
       position: relative;
       top: 50%;
-      left: 50%;
+      left: 35%;
+      margin-left: 500px;
       transform: translate(-50%, -80%);
-      max-height: 700px;
+      max-height: 500px;
+      max-width: 500px;
+      width: 80%;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      display:flex;
+      flex-direction: column;
+      height: 50vh;
+  }
+
+  .pop_up2{
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%, -80%);
+      max-height: 500px;
       max-width: 500px;
       width: 80%;
       background-size: 100%;
@@ -833,9 +873,17 @@ function touch_end(event) {
             border-radius: 10px !important;
          }
 
-        .pop_up {
+        .pop_up1 {
             transform: translate(-50%, -55%);
+            left: 50%;
+            margin-left: 0px;
         }
+
+        .pop_up2 {
+            left: 50%;
+            top: 62%;
+        }
+
     }
 
     @media screen and (max-width: 480px) {
@@ -885,15 +933,42 @@ function touch_end(event) {
     document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
   }
 
-  function Pop_up_no_Display_1() {
-    setCookie("pop_up", "done", "1");
-    $('.pop_up_back').css('display', 'none');
-    $('body').css('position', 'relative');
+  function Pop_up_no_Display_1(num) {
+      console.log(num)
+      if(num === 1) {
+          setCookie("pop_up1", "done", "1");
+          $('.pop_up1').css('display', 'none');
+          if($('.pop_up2').css('display')==='none') {
+              $('.pop_up_back').css('display', 'none');
+              $('body').css('position', 'relative');
+          }
+
+      }else {
+          setCookie("pop_up2", "done", "1");
+          $('.pop_up2').css('display', 'none');
+          if($('.pop_up1').css('display')==='none') {
+              $('.pop_up_back').css('display', 'none');
+              $('body').css('position', 'relative');
+          }
+      }
+
   }
 
-  function Pop_up_no() {
-    $('.pop_up_back').css('display', 'none');
-    $('body').css('position', 'relative');
+  function Pop_up_no(num) {
+      if(num === 1) {
+          $('.pop_up1').css('display', 'none');
+          if($('.pop_up2').css('display')==='none') {
+              $('.pop_up_back').css('display', 'none');
+              $('body').css('position', 'relative');
+          }
+      }else {
+          $('.pop_up2').css('display', 'none');
+          if($('.pop_up1').css('display')==='none') {
+              $('.pop_up_back').css('display', 'none');
+              $('body').css('position', 'relative');
+          }
+      }
+
   }
 </script>
 

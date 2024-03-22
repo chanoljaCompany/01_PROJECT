@@ -59,13 +59,31 @@
 </style>
 
 <script>
-      $('.close-button0').click(()=>{
+
+    // 주어진 이름의 쿠키를 반환하는데,
+    // 조건에 맞는 쿠키가 없다면 undefined를 반환합니다.
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        console.log(matches);
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    if(getCookie('quote') == 'off') {
+        $('.banner-container').css('display', 'none');
+    }
+
+    $('.close-button0').click(()=>{
         $('.banner-container').css('display', 'none');
         $('#qna_btn').css('display', 'block');
-      })
+        var date = new Date();
+        date.setMinutes(date.getMinutes() + 5);
+        document.cookie = `quote=off; expires=${date.toUTCString()}`;
+    })
 
-/*       $('.help').click(()=>{
-           $('.banner-container').css('display', 'block');
-           $('.help').css('display', 'none');
-      }); */
+    /*       $('.help').click(()=>{
+               $('.banner-container').css('display', 'block');
+               $('.help').css('display', 'none');
+          }); */
 </script>
