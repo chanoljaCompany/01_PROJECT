@@ -753,11 +753,11 @@ function touch_end(event) {
 <div class="pop_up_back" style="display:none;" >
     <div class="pop_up1">
         <div style="cursor:pointer; width: auto; height:80vh; display:flex; justify-content: center;" >
-            <img onclick="location.href='http://chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=8'" style="width:80%; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.png" />
+            <img onclick="location.href='http://chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=8'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.png" />
         </div>
          <div  class="pop_up_spans">
               <div class="pop_up_btns">
-                  <span onClick="Pop_up_no_Display_1(1)" style="cursor:pointer; font-weight:900;">오늘 그만 보기</span>
+                  <span onClick="Pop_up_no_Display_1(1)" style="cursor:pointer; font-weight:900; color:#fff;">오늘 그만 보기</span>
                   <span onClick="Pop_up_no(1)" style="color:#fff;  font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
               </div>
          </div>
@@ -765,12 +765,12 @@ function touch_end(event) {
 
     <div class="pop_up2">
         <div style="cursor:pointer; width: auto; display:flex; justify-content: center;" >
-            <img onclick="location.href='https://www.wadiz.kr/web/campaign/detail/272507'" style="width:80%; " src="http://www.chanolja.co.kr/theme/template1/img/wadiz_popup.jpg" />
+            <img onclick="location.href='https://www.wadiz.kr/web/campaign/detail/272507'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/wadiz_popup.jpg" />
         </div>
         <div  class="pop_up_spans">
-            <div class="pop_up_btns" style="background: #fef4d2;">
-                <span onClick="Pop_up_no_Display_1(2)" style="cursor:pointer; font-weight:900;">오늘 그만 보기</span>
-                <span onClick="Pop_up_no(2)" style="color:#888888;  font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
+            <div class="pop_up_btns" >
+                <span onClick="Pop_up_no_Display_1(2)" style="cursor:pointer; font-weight:900; color:#fff">오늘 그만 보기</span>
+                <span onClick="Pop_up_no(2)" style="color:#fff;  font-weight:bold; cursor:pointer; font-weight:900;">닫기</span>
             </div>
         </div>
     </div>
@@ -856,9 +856,11 @@ function touch_end(event) {
   .pop_up_btns {
     display:flex;
     justify-content: space-around;
-    background:#a0d25d;
+    background:#13568D;
     padding-bottom: 10px;
     padding-top: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
   }
 
     @media screen and (max-width: 600px) {
