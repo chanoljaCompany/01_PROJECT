@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bb72a66-5f29-4ba6-b316-4c94dd95bcb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chanolja_mng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/img/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/img/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/img/img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/img/kakao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/img/naver.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/join.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/view/terms_use.html" beforeDir="false" />
-    </list>
+    <list default="true" id="c4a56fce-ef93-4ea4-90ab-7ee1a2c6e5f6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,24 +13,40 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php@7.4/7.4.33_6/bin/php" />
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2e1ZKJHuwLbqPzQo2vdFVdEckxw" />
+  <component name="ProjectId" id="2e9kf3kZWe3wYGnhiMPQCrorXQU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kimchanhee/Documents/GitHub/01_PROJECT/01_SOURCE/01_WEB/chanolja_mng/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +55,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ChanoljaMngApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="chanolja_mng.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.chanolja_mng.ChanoljaMngApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,12 +79,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3bb72a66-5f29-4ba6-b316-4c94dd95bcb9" name="Changes" comment="" />
-      <created>1711073980607</created>
+      <changelist id="c4a56fce-ef93-4ea4-90ab-7ee1a2c6e5f6" name="Changes" comment="" />
+      <created>1711324287278</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711073980607</updated>
-      <workItem from="1711073982270" duration="299000" />
+      <updated>1711324287278</updated>
+      <workItem from="1711324289109" duration="2558000" />
     </task>
     <servers />
   </component>

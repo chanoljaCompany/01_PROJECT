@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.start.chanolja_camping"
+    namespace = "com.chanolja.camping_serivce"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.start.chanolja_camping"
+        applicationId = "com.chanolja.camping_service"
         minSdk = 21
         targetSdk = 34
         versionCode = 1

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.start.chanolja_union"
+    namespace = "com.chanolja.union_serivce"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.start.chanolja_union"
+        applicationId = "com.chanolja.union_serivce"
         minSdk = 21
         targetSdk = 34
         versionCode = 3
