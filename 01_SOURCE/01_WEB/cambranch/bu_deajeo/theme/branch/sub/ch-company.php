@@ -19,7 +19,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/jw-sub.css">')
 <?php
 $g5['navTitle'] = "차놀자캠핑";
 $g5['title'] = "기업소개";
-$g5['sub-text']="안녕하세요. 차놀자캠핑 인천공항지점입니다.";
+$g5['sub-text']="안녕하세요. 차놀자캠핑 부산대저지점입니다.";
 ?>
 
 
@@ -106,7 +106,7 @@ $g5['sub-text']="안녕하세요. 차놀자캠핑 인천공항지점입니다.";
                             <dl>
                                 <dt>수도권 관광 메카 <span><i class="xi-angle-down-min"></i></span></dt>
                                 <dd>수도권에가 가장 가까운 바다와 천혜의 자연을 갖춘.<br>
-                                    영종도에 위치한 인천공항 지점입니다.
+                                    영종도에 위치한 부산대저 지점입니다.
                                 </dd>
                             </dl>
                         </li>

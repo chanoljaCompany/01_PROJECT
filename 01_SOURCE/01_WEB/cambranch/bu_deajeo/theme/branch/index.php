@@ -48,8 +48,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         <div class="main-tit">
                             <dl>
                                 <dt>수도권에서 가장 가까운 캠핑카 여행</dt>
-                                <dd>차놀자 인천공항지점 <br class="mo-br"> 캠핑카 토탈 서비스</dd>
-                                <dd>#캠핑여행 #캠핑취미 #캠핑레저 #인천캠핑카 #영종도캠핑카</dd>
+                                <dd>차놀자 부산대저지점 <br class="mo-br"> 캠핑카 토탈 서비스</dd>
+                                <dd>#캠핑여행 #캠핑취미 #캠핑레저 #부산캠핑카 #영종도캠핑카</dd>
                             </dl>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/sub.css">', 1)
 ?>
 
 <?php
-$g5['navTitle'] = "인천공항지점";
+$g5['navTitle'] = "전주지점";
 $g5['title'] = "오시는길";
 ?>
 
@@ -52,7 +52,7 @@ $g5['title'] = "오시는길";
                     </span>
                 </div>
                 <div class="rt_box">
-                    <strong>차놀자캠핑 인천공항지점</strong>
+                    <strong>차놀자캠핑 전주지점</strong>
                     <p>
                         <span>ADDRESS</span>
                         <span>인천 중구 운남동 476-21</span>
