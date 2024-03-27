@@ -72,15 +72,12 @@
     position: relative;
 }
 .main-slick .slick-current .bg{
-    transform: scale(1.1);
-    transition: 5s ease;
 }
 .main-slick .bg::after{
     content:"";
     width:100%;height: 100%;
     position: absolute;
     top:0;left: 0;
-    background-color: rgba(0, 0, 0, 0.35);
 }
 .main-controll{
     position: absolute;
@@ -104,7 +101,8 @@
 
 .main-tit dl{
     text-align: center;
-    color:#fff
+    color:#fff;
+    text-shadow: 3px 3px 10px #111;
 }
 .main-tit dt{
     font-size: 30px;
@@ -131,9 +129,9 @@
     display: flex;
     justify-content: space-between;
     z-index: 99999;
-  }
-  
-  .progressBarContainer>.item {
+}
+
+.progressBarContainer>.item {
     padding: 0;
     cursor: pointer;
     color: white;
@@ -141,29 +139,29 @@
     align-items: center;
     justify-content: center;
     margin:0px 10px;
-  }
-  .progressBarContainer h3{
-      font-size: 16px;
-  }
-  .progressBarContainer .item:last-child {
+}
+.progressBarContainer h3{
+    font-size: 16px;
+}
+.progressBarContainer .item:last-child {
     margin-right: 0;
-  }
-  
-  .progressBarContainer .item span.progressBar {
+}
+
+.progressBarContainer .item span.progressBar {
     width:80px;
     height: 4px;
     background-color: rgba(255, 255, 255, 0.4);
     display: none;
     position: relative;
     margin-left: 10px;
-  }
-  
-  .progressBarContainer .item span.progressBar .inProgress {
+}
+
+.progressBarContainer .item span.progressBar .inProgress {
     background-color: rgba(255, 255, 255, 1);
     width: 0%;
     height: 4px;
     left:0;
-  }
+}
 .slick-btn{
     margin-left: 20px;
     cursor: pointer;
@@ -294,9 +292,9 @@
     position: absolute;
     bottom: 0;right: 45%;
     transform: translateX(100%);
-  }
-  
-  .progressWrap>.item2 {
+}
+
+.progressWrap>.item2 {
     padding: 0;
     cursor: pointer;
     display: flex;
@@ -304,29 +302,29 @@
     margin:0px 10px;
     flex-flow: row wrap;
     width:140px;
-  }
-  .progressWrap h3{
-      font-size: 16px;
-      padding-bottom: 5px;
+}
+.progressWrap h3{
+    font-size: 16px;
+    padding-bottom: 5px;
     color: #363636;
-  }
-  .progressWrap .item2:last-child {
+}
+.progressWrap .item2:last-child {
     margin-right: 0;
-  }
-  
-  .progressWrap .item2 span.progress {
+}
+
+.progressWrap .item2 span.progress {
     width:100%;
     height: 2px;
     background-color: #ddd;
     position: relative;
-  }
-  
-  .progressWrap .item2 span.progress .inProgresss {
+}
+
+.progressWrap .item2 span.progress .inProgresss {
     background-color: #000;
     width: 0%;
     height: 2px;
     left:0;
-  }
+}
 .sec1-controll{
     display: flex;align-items: center;
     justify-content: center;
@@ -595,7 +593,7 @@
     100%{
         transform: rotate(0deg);
     }
-    
+
 }
 
 .section4 .bg{
@@ -933,7 +931,7 @@
 
 @media screen and (max-width:1000px) {
     .main-section{
-         height: 100vh;
+        height: 100vh;
     }
     .main-tit dd{
         font-size: 50px;
@@ -1034,7 +1032,7 @@
         font-size: 19px;
     }
     .sec3-contents li{
-        width:90%;
+        width:48.5%;
         padding:50px 10px;
     }
 
@@ -1126,7 +1124,7 @@
         font-size: 30px;
     }
     .sec3-contents li{
-        margin:10px 10px;
+        margin:0px 5px;
     }
     .sec3-tit dd br{
         display: none;
@@ -1173,7 +1171,7 @@
     .progressWrap>.item2:not(:first-child){
         margin-left: 5px;
     }
-	.mo-br{
-    display: block;
-	}
+    .mo-br{
+        display: block;
+    }
 }

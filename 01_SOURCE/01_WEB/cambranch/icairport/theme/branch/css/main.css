@@ -72,15 +72,12 @@
     position: relative;
 }
 .main-slick .slick-current .bg{
-    transform: scale(1.1);
-    transition: 5s ease;
 }
 .main-slick .bg::after{
     content:"";
     width:100%;height: 100%;
     position: absolute;
     top:0;left: 0;
-    background-color: rgba(0, 0, 0, 0.35);
 }
 .main-controll{
     position: absolute;
@@ -104,7 +101,8 @@
 
 .main-tit dl{
     text-align: center;
-    color:#fff
+    color:#fff;
+    text-shadow: 3px 3px 10px #111;
 }
 .main-tit dt{
     font-size: 30px;
