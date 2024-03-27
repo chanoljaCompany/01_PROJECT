@@ -280,7 +280,3 @@ $g5['title'] = "고객후기";
             </div>
         </section>
     </div>
-
-<?php
-include_once(G5_THEME_PATH.'/tail.php');
-?>

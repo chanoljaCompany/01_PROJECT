@@ -314,7 +314,3 @@ $g5['title'] = "보유차량";
         });
     })
 </script>
-
-<?php
-include_once(G5_THEME_PATH.'/tail.php');
-?>

@@ -313,7 +313,3 @@ $g5['title'] = "고객문의";
         </section>
     </div>
     
-
-<?php
-include_once(G5_THEME_PATH.'/tail.php');
-?>
