@@ -1,0 +1,15 @@
+.n_gallery_wrap {clear:both; position:relative}
+.n_title_wrap {width:100%; height:25px; border:1px solid #ccc;text-align:center}
+.n_title a:link, .n_title a:visited, .n_title a:active, .n_title a:hover {float:left; text-decoration:none; padding-left:8px; white-space:nowrap; font:bold 12px gulim, dotum; color:#222; line-height:27px}
+.n_icon {float:left; margin-left:5px; height:19px}
+.n_right_wrap {float:right; padding-top:5px; padding-right:7px}
+ul.n_thumb_youtube {margin:0 auto; padding:0; list-style:none; font-size:0; white-space:nowrap;clear:both;width:100%}
+ul.n_thumb_youtube li {display:inline-block; position:relative; text-align:center; margin:0 0 12px 40px;overflow:hidden;box-sizing:border-box; border-radius:20px;}
+ul.n_thumb_youtube li:nth-child(2n-1) {margin-left:0}
+ul.n_thumb_youtube li p {padding:4px 0 0 0; width:332px; overflow-x:hidden}
+ul.n_thumb_youtube li p a:link, ul.n_thumb_youtube li p a:visited, ul.n_thumb_youtube li p a:active, ul.n_thumb_youtube li p a:hover {text-decoration:none; font:14px dotum, tahoma;  font-weight:bold; color:#fff; letter-spacing:-1px; white-space:nowrap}
+.n_no_list {padding:10px 0; font:normal 12px gulim, dotum; color:#777; text-align:center}
+
+
+ul.n_thumb_youtube li .thumbcontent{position:absolute;transition:all 0.5s;width:100%;top:50%;left:50%;transform:translate(-50%, -50%)}
+ul.n_thumb_youtube li .thumbcontent:hover{width:108%;height:108%}

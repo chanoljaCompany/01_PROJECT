@@ -134,7 +134,7 @@ body {
     left:0;
     width:100%;
     margin-left:0;
-    padding:15px;
+    padding:5px;
     text-align: center;
 }
 
@@ -172,7 +172,7 @@ body {
     position:relative;
     width:100%;
     display:block;
-    font-size:13px;
+    font-size:15px;
     z-index:9999999;
     transition-duration:0.2s;
     font-weight: 500;
