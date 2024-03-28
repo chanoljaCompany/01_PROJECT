@@ -69,7 +69,7 @@
           return matches ? decodeURIComponent(matches[1]) : undefined;
         }
 
-        if(getCookie('quote') == 'off') {
+        if(getCookie('quote') === 'off') {
             $('.banner-container').css('display', 'none');
             $('.help').css('display', 'block');
         }

@@ -143,6 +143,10 @@ include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
                                 .flatpickr-input{
                                     font-size:17px !important;
                                 }
+
+                                .sch_txt p {
+                                    font-size: 13px !important;
+                                }
                             }
                         </style>
 

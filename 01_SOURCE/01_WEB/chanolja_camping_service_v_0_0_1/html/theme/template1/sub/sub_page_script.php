@@ -194,10 +194,17 @@ $("#inputDate_sub").flatpickr({
        //console.log('get_area========', json[0]['area_name']);
        areaData = json;
        var html = "";
+       /*
+         html += "<span>";
+         html += "<input type='checkbox' name='area[]' value='' onclick='location_allcheck()' class='check_box' id='all_check'>";
+         html += "<label for='chk1'>전체</label>";
+         html += "</span>";
+        */
         for(var i=0 ; i < areaData.length ; i++ ){
+
 			console.log('data test : ', json[i]);
             html += "<span>";
-            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class=''>";
+            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class='check_box'>";
             html += "<label for='chk1'>"+areaData[i]['area_name']+"</label>";
             html += "</span>";
             $("#mainArea").html(html);
@@ -235,6 +242,12 @@ $("#inputDate_sub").flatpickr({
      }
    });
   }
+
+function location_allcheck() {
+    var isChecked = $('#all_check').prop('checked');
+
+    $('.check_box').prop('checked', isChecked);
+}
 
 function setDate(setdate){
     //  alert('setdate ' + setdate);
