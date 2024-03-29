@@ -915,14 +915,13 @@
         margin-top:28px
     }
     #business2 .sec1-contents{
-        height: 260px;
-        background-image: url('../img/가스7.jpg');
+        /*height: 260px;*/
         background-size: cover;
         background-position: center;
 
     }
     #business2 .sec1-contents img{
-        display: none;
+        /*display: none;*/
     }
 }
 /* business2 end*/
