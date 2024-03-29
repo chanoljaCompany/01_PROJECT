@@ -117,8 +117,17 @@ if ($config['cf_analytics']) {
         $(this).find('.site-wrap-sub').toggleClass('on');
     });
 
-    $('.family-tab').click(function(){
+    /*$('.family-tab').click(function(){
         $('.f-tab').stop().slideUp();
+    });*/
+
+    $('.family-tab').click(function(){
+        var $fTab = $('.f-tab');
+        if ($fTab.css("display") === "none") {
+            $fTab.css("display", "block"); // 닫혀 있을 때 열기
+        } else {
+            $fTab.css("display", "none"); // 열려 있을 때 닫기
+        }
     });
 
 

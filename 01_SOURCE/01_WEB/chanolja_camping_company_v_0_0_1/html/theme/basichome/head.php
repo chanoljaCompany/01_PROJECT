@@ -187,12 +187,15 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         //                  $(this).children('.gnb_box').hide();
         //                  $('.menu_tit').removeClass('on');
         //              });
+            /*
                      $('#all_menu .menu_tit').mouseenter(function(){
                           $(this).nextAll('.all_box').addClass('on');
                       }); 
                       $('#all_menu .menu_li').mouseleave(function(){
                           $('.all_box').removeClass('on');
                       });
+
+             */
                       $('#all_menu .menu_li').click(function(){
                    $(this).toggleClass('on');
                           $(this).find('.all_box').toggleClass('on');
