@@ -2461,3 +2461,9 @@ span {
         top:10%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .visual .text_box h2 {
+        font-size: 3em;
+    }
+}

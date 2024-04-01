@@ -225,10 +225,10 @@
 }
 @media screen and (max-width:600px) {
     #board_cate ul li {
-        width:60px;
+        width:85px;
     }
     #board_cate ul li a {
-        font-size:7px;
+        font-size:10px;
     }
 }
 /* e:category */

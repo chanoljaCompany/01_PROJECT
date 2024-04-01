@@ -906,6 +906,9 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
         border-radius: 0px 100px 0px 0px;
     }
 
+    .rent04_img{
+        width:100%;
+    }
 }
 </style>
 <body>
@@ -942,7 +945,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
         </ul>
         <div class="shar_div" style="">
 
-        <div class="cont cont_1">
+        <div class="cont cont_1" style="width:100%;">
                 <div class="cont_tit">
                     <h2 id="tit">그룹형 카쉐어링 특장점</h2>
                 </div>
@@ -1052,7 +1055,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                     <div id="clbt"></div>
                     <div id="sr03">
                         <div style="display: flex; flex-wrap: wrap;">
-                            <img src="/img/page/sharingType01.jpg">
+                            <img class="rent04_img" src="/img/page/sharingType01.jpg">
 
                             <span style="padding: 20px; ">
                                 <h2>기업</h2>
@@ -1064,7 +1067,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                         </div>
 
                         <div style="display: flex; flex-flow: wrap;">
-                            <img src="/img/page/sharingType02.jpg">
+                            <img class="rent04_img" src="/img/page/sharingType02.jpg">
 
                             <span style="padding: 20px; ">
                                 <h2>아파트/주택단지</h2>
@@ -1075,7 +1078,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                         </div>
 
                         <div style="display: flex; flex-flow: wrap;">
-                            <img src="/img/page/sharingType03.jpg">
+                            <img class="rent04_img" src="/img/page/sharingType03.jpg">
 
                             <span style="padding: 20px">
                                 <h2>학교/커뮤니티</h2>
@@ -1085,7 +1088,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                         </div>
 
                         <div style="display: flex; flex-flow: wrap;">
-                            <img src="/img/page/sharingType04.jpg">
+                            <img class="rent04_img" src="/img/page/sharingType04.jpg">
                             <span style="padding: 20px">
                                 <h2>집합체건물</h2>
                                 - 수많은 기업이 입주해 있는 집합체 건물에서 공용 자동차를 확보, 공유하여 필요한 시간만 이용<br>
@@ -1103,7 +1106,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                     <div id="clbt"></div>
                     <div id="sr04">
                         <div>
-                            <img src="/img/page/sharingCase01.jpg">
+                            <img class="rent04_img" src="/img/page/sharingCase01.jpg">
                             <span style="margin-left: 20px;">
                                 <h2>한국도로공사 도입</h2>
                                 <span style="font-size:18px; color:#888;  margin-top:10px; word-break:keep-all;">
@@ -1114,7 +1117,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                             </span>
                         </div>
                         <div>
-                            <img src="/img/page/sharingCase02.png">
+                            <img class="rent04_img" src="/img/page/sharingCase02.png">
                             <span style="margin-left: 20px;">
                                 <h2>연간 유지비 200만원이상 절감</h2>
                                 <p>- 아반떼 10년 탄다고 가정할 때, 연간 차량 운영비는 약 630만원정도 필요합니다.<br>
@@ -1123,7 +1126,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                             </span>
                         </div>
                         <div>
-                            <img src="/img/page/sharingCase03.png">
+                            <img class="rent04_img" src="/img/page/sharingCase03.png">
                             <span style="margin-top:20px; margin-left: 20px;">
                                 <h2>일반 차 16대 이상 대체</h2>
                                 <p>- 1대의 카쉐어링 차가 도로 위의 일반 차 16.8대를 대체합니다.<br>
@@ -1142,7 +1145,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                     <div id="clbt"></div>
                     <div id="sr05">
                         <div style="display: flex; flex-wrap: wrap">
-                            <img src="/img/page/sharingApp01.jpg">
+                            <img class="rent04_img" src="/img/page/sharingApp01.jpg">
                             <span style="padding: 20px;">
                                 <h2>관리 콘솔(Web)</h2>
                                 차량  운행 현황을 바로 확인할 수 있습니다. (사고 영상 정보, 위치 정보 등) <br>
@@ -1154,7 +1157,7 @@ h3.ctf_txt {font-size:24px; text-align:center; margin:80px auto 60px; padding:40
                             </span>
                         </div>
                         <div style="display: flex; flex-wrap: wrap">
-                            <img src="/img/page/sharingApp02.jpg">
+                            <img class="rent04_img" src="/img/page/sharingApp02.jpg">
                             <span style="padding: 20px;">
                                 <h2>모바일 앱</h2>
                                 스마트폰 앱으로 원하는 시간 만큼만 예약하고 자동차를 이용할 수 있습니다. <br>
