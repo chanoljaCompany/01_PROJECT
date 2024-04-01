@@ -1,0 +1,73 @@
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=df0e6b53dd68e241445cdf16324475bb"></script>
+<script>
+        function mapstart(){
+          var mapidVal = $("#mapid").val();
+          if(mapidVal == 'getData'){
+            var tMapVal = "map";
+          }
+          else{
+            var tMapVal = "mapDetail";
+          }
+
+          var mapContainer = document.getElementById(tMapVal), // 지도를 표시할 div 
+        //   alert('mapstart ' + mapContainer);
+              mapOption = { 
+                  center: new kakao.maps.LatLng(37.5407622,127.0706095), // 지도의 중심좌표
+                  level: 3 // 지도의 확대 레벨
+              };
+          
+          var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+          
+          // 마커가 표시될 위치입니다 
+          var markerPosition  = new kakao.maps.LatLng(37.5407622,127.0706095); 
+          
+          // 마커를 생성합니다
+          var marker = new kakao.maps.Marker({
+              position: markerPosition
+          });
+          
+          // 마커가 지도 위에 표시되도록 설정합니다
+          //marker.setMap(map);
+          
+          // 인포윈도우를 생성합니다
+          var infowindow = new kakao.maps.InfoWindow({
+              content : "<div style='position: absolute; left: 0px; top: 0px;'><div style='width:140px;padding:1px;text-align:center;'>칠성종합시장</div></div>" 
+          });
+            
+          // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+          //infowindow.open(map, marker); 
+          
+          var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png';                              // 마커이미지 주소
+              imageSize = new kakao.maps.Size(34, 36);                // 마커이미지의 크기
+              imageOption = {offset: new kakao.maps.Point(17, 36)};   // 마커의 좌표와 일치시킬 이미지 안에서의 좌표설정
+                
+          // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+          var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+          
+          if(mapidVal == 'getData'){
+            var arr = JSON.parse($("#arrayLocation").val());
+          }
+          else{
+            var arr = JSON.parse($("#arrayLocationDetail").val());
+          }
+          
+          // 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
+          var bounds = new kakao.maps.LatLngBounds();   
+          // var arr = new Array();
+          // arr[0] = ["칠성시장북편 노상공영주차장",35.8780671960342,128.60320927213, "대구 북구 칠성동1가 275-3","1980287267"];
+          // arr[1] = ["칠성시장방범초소 노상공영주차장",35.8794483127273,128.602329365994, "대구 북구 칠성동2가 409-24","1438742395"];
+          // arr[2] = ["신천둔치주차장",35.8767253660639,128.605336577613, "대구 북구 칠성동1가 276-1","10068807"];
+          // arr[3] = ["칠성시장서편 노상공영주차장",35.8771714863247,128.601464917779, "대구 북구 칠성동1가 236-1","27154726"];
+          // arr[4] = ["칠성공영주차장",35.8761081400681,128.601660859567, "대구 북구 칠성남로 196","20587860"];
+          // arr[5] = ["신천교고가도로밑 노상공영주차장",35.875440484078,128.607219820583, "대구 북구 칠성동1가 279-1","842394951"];
+          
+          
+          var markerTmp;      // 마커
+          var customOverlay;  // 오버레이
+          var contentStr;
+          var points = [];
+          for (var i=0;i<arr.length;i++) {
+            //   console.log('place ' + arr[i].place + ' lat ' + arr[i].lat + ' lng ' + arr[i].lng);
+              var pushval = arr[i].lat+","+arr[i].lng;
+              points.push(new daum.maps.LatLng(arr[i]['lat'],arr[i]['lng']));
+              markerTmp = new daum.maps.Marker

@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+ul, li { margin: 0; padding: 0; list-style: none; }
+    
+/* 리스트 공통 */
+.lists-row{margin-right:-10px;margin-left:-10px;overflow: hidden;}
+.lists-row .col-row-0,.lists-row .col-row-1,.lists-row .col-row-2,.lists-row .col-row-3,.lists-row .col-row-4,.lists-row .col-row-5,.lists-row .col-row-6,.lists-row .col-row-7,.lists-row .col-row-8,.lists-row .col-row-9,.lists-row .col-row-10{position:relative;min-height:1px;padding-left:10px;*padding-left:0;padding-right:10px;*padding-right:0;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-left:0;}
+.lists-row .col-row-0,.lists-row .col-row-1{width:100%}
+.lists-row .col-row-2{width:50%}
+.lists-row .col-row-3{width:33.33333333%}
+.lists-row .col-row-4{width:25%}
+.lists-row .col-row-5{width:20%}
+.lists-row .col-row-6{width:16.66666667%}
+.lists-row .col-row-7{width:14.28571428%}
+.lists-row .col-row-8{width:12.5%}
+.lists-row .col-row-9{width:11.11111111%}
+.lists-row .col-row-10{width:10%}
+.row-clear{clear:both!important}
+/*.lists-row .sct_img img{ max-width:100%; height:auto}*/
+.lists-row .sct_img img{ max-width:100%; height: 220px;}
+.sub-p p { font-size: 15px; }
+
+@media screen and (max-width:767px) {
+    .lists-row .col-row-3{width:100%}
+    .sub-p p { font-size: 13px; }
+
+}
+
+
+.blog_area .container { width: 100%; }
+    
+/*.subpage {background: url('/theme/template1/img/booking_bg.jpg') no-repeat center;padding: 140px 0 260px;background-size: cover;}*/
+.subpage { padding: 50px 0 20px; }
+.bg { padding: 200px 0; background: url('/theme/template1/img/booking_bg.jpg') no-repeat center; background-size: cover; }
+
+/* 서치박스 */
+/*.sch_box {background: rgb(255 255 255 / 88%);padding: 2rem;border-radius: 10px;max-width: 480px;margin: 0 auto;}*/
+.sch_box {background: rgba(255, 255, 255, 0.95);padding: 2rem;border-radius: 10px;max-width: 480px;margin: 0 auto; }
+.sch_box .sch_tit { margin: 10px 0 40px; text-align: center; }
+.sch_box .sch_tit h2 { font-size: 21px; line-height: 1.25; }
+.sch_box .sch_content {}
+
+.sch_box .sch_form { position: relative; /*border: 1px solid #ddd;*/ /*border-radius: 10px;*/ }
+
+.sch_box .sch_form .frm_input {width: 100%;}
+
+.sch_box .sch_select {height: 61px;line-height: 61px;}
+/*.sch_box .sch_select.sch_date { border-bottom: 1px solid #ddd; }*/
+.sch_box .sch_select.sch_date { margin: 20px 0 70px; border: 1px solid #ddd; }
+.sch_box .sch_select.sch_locate { margin: 20px 0 70px; border: 1px solid #ddd; }
+.sch_box .sch_select .sch_txt {position: relative;padding: 0 20px; }
+.sch_box .sch_select .sch_down {position: absolute;top: 0;right: 20px;font-size: 1.3em;}
+/*.sch_box .sch_select .sch_pop {display: none;position: absolute;top: 0;left: 100%;width: 100%;background: #fff;border-radius: 10px;box-shadow: 0 3px 16px 0 rgb(0 0 0 / 10%);z-index: 90;}*/
+.sch_box .sch_select .sch_pop { display: none; position: absolute; top: 68px; left: 0; width: 100%; background: #fff; border-radius: 11px; box-shadow: 0 3px 16px 0 rgb(0 0 0 / 10%); z-index: 90; }
+.sch_box .sch_select.sch_locate .sch_pop { top: 198px; left: 0; }
+.sch_box .sch_select.active .sch_pop {display: block;}
+.sch_box .sch_select.active .sch_down {transform: rotate(180deg);}
+/*.sch_box .sch_pop.sch_calendar {line-height: 1.25;padding: 20px 25px;}*/
+.sch_box .sch_pop.sch_calendar { width: 100%; height: 300px; padding: 140px 0; text-align: center; border: 2px solid #eee; box-sizing: border-box; border-radius: 11px; }
+.sch_box .sch_pop.sch_check { /*max-width: 240px;*/ padding: 20px 25px; top: 198px; left: 0; }
+.sch_box .sch_pop.sch_check h3{line-height: 1.25;font-size: 16px;margin: 0 0 5px;}
+.sch_box .sch_pop.sch_check p {line-height: 1.25;font-size: 13px;}
+.sch_box .sch_pop.sch_check .sch_checkbox {  margin-top: 10px; }
+.sch_box .sch_pop.sch_check .sch_checkbox span {line-height: 1;display: block;margin: 14px 0;}
+.sch_box .sch_pop.sch_check .sch_checkbox input[type=checkbox] {margin: 0;width: 18px;height: 18px;}
+.sch_box .sch_pop.sch_check .sch_checkbox label {margin: 0;padding-left: 5px;font-size: 15px;}
+.sch_box .sch_pop.sch_check .check_btn {line-

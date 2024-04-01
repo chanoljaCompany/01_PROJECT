@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* mn.kim css 수정 */
+
+#bo_list{
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#bo_list svg{
+    width: 360px;
+    height: 360px;
+}
+
+#bo_list .cate_map .cate_map_in{
+    display: flex;
+    justify-content: center;
+}
+
+#bo_list .cate_search_wrap{
+    margin-top: 30px;
+}
+
+#bo_list .cate_search_wrap h1{
+    font-size: 20px;
+}
+
+#bo_list .cate_search_wrap #bo_sch{
+    margin-top: 10px;
+}
+
+#bo_list .cate_search_wrap #bo_sch h2{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#bo_list #bo_sch>form {
+    width: 100%;
+    display: flex;
+}
+
+#bo_list #bo_sch #sfl{
+    height: 20px;
+}
+
+#bo_list #bo_sch #btn_submit{
+    background-color: #2f9cdf;
+    color : white;
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+
+
+#bo_list #bo_sch input{
+    margin-left: 10px;
+    margin-right: 10px;
+}

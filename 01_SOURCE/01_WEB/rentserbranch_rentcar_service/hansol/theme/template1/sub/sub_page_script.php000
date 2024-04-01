@@ -1,0 +1,877 @@
+<script>
+    var mapid = "";
+    flatpickr.localize(flatpickr.l10ns.ko);//한글
+    var act_target = "<?=$act_target?>";
+    var divisionType = "1";
+    var select_guestroom_code = "";
+    var select_guestroom_fee = "";
+    var total_price = 0;
+    var guestroom_info_data;
+    var option_info_data;
+    var conType = "<?=$conType?>";
+    var areaData;
+    var optbasicData;
+    var form_userid;
+    $(function(){
+        $(".sch_txt").click(function(){
+            $(this).parent(".sch_select").toggleClass("active");
+        });
+    });
+    
+    $(function(){
+        $(".list_select").click(function(){
+            $(this).parent(".list_form").toggleClass("active");
+        });
+    });
+    
+    /* 탭 메뉴 */
+    $(function (){
+	    $(".tab_con>div").hide();
+	    $(".tab_con>div:first").show();   
+	    $(".tab_headers li").click(function(){
+	        $(".tab_headers li").removeClass("selected");
+	        $(this).addClass("selected");
+	        $(".tab_con>div").hide();
+	        $($(this).attr("rel")).show();
+	    });
+	});
+
+    $( function() {
+    $( "#accordion" ).accordion({
+        collapsible: true,
+        active: false,
+
+    });
+    } );
+
+function paymthodChang(ptype){
+    if(ptype =='card') {
+        $("#account_info_tr").hide();
+        $("#depositor_tr").hide();
+    }
+    else if(ptype =='bank'){
+        $("#account_info_tr").show();
+        $("#depositor_tr").show();
+    }
+}    
+
+$("#inputDate").flatpickr({
+     mode: "range",
+     dateFormat: "Y-m-d",
+     minDate: "today",
+     defaultDate: ["<?=$todate?>","<?=$nextdate?>"],
+     locale: {
+                     rangeSeparator: '~'
+     },
+     local:'ko',
+     conjunction:"~",
+     disable: [
+       function(date) {
+           // disable every multiple of 8
+           //return !(date.getDate() % 10);
+
+       }
+   ],
+   onClose: function(selectedDates, dateStr, instance) {
+      //getData(dateStr);
+    //   findSearchData('main');
+       setDate(dateStr);
+   }
+});
+
+$("#inputDate_sub").flatpickr({
+     mode: "range",
+     dateFormat: "Y-m-d",
+     minDate: "today",
+     defaultDate: [$("#sss").val(),$("#eee").val()],
+     locale: {
+                     rangeSeparator: '~'
+     },
+     local:'ko',
+     conjunction:"~",
+     disable: [
+       function(date) {
+           // disable every multiple of 8
+           //return !(date.getDate() % 10);
+
+       }
+   ],
+   onClose: function(selectedDates, dateStr, instance) {
+      //getData(dateStr);
+    //   findSearchData('sub');
+   }
+});
+    <? if($act_target == 'reserve_confirm'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").hide(); 
+        $("#sub_page_map").hide(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").show(); 
+        // $("#login").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        //   reserve_fifth('1647937331');
+        // get_area();
+        // get_option_basic();
+        // findSearchData('init');
+       });
+    <? }else if($act_target == 'card_return'){?>
+        $(document).ready(function() {
+        reserve_fifth("<?=$orderId?>");    
+        $("#subpagebg").hide();  
+        $("#sub_page_1").hide(); 
+        $("#sub_page_map").hide(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").show(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        // $("#login").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        //   reserve_fifth('1647937331');
+        // get_area();
+        // get_option_basic();
+        // findSearchData('init');
+          
+    });
+    <? }else if($act_target == 'car_detail'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").hide(); 
+        $("#sub_page_map").hide(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        room_detail('<?=$car_code?>');  
+    });
+    <?}else{?>
+        $(document).ready(function() {
+         //    room_image('9416914189');
+        //    room_detail('9416914189');
+        $("#subpagebg").show();  
+        $("#sub_page_1").hide(); 
+        $("#sub_page_map").hide(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        //   reserve_fifth('1647937331');
+        get_area();
+        get_option_basic();
+    });
+    <?}?>
+   
+    function move_top(){
+        var offset = $(".breatcome_area").offset(); //해당 위치 반환
+        $("html, body").animate({scrollTop: offset.top},400);
+    }
+
+    function get_area(){
+      var division = "get_area";
+      $.ajax({
+      type: 'GET',
+      url:'/client/act/get_init_data.php',
+      async: false,
+      data: {
+           division : division,
+      },
+      error: function (request, status, error) {
+      console.log('guestroom_info_ajax error');
+      },
+     success:function(json){
+    //   console.log('get_area========');
+       areaData = json;
+       var html = "";
+        for(var i=0 ; i < areaData.length ;i++ ){
+            html += "<span>";
+            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class=''>";
+            html += "<label for='chk1'>"+areaData[i]['area_name']+"</label>";
+            html += "</span>";
+            $("#mainArea").html(html);
+            $("#subArea").html(html);
+        }
+      }
+   });
+ }
+
+    function get_option_basic(){
+      var division = "get_option_basic";
+      $.ajax({
+      type: 'GET',
+      url:'/client/act/get_init_data.php',
+      async: false,
+      data: {
+           division : division,
+      },
+      error: function (request, status, error) {
+      console.log('guestroom_info_ajax error');
+      },
+     success:function(json){
+    //   console.log('get_option_basic========');
+       optbasicData = json;
+       var html = "";
+            html +="<h4>보유시설</h4>";
+        for(var i=0 ; i < optbasicData.length ;i++ ){
+            html += "<span>";
+            html += "<input type='checkbox' name='basicoption[]' value='"+optbasicData[i]['option_code']+"' class=''>";
+            html += "<label for='chk1'>"+optbasicData[i]['option_name']+"</label>";
+            html += "</span>";
+            $("#basicOption").html(html);
+        }
+      // $("#sit_pvi").html(html);
+     }
+   });
+  }
+
+function setDate(setdate){
+    //  alert('setdate ' + setdate);
+    $("#dateStr").val(setdate);
+    var setdatesplit = setdate.split("~");
+    $("#sss").val(setdatesplit['0']);
+    $("#eee").val(setdatesplit['1']);
+}
+function findSearchData(locate) {
+  if(locate == 'main'){
+    $("#sub_page_1").show(); 
+    $("#sub_page_map").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+  }
+  else if(locate == 'init'){
+    setDate('<?=$dateType?>').val();
+    $("#inputDate_sub").val('<?=$dateType?>');
+  }
+  else{
+    setDate($("#inputDate_sub").val());
+  }
+
+  divisionType = $("#divisionType").val();
+  getData(divisionType,locate)
+}
+function getData(divisionType,locate) {
+  $("#divisionType").val(divisionType);
+  var division = 'getData';
+  var personnel = "1";
+if(divisionType == '1'){
+  // var divisionType = $("#divisionType").val();
+  var dateStr = $("#dateStr").val();
+  var datalen = dateStr.length;
+  if(datalen < '11'){
+     var ndate = nextDay(dateStr);
+     var ndateStr = dateStr+"~"+ndate;
+     if(locate == 'main'){
+        $("#inputDate").val(ndateStr);
+     }else{
+        $("#inputDate_sub").val(ndateStr);
+     }
+     dateStr = ndateStr;
+  }
+}
+    var areaArray = new Array();
+    $("input[name='area[]']:checked").each(function() { 
+      var areaVal = $(this).val(); 
+      areaArray.push(areaVal);
+    });
+
+    var optionArray = new Array();
+    $("input[name='basicoption[]']:checked").each(function() { 
+      var optionVal = $(this).val(); 
+      optionArray.push(optionVal);
+    });
+
+    var form = $('#reserveForm')[0];
+    var formData = new FormData(form);
+    formData.append("division", "getData");
+    formData.append("locate", locate);
+    formData.append("area", areaArray);
+    formData.append("basicoption", optionArray);
+
+    for (var pair of formData.entries())
+    {
+    //   console.log(pair[0]+ ', ' + pair[1]);
+    }
+  $.ajax({
+      type: 'POST',
+      url:'/client/act/get_room_info.php',
+      enctype: 'multipart/form-data',
+      data:formData,
+      cache:false,
+      contentType : false,
+      processData : false,
+      error: function (request, status, error) {
+      console.log('event error');
+      },
+      success:function(html){
+        // alert();
+    //   if(conType == '1'){
+    //   $("#reserve_first_area_mo").html(html);
+    //   }
+    //   else{
+      $("#reserve_first_area").html(html);
+    //   }
+    //   alert(dateStr);
+      $("#dateStr").val(dateStr);
+     }
+   }
+
+ );
+ $("#mapid").val('getData');
+ setTimeout(mapstart, 1000, 1);
+ 
+//   showLoadingBar('stop');
+}
+// date 포맷을 만들어주는 함수 , ex) 20191210
+function getDateStr(myDate){
+  let month = myDate.getMonth() + 1
+  let day = myDate.getDate()
+
+  if (month < 10) month = '0' + month
+  if (day < 10) day = '0' + day
+
+  return (myDate.getFullYear() + '-' + month + '-' + day) // '20191211'
+}
+// 다음날을 구하는 함수
+function nextDay(today) {
+  //today = today.slice(0,4) + '-' + today.slice(4,6) + '-' + today.slice(6,) // ex) 2019-12-10
+  let d = new Date(today) // 2019-12-10T00:00:00.000Z
+  d.setDate(d.getDate() + 1)
+  return getDateStr(d)
+}
+function showLoadingBar(val) {
+          if(val == 'start'){
+            $("#loadingArea").LoadingOverlay("show", {
+              background  : "rgba(255, 255, 255, 1.0)"
+            });
+          }
+          else{
+            $("#loadingArea").LoadingOverlay("hide", true);
+          }
+}
+
+
+
+function room_image(guestroom_code){
+//   var dateStr="2022-03-19~2022-03-20";
+  var division = 'guestroom_image_info_ajax';
+  var divisionType = $("#divisionType").val();
+  $.ajax({
+      type: 'GET',
+      url:'/client/act/get_guestroom_image.php',
+      async: false,
+      data: {
+           division : division,
+           guestroom_code : guestroom_code,
+           divisionType : divisionType,
+      },
+      error: function (request, status, error) {
+      console.log('guestroom_info_ajax error');
+      },
+      success:function(html){
+      $("#sit_pvi").html(html);
+     }
+   }
+ );
+}
+function room_detail(guestroom_code){
+  $("#sub_page_detail").show(); 
+  $("#sub_page_1").hide(); 
+  $("#sub_page_map").hide(); 
+  var dateStr = $("#dateStr").val();
+//   alert(dateStr);
+  //var dateStr="2022-03-19~2022-03-20";
+  if(dateStr =='') {
+    dateStr = "<?=$intidate?>";
+  }
+  var makeCopyUrl = "http://www.chanolja.co.kr/bbs/board.php?bo_table=70&act_target=car_detail&car_code="+guestroom_code;
+  $("#copyUrl").val(makeCopyUrl);
+//   alert(dateStr);
+  var division = 'guestroom_info_ajax';
+  var divisionType = $("#divisionType").val();
+  var reserve_code = "";
+  var returnData ;
+  $.ajax({
+      type: 'GET',
+      url:'/client/act/get_guestroom_detail.php',
+      async: false,
+      data: {
+           division : division,
+           guestroom_code : guestroom_code,
+           dateStr : dateStr,
+           divisionType : divisionType,
+      },
+      error: function (request, status, error) {
+      console.log('guestroom_info_ajax error');
+      },
+      success:function(html){
+        pid = "1";
+       var state = { 'page_id': 1, 'user_id': 5 }; 
+       var title = 'Hello World'; 
+       var url = '/bbs/board.php?bo_table=70'; 
+       history.pushState(state, title, url);
+      $("#sit_info").html(html);
+     }
+   }
+ );
+ room_image(guestroom_code);
+ rightData();
+
+}
+
+function copyUrl() {
+    var urlbox = document.getElementById('copyUrl');
+        urlbox.select();
+        document.execCommand('Copy');
+        alert('URL 이 복사 되었습니다.');
+}
+
+window.onpopstate = function(event) {
+// alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+loadStateContent(event.state);
+}
+
+var pid = "1";
+function loadStateContent(stateData){
+    //alert('stateData ' + stateData.page_id);
+    // alert('pid ' + pid);
+    // var stateDataid = stateData.page_id;
+    // if(pid > 1){
+    //     pid = 1;
+    // }
+    // alert(pid);
+    if(pid == '1'){
+        $("#sub_page_map").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#sub_page_1").show(); 
+        move_top();
+    }
+    else if(pid == '2'){
+        $("#sub_page_map").hide(); 
+        $("#sub_page_detail").show(); 
+        $("#customer_info").hide(); 
+        move_top();
+    }
+
+}
+// function room_detail_right(guestroom_code){
+//     var dateStr = $("#dateStr").val();
+// //   alert(dateStr);
+// //   var dateStr="2022-03-19~2022-03-20";
+//   var division = 'guestroom_info_ajax';
+//   var divisionType = $("#divisionType").val();
+//   var reserve_code = "";
+//   var returnData ;
+//   $.ajax({
+//       type: 'GET',
+//       url:'/client/act/get_guestroom_detail_r.php',
+//       async: false,
+//       data: {
+//            division : division,
+//            guestroom_code : guestroom_code,
+//            dateStr : dateStr,
+//            divisionType : divisionType,
+//       },
+//       error: function (request, status, error) {
+//       console.log('guestroom_info_ajax error');
+//       },
+//       success:function(html){
+//        var state = { 'page_id': 1, 'user_id': 5 }; 
+//        var title = 'Hello World'; 
+//        var url = '/bbs/board.php?bo_table=70'; 
+//        history.pushState(state, title, url);
+//       $("#sel_option_wrap").html(html);
+//      }
+//    }
+//  );
+  
+// }
+function rightData() {
+    $("#select_guestroom_fee").val("0");
+    $("#discount").val("0");
+    $("#select_option_fee").val("0");
+    var room_info_array_etc_data = $("#room_info_array_etc") .val();
+    var room_info_data = JSON.parse(room_info_array_etc_data);
+    // console.log(' room_info_array_etc_data ' + room_info_array_etc_data);
+    for(var i=0 ; i < room_info_data.length ;i++ ){
+        $("#room_fee_r").text((room_info_data[i]['room_fee']/room_info_data[i]['reserve_interval_day']).toLocaleString());//1박가격
+        // $("#room_fee_r").text(room_info_data[i]['room_fee'].toLocaleString());//1박가격
+        // $("#reserve_interval_day").text('/'박');//1박가격
+        $("#reserve_interval_day_val").val(room_info_data[i]['reserve_interval_day']);
+        var reserve_interval_day_val = $("#reserve_interval_day_val").val();
+        $("#select_guestroom_fee").val(room_info_data[i]['room_fee']);
+        $("#room_fee_t").text(room_info_data[i]['room_fee'].toLocaleString());
+        $("#total_hap").text(room_info_data[i]['room_fee'].toLocaleString());
+        $("#total_fee").text(room_info_data[i]['room_fee'].toLocaleString());
+        $("#room_subject").text(room_info_data[i]['guestroom_name']);
+        $("#dateintval").text("/"+room_info_data[i]['dateintval']+"박");
+        $("#guestroom_name").val(room_info_data[i]['guestroom_name']);
+        $("#select_guestroom_code").val(room_info_data[i]['guestroom_code']);
+        $("#guestroom_use_hour").val(room_info_data[i]['guestroom_use_hour']);
+        $("#reserve_term").text("X"+room_info_data[i]['dateintval']);
+
+        
+        if(room_info_data[i]['dateintval'] == '1'){
+            $("#discount").val("0");
+        }
+        
+        if(room_info_data[i]['dateintval'] >= '2'){
+            if(room_info_data[i]['discount_1'] > '0'){
+                $("#discount").val(room_info_data[i]['discount_1']);
+            }
+        }
+        
+        if(room_info_data[i]['dateintval'] >= '3'){
+            if(room_info_data[i]['discount_2'] > '0'){
+                $("#discount").val(room_info_data[i]['discount_2']);
+            }
+        }
+
+        var discountValue = $("#discount").val();
+        if(discountValue > 0){
+            var discount = (parseInt(room_info_data[i]['room_fee'])*parseInt(discountValue))/100;
+            $("#room_fee_discount_tr").show();
+            $("#room_fee_discount").text(discount.toLocaleString());
+        }else{
+            $("#room_fee_discount_tr").hide();
+        }
+        totalCal();
+    }  
+    var html = "";
+    var html_2 = "";
+    var js_array = $("#get_goption_all_pay") .val();
+    var contact = JSON.parse(js_array);
+    var codeArray = new Array();
+    for(var i=0 ; i < contact.length ;i++ ){
+        var trval = contact[i]['option_code'];
+        var chval = "ch_"+contact[i]['option_code'];
+        var optionVal = contact[i]['option_code']+"^"+contact[i]['option_name']+"^"+contact[i]['option_fee']+"^"+contact[i]['option_divi'];
+        if(contact[i]['option_divi'] == '2'){
+            var optionVal2 = parseInt(contact[i]['option_fee'])*parseInt(reserve_interval_day_val);
+        }
+        else{
+            var optionVal2 = parseInt(contact[i]['option_fee']);
+        }
+        
+        html += "<span class='price_item'>";
+        html += "<input type='checkbox' name='selectopt' id='"+chval+"'onclick=\"optcheck('"+contact[i]['option_code']+"')\" value='"+optionVal+"' class=''>";
+        html += "<label for='price_chk1'>"+contact[i]['option_name']+"<span class='price_num'>"+parseInt(contact[i]['option_fee']).toLocaleString()+"</span>원</label>";
+        html += "</span>";
+        $("#price_checkbox").html(html);
+
+        html_2 += "<tr id='"+trval+"'>";
+        html_2 += "<td>"+contact[i]['option_name']+"</td>";
+        html_2 += "<td><span class=''>"+optionVal2.toLocaleString()+"</span><span class=''>원</span></td>";
+        html_2 += "</tr>";
+        $("#opt_list").html(html_2);
+        codeArray.push(trval);
+    }
+   
+    for(var i=0 ; i < codeArray.length ;i++ ){
+        $("#"+codeArray[i]).hide();
+    }
+
+    if(contact.length <= '0') {
+        $("#opt_pay").hide();
+    } 
+    move_top();
+    $("#mapid").val('rightData');
+    setTimeout(mapstart, 1000, 1);
+}
+function optcheck(val){
+    var chval = "ch_"+val;
+    var chResult = $("#"+chval).is(':checked');
+    var select_option_fee = $("#select_option_fee").val();
+    // console.log('select_option_fee ' + select_option_fee);
+    var chvaldata = $('input:checkbox[id='+chval+']').val();
+    var reserve_interval_day_val = $("#reserve_interval_day_val").val();
+
+    if(chResult){
+        $("#"+val).show();
+        var datasplit = chvaldata.split("^");
+        var optFee = datasplit[2];
+        var option_divi = datasplit[3];
+        // alert('select_option_fee ' + select_option_fee + 'optFee ' + optFee + 'option_divi ' + option_divi);
+        if(option_divi == '2'){
+            var optFeeCal = parseInt(select_option_fee)+(parseInt(optFee)*parseInt(reserve_interval_day_val));
+        }
+        else{
+            var optFeeCal = (parseInt(select_option_fee)+parseInt(optFee));  
+            // alert('optFeeCal ' + optFeeCal);  
+        }
+        $("#select_option_fee").val(optFeeCal);
+        totalCal();
+    }
+    else{
+        $("#"+val).hide();
+        var datasplit = chvaldata.split("^");
+        var optFee = datasplit[2];
+        // alert('optFee ' + optFee);
+        var optFeeCal = parseInt(select_option_fee)-parseInt(optFee);
+        // alert('optFeeCal ' + optFeeCal);
+        $("#select_option_fee").val(optFeeCal);
+        totalCal();
+    }
+    // alert(' chvaldata 2' + chvaldata);
+}
+
+function totalCal(){
+    var select_guestroom_fee = $("#select_guestroom_fee").val();
+    var select_discount = $("#discount").val();
+    var select_option_fee = $("#select_option_fee").val();
+    //  alert('select_guestroom_fee ' + select_guestroom_fee + ' select_discount ' + select_discount  + ' select_option_fee ' + select_option_fee);
+
+    var select_discount_fee = parseInt(select_guestroom_fee) * parseInt(select_discount)/100;
+    $("#select_discount_fee").val(select_discount_fee);
+    var totalFee = parseInt(select_guestroom_fee) - parseInt(select_discount_fee) + parseInt(select_option_fee);
+    $("#total_hap").text(totalFee.toLocaleString());
+    $("#total_fee").text(totalFee.toLocaleString());
+    $("#total_fee_input").val(totalFee);
+
+    
+}
+function tr_hide(value){
+       $(value).hide();
+    }
+function selecthide(val){
+    var selid = "#"+val;
+   $(selid).removeClass("active");
+}
+$("#reserve_btn").click(function(){
+       pid = "2";
+       var state = { 'page_id': 2, 'user_id': 5 }; 
+       var title = 'Hello World'; 
+       var url = '/bbs/board.php?bo_table=70'; 
+       history.pushState(state, title, url);
+  $("#sub_page_detail").hide(); 
+  $("#customer_info").show(); 
+//   $("#login").show(); 
+  move_top();
+  var guestroom_name = $("#guestroom_name").val();
+  var dateStr = $("#dateStr").val();
+  var room_fee = $("#select_guestroom_fee").val();
+  var option_fee = $("#select_option_fee").val();
+  var discount_fee = $("#select_discount_fee").val();
+  var total_fee = parseInt(select_guestroom_fee) - parseInt(select_discount_fee) + parseInt(select_option_fee);
+  console.log(JSON.stringify(total_fee));
+  //var total_fee = parseInt(room_fee)+parseInt(option_fee)-parseInt(discount_fee);
+  //var total_cost = JSON.stringify(total_fee);
+  $('#pay_total').text(total_fee.toLocaleString()+"원");
+  $('#c_pay_total').val(total_fee);  
+  
+  
+  
+  
+
+
+$
+  var add_fee = 0;
+  var html = "";
+//   alert('guestroom_name ' + guestroom_name + ' dateStr ' + dateStr  + ' room_fee ' + room_fee
+//         + ' option_fee ' + option_fee + ' total_fee ' + total_fee
+//       );
+      var seloptionArray = new Array();
+        $("input[name='selectopt']:checked").each(function() { 
+            var seloptVal = $(this).val(); 
+            // alert('seloptVal ' + seloptVal);
+            seloptionArray.push(seloptVal);
+        });
+        $("#select_option").val(seloptionArray);
+      var option_info_data_size = seloptionArray.length; //옵션갯수..
+      var t=1;
+      var optStr = "";
+      var reserve_interval_day_val = $("#reserve_interval_day_val").val();
+      for (step = 0; step < option_info_data_size; step++) {
+        var datasplit = seloptionArray[step].split("^");
+        var optcode = datasplit[0];
+        var optname = datasplit[1];
+        var optfee = datasplit[2];
+        var option_divi = datasplit[3];
+        if(option_divi == '2'){
+            optfee = parseInt(optfee)*parseInt(reserve_interval_day_val);
+        }
+        optStr += "옵션명 : " + optname + " , 금액: " + parseInt(optfee).toLocaleString() + "원<br>";
+      }
+  if(conType == 1){
+   html += "<tr>";
+   html += "<th colspan='3'>상품명</th>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<td colspan='3'>" + guestroom_name + "</td>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<th colspan='3'>이용일자</th>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<td colspan='3'>" + dateStr + "</td>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<th colspan='3'>인원</th>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<td colspan='3'>성인"+adultPersonNum+",아동"+childPersonNum+",유아"+babyPersonNum+"</td>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<th>상품요금</th>";
+   html += "<th>할인요금</th>";
+   html += "<th>옵션요금</th>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<td>" + parseInt(room_fee).toLocaleString() + "원</td>";
+   html += "<td>" + parseInt(discount_fee).toLocaleString() + "원</td>";
+   html += "<td>" + parseInt(option_fee).toLocaleString() + "원</td>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<th colspan='3'>합계</th>";
+   html += "</tr>";
+   html += "<tr>";
+   html += "<td colspan='3'>" + parseInt(total_fee).toLocaleString() + "원</td>";
+   html += "</tr>";
+   $("#reser_pay_table_wrap_mo").html(html);
+  }
+  else{
+    html += "<tr>";
+    html += "<td>" + guestroom_name + "</td>";
+    html += "<td>" + dateStr + "</td>";
+    html += "<td>" + parseInt(room_fee).toLocaleString() + "원</td>";
+    html += "<td>" + parseInt(discount_fee).toLocaleString() + "원</td>";
+    html += "<td>" + parseInt(option_fee).toLocaleString() + "원</td>";
+    html += "<td>" + parseInt(total_fee).toLocaleString() + "원</td>";
+    html += "</tr>";
+    html += "<tr>";
+    html += "<td colspan='7'>선택옵션<br>" + optStr + "</td>";
+    html += "</tr>";
+    $("#reser_pay_table_wrap_pc").html(html);
+  }
+  $("#payment_total").text(parseInt(total_fee).toLocaleString()+'원')
+  $("#sec2").hide();
+  $("#sec3").hide();
+  $("#sec4").show();
+      
+  move_top();
+});
+
+function reserve_fourth(){
+  var reserve_name = $("#reserve_name").val();
+//   var reserve_license = $("#reserve_license option:selected").val();
+  var reserve_drive_age = $("#reserve_drive_age").val();
+  var reserve_phone = $("#reserve_phone").val();
+//   var reserve_person = $("#reserve_person").val();
+  var reserve_email = $("#reserve_email").val();
+//   var adultPerson = $("#adultPerson").val();
+//   var childPerson = $("#childPerson").val();
+  
+  var guestroom_paymthod_val = $("input[name='guestroom_paymthod']:checked").val();
+  if(reserve_name == ''){
+     alert('예약자를 입력하세요.');
+     $("#reserve_name").focus();
+     return false;
+   }
+
+   if(reserve_drive_age == ''){
+     alert('운전자연령을 만 나이로 입력하세요.');
+     $("#reserve_drive_age").focus();
+     return false;
+   }
+
+   if(reserve_phone == ''){
+      alert('핸드폰번호를 입력하세요.');
+      $("#reserve_phone").focus();
+      return false;
+    }
+    if(reserve_email == ''){
+       alert('이메일을 입력하세요.');
+       $("#reserve_email").focus();
+       return false;
+     }
+     if(guestroom_paymthod_val == 1){ //무통장입금일때
+       var depositor_val = $("#depositor").val();
+       if(depositor_val == ''){
+          alert('입금자명을 입력하세요.');
+          $("#depositor").focus();
+          return false;
+        }
+     }
+     var agreement = $('#agreement').is(':checked');
+     if(agreement == false){
+       alert('규정동의에 체크해주세요.');
+       return false;
+     }
+
+  var form = $('#reserveForm')[0];
+    var formData = new FormData(form);
+    // for (var pair of formData.entries())
+    // {
+    //   console.log(pair[0]+ ', ' + pair[1]);
+    // }
+var result = confirm("예약을 신청 하시겠습니까?");
+    if(result) { //확인 클릭 시
+
+    $.ajax({
+       type: 'POST',
+       url:"/client/act/reserveAct.php",
+       enctype: 'multipart/form-data',
+       data:formData,
+       cache:false,
+       contentType : false,
+       processData : false,
+       error: function (request, status, error) {
+           console.log('reserveAct error');
+           },
+           success:function(json) {
+               var obj = json.dataret;
+               var recode = obj[0].ret_code;
+               var remsgArray = obj[0].ret_code_msg;
+               var remsgsplit = remsgArray.split("^");
+               var remsg =  remsgsplit['0']//메세지내용
+               var reserve_code = remsgsplit['1']//메세지내용
+               $("#reserve_code").val(reserve_code);
+                if(recode == '100'){ //무통장예약 성공 > 예약완료페이지화면
+                    alert(remsg);
+                    reserve_fifth(reserve_code);
+                }
+                else if(recode == '101'){ //신용카드결제 선택 성공 > 신용카드결제PC화면
+                        pg_payment_proc(reserve_code);
+                }
+                else{ //기타오류
+                    alert('오류가 발생하였습니다.');
+                    return false;
+                    location.reload();
+                }
+        }
+    });
+ }
+}
+
+function pg_payment_proc(reserve_code) {
+    var guestroom_name = "캠핑카예약";
+    var c_pay_total = $('#c_pay_total').text(total_fee.toLocaleString());  
+
+      AUTHNICE.requestPay({
+        clientId: '<?php echo($clientId)?>',
+        method: 'card',
+        orderId: reserve_code,
+        amount: c_pay_total,
+        //amount: '1004',		
+        goodsName: guestroom_name,
+        returnUrl: 'http://www.chanolja.co.kr/bbs/board.php?bo_table=70&act_target=card_return',
+        fnError: function (result) {
+
+             alert(c_pay_total + '개발자확인용 : ' + result.errorMsg + '')
+        }
+      });
+}
+
+
+func

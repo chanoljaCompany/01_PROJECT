@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*@import url("../skin/member/basic/style.css");*/
+
+label { display: inline; }
+input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus { box-shadow: none !important; border: 1px solid #333 !important; }
+
+section { width: 1140px; margin: 0 auto; }
+
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_mo  { display: none; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc { display: block; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 { width: 100%; margin: 30px 0 30px; border-bottom: 1px solid #ddd; }
+/*section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 th { padding: 15px 15px; font-weight: 600; color: #333; background: #fafafa; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box; text-align: left; }*/
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 th { padding: 15px 15px; font-weight: 600; color: #333; background: #fcfcfc; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box; text-align: center; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 th:nth-child(1) { width: 24%; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 th:nth-child(2) { width: 18%; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 th:nth-last-child(1),
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 th:nth-last-child(2),
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 th:nth-last-child(3) { width: 13%; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 tr:nth-child(2) th { background: #fcfcfc; text-align: center; }
+
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 td { padding: 15px 5px; text-align: center; border-bottom: 1px solid #eee; line-height: 27px; vertical-align: middle; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 td:nth-last-child(1),
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 td:nth-last-child(2),
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 td:nth-last-child(3) { padding: 15px 10px 15px 5px; text-align: right; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 tr:nth-child(2n) td { background: #fefefe; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 tr:last-child td { font-weight: 600; background: #fcfcfc; border-bottom: 1px solid #ddd; }
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 tr:last-child td:nth-last-child(1),
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 tr:last-child td:nth-last-child(2),
+section#customer_info #room_reserve_pay .reser_pay_table_wrap_pc table.reser_pay_table_1 tr:last-child td:nth-last-child(3) { padding: 15px 10px 15px 5px; font-weight: 500; text-align: right; }
+
+/*section#customer_info #room_reserve_pay table.reser_pay_table2 { width: 580px; margin: 20px 10px; float: left; }*/
+section#customer_info #room_reserve_pay table.reser_pay_table2 { width: 580px; margin: 20px 10px; }
+section#customer_info #room_reserve_pay table.reser_pay_table2 tr { padding: 5px 0; }
+section#customer_info #room_reserve_pay table.reser_pay_table2 tr th { width: 30%; padding: 10px 5%; text-align: left; color: #fff; background: rgba(10, 10, 10, 0.75); box-sizing: border-box; }
+section#customer_info #room_reserve_pay table.reser_pay_table2 tr td { width: 50%; padding: 10px 5%; text-align: right; background: #fafafa; }
+section#customer_info #room_reserve_pay table.reser_pay_table2 tr:nth-child(2n) td { background: #fff; }
+
+section#customer_info #room_reserve_pay table.reser_pay_table3 { width: 580px; margin: 30px 10px; float: left; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr { padding: 5px 0; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr th { width: 30%; padding: 10px 5%; text-align: left; color: #fff; background: rgba(10, 10, 10, 0.75); box-sizing: border-box; vertical-align: middle; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td { width: 50%; padding: 10px 5%; text-align: right; background: #fafafa }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td input { width: 100%; padding: 10px; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td textarea { width: 100%; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr:nth-child(2n) td { background: #fff; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td #reserve_license { width: 100%; height: 53px; padding: 0 10px; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td.personnel_td { font-size: 15px; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td.personnel_td button { width: 20px; height: 20px; line-height: 1; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td.personnel_td input { width: 40px !important; height: 34px; margin: 0px; padding: 10px !important; text-align: center; }
+section#customer_info #room_reserve_pay table.reser_pay_table3 tr td.personnel_td .mo_br { display: none; }
+
+
+
+section#customer_info #room_reserve_pay table.reser_pay_table4 { width: 520px; margin: 30px 10px; float: right; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 h5 { font-size: 1em; font-family: 'Malgun Gothic', dotum, sans-serif; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr { padding: 5px 0; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr th { width: 30%; padding: 10px 5%; text-align: left; color: #fff; background: rgba(10, 10, 10, 0.75); box-sizing: border-box; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr td { width: 50%; padding: 10px 5%; text-align: right; background: #fafafa; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr:nth-child(2n) td { background: #fff; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr td input { width: 10%; padding: 10px; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr td input#account_info { width: 100%; text-align: left; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr td input#depositor { width: 40%; text-align: right; }
+section#customer_info #room_reserve_pay table.reser_pay_table4 tr td label { display: inline; }
+
+section#customer_info #room_reserve_pay .reser_pay_div5 { width: 98%; margin: 20px 1%; padding: 10px 0; }
+section#customer_info #room_reserve_pay .reser_pay_div5 h3 { margin: 20px 0 0; padding: 20px 30px; font-size: 17px; font-weight: 600; color: #fff; background: rgba(10, 10, 10, 0.75); border-radius: 1px; }
+section#customer_info #room_reserve_pay .reser_pay_div5 h3::before { content: 'O'; display: inline-block; padding-right: 5px; }
+section#customer_info #room_reserve_pay .reser_pay_div5 .tri { position: relative; top: 10px; right: 10px; display: inline-block; }
+section#customer_info #room_reserve_pay .reser_pay_div5 .tri::after { width: 0px; height: 0px; border-bottom: 10px solid transparent; border-top: 10px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; }
+section#customer_info #room_reserve_pay .reser_pay_div5 div { height: inherit !important; margin: 0px; padding: 20px; background: #fafafa; }
+section#customer_info #room_reserve_pay .reser_pay_div5 div p {  }
+section#customer_info #room_reserve_pay .reser_pay_div5 div p textarea { width: 100%; height: 200px; padding: 10px; font-size: 13px; font-weight: 400; line-height: 25px; border: 1px solid #ccc; box-sizing: border-box; border-radius: 3px; }
+section#customer_info #room_reserve_pay .checkbox_wrap { padding: 0px 30px 10px; font-size: 15px; font-weight: 600; display: inline-block; }
+section#customer_info #r

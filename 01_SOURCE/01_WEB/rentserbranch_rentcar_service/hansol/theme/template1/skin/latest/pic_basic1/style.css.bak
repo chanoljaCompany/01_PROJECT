@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 새글 스킨 (latest) */
+.pic_lt1{position:relative;margin-bottom:20px;overflow:hidden;border: 0px solid #c6cacc;background:#fff}
+.pic_lt1 .lat_title {display:block;background:#fcfcfc;padding:0 20px;line-height:45px;font-size:1.083em;border-bottom:1px solid #e2e2e2;color:#253dbe;}
+.pic_lt1 .lat_title a{color:#253dbe;display:inline-block;position:relative}
+.pic_lt1 .lat_title a:after{position:absolute;bottom:-1px;left:0;width:100%;height:2px;background:#253dbe;content:''}
+.pic_lt1 .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center;}
+.pic_lt1 .lt_more:hover{color:#777}
+
+.pic_lt1 ul:after {display:block;visibility:hidden;clear:both;content:""}
+.pic_lt1 ul{padding: 0px 0px }
+.pic_lt1 li{float:left;width:25%;padding:5 0px;  border: 0px solid #c6cacc;}
+.pic_lt1 h3 {font-size: 20px; font-weight: 900; padding: 5px 0; padding : 20px 20px}
+.pic_lt1 h3 span{ font-weight: 400;}
+
+.pic_lt1 li .lt_img{margin:5px 0;display:block}
+.pic_lt1 li .lt_img img{width:100%;height:auto}
+.pic_lt1 li a:hover{color:#a22121}
+.pic_lt1 li .fa-heart{color:#ff0000;}
+.pic_lt1 li .fa-lock{display: inline-block;line-height: 14px;width: 16px;font-size: 0.833em;color: #4f818c;background: #cbe3e8;text-align: center;border-radius: 2px;font-size: 12px;border:1px solid #a2c6ce}
+.pic_lt1 li .new_icon{display:inline-block;width: 16px;line-height:16px ;font-size:0.833em;color:#ffff00;background:#6db142;text-align:center;border-radius: 2px;}
+.pic_lt1 li .hot_icon{display:inline-block;width: 16px;line-height:16px ;font-size:0.833em;color:#fff;background:#e52955;text-align:center;border-radius: 2px;}
+.pic_lt1 li .fa-caret-right{color:#bbb}
+.pic_lt1 .lt_cmt{background:#5c85c1;color:#fff; font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;white-space: nowrap;
+-webkit-box-shadow: inset 0 2px 5px  rgba(255,255,255,0.4);
+-moz-box-shadow: inset 0 2px 5px  rgba(255,255,255,0.4);
+box-shadow: inset 0 2px 5px  rgba(255,255,255,0.4);}
+.pic_lt1 .lt_date{display:block;margin-top:5px;color: #888;}
+
