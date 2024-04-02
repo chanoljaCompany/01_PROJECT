@@ -109,7 +109,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section section1">
 				<center>
 
-                 <h2 style="word-break: auto-phrase; paading: 10px;">고객이 원하는 차량을 시간만큼, 고객이 필요한 <span>모든 렌터카 서비스</span> 제공  </h2>
+                 <h2 style="word-break: auto-phrase; margin: 10px;">고객이 원하는 차량을 시간만큼, 고객이 필요한 <span>모든 렌터카 서비스</span> 제공  </h2>
 
 <br>
 <br>

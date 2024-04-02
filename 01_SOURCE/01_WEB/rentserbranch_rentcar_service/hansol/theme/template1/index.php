@@ -210,7 +210,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap" style="margin-bottom: 20px !important; margin-top: 20px;">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
+              <a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=70" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; font-size:19px; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -254,7 +254,7 @@ include_once(G5_THEME_PATH.'/head.php');
 -->
 <div class="slider" style="max-witdh : 100%;  position: relative;">
       <div><img class="slider_img1" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpg" style="border-radius: 20px; "></div>
-      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.png" style="border-radius: 20px; "></div>
+      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.jpg" style="border-radius: 20px; "></div>
 </div>
 
 <!-- 상단아이콘 PC -->
@@ -757,8 +757,8 @@ function touch_end(event) {
 <script>
     // 모바일 화면일 때 이미지 경로 변경
     if (window.innerWidth <= 600) {
-        document.querySelector('.slider_img1').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo1.png";
-        document.querySelector('.slider_img2').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo2.png";
+        document.querySelector('.slider_img1').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo1.jpg";
+        document.querySelector('.slider_img2').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo2.jpg";
     }
 </script>
 

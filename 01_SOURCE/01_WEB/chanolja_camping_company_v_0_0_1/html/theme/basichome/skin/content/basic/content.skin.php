@@ -19,7 +19,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         width:100%;
     }
     .sec .inner {
-        width:1240px;
+        max-width:1240px;
         position:relative;
         margin:0 auto;
         padding:4% 0;

@@ -711,6 +711,7 @@ function touch_end(event) {
 
 
 <!--공지사항 -->
+<!--
 <div class="aboutWrap_mo">
    <div class="box inner">
 		<div class="main_title">
@@ -724,8 +725,7 @@ function touch_end(event) {
 	    </div>	    
 	</div>
 </div>
-
-
+-->
 
 <!--NEWS -->
 <div class="aboutWrap_mo">

@@ -6,7 +6,7 @@ define('G5_MYSQL_PASSWORD', 'aqws1793!');
 define('G5_MYSQL_DB', 'rentserbranch');
 define('G5_MYSQL_SET_MODE', true);
 
-define('G5_TABLE_PREFIX', 'g5_');
+define('G5_TABLE_PREFIX', 'hansol_');
 
 $g5['write_prefix'] = G5_TABLE_PREFIX.'write_'; // 게시판 테이블명 접두사
 
