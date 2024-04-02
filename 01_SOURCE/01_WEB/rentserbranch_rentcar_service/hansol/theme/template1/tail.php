@@ -145,7 +145,7 @@ if (G5_IS_MOBILE) {
             </ul>
         </div>
         <div id="ft_contact">
-            <strong>1811-6526</strong><br>
+            <strong>1811-9632</strong><br>
             고객센터 운영시간 09:00 - 18:00 <br> (점심시간 12:00 - 13:00)
         </div>
         <div id="ft_link">
@@ -156,15 +156,11 @@ if (G5_IS_MOBILE) {
         
         <div id="ft_company">
             <ul>
-                <li class="ft_company1">상호 : 차놀자렌트카(주)</li>
-                <li class="ft_company2">대표 : 전은택 </li>
-                <li class="ft_company3">주소 : 충청남도 천안시 동남구 충절로 224 1층 차놀자 </li>
-                <li class="ft_company4">차놀자렌트카(주) 사업자등록번호 : 000-00-0000</li>
-                <li class="ft_company5">상호 : 지에스렌트카(주)</li>
-                <li class="ft_company6">대표 : 이정숙 </li>
-                <li class="ft_company7">주소 : 충남 천안시 서북구 서부대로 717, 3층 301호 </li>
-                <li class="ft_company8">지에스렌트카(주) 사업자등록번호 : 000-00-00000</li>
-                <li class="ft_company9">대표전화 041-522-7000 월~금 09:00 - 18:00</li>
+                <li class="ft_company1">상호 : (주)한솔 네트웍스</li>
+                <li class="ft_company2">대표 : 부수현 </li>
+                <li class="ft_company3">주소 : 인천광역시 부평구 세월천로 11, 2층 </li>
+                <li class="ft_company4">사업자번호 : 102-81-45637</li>
+                <li class="ft_company9">대표전화 1811-9632 </li>
             </ul>
         </div>
         
