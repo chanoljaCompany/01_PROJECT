@@ -31,7 +31,7 @@ header("Pragma: no-cache"); // HTTP/1.0
 <!doctype html>
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="icon" href="http://chanolja.co.kr/theme/template1/img/favicon.ico" />
+<link rel="icon" href="http://rentserbranch.dothome.co.kr/branch/hansol/theme/template1/img/icon/main_favicon.ico" />
 <html lang="ko">
 <head>
 
@@ -57,10 +57,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta property="og:type" content="website">
-<meta property="og:title" content="차놀자 렌트카">
+<meta property="og:title" content="한솔 렌트카">
 <meta property="og:description" content="행복한 캠핑카 여행은 차놀자캠핑과 함께">
-<meta property="og:url" content="http://www.chanolja.co.kr">
-<meta name="title" content="차놀자 렌트카">
+<meta property="og:url" content="http://rentserbranch.dothome.co.kr/branch/hansol/">
+<meta name="title" content="한솔 렌트카">
 <meta name="description" content="전국 최대 최다 캠핑카 여행 플랫폼, 차놀자 캠핑, 캠핑카렌트, 캠핑카대여, 서울캠핑카, 경기캠핑카, 인천캠핑카, 부산캠핑카, 경남캠핑카, 전북캠핑카, 전남캠핑카, 충남캠핑카 ">
 
 
@@ -78,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
-<title>차놀자 렌트카</title>
+<title>한솔 렌트카</title>
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/<?php echo G5_IS_MOBILE ? 'mobile' : 'default'; ?>.css?ver=<?php echo G5_CSS_VER; ?>">
 <!--[if lte IE 8]>
 <script src="<?php echo G5_JS_URL ?>/html5.js"></script>

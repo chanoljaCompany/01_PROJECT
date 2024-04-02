@@ -232,7 +232,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
-                >캠핑여행 일정을 세워볼까요 ?</span>
+                >고객이 필요한 모든 렌트카 서비스 제공</span>
                 <div style="position: relative;">
                     <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:100%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
                     <span
@@ -376,7 +376,7 @@ function touch_end(event) {
     <div class="box inner">
      		<div class="main_title">
                <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카</h2>
-		      <a href="http://testsv.dothome.co.kr//bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+		      <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
             <?php  echo latest('theme/splide2', 'tour_guide', 4, 4);   ?>
@@ -389,7 +389,7 @@ function touch_end(event) {
    <div class="box inner">
 		<div class="main_title">
             <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카 신규입점</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+			<a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
        <?php
@@ -632,7 +632,7 @@ function touch_end(event) {
     <div class="box inner">
      		<div class="main_title">
                <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카</h2>
-		      <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+		      <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
             <?php  echo latest('theme/splide22', 'tour_guide', 4, 4);   ?>
@@ -645,7 +645,7 @@ function touch_end(event) {
    <div class="box inner">
 		<div class="main_title">
             <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카 신규입점</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+			<a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
        <?php
