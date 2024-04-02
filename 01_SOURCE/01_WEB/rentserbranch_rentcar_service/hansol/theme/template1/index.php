@@ -375,7 +375,7 @@ function touch_end(event) {
 <div class="aboutWrap">
     <div class="box inner">
      		<div class="main_title">
-               <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카</h2>
+               <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔렌트카</h2>
 		      <a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
@@ -388,7 +388,7 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카 신규입점</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔렌트카 신규입점</h2>
 			<a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -435,8 +435,8 @@ function touch_end(event) {
         <div class="utube_wrap">
             <table style="width:100%;">
                     <td width="40%">
-                       <h3>차놀자렌트카<br> 미디어</h3>
-                       <h4>#차놀자렌트카 #차놀자 #렌트 </h4>
+                       <h3>한솔렌트카<br> 미디어</h3>
+                       <h4>#한솔렌트카 #한솔 #렌트 </h4>
                      </td>
                      <td width="60%">
                         <!--<?php echo latest('theme/youtube_latest','91',1,50) ?>-->
@@ -465,7 +465,7 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 공지사항</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔 공지사항</h2>
 			<a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -485,7 +485,7 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스룸</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔 뉴스룸</h2>
 			<a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -631,7 +631,7 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
     <div class="box inner">
      		<div class="main_title">
-               <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카</h2>
+               <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔렌트카</h2>
 		      <a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
@@ -644,7 +644,7 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카 신규입점</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔렌트카 신규입점</h2>
 			<a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -690,8 +690,8 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
    <div class="box inner">
         <div class="utube_wrap"  style="max-width : 100%" >
-                       <center> <font size=5><bold> 차놀자렌트카 미디어 </bold></font></br>
-                       <font size=3>#차놀자렌트카 #차놀자 #렌트</font>  </center>
+                       <center> <font size=5><bold> 한솔렌트카 미디어 </bold></font></br>
+                       <font size=3>#한솔렌트카 #한솔 #렌트</font>  </center>
 
                        <div style="position:relative;height:0;padding-bottom:56.25%">
                           <iframe src="https://www.youtube.com/embed/Qy-G99rthA4?si=6Wqornkikl4UrLwC"
@@ -707,7 +707,7 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 공지사항</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔 공지사항</h2>
 			<a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
@@ -724,7 +724,7 @@ function touch_end(event) {
 <div class="aboutWrap_mo">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스룸</h2>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">한솔 뉴스룸</h2>
 			<a href="http://rentserbranch.dothome.co.kr/branch/hansol/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
