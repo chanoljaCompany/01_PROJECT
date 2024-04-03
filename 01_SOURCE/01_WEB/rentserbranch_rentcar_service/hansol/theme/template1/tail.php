@@ -139,9 +139,9 @@ if (G5_IS_MOBILE) {
     <div id="ft_wr">
        <div id="ft_sns">
             <ul>
-                <li><a href="https://blog.naver.com/m_chanolja">youtube</a></li>
-                <li class="ft_sns2"><a style="width:100%; background-size: auto 90%; background-repeat: no-repeat;" href="javascirpt:;">instagram</a></li>
-                <li class="ft_sns3"><a href="javascirpt:;">naver blog</a></li>
+                <li class="ft_sns3"><a style="background: none;" href="https://pf.kakao.com/_ZIxcxnT"><img src="http://rentserbranch.dothome.co.kr/branch/hansol/theme/template1/img/icon/kakao_icon.png" /></a></li>
+                <li><a href="https://www.youtube.com/channel/UCBXEWxTndoNyJb1JRaAft3g">youtube</a></li>
+                <li class="ft_sns2"><a style="width:100%; background-size: auto 90%; background-repeat: no-repeat;" href="https://www.instagram.com/hansol_rent/">instagram</a></li>
             </ul>
         </div>
         <div id="ft_contact">

@@ -150,7 +150,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section section2">
 				<center>
 
-                 <h2 style="word-break: auto-phrase;">렌트카 창업! <span>차놀자 렌트카</span>와 함께하세요.</h2>
+                 <h2 style="word-break: auto-phrase;">렌트카 창업! <span>한솔 렌트카</span>와 함께하세요.</h2>
 
 <br>
 <br>
@@ -186,11 +186,11 @@ include_once(G5_THEME_PATH.'/head.php');
                                 align-items: center;
                                 justify-content: center;
                                 margin-top: 20px;">
-                                <div style="font-size: 30px; font-weight: bold; margin-bottom: 20px; text-align: center;">렌트카 창업 자동차 <span style="font-size: 30px;">토탈 플랫폼 차놀자</span>와 함께 하세요.</div>
+                                <div style="font-size: 30px; font-weight: bold; margin-bottom: 20px; text-align: center;">렌트카 창업 자동차 <span style="font-size: 30px;">토탈 플랫폼 한솔</span>과 함께 하세요.</div>
                                 <div style="font-size: 20px; text-align: center">
                                     <div>이제는 자동차도 공유의 시대!</div>
                                     <div>자동차라는 한 가지 아이템으로 소자본 창업이 가능하며</div>
-                                    <div>자동차 판매/렌트 25년 경력의 노하우를 가진 차놀자와 함께 성장하세요!</div>
+                                    <div>자동차 판매/렌트 25년 경력의 노하우를 가진 한솔과 함께 성장하세요!</div>
                                 </div>
                             </div>
                         </div>
@@ -327,7 +327,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="section section6" style="position: relative">
 				<center>
 
-                 <h2 style="word-break: auto-phrase;">차놀자가 여러분께 이야기 드립니다.</h2>
+                 <h2 style="word-break: auto-phrase;">한솔이 여러분께 이야기 드립니다.</h2>
                 </center>
                       
                 <div class="sec6-inner" style="width:100%; flex-wrap: wrap;">
