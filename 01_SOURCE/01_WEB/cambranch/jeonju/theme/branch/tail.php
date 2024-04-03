@@ -57,10 +57,10 @@ if(G5_COMMUNITY_USE === false) {
                                 <div class="foo-lt">
                                     <ul>
                                         <li>
-                                            인천 중구 운남동 476-21
+                                            전라북도 전주시 덕진구 동부대로 1076, 1층(송천동2가)
                                         </li>
                                         <li>
-                                            사업자등록번호 : 538-85-02228
+                                            사업자등록번호 : 712-85-01579
                                         </li>
                                         <li>
                                             Copyright © Chanolja All Rights Reserved.

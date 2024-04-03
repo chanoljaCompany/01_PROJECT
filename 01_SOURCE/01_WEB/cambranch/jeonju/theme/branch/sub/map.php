@@ -19,32 +19,32 @@ $g5['title'] = "오시는길";
 ?>
 
 <div class="sub sub01" id="map">
-        <?php include_once(G5_THEME_PATH.'/head.php'); ?>
-        <?php include_once(G5_THEME_PATH.'/sub/sub_visual.php');?>
-        <?php  include_once(G5_THEME_PATH.'/navigation.php'); ?>
-        <section class="sec sec1">
-            <h1 class="blind">오시는 길</h1>
-            <article class="inner">
-            <h1 class="title">오시는 길</h1>
-<!-- * 카카오맵 - 지도퍼가기 -->
-<!-- 1. 지도 노드 -->
-<div id="daumRoughmapContainer1704667275535" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+    <?php include_once(G5_THEME_PATH.'/head.php'); ?>
+    <?php include_once(G5_THEME_PATH.'/sub/sub_visual.php');?>
+    <?php  include_once(G5_THEME_PATH.'/navigation.php'); ?>
+    <section class="sec sec1">
+        <h1 class="blind">오시는 길</h1>
+        <article class="inner">
+        <h1 class="title">오시는 길</h1>
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1712113766904" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-<!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1704667275535",
-		"key" : "2hjsx",
-		"mapWidth" : "100%",
-		"mapHeight" : "100%"
-	}).render();
-</script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1712113766904",
+                    "key" : "2is4x",
+                    "mapWidth" : "100%",
+                    "mapHeight" : "100%"
+                }).render();
+            </script>
             <div class="map_info elm">
                 <div class="lf_box">
                     <span>
@@ -55,7 +55,7 @@ $g5['title'] = "오시는길";
                     <strong>차놀자캠핑 전주지점</strong>
                     <p>
                         <span>ADDRESS</span>
-                        <span>인천 중구 운남동 476-21</span>
+                        <span>전라북도 전주시 덕진구 동부대로 1076, 1층(송천동2가)</span>
                     </p>
                     <p>
                         <span>Tel</span>

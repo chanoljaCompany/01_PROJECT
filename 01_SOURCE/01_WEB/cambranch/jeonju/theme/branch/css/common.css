@@ -322,7 +322,7 @@ body {
     transform: translateX(0);
 }
 #header #all_menu .menu_ul {
-    width:18%;
+    width:30%;
     position:absolute;
     top:50%;
     left:50%;
@@ -396,6 +396,10 @@ body {
 
 
 /* e:all_menu */
+@media screen and (max-width: 1500px) {
+    #header #nav .gnb_a {
+        font-size: 13px;
+    }
 
 
 @media screen and (max-width:1240px){

@@ -105,13 +105,12 @@
     text-shadow: 3px 3px 10px #111;
 }
 .main-tit dt{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 500;
 }
 .main-tit dd{
-    font-size: 75px;
+    font-size: 72px;
     font-weight: 600;
-    line-height: 1;
 }
 .main-tit dd:nth-of-type(2){
     font-size: 20px;
@@ -775,7 +774,6 @@
 }
 
 .mo-br{
-    display: none;
 }
 
 @media screen and (max-width:1500px) {

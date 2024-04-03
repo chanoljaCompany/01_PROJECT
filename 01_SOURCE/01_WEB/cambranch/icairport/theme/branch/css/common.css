@@ -318,11 +318,18 @@ body {
     transform: translateX(100%);
     transition: .5s ease;
 }
+
+@media screen and (max-width: 1500px) {
+    #header #nav .gnb_a {
+        font-size: 13px;
+    }
+}
+
 #header #all_menu.on {
     transform: translateX(0);
 }
 #header #all_menu .menu_ul {
-    width:18%;
+    width:30%;
     position:absolute;
     top:50%;
     left:50%;

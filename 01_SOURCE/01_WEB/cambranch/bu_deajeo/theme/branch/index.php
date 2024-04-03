@@ -34,32 +34,29 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section main-section">
                 <div class="main-slick">
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/메인_04.jpg')"></div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner1.jpg')"></div>
                         <div class="main-tit">
                             <dl>
                                 <dt>국내 최대/최다 캠핑카 플랫폼</dt>
                                 <dd>전국 50여개 지점과 <br class="mo-br"> 180여대 캠핑카 인프라</dd>
-                                <dd>#캠핑카여행 #캠핑카대여 #전국캠핑카</dd>
                             </dl>
                         </div>
                     </div>
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/메인_03.jpg')"></div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner2.jpg')"></div>
                         <div class="main-tit">
                             <dl>
                                 <dt>수도권에서 가장 가까운 캠핑카 여행</dt>
                                 <dd>차놀자 부산대저지점 <br class="mo-br"> 캠핑카 토탈 서비스</dd>
-                                <dd>#캠핑여행 #캠핑취미 #캠핑레저 #부산캠핑카 #영종도캠핑카</dd>
                             </dl>
                         </div>
                     </div>
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/배너01.jpg')"></div>
+                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner3.jpg')"></div>
                         <div class="main-tit">
                             <dl>
                                 <dt>캠핑여행을 위한 최신 캠핑카보유</dt>
-                                <dd>최고의 옵션을 가진 캠핑카가<br><br class="mo-br"> 여러분을 기다립니다.</dd>
-                                <dd>#코지밴 650S #렉스턴칸 지바코코넛</dd>
+                                <dd>최고의 옵션을 가진 캠핑카가<br class="mo-br"> 여러분을 기다립니다.</dd>
                             </dl>
                         </div>
                     </div>
@@ -127,7 +124,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                         
                                         </dd>
                                     </dl>
-                                    <a href="http://cambranch.dothome.co.kr/BRANCH/icairport/bbs/board.php?bo_table=carlist"><span>MORE VIEW</span></a>
+                                    <a href="http://cambranch.dothome.co.kr/BRANCH/bu_deajeo/bbs/board.php?bo_table=carlist"><span>MORE VIEW</span></a>
                                 </div>
                                 <div class="_dl">
                                     <dl>
@@ -142,7 +139,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                             편리한 캠핑카여행을 떠나볼까요/
                                         </dd>
                                     </dl>
-                                    <a href="http://cambranch.dothome.co.kr/BRANCH/icairport/theme/branch/sub/goods_info.php"><span>MORE VIEW</span></a>
+                                    <a href="http://cambranch.dothome.co.kr/BRANCH/bu_deajeo/theme/branch/sub/goods_info.php"><span>MORE VIEW</span></a>
                                 </div>
                                 <!--<div class="_dl">
                                     <dl>
@@ -254,7 +251,7 @@ include_once(G5_THEME_PATH.'/head.php');
                             생생한 고객 후기 입니다.
                             </dd>
                         </dl>
-                        <a href="http://cambranch.dothome.co.kr/BRANCH/icairport/bbs/board.php?bo_table=replay"><span>MORE VIEW</span></a>
+                        <a href="http://cambranch.dothome.co.kr/BRANCH/bu_deajeo/bbs/board.php?bo_table=replay"><span>MORE VIEW</span></a>
                     </div>
                     <div class="sec4-contents">
                         <div class="news-tit">
