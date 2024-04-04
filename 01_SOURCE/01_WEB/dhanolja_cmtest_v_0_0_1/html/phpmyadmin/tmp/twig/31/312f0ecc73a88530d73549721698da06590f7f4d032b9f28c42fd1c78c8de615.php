@@ -77,6 +77,6 @@ echo _gettext("Close");
 
     public function getSourceContext()
     {
-        return new Source("", "modals/preview_sql_modal.twig", "/host/home2/chatour/html/phpmyadmin/templates/modals/preview_sql_modal.twig");
+        return new Source("", "modals/preview_sql_modal.twig", "/host/home2/cmtest/html/phpmyadmin/templates/modals/preview_sql_modal.twig");
     }
 }

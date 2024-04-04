@@ -387,7 +387,7 @@ function room_info_array_etc($get_guestroom_code, $dateStr, $divisionType, $pers
           AND A.post_show = 'Y'
          AND A.guestroom_del_whether = 'N'
           ";
-  echo $sql;
+  //echo $sql;
 
   // $sql = "SELECT DISTINCT A.* , B.guestroom_image_name
   // FROM guestroom_info AS A 

@@ -292,7 +292,7 @@ function getData(divisionType,locate) {
     var local = '';
     }
     else if(locate == 'icn'){
-      var local = '인천';
+      var local = '인천 영종도';
     }     
     else if(locate == 'sub'){      
       var local = $("#guestroom_name").val();

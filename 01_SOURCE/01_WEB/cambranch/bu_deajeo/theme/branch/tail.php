@@ -57,10 +57,10 @@ if(G5_COMMUNITY_USE === false) {
                                 <div class="foo-lt">
                                     <ul>
                                         <li>
-                                            인천 중구 운남동 476-21
+                                            부산광역시 강서구 대저로155번길 15, 1층 B동(대저1동)
                                         </li>
                                         <li>
-                                            사업자등록번호 : 538-85-02228
+                                            사업자등록번호 : 124-85-87862
                                         </li>
                                         <li>
                                             Copyright © Chanolja All Rights Reserved.

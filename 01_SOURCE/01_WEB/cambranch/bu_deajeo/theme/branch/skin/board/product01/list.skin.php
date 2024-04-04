@@ -122,6 +122,7 @@ $g5['title'] = "보유차량";
                                 <strong class="tit">
                                     <?php echo $list[$i]['subject'] ?> 
                                 </strong>
+                                <!--
                                 <p class="txt">
                                     <?php
                                         if (is_mobile()){
@@ -130,6 +131,10 @@ $g5['title'] = "보유차량";
                                             echo utf8_strcut(strip_tags($list[$i]['wr_content']), 235, '..');  
                                         }
                                     ?>
+                                </p>
+                                -->
+                                <p>
+
                                 </p>
                                 <a href="<?php echo $list[$i]['href'] ?>" class="moreBtn">
                                     <span>more +</span>

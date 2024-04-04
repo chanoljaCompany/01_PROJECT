@@ -121,7 +121,8 @@ $g5['title'] = "보유차량";
                 </ul>
             </div>
             <div class="cont_box">
-                <p><?php echo get_view_thumbnail($view['content']); ?></p>
+                <!--<p><?php echo get_view_thumbnail($view['content']); ?></p>-->
+                <p></p>
                 <?php //echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 ?>
             </div>
             <div class="info_box">

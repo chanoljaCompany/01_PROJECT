@@ -71,7 +71,7 @@
                             </div>
                         </div>
                     </li>
-
+<!--
                     <li class="col-md-4 col-sm-6 col-xs-12">
                         <div class="list_form" id="list_form_subdetail">
                             <h3>세부검색</h3>

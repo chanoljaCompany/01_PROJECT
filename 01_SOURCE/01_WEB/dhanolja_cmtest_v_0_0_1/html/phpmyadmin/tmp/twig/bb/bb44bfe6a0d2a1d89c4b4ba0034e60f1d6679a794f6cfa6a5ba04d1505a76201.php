@@ -207,6 +207,6 @@ class __TwigTemplate_caea3004f97e5105b423f12464aab5ec3f1e068082adca6e3947ac41d6f
 
     public function getSourceContext()
     {
-        return new Source("", "header.twig", "/host/home2/chatour/html/phpmyadmin/templates/header.twig");
+        return new Source("", "header.twig", "/host/home2/cmtest/html/phpmyadmin/templates/header.twig");
     }
 }

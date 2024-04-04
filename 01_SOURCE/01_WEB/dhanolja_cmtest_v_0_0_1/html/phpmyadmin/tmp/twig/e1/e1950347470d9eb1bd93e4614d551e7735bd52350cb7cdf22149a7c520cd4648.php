@@ -62,6 +62,6 @@ class __TwigTemplate_d8e62aa806bb120f298eaef8b617392f2536ce3c49852a43328141ab0ad
 
     public function getSourceContext()
     {
-        return new Source("", "message.twig", "/host/home2/chatour/html/phpmyadmin/templates/message.twig");
+        return new Source("", "message.twig", "/host/home2/cmtest/html/phpmyadmin/templates/message.twig");
     }
 }

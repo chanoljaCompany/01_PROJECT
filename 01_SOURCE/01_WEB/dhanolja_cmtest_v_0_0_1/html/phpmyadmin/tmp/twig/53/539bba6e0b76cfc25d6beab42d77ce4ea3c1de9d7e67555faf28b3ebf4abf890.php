@@ -81,6 +81,6 @@ echo _gettext("Close");
 
     public function getSourceContext()
     {
-        return new Source("", "modals/enum_set_editor.twig", "/host/home2/chatour/html/phpmyadmin/templates/modals/enum_set_editor.twig");
+        return new Source("", "modals/enum_set_editor.twig", "/host/home2/cmtest/html/phpmyadmin/templates/modals/enum_set_editor.twig");
     }
 }

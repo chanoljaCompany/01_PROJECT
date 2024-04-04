@@ -34,7 +34,10 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section main-section">
                 <div class="main-slick">
                     <div>
+                        <!--
                         <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner1.jpg')"></div>
+                        -->
+                        <video style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
                         <div class="main-tit">
                             <dl>
                                 <dt>국내 최대/최다 캠핑카 플랫폼</dt>
@@ -56,7 +59,7 @@ include_once(G5_THEME_PATH.'/head.php');
                         <div class="main-tit">
                             <dl>
                                 <dt>캠핑여행을 위한 최신 캠핑카보유</dt>
-                                <dd>최고의 옵션을 가진 캠핑카가<br><br class="mo-br"> 여러분을 기다립니다.</dd>
+                                <dd>최고의 옵션을 가진 캠핑카가<br class="mo-br"> 여러분을 기다립니다.</dd>
                             </dl>
                         </div>
                     </div>
