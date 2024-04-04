@@ -49,8 +49,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner2.jpg')"></div>
                         <div class="main-tit">
                             <dl>
-                                <dt>수도권에서 가장 가까운 캠핑카 여행</dt>
-                                <dd>차놀자 인천공항지점 <br class="mo-br"> 캠핑카 토탈 서비스</dd>
+                                <dt>편안한 여행을 위한 완벽한 파트너</dt>
+                                <dd>즐거운 여정을 위한 <br class="mo-br"> 최고의 캠핑카를 경험하세요</dd>
                             </dl>
                         </div>
                     </div>

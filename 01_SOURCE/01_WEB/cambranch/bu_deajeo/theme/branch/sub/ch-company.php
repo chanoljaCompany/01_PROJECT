@@ -104,17 +104,17 @@ $g5['sub-text']="안녕하세요. 차놀자캠핑 부산대저지점입니다.";
                     <ul>
                         <li class="on" data-img="<?php echo G5_THEME_URL?>/img/sub/011.jpg">
                             <dl>
-                                <dt>수도권 관광 메카 <span><i class="xi-angle-down-min"></i></span></dt>
-                                <dd>수도권에가 가장 가까운 바다와 천혜의 자연을 갖춘.<br>
-                                    영종도에 위치한 부산대저 지점입니다.
+                                <dt>자연 속에서의 힐링을 찾아서 <span><i class="xi-angle-down-min"></i></span></dt>
+                                <dd>부산 대저지점, 자연 속에서 마음을 정화하고 <br>
+                                    새로운 에너지를 얻을 수 있는 곳입니다.
                                 </dd>
                             </dl>
                         </li>
                         <li data-img="<?php echo G5_THEME_URL?>/img/sub/012.jpg">
                             <dl>
-                                 <dt>가장 가까운 캠핑카여행<span><i class="xi-angle-down-min"></i></span></dt>
-                                <dd>아름다운 바다와 산, 그리고 자연이 숨쉬는 영종도<br>
-                                    그곳이 바로 고객님의 가장 가까운 곳에 있습니다.
+                                 <dt>해변가의 소리가 있는 휴식<span><i class="xi-angle-down-min"></i></span></dt>
+                                <dd>자연이 숨쉬는 부산, 바닷가의 소리와 함께<br>
+                                    편안한 휴식을 즐길 수 있는 곳입니다.
                                 </dd>
                             </dl>
                         </li>

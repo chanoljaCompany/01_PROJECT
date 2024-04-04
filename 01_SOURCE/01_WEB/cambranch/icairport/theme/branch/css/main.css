@@ -111,7 +111,7 @@
 .main-tit dd{
     font-size: 72px;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.2;
 }
 .main-tit dd:nth-of-type(2){
     font-size: 20px;

@@ -149,19 +149,19 @@ $g5['title'] = "보유차량";
                             <div class="info">
                                 <ul>
                                     <li>
-                                        <p class="tit">테마</p>
+                                        <p class="tit">운전면허</p>
                                         <p class="txt"><?php echo $list[$i]['wr_1'] ?></p>
                                     </li>
                                     <li>
-                                        <p class="tit">가격</p>
+                                        <p class="tit">취침인원</p>
                                         <p class="txt"><?php echo $list[$i]['wr_2'] ?></p>
                                     </li>
                                     <li>
-                                        <p class="tit">버전</p>
+                                        <p class="tit">반려동물가능여부</p>
                                         <p class="txt"><?php echo $list[$i]['wr_3'] ?></p>
                                     </li>
                                     <li>
-                                        <p class="tit">주요사업</p>
+                                        <p class="tit">주요기능</p>
                                         <p class="txt"><?php echo $list[$i]['wr_4'] ?></p>
                                     </li>
                                 </ul>

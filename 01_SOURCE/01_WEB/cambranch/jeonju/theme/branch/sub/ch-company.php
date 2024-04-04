@@ -104,17 +104,17 @@ $g5['sub-text']="안녕하세요. 차놀자캠핑 전주지점입니다.";
                     <ul>
                         <li class="on" data-img="<?php echo G5_THEME_URL?>/img/sub/011.jpg">
                             <dl>
-                                <dt>수도권 관광 메카 <span><i class="xi-angle-down-min"></i></span></dt>
-                                <dd>수도권에가 가장 가까운 바다와 천혜의 자연을 갖춘.<br>
-                                    영종도에 위치한 인천공항 지점입니다.
+                                <dt>역사와 자연의 만남 <span><i class="xi-angle-down-min"></i></span></dt>
+                                <dd>전주지점, 전통과 자연이 어우러진 특별한 공간에서 <br>
+                                    여유로운 휴식을 경험하세요.
                                 </dd>
                             </dl>
                         </li>
                         <li data-img="<?php echo G5_THEME_URL?>/img/sub/012.jpg">
                             <dl>
-                                 <dt>가장 가까운 캠핑카여행<span><i class="xi-angle-down-min"></i></span></dt>
-                                <dd>아름다운 바다와 산, 그리고 자연이 숨쉬는 영종도<br>
-                                    그곳이 바로 고객님의 가장 가까운 곳에 있습니다.
+                                 <dt>자연의 힐링, 캠핑카 여행<span><i class="xi-angle-down-min"></i></span></dt>
+                                <dd>전통, 그리고 자연이 숨쉬는 전주<br>
+                                    아름다운 곳에서 여유로운 휴식을 즐기세요.
                                 </dd>
                             </dl>
                         </li>
