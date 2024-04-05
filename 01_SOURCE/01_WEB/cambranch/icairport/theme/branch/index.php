@@ -25,6 +25,24 @@ include_once(G5_THEME_PATH.'/head.php');
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     </div>
+
+    <style>
+
+        #main_banner_mp4_mo {
+            display: none;
+        }
+
+        @media screen and (max-width: 480px) {
+            #main_banner_mp4 {
+                display: none;
+            }
+            #main_banner_mp4_mo {
+                display: block;
+            }
+        }
+
+    </style>
+
     <div id="main">
         <div class="top-btn">
             <i class="xi-angle-up"></i>
@@ -37,7 +55,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         <!--
                         <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner1.jpg')"></div>
                         -->
-                        <video style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
+                        <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
+                        <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo.mp4"></video>
                         <div class="main-tit">
                             <dl>
                                 <dt>국내 최대/최다 캠핑카 플랫폼</dt>

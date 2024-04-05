@@ -16,7 +16,15 @@ include_once(G5_THEME_PATH.'/head.php');
    $(document).ready(function () {
 
        console.log(document.cookie.indexOf("pop_up1"));
-       if(document.cookie.indexOf("pop_up1") === -1 ){
+       if(document.cookie.indexOf("pop_up1") === -1 || document.cookie.indexOf("pop_up2") === -1  ){ // 못 찾으면
+
+           if(document.cookie.indexOf("pop_up1") !== -1) {
+               $('.pop_up1').css('display', 'none');
+           }
+
+           if(document.cookie.indexOf("pop_up2") !== -1) {
+               $('.pop_up2').css('display', 'none');
+           }
 
            $('.pop_up_back').css('display', 'block');
            $('body').css('position', 'fixed');
@@ -747,7 +755,7 @@ function touch_end(event) {
 <div class="pop_up_back" style="display:none;" >
     <div class="pop_up1">
         <div style="cursor:pointer; width: auto; height:80vh; display:flex; justify-content: center;" >
-            <img onclick="location.href='http://chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=10'" style="width:85%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.jpg" />
+            <img onclick="location.href='http://chatour.dothome.co.kr/bbs/board.php?bo_table=event&wr_id=10'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.jpg" />
         </div>
          <div  class="pop_up_spans">
               <div class="pop_up_btns">
@@ -757,10 +765,10 @@ function touch_end(event) {
          </div>
     </div>
 
-    <!--
+
     <div class="pop_up2">
         <div style="cursor:pointer; width: auto; display:flex; justify-content: center;" >
-            <img onclick="location.href='https://www.wadiz.kr/web/campaign/detail/272507'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/wadiz_popup.jpg" />
+            <img onclick="location.href='http://chatour.dothome.co.kr/bbs/board.php?bo_table=event&wr_id=11'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up2.jpg" />
         </div>
         <div  class="pop_up_spans">
             <div class="pop_up_btns" >
@@ -769,7 +777,7 @@ function touch_end(event) {
             </div>
         </div>
     </div>
-    -->
+
 </div>
 
 
@@ -795,11 +803,12 @@ function touch_end(event) {
   .pop_up1{
       position: relative;
       top: 50%;
-      left: 50%;
+      left: 35%;
       transform: translate(-50%, -80%);
       max-height: 500px;
       max-width: 500px;
       width: 80%;
+      margin-left: 420px;
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -808,7 +817,7 @@ function touch_end(event) {
       flex-direction: column;
       height: 50vh;
   }
-/*
+
   .pop_up2{
       position: absolute;
       top: 50%;
@@ -825,7 +834,7 @@ function touch_end(event) {
       flex-direction: column;
       height: 50vh;
   }
-
+/*
   .pop_up_x{
     color: red;
     font-size: 25px;
@@ -841,7 +850,7 @@ function touch_end(event) {
         position:relative;
         bottom:0px;
         left:0px;
-        width:85%;
+        width:80%;
         max-width:500px;
         font-size:15px;
         display:flex;
@@ -935,12 +944,12 @@ function touch_end(event) {
       if(num === 1) {
           setCookie("pop_up1", "done", "1");
           $('.pop_up1').css('display', 'none');
-          /*
+
           if($('.pop_up2').css('display')==='none') {
               $('.pop_up_back').css('display', 'none');
               $('body').css('position', 'relative');
           }
-        */
+
           $('.pop_up_back').css('display', 'none');
           $('body').css('position', 'relative');
       }else {
@@ -957,12 +966,12 @@ function touch_end(event) {
   function Pop_up_no(num) {
       if(num === 1) {
           $('.pop_up1').css('display', 'none');
-          /*
+
           if($('.pop_up2').css('display')==='none') {
               $('.pop_up_back').css('display', 'none');
               $('body').css('position', 'relative');
           }
-          */
+
           $('.pop_up_back').css('display', 'none');
           $('body').css('position', 'relative');
       }else {
