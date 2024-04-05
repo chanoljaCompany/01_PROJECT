@@ -35,7 +35,7 @@ header("Pragma: no-cache"); // HTTP/1.0
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="http://chanolja.co.kr/theme/template1/img/favicon.ico" />
+    <link rel="icon" href="http://cambranch.dothome.co.kr/BRANCH/jeonju/theme/branch/img/favicon.ico" />
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;

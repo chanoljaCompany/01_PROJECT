@@ -3,7 +3,7 @@ if (!defined('_INDEX_')) define('_INDEX_', true);
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 if (G5_IS_MOBILE) {
-    // include_once(G5_THEME_PATH.'/index.php');
+    //include_once(G5_THEME_PATH.'/index.php');
     return;
 }
 
@@ -14,10 +14,9 @@ if(G5_COMMUNITY_USE === false) {
 
 include_once(G5_THEME_PATH.'/head.php');
 ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/common.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/icofont.min.css" />
@@ -43,7 +42,6 @@ include_once(G5_THEME_PATH.'/head.php');
 
     </style>
 
-
     <div id="main">
         <div class="top-btn">
             <i class="xi-angle-up"></i>
@@ -53,9 +51,6 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="section main-section">
                 <div class="main-slick">
                     <div>
-                        <!--
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner1.jpg')"></div>
-                        -->
                         <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
                         <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo.mp4"></video>
                         <div class="main-tit">
@@ -66,14 +61,16 @@ include_once(G5_THEME_PATH.'/head.php');
                         </div>
                     </div>
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner2.jpg')"></div>
+                        <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
+                        <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo.mp4"></video>
                         <div class="main-tit">
                             <dl>
                                 <dt>편안한 여행을 위한 완벽한 파트너</dt>
-                                <dd>즐거운 여정을 위한 <br class="mo-br">최고의 캠핑카를 경험하세요</dd>
+                                <dd>즐거운 여정을 위한 <br class="mo-br"> 최고의 캠핑카를 경험하세요</dd>
                             </dl>
                         </div>
                     </div>
+                    <!--
                     <div>
                         <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner3.jpg')"></div>
                         <div class="main-tit">
@@ -83,22 +80,26 @@ include_once(G5_THEME_PATH.'/head.php');
                             </dl>
                         </div>
                     </div>
+                    -->
                 </div>
                 <div class="controll">
                     <div class="progressBarContainer">
-                            <div class="item">
-                                <h3>01</h3>
-                                <span data-slick-index="0" class="progressBar"></span>
-                            </div>
-                            <div class="item">
-                                <h3>02</h3>
-                                <span data-slick-index="1" class="progressBar"></span>
-                            </div>
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="0" class="progressBar"></span>
+                        </div>
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="1" class="progressBar"></span>
+                        </div>
+                        <!--
                             <div class="item">
                                 <h3>03</h3>
                                 <span data-slick-index="2" class="progressBar"></span>
                             </div>
+                        -->
                     </div>
+                    <!--
                     <div class="slick-btn">
                         <div class="pause-btn">
                             <i class="xi-pause"></i>
@@ -107,13 +108,23 @@ include_once(G5_THEME_PATH.'/head.php');
                             <i class="xi-play"></i>
                         </div>
                     </div>
+                    -->
                     <div class="main-controll">
                     </div>
                 </div>
             </div>
 
+            <style>
 
+                .bar_item_h3{
+                    width:10px;
+                    height: 10px;
+                    border: 2px solid #fff;
+                    background: #fff;
+                    border-radius: 100%;
+                }
 
+            </style>
             <div class="section section1">
                 <div class="sec1-inner">
                     <div class="sec1-lt">
@@ -144,10 +155,10 @@ include_once(G5_THEME_PATH.'/head.php');
                                         <dd>
                                             캠핑카대여, 캠핑용품, 캠핑음식, 캠핑장 정보 등<br>
                                             차별화된 차놀자 캠핑만의 서비스를 받아 보세요<br>
-                                        
+
                                         </dd>
                                     </dl>
-                                    <a href="http://cambranch.dothome.co.kr/BRANCH/bu_deajeo/bbs/board.php?bo_table=carlist"><span>MORE VIEW</span></a>
+                                    <a href="http://cambranch.chanolja.co.kr/BRANCH/bu_deajeo/bbs/board.php?bo_table=carlist"><span>MORE VIEW</span></a>
                                 </div>
                                 <div class="_dl">
                                     <dl>
@@ -156,18 +167,18 @@ include_once(G5_THEME_PATH.'/head.php');
                                         </dt>
                                         <dd>
                                             캠핑카여행을 위한 다양한 캠핑용품과<br>장작, 숯등일 준비되어 있습니다<br>이제 먹을것만 챙기면 됩니다.
-                                             
+
                                         </dd>
                                         <dd>
                                             편리한 캠핑카여행을 떠나볼까요/
                                         </dd>
                                     </dl>
-                                    <a href="http://cambranch.dothome.co.kr/BRANCH/bu_deajeo/theme/branch/sub/goods_info.php"><span>MORE VIEW</span></a>
+                                    <a href="http://cambranch.chanolja.co.kr/BRANCH/bu_deajeo/theme/branch/sub/goods_info.php"><span>MORE VIEW</span></a>
                                 </div>
                                 <!--<div class="_dl">
                                     <dl>
                                         <dt>
-                                            수익형 캠핑카 
+                                            수익형 캠핑카
                                         </dt>
                                         <dd>
                                             1년에 몇 번 안타는 캠핑카 때문에 고민이신가요?<br>억 대의 캠핑카 구매에 망설이시나요?
@@ -218,7 +229,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                     시작한 믿을 수 있는 인프라입니다.</dd>
                             </dl>
                             <a href="<?php echo G5_THEME_URL?>/sub/ch-company.php"><span>MORE VIEW</span></a>
-                         
+
                             <ul class="sec2-contents">
                                 <li>
                                     <i class="icofont-chart-growth"></i>
@@ -274,7 +285,7 @@ include_once(G5_THEME_PATH.'/head.php');
                             생생한 고객 후기 입니다.
                             </dd>
                         </dl>
-                        <a href="http://cambranch.dothome.co.kr/BRANCH/bu_deajeo/bbs/board.php?bo_table=replay"><span>MORE VIEW</span></a>
+                        <a href="http://cambranch.chanolja.co.kr/BRANCH/bu_deajeo/bbs/board.php?bo_table=replay"><span>MORE VIEW</span></a>
                     </div>
                     <div class="sec4-contents">
                         <div class="news-tit">
@@ -288,7 +299,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <?php include_once(G5_THEME_PATH.'/tail.php'); ?>
 
             <div class="section fp-auto-height">
-                
+
             </div>
         </div>
     </div>
@@ -304,7 +315,7 @@ include_once(G5_THEME_PATH.'/head.php');
          duration: 1200,
         });
     </script>
-    
+
 <?php
  include_once(G5_THEME_PATH.'/tail.sub.php');
  ?>

@@ -30,9 +30,11 @@ $thumb_height = 195;
                     <dd>
                         <?php echo mb_strimwidth($list[$i]['wr_content'], '0', '500', '...', 'utf-8');?>
                     </dd>
+                    <!--
                     <dd>
                         <?php echo date("Y-m-d", strtotime($list[$i]['wr_datetime'])) ?>
                     </dd>
+                    -->
                 </dl>
                </a>
             </li>

@@ -1,6 +1,6 @@
 
 $(window).resize(function(){
-	loaction.reload();
+    loaction.reload();
 });
 
 $(document).ready(function(){
@@ -27,34 +27,34 @@ $(document).ready(function(){
                 }
             },
                                     */
-             onLeave: function (section,destination) {
-                 if(destination.index!==0){
-                     $('#header').addClass('active');
-                     $('.top-btn').addClass('on')
-                 }else{
-                     $('#header').removeClass('active')
-                     $('.top-btn').removeClass('on')
-                 }
+            onLeave: function (section,destination) {
+                if(destination.index!==0){
+                    $('#header').addClass('active');
+                    $('.top-btn').addClass('on')
+                }else{
+                    $('#header').removeClass('active')
+                    $('.top-btn').removeClass('on')
+                }
 
-                 if(destination.index==1){
-                     $('#fp-nav ul li').addClass('on');
-                 }else{
-                     $('#fp-nav ul li').removeClass('on');
-                 }
-                 if(destination.index==1 || destination.index==5){
+                if(destination.index==1){
+                    $('#fp-nav ul li').addClass('on');
+                }else{
+                    $('#fp-nav ul li').removeClass('on');
+                }
+                if(destination.index==1 || destination.index==5){
                     $('.top-btn').addClass('active')
-                 }else{
+                }else{
                     $('.top-btn').removeClass('active');
-                 }
+                }
 
-             },
-             afterLoad:function(section,destination){
+            },
+            afterLoad:function(section,destination){
                 if(destination.index==4 || destination.index==5){
                     $('.sec4-contents').addClass('on')
                 }else{
                     $('.sec4-contents').removeClass('on')
                 }
-             }
+            }
         })
     }
     $('.mouse').click(function(destination){
@@ -91,14 +91,14 @@ $(document).ready(function(){
             progressBarIndex = $('.main-slick .slick-track div[aria-hidden="false"]').data("slickIndex");
             startProgressbar();
         } else {
-            percentTime += 1 / (time + 5);
+            percentTime += 1 / (time + 11);
             $('.inProgress' + progressBarIndex).css({
                 width: percentTime + "%"
             });
             if (percentTime >= 100) {
                 $('.main-slick').slick('slickNext');
                 progressBarIndex++;
-                if (progressBarIndex > 2) {
+                if (progressBarIndex > 1) {
                     progressBarIndex = 0;
                 }
                 startProgressbar();
@@ -118,10 +118,10 @@ $(document).ready(function(){
     // End ticking machine
 
     $('.progressBarContainer div').click(function () {
-    	clearInterval(tick);
-    	var goToThisIndex = $(this).find("span").data("slickIndex");
-    	$('.main-slick').slick('slickGoTo', goToThisIndex, false);
-    	startProgressbar();
+        clearInterval(tick);
+        var goToThisIndex = $(this).find("span").data("slickIndex");
+        $('.main-slick').slick('slickGoTo', goToThisIndex, false);
+        startProgressbar();
         $('.pause-btn').css({display:"block"});
         $('.play-btn').css({display:"none"})
     });
@@ -209,12 +209,12 @@ $(document).ready(function(){
     // End ticking machine
 
     $('.progressWrap .item2').click(function () {
-    	clearInterval(tick2);
-    	var goToThisIndex2 = $(this).find("span").data("slickIndex");
-    	$('.sec1-slick').slick('slickGoTo', goToThisIndex2, false);
+        clearInterval(tick2);
+        var goToThisIndex2 = $(this).find("span").data("slickIndex");
+        $('.sec1-slick').slick('slickGoTo', goToThisIndex2, false);
         $('.sec1-pause').css({display:"block"});
         $('.sec1-play').css({display:"none"});
-    	startProgressbar2();
+        startProgressbar2();
     });
 
     $('.sec1-pause').click(function(){
@@ -243,44 +243,44 @@ $(document).ready(function(){
             topcoords = $elm.offset().top;
             if(executed==false){
                 if (wintop >= (topcoords - (winheight * 0.5))) {
-                        var progressRate=$('.num').eq(0).attr("data-rate");
-                        $({rate:0}).animate({rate:progressRate},{
-                            duration:1000,
-                            progress:function(){
-                                var now=this.rate;
-                                $('.num').eq(0).html(Math.ceil(now))
-                            }
-                        })
-                        var progressRate1=$('.num').eq(1).attr("data-rate");
-                        $({rate:0}).animate({rate:progressRate1},{
-                            duration:1000,
-                            progress:function(){
-                                var now=this.rate;
-                                $('.num').eq(1).html("0"+(Math.ceil(now)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','))
-                            }
-                        })
-                        var progressRate2=$('.num').eq(2).attr("data-rate");
-                        $({rate:0}).animate({rate:progressRate2},{
-                            duration:1000,
-                            progress:function(){
-                                var now=this.rate;
-                                $('.num').eq(2).html((Math.ceil(now)))
-                            }
-                        })
-                        var progressRate3=$('.num').eq(3).attr("data-rate");
-                        $({rate:0}).animate({rate:progressRate3},{
-                            duration:1000,
-                            progress:function(){
-                                var now=this.rate;
-                                $('.num').eq(3).html((Math.ceil(now)))
-                            }
-                        })
-                
+                    var progressRate=$('.num').eq(0).attr("data-rate");
+                    $({rate:0}).animate({rate:progressRate},{
+                        duration:1000,
+                        progress:function(){
+                            var now=this.rate;
+                            $('.num').eq(0).html(Math.ceil(now))
+                        }
+                    })
+                    var progressRate1=$('.num').eq(1).attr("data-rate");
+                    $({rate:0}).animate({rate:progressRate1},{
+                        duration:1000,
+                        progress:function(){
+                            var now=this.rate;
+                            $('.num').eq(1).html("0"+(Math.ceil(now)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','))
+                        }
+                    })
+                    var progressRate2=$('.num').eq(2).attr("data-rate");
+                    $({rate:0}).animate({rate:progressRate2},{
+                        duration:1000,
+                        progress:function(){
+                            var now=this.rate;
+                            $('.num').eq(2).html((Math.ceil(now)))
+                        }
+                    })
+                    var progressRate3=$('.num').eq(3).attr("data-rate");
+                    $({rate:0}).animate({rate:progressRate3},{
+                        duration:1000,
+                        progress:function(){
+                            var now=this.rate;
+                            $('.num').eq(3).html((Math.ceil(now)))
+                        }
+                    })
+
                     executed=true;
                 }
             }
         });
-    }; 
+    };
 
     $('.sec2-contents li').mouseenter(function(){
         let indexNum=$(this).index();
@@ -335,12 +335,12 @@ $(document).ready(function(){
         let goIndex=$(this).data('slickIndex');
         $('.sec3-contents').slick('slickGoTo',goIndex,false)
     });
-    $(window).on('load resize', function() { 		
-        if($(window).width() < 1001 && $(window).width()>=601) { 			
-            $('.sec3-contents').slick('unslick'); 		
-        }else{ 			
-            $('.sec3-contents').not('.slick-initialized').slick(slickOptions); 		
-        } 
+    $(window).on('load resize', function() {
+        if($(window).width() < 1001 && $(window).width()>=601) {
+            $('.sec3-contents').slick('unslick');
+        }else{
+            $('.sec3-contents').not('.slick-initialized').slick(slickOptions);
+        }
     });
 
 
@@ -360,9 +360,9 @@ $(document).ready(function(){
         },500);
     });
 
-    
 
-  
+
+
 
 })
 

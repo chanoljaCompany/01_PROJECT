@@ -91,14 +91,14 @@ $(document).ready(function(){
             progressBarIndex = $('.main-slick .slick-track div[aria-hidden="false"]').data("slickIndex");
             startProgressbar();
         } else {
-            percentTime += 1 / (time + 5);
+            percentTime += 1 / (time + 11);
             $('.inProgress' + progressBarIndex).css({
                 width: percentTime + "%"
             });
             if (percentTime >= 100) {
                 $('.main-slick').slick('slickNext');
                 progressBarIndex++;
-                if (progressBarIndex > 2) {
+                if (progressBarIndex > 1) {
                     progressBarIndex = 0;
                 }
                 startProgressbar();

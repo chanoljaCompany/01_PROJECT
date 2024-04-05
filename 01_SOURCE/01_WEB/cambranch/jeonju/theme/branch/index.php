@@ -65,7 +65,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         </div>
                     </div>
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner2.jpg')"></div>
+                        <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
+                        <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo.mp4"></video>
                         <div class="main-tit">
                             <dl>
                                 <dt>편안한 여행을 위한 완벽한 파트너</dt>
@@ -73,31 +74,25 @@ include_once(G5_THEME_PATH.'/head.php');
                             </dl>
                         </div>
                     </div>
-                    <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner3.jpg')"></div>
-                        <div class="main-tit">
-                            <dl>
-                                <dt>캠핑여행을 위한 최신 캠핑카보유</dt>
-                                <dd>최고의 옵션을 가진 캠핑카가<br class="mo-br"> 여러분을 기다립니다.</dd>
-                            </dl>
-                        </div>
-                    </div>
                 </div>
                 <div class="controll">
                     <div class="progressBarContainer">
-                            <div class="item">
-                                <h3>01</h3>
-                                <span data-slick-index="0" class="progressBar"></span>
-                            </div>
-                            <div class="item">
-                                <h3>02</h3>
-                                <span data-slick-index="1" class="progressBar"></span>
-                            </div>
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="0" class="progressBar"></span>
+                        </div>
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="1" class="progressBar"></span>
+                        </div>
+                        <!--
                             <div class="item">
                                 <h3>03</h3>
                                 <span data-slick-index="2" class="progressBar"></span>
                             </div>
+                        -->
                     </div>
+                    <!--
                     <div class="slick-btn">
                         <div class="pause-btn">
                             <i class="xi-pause"></i>
@@ -106,12 +101,23 @@ include_once(G5_THEME_PATH.'/head.php');
                             <i class="xi-play"></i>
                         </div>
                     </div>
+                    -->
                     <div class="main-controll">
                     </div>
                 </div>
             </div>
 
+            <style>
 
+                .bar_item_h3{
+                    width:10px;
+                    height: 10px;
+                    border: 2px solid #fff;
+                    background: #fff;
+                    border-radius: 100%;
+                }
+
+            </style>
 
             <div class="section section1">
                 <div class="sec1-inner">

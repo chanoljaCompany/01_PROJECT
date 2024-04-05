@@ -70,7 +70,7 @@ if(G5_COMMUNITY_USE === false) {
                                 <div class="foo-rt">
                                     <ul class="phone">
                                         <li>
-                                            대표전화 02-6442-7873
+                                            대표전화 010-9818-5508
                                         </li>
                                         <li>
                                             월~금 09:00 - 18:00

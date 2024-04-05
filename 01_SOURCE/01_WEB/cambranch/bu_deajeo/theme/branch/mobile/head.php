@@ -19,7 +19,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <header id="header">
     <div class="inner">
         <div class="logo">
-            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_URL?>/img/logo_black.png" alt="<?php echo $config['cf_title']; ?>"></a>
+            <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_URL?>/img/face/text_logo_black.png" alt="<?php echo $config['cf_title']; ?>"></a>
         </div>
         <div id="nav">
             <nav>

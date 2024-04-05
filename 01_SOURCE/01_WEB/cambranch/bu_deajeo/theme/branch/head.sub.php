@@ -35,7 +35,7 @@ header("Pragma: no-cache"); // HTTP/1.0
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="http://chanolja.co.kr/theme/template1/img/favicon.ico" />
+    <link rel="icon" href="http://cambranch.chanolja.co.kr/BRANCH/bu_deajeo/theme/branch/img/favicon.ico" />
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;
@@ -110,7 +110,8 @@ if(!defined('G5_IS_ADMIN'))
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    
+
+
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -59,11 +59,7 @@ $g5['title'] = "오시는길";
                     </p>
                     <p>
                         <span>Tel</span>
-                        <span>010-2838-2466</span>
-                    </p>
-                    <p>
-                        <span>Fax</span>
-                        <span>02-6442-7873</span>
+                        <span>010-9818-5508</span>
                     </p>
                 </div>
             </div>
