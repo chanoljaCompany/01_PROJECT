@@ -168,7 +168,10 @@ ul, li { margin: 0; padding: 0; list-style: none; }
 .sct_wrap {margin:25px 0;padding: 0 24px;}
 .sct_wrap.lists-row{margin-right:-10px;margin-left:-10px}
 .sct_wrap .sct_li {position:relative;float:left;margin-bottom:40px;text-align:left}
+/*
 .sct_wrap .sct_li:nth-child(3n+1) {clear: both;}
+*/
+ */
 .sct_wrap .sct_li .sct_sub_txt_wrap { }
 .sct_wrap .sct_li .sct_sub_txt_wrap ul.sct_sub_ul { display: flex; flex-direction: row; flex-wrap: wrap; flex-grow: 1; justify-content: flex-start; padding: 0px; margin: 5px -6px; list-style: none; font-size: 13px; }
 .sct_wrap .sct_li .sct_sub_txt_wrap ul.sct_sub_ul li { margin: 5px 6px; vertical-align: middle; }

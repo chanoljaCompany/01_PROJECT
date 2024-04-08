@@ -1,5 +1,5 @@
     <!-- 리스트 페이지 -->
-    <div class="col-md-7 col-sm-12 col-xs-12 list_left"  id="loadingArea">
+    <div style="width:100%;" class="col-md-7 col-sm-12 col-xs-12 list_left"  id="loadingArea">
         <div class="list_filter">
             <div class="list_content">
                 <ul class="row">
@@ -71,28 +71,30 @@
                             </div>
                         </div>
                     </li>
-<!--
+                    
                     <li class="col-md-4 col-sm-6 col-xs-12">
                         <div class="list_form" id="list_form_subdetail">
-                            <h3>세부검색</h3>
+                            <font size="4.5px" weight='800'>■ 세부검색</font>                            
                             <div class="list_select">
                                 <p>더보기</p><span class="sch_down"><i class="fas fa-angle-down"></i></span>
                             </div>
                             <div class="list_box">
                                 <div class="list_scroll">
-                                    <div>
-                                        <h4>차량 및 업체명으로 검색</h4>
-                                        <input type="text" name='com_name'>
-                                    </div>
+                                    
                                     <div>
                                         <h4>동승인원수</h4>
                                         <input type="text" name='personnel'>
                                     </div>
+                                    <div>
+                                        <h4>차량 및 지역명으로 검색</h4>
+                                        <input type="text" name='guestroom_name'>
+                                    </div>
+                                    <!--
                                     <div class="sch_checkbox">
                                         <h4>반려동반 가능여부</h4>
                                         <input type="checkbox" name='pet_able' value='Y'>
                                         <label for="">반려동물 동반 가능</label>
-                                    </div>
+                                    </div>                                    
                                     <div class="sch_checkbox">
                                         <h4>탁송(딜리버리) 가능여부</h4>
                                         <input type="checkbox" name='delivery_able' value='Y'>
@@ -127,6 +129,7 @@
                                             <label for="">소형 견인차</label>
                                         </span>
                                     </div>
+-->
                                     <div class="sch_checkbox" id="basicOption">
                                        
                                     </div>
@@ -134,7 +137,8 @@
                                 <div class="check_btn"><a href='javascript:void(0);' onclick="selecthide('list_form_subdetail');">선택완료</a></div>
                             </div>
                         </div>
-                    </li>-->
+                    </li>
+
                 </ul>
             </div>
 

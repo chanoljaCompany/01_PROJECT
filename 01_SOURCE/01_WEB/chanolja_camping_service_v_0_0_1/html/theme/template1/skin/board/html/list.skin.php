@@ -84,6 +84,18 @@ include_once(G5_THEME_PATH."/sub/ready.php");
 if ($board['bo_table'] == '70')
 include_once(G5_THEME_PATH."/sub/reserve_camp.php");
 
+if ($board['bo_table'] == 'mall')
+include_once(G5_THEME_PATH."/sub/reserve_camp.php");
+
+if ($board['bo_table'] == 'icairport')
+include_once(G5_THEME_PATH."/sub/reserve_camp_icairport.php");
+
+if ($board['bo_table'] == 'deajeo')
+include_once(G5_THEME_PATH."/sub/reserve_camp_deajeo.php");
+
+if ($board['bo_table'] == 'jeonju')
+include_once(G5_THEME_PATH."/sub/reserve_camp_jeonju.php");
+
 if ($board['bo_table'] == '71')
 include_once(G5_THEME_PATH."/sub/71.php");
                             

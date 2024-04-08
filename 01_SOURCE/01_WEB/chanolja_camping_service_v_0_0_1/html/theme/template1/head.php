@@ -130,6 +130,7 @@ include_once(G5_THEME_PATH.'/quoteContent.php');
                     foreach( $menu_datas as $row ){
                         if( empty($row) ) continue; 
                     ?>
+
                         <li class="gnb_1dli" style="z-index:<?php echo $gnb_zindex--; ?>">
                             <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_1da"><?php echo $row['me_name'] ?></a>
                             <?php

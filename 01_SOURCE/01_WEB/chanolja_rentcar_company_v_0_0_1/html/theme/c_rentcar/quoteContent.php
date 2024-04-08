@@ -21,7 +21,7 @@
                     <input name="first_name"  type="text" placeholder="이름" class="ipt" style="width:186px; height:32px; margin-top : 21px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
                     <input name="email_from"  type="text" placeholder="전화번호" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
                     <input name="telephone"  type="text" placeholder="문의내용" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
-                    <input name="comments"  type="text" placeholder="기타" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
+                    <input name="comments"  type="text" placeholder="희망지역" class="ipt" style="width:186px; height:32px; margin-top : 14px; border: 1px solid #13568d; padding-left: 10px; border-radius:10px; background:#f5f5f5;" required>
                 </div>
                 <div class="input-row" style="margin-top: 21px;">
                     <center style="margin:0px;">

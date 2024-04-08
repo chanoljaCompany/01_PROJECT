@@ -145,7 +145,7 @@ include_once(G5_THEME_PATH.'/head.php');
                <div style="max-width:1200px; margin: 0 auto;">
                     <center>
                          <a style="max-width:300px; width:100%; height:80px; border-radius: 10px 10px 10px 10px; font-size: 18px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center;  background-color: #54C3FD;  color: #fff;
-                            position: relative;" href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=70"><h3 style="font-size:30px;">일반렌트카 문의</h3></a>
+                            position: relative;" href="http://gsrent.kr/bbs/write.php?bo_table=qanda"><h3 style="font-size:30px;">일반렌트카 문의</h3></a>
                      </center>
                 </div>
             </div>
@@ -250,7 +250,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 						<h1>아직도, 사고시에 보험사를 통해 차량을 바도 계시나요?<br>몇일을 사용해도 고객님의 조건에 맞는 렌트카를 선택해 보세요.<br>
 
-                                 <a href="<?php echo G5_THEME_URL?>/sub/jw-business2.php" style="width: 100%; max-width: 500px; height:150px; "><h3 style="font-size:30px;">지금 바로 상담 <br> 041-522-7000</h3></a>
+                                 <a href="tel:041-522-7000" style="width: 100%; max-width: 500px; height:150px; "><h3 style="font-size:30px;">지금 바로 상담 <br> 041-522-7000</h3></a>
                         </h1>
                         </div>
                     </div>

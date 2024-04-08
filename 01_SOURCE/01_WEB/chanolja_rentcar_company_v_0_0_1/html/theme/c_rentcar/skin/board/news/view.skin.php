@@ -20,7 +20,6 @@ $g5['title'] = "NEWS";
 <!-- 게시물 읽기 시작 { -->
 
 <div class="sub" id="board_webzine01">
-    <?php include_once(G5_THEME_PATH.'/head.php'); ?>
     <?php include_once(G5_THEME_PATH.'/sub/sub_visual.php');?>
     <?php  include_once(G5_THEME_PATH.'/navigation.php'); ?>
     <section class="viewSkin_admin">

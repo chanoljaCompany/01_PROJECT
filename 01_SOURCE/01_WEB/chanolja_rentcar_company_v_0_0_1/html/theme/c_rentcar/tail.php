@@ -45,7 +45,7 @@ if(G5_COMMUNITY_USE === false) {
                                             <a style="display:block" href="http://www.chanolja-union.kr/">차놀자협동조합</a>
                                         </li>
                                         <li>
-                                            <a style="display:block" href="http://chanolja.co.kr/">차놀자캠핑</a>
+                                            <a style="display:block" href="http://www.chanolja.co.kr/">차놀자캠핑</a>
                                         </li>
                                         <li>
                                             <a style="display:block" href="https://www.youtube.com/channel/UCjBtbct7aCsJ4fo0S4g5bRQ/">차놀자TV</a>

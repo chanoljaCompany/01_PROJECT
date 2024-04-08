@@ -127,21 +127,27 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 
-<div class="top_blank">
-</div>
-
-<div class="top_blank_m">
-</div>
+<div id="top_blank" style="witdh : 100%; height : 90px;">
+ </div>
 
 <div class="slider" style=>
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/rentcar_admission.png"></div>
-   
+      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner1.jpg"></div>
 
-      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/rentcar_admission.png"></div>
+      <div><img src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.jpg"></div>
+    </div>
 </div>
 
+<style>
+    .bx-wrapper img {
+        border-radius: 30px !important;
+    }
 
-</div>
+    @media screen and (max-width:600px) {
+        .bx-wrapper img {
+            border-radius: 10px !important;
+        }
+    }
+</style>
 
 
 <!-- 상단아이콘 PC -->
@@ -168,6 +174,80 @@ include_once(G5_THEME_PATH.'/head.php');
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/관광버스.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+            </ul>
+        </div>
+
+<!-- 2번 줄 -->
+        <div class="main_title">
+            <p class="wow fadeInDown" data-wow-delay="0.4s">자동차 종합 서비스</p>
+        </div>
+        <div class="detail">
+            <ul class="clearfix">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/공업사.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/정비소.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/자동차검사.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/세차서비스.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/견인서비스.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+            </ul>
+        </div>
+
+<!-- 3번 줄 -->
+<div class="main_title">
+            <p class="wow fadeInDown" data-wow-delay="0.4s">자동차 용품 및 악세서리</p>
+        </div>
+        <div class="detail">
+            <ul class="clearfix">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/차량용품.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                   <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"> <img src="<?php echo G5_THEME_IMG_URL ?>/icon/블랙박스.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/타이어.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/차박용품.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/썬팅.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+            </ul>
+        </div>
+
+
+<!-- 4번 줄 -->
+		<div class="main_title">
+            <p class="wow fadeInDown" data-wow-delay="0.4s">자동차 영업인</p>
+        </div>
+        <div class="detail">
+            <ul class="clearfix">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/신차판매.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/중고차판매.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/자동차보험.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/렌터카사고팔기.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/화물운송.png" style="margin-left : 5px; margin-right : 5px:" ></a>
                 </li>
             </ul>
         </div>
@@ -478,6 +558,80 @@ h1 {
             </ul>
         </div>
 
+<!-- 2번 줄 -->
+        <div class="detail">
+            <ul class="clearfix">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/관광버스.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/공업사.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/정비소.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/자동차검사.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+
+            </ul>
+        </div>
+
+<!-- 3번 줄 -->
+        <div class="detail">
+            <ul class="clearfix">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/세차서비스.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/견인서비스.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+				<li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/차량용품.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                   <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"> <img src="<?php echo G5_THEME_IMG_URL ?>/icon/블랙박스.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+            </ul>
+        </div>
+
+
+<!-- 4번 줄 -->
+        <div class="detail">
+            <ul class="clearfix">
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/타이어.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/차박용품.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/썬팅.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/신차판매.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+
+            </ul>
+        </div>
+
+<!-- 5번 줄 -->
+   <div class="detail">
+            <ul class="clearfix">
+                 <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/중고차판매.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/자동차보험.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/렌터카사고팔기.png" style="margin-left : 5px; margin-right : 5px" ></a>
+                </li>
+                <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://chanolja-union.kr/bbs/content.php?co_id=ready"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/화물운송.png" style="margin-left : 5px; margin-right : 5px:" ></a>
+                </li>
+            </ul>
+        </div>
 <!-- 6번 줄 -->
    <div class="detail">
             <ul class="clearfix">

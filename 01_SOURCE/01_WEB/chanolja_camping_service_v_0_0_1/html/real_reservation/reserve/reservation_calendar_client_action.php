@@ -23,7 +23,9 @@ $size = count($guestroom_code_arr);
 	<div id="container">
 		<? include "$_SERVER[DOCUMENT_ROOT]/pension_prj/admin_header.php";?>
 		<section id="wrapper">
-				<article id="contentArea">
+				<artic
+
+                        le id="contentArea">
 					<div class="clear"></div>
 						<form name="client_reserve_input" method="post" enctype="multipart/form-data">
 							<input type="hidden" name="top_menu_id" id="top_menu_id" value="<?=$top_menu_id?>">

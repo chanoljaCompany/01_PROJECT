@@ -436,7 +436,7 @@ function get_list($write_row, $board, $skin_url, $subject_len=40)
     if ($list['datetime'] == G5_TIME_YMD)
         $list['datetime2'] = substr($list['datetime2'],11,5);
     else
-        $list['datetime2'] = substr($list['datetime2'],5,5);
+        $list['datetime2'] = substr($list['datetime2'],2,8);
     // 4.1
     $list['last'] = substr($list['wr_last'],0,10);
     $list['last2'] = $list['wr_last'];

@@ -119,7 +119,7 @@ $g5['title'] = "회사연혁";
                                             <span>2022</span>
                                         </div>
                                         <div class="info">
-                                            <p>차놀자 렌터카 대표 장성민</p>
+                                            <p>차놀자 렌터카 대표 장성민, 파생법인</p>
                                         </div>
                                     </li>
                                     <li class="history_00 history_css aos-init aos-animate" data-aos="fade-up">

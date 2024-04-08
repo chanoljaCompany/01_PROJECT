@@ -1,8 +1,8 @@
 <?php
 //error_reporting(E_ALL);
 ini_set("display_errors", 1);
-$SITENAME = "jwsntech";
-$SITEURL = "//jwsntech.barunweb.co.kr/";
+$SITENAME = "chanoljacamping";
+$SITEURL = "//www.chanolja.co.kr/";
 $subUrl = "/real_reservation";
 $TODATE = date("Y-m-d");
 $mobile_agent = "/(iPod|iPhone|Android|BlackBerry|SymbianOS|SCH-M\d+|Opera Mini|Windows CE|Nokia|SonyEricsson|webOS|PalmOS)/";

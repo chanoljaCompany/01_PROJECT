@@ -8,7 +8,7 @@
 #bo_list .td_board {width:120px;text-align:center}
 #bo_list .td_chk {width:30px;text-align:center;border-top:1px solid #ecf0f1;border-bottom:1px solid #ecf0f1}
 #bo_list .td_date {width:60px;text-align:center}
-#bo_list .td_datetime {width:60px;text-align:center;font-size:15px;}
+#bo_list .td_datetime {width:60px;text-align:center;font-size:10px;}
 #bo_list .td_group {width:100px;text-align:center}
 #bo_list .td_mb_id {width:100px;text-align:center}
 #bo_list .td_mng {width:80px;text-align:center}

@@ -122,7 +122,7 @@ include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
     <div class="sch_box" style="margin-bottom: 130px;">
 
         <div class="sch_tit">
-            <b><font size="6" bold style="font-size:40px; font-weight:800; color: #54C3FD;">예약문의 1811-6526</font></b>
+            <b><font size="6" bold style="font-size:40px; font-weight:800; color: #54C3FD;">예약문의 </br> 1811-6526</font></b>
         </div>
 
         <div class="sch_content">
@@ -132,7 +132,9 @@ include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
                 <div class="sch_select sch_date">
 
                     <div class="sch_txt">
-
+                        <!--
+                        <span>날짜 : </span>
+                        -->
                         <input type="date" class="selector flatpickr-input" value="" id="inputDate" name="inputDate">
                         <!--<span class="sch_down">
                             <i class="fas fa-angle-down"></i>
@@ -160,8 +162,11 @@ include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
                     </div>-->
 
                 </div>
-
+                <!--
+                <span>지역 : </span>
+                -->
                 <div class="sch_select sch_locate" id="sch_pop">
+
 
                     <div class="sch_txt">
                         <p style="font-size:20px;">어디서 캠핑카를 빌려볼까요?</p>

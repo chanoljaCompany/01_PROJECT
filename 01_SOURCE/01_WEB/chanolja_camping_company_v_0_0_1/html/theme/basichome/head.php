@@ -39,7 +39,16 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
                 ?>
                 <li class="menu_li <?php echo $add_class; ?>" style="z-index:<?php echo $gnb_zindex--; ?>">
+                    <?php
+                    if($row['me_name']=='캠핑카예약')  {
+                        echo "<a class='menu_tit hd_color camping_li' target='_self' href='http://www.chanolja.co.kr/bbs/board.php?bo_table=mall'>". $row['me_name'] ."</a>";
+                    }else {
+
+                    ?>
                     <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="menu_tit hd_color"><?php echo $row['me_name'] ?></a>
+                    <?php
+                    }
+                    ?>
                         <!-- s:하위 gnb -->
                         <?php
                             $k = 0;
@@ -110,7 +119,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         echo "<a class='menu_tit' href='http://www.chanolja.co.kr/real_reservation/'>". $row['me_name'] ."</a>";
                     }
                     else if($row['me_name']=='캠핑카예약')  {
-                       echo "<a class='menu_tit' href='http://www.chanolja.co.kr/bbs/board.php?bo_table=70'>". $row['me_name'] ."</a>";
+                       echo "<a class='menu_tit ' href='http://www.chanolja.co.kr/bbs/board.php?bo_table=70'>". $row['me_name'] ."</a>";
                     }else {
                 ?>
 
@@ -153,6 +162,26 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <!--<?php include_once(G5_THEME_PATH.'/responsive.php'); // 분류 ?> -->
 <!-- } 상단 끝 -->
 <!-- } 상단 끝 -->
+
+<style>
+    .camping_li {
+        animation : bounce 2s ease infinite;
+        color: #54C3FD !important;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-7px);
+        }
+        60% {
+            transform: translateY(-3px);
+        }
+    }
+</style>
+
 
 
 <script>

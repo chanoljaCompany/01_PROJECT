@@ -25,11 +25,13 @@ $pet_able = isset($_REQUEST['pet_able']) ? $_REQUEST['pet_able'] : ''; //최대�
 $delivery_able = isset($_REQUEST['delivery_able']) ? $_REQUEST['delivery_able'] : ''; //최대인원
 $camping_able = isset($_REQUEST['camping_able']) ? $_REQUEST['camping_able'] : ''; //최대인원
 $get_guestroom_code = isset($_REQUEST['guestroom_code']) ? $_REQUEST['guestroom_code'] : '';
+//$com_name = isset($_REQUEST['com_name']) ? $_REQUEST['com_name'] : ''; //최대인원
+$guestroom_name = isset($_REQUEST['guestroom_name']) ? $_REQUEST['guestroom_name'] : ''; //최대인원
 if($division == 'getData'){
   $get_guestroom_type = get_guestroom_type($divisionType);
   $room_info_array_etc = "";
   $room_info_array_etc = room_info_array_etc($get_guestroom_code,$dateStr,$divisionType,$personnel,$area,$basicoption,$com_name
-                          ,$sPrice,$ePrice,$driver_license,$pet_able,$delivery_able,$camping_able);
+                          ,$sPrice,$ePrice,$driver_license,$pet_able,$delivery_able,$camping_able,$guestroom_name);
   $peak_data_array = "";
   $semi_peak_data_array = "";
   $html ="";
@@ -37,6 +39,7 @@ if($division == 'getData'){
   $room_info_array_etc_size = sizeof($room_info_array_etc);
   if($room_info_array_etc_size <= '0'){
     $html ="
+<!--
     <table border='1' class='tbroom' id='tb_9416914189' style='display: table; width: 100%;'>
     <thead>
         <tr>
@@ -44,11 +47,22 @@ if($division == 'getData'){
         </tr>
     </thead>
     <tbody>
-    </table>";
+    </table>
+    -->
+    <div style='font-size: 35px; text-align: center;' >
+        조건에 만족하는 상품이 없습니다.    
+    </div>
+    ";
 
   }
   $arrayLocation = array();
   foreach ($room_info_array_etc as $key=>$value) {
+?>
+    <script>
+      var room_info_array_etc = <?php echo json_encode($room_info_array_etc); ?>;
+      console.log(room_info_array_etc);
+    </script>
+<?php
     $goption_all = "";
     $imgUrl = $guestroom_image_url."/".$value['guestroom_image_name'];
     $guestroom_use_hour_exp = explode("~",$value['guestroom_use_hour']);
@@ -94,8 +108,8 @@ if($division == 'getData'){
               </div>
           </li>
         ";
-    }
-    $html .= "<input type='hidden' name='arrayLocation' id='arrayLocation' value='".json_encode($arrayLocation)."'>";
+  }
+  $html .= "<input type='hidden' name='arrayLocation' id='arrayLocation' value='".json_encode($arrayLocation)."'>";
   echo $html;
 }
 else if($division == 'guestroom_info_ajax'){

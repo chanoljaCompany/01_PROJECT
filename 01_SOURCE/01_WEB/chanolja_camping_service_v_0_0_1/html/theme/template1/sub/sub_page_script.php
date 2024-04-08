@@ -139,6 +139,51 @@ $("#inputDate_sub").flatpickr({
         // findSearchData('init');
           
     });
+    <? }else if($act_target == 'icairport'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        findSearchData('icairport');
+        
+          
+    });
+    <? }else if($act_target == 'jeonju'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        findSearchData('jeonju');
+        
+          
+    });
+    <? }else if($act_target == 'deajeo'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        findSearchData('deajeo');
+        
+          
+    });
     <? }else if($act_target == 'car_detail'){?>
         $(document).ready(function() {
         $("#subpagebg").hide();  
@@ -151,7 +196,7 @@ $("#inputDate_sub").flatpickr({
         $("#reservation_inquiry_list").hide(); 
         $("#login_form").hide(); 
         $("#memberjoin").hide(); 
-        room_detail('<?=$car_code?>');  
+        roorm_detail('<?=$car_code?>');  
     });
     <?}else{?>
         $(document).ready(function() {
@@ -194,17 +239,10 @@ $("#inputDate_sub").flatpickr({
        //console.log('get_area========', json[0]['area_name']);
        areaData = json;
        var html = "";
-       /*
-         html += "<span>";
-         html += "<input type='checkbox' name='area[]' value='' onclick='location_allcheck()' class='check_box' id='all_check'>";
-         html += "<label for='chk1'>전체</label>";
-         html += "</span>";
-        */
         for(var i=0 ; i < areaData.length ; i++ ){
-
 			console.log('data test : ', json[i]);
             html += "<span>";
-            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class='check_box'>";
+            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class=''>";
             html += "<label for='chk1'>"+areaData[i]['area_name']+"</label>";
             html += "</span>";
             $("#mainArea").html(html);
@@ -243,12 +281,6 @@ $("#inputDate_sub").flatpickr({
    });
   }
 
-function location_allcheck() {
-    var isChecked = $('#all_check').prop('checked');
-
-    $('.check_box').prop('checked', isChecked);
-}
-
 function setDate(setdate){
     //  alert('setdate ' + setdate);
     $("#dateStr").val(setdate);
@@ -256,17 +288,40 @@ function setDate(setdate){
     $("#sss").val(setdatesplit['0']);
     $("#eee").val(setdatesplit['1']);
 }
+
 function findSearchData(locate) {
   if(locate == 'main'){
     $("#sub_page_1").show(); 
     //$("#sub_page_map").show(); 
     $("#subpagebg").hide(); 
     setDate($("#inputDate").val());
-    $("#inputDate_sub").val($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val()); 
+  
   }
   else if(locate == 'init'){
     setDate('<?=$dateType?>').val();
     $("#inputDate_sub").val('<?=$dateType?>');
+  }
+  else if(locate == 'icairport'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+  else if(locate == 'jeonju'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+  else if(locate == 'deajeo'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
   }
   else{
     setDate($("#inputDate_sub").val());
@@ -275,11 +330,31 @@ function findSearchData(locate) {
   divisionType = $("#divisionType").val();
   getData(divisionType,locate)
 }
+
 function getData(divisionType,locate) {
+  if(locate == 'main'){
+    var local = '';
+    }
+    else if(locate == 'icairport'){
+      var local = '인천 영종도';
+    }     
+    else if(locate == 'jeonju'){
+      var local = '전북 전주';
+    }     
+    else if(locate == 'deajeo'){
+      var local = '부산 강서';
+    }     
+    else if(locate == 'sub'){      
+      var local = $("#guestroom_name").val();
+      //var local = $("guestroom_name').val();
+    } 
+    else{       
+    }
+
   $("#divisionType").val(divisionType);
   var division = 'getData';
   var personnel = "1";
-if(divisionType == '1'){
+  if(divisionType == '1'){
   // var divisionType = $("#divisionType").val();
   var dateStr = $("#dateStr").val();
   var datalen = dateStr.length;
@@ -289,29 +364,35 @@ if(divisionType == '1'){
      if(locate == 'main'){
         $("#inputDate").val(ndateStr);
      }else{
-        $("#inputDate_sub").val(ndateStr);
+        $("#inputDate_sub").val(ndateStr);        
      }
      dateStr = ndateStr;
   }
-}
-    var areaArray = new Array();
-    $("input[name='area[]']:checked").each(function() { 
-      var areaVal = $(this).val(); 
-      areaArray.push(areaVal);
-    });
+  }
+  var areaArray = new Array();
 
-    var optionArray = new Array();
-    $("input[name='basicoption[]']:checked").each(function() { 
-      var optionVal = $(this).val(); 
-      optionArray.push(optionVal);
-    });
 
-    var form = $('#reserveForm')[0];
-    var formData = new FormData(form);
-    formData.append("division", "getData");
-    formData.append("locate", locate);
-    formData.append("area", areaArray);
-    formData.append("basicoption", optionArray);
+  $("input[name='area[]']:checked").each(function() { 
+  var areaVal = $(this).val(); 
+  areaArray.push(areaVal);
+});
+
+var optionArray = new Array();
+$("input[name='basicoption[]']:checked").each(function() { 
+  var optionVal = $(this).val(); 
+  optionArray.push(optionVal);
+});
+
+
+
+
+var form = $('#reserveForm')[0];
+var formData = new FormData(form);
+formData.append("division", "getData");
+formData.append("locate", locate);
+formData.append("area", areaArray);
+formData.append("basicoption", optionArray);
+//formData.append("guestroom_name", local);
 
     for (var pair of formData.entries())
     {
@@ -411,7 +492,7 @@ function room_detail(guestroom_code){
   if(dateStr =='') {
     dateStr = "<?=$intidate?>";
   }
-  var makeCopyUrl = "http://www.chanolja.co.kr/bbs/board.php?bo_table=70&act_target=car_detail&car_code="+guestroom_code;
+  var makeCopyUrl = "http://www.chanolja.co.kr/bbs/board.php?bo_table=mall&act_target=car_detail&car_code="+guestroom_code;
   $("#copyUrl").val(makeCopyUrl);
 //   alert(dateStr);
   var division = 'guestroom_info_ajax';
@@ -435,7 +516,7 @@ function room_detail(guestroom_code){
         pid = "1";
        var state = { 'page_id': 1, 'user_id': 5 }; 
        var title = 'Hello World'; 
-       var url = '/bbs/board.php?bo_table=70'; 
+       var url = '/bbs/board.php?bo_table=mall'; 
        history.pushState(state, title, url);
       $("#sit_info").html(html);
 
@@ -671,7 +752,7 @@ $("#reserve_btn").click(function(){
        pid = "2";
        var state = { 'page_id': 2, 'user_id': 5 }; 
        var title = 'Hello World'; 
-       var url = '/bbs/board.php?bo_table=70'; 
+       var url = '/bbs/board.php?bo_table=mall'; 
        history.pushState(state, title, url);
   $("#sub_page_detail").hide(); 
   $("#customer_info").show(); 
@@ -899,7 +980,7 @@ function pg_payment_proc(reserve_code) {
         amount: card_pay_total,
         // amount: 1004,
         goodsName: guestroom_name,
-        returnUrl: 'http://www.chanolja.co.kr/bbs/board.php?bo_table=70&act_target=card_return',
+        returnUrl: 'http://www.chanolja.co.kr/bbs/board.php?bo_table=mall&act_target=card_return',
         fnError: function (result) {
 
 		//alert(card_pay_total + '개발자확인용 : ' + result.errorMsg + '')
