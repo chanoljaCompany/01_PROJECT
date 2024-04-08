@@ -979,8 +979,6 @@ function touch_end(event) {
               $('body').css('position', 'relative');
           }
 
-          $('.pop_up_back').css('display', 'none');
-          $('body').css('position', 'relative');
       }else {
           setCookie("pop_up2", "done", "1");
           $('.pop_up2').css('display', 'none');

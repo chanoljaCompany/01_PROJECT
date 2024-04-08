@@ -3,9 +3,9 @@
 #ft{background: #333; color: #888;} 
 #ft a, #ft_copy{color: #888;}
 #ft_wr{width: 100%; padding: 50px 20px; overflow: hidden; margin: 0 auto; background: #333333;}
-#ft_sns{width: 65%;}
+#ft_sns{width: 100%;}
 #ft_sns ul{float: right; overflow: hidden;}
-#ft_sns ul li{float: left; width: 40px; height: 40px; text-indent: -9999px; overflow: hidden; margin-left: 15px;}
+#ft_sns ul li{float: left; width: 40px; height: 40px; text-indent: -9999px; overflow: hidden; margin-left: 25px;}
 #ft_sns ul li a{width: 100%; height: 100%; background: url(../../img/common/ft_sns1.png); background-size: 100% auto; }
 #ft_sns ul li.ft_sns2 a{background-image: url(../../img/common/ft_sns2.png);}
 #ft_sns ul li.ft_sns3 a{background-image: url(../../img/common/ft_sns3.png);}

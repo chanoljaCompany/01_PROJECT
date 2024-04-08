@@ -32,6 +32,11 @@ include_once(G5_THEME_PATH.'/head.php');
             display: none;
         }
 
+        #main_banner_mp4 {
+            width: 100vw; padding: 0px; margin: 0px;
+
+        }
+
         @media screen and (max-width: 480px) {
             #main_banner_mp4 {
                 display: none;
@@ -48,11 +53,11 @@ include_once(G5_THEME_PATH.'/head.php');
             <i class="xi-angle-up"></i>
 
         </div>
-        <div id="fullpage">
-            <div class="section main-section">
+        <div id="fullpage" >
+            <div  class="section main-section">
                 <div class="main-slick">
                     <div>
-                        <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
+                        <video id="main_banner_mp4" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
                         <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo.mp4"></video>
                         <div class="main-tit">
                             <dl>
@@ -62,8 +67,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         </div>
                     </div>
                     <div>
-                        <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
-                        <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo.mp4"></video>
+                        <video id="main_banner_mp4" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp42.mp4"></video>
+                        <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo2.mp4"></video>
                         <div class="main-tit">
                             <dl>
                                 <dt>편안한 여행을 위한 완벽한 파트너</dt>

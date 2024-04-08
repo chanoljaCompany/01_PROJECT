@@ -71,7 +71,7 @@ a.gnb_2da:hover{background-color: #c80e21;}
 .mb-sub-ul {display: none; background: #333;}
 .mb-sub-ul li a {display: block; font-size: 16px; font-weight: 100; padding: 15px 0;}
 .mobile_menu{position: absolute; width: 100%; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
-.mobile_menu ul{width: 100%; overflow: hidden; padding: 0px;}
+.mobile_menu ul{overflow: hidden; padding: 0px;}
 .mobile-list {width: 100%;}
 .mobile-list a {padding: 20px 0; width: 100%; color: #fff; text-transform: uppercase;font-size: 13px; text-align: center; font-size: 18px; font-weight: normal;}
 

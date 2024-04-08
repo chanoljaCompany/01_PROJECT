@@ -71,7 +71,17 @@ if (G5_IS_MOBILE) {
                     <?php
                     $i++;
                     }   //end foreach $row
+                    ?>
 
+                    <div id="ft_sns" style="margin-top:30px; display: flex; justify-content: center;">
+                        <ul>
+                            <li style="margin:0px;"><a href="https://www.youtube.com/watch?v=7FJhmXFPC0w">youtube</a></li>
+                            <li class="ft_sns2"><a style="width:100%; background-size: auto 90%; background-repeat: no-repeat;" href="https://www.instagram.com/chanolja.camping/">instagram</a></li>
+                            <li class="ft_sns3"><a href="https://blog.naver.com/m_chanolja">naver blog</a></li>
+                        </ul>
+                    </div>
+
+                    <?php
                     if ($i == 0) {  ?>
                         <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
                     <?php } ?>
