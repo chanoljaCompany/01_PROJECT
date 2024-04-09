@@ -89,6 +89,7 @@ include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
 <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+<script src="https://kit.fontawesome.com/f1ca3de2c6.js" crossorigin="anonymous"></script>
 <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>aa -->
 <div class="subpage bg" id="subpagebg">
 	<div class="sch_bg">

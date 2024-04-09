@@ -1,5 +1,5 @@
     <!-- 리스트 페이지 -->
-    <div style="width:100%;" class="col-md-7 col-sm-12 col-xs-12 list_left"  id="loadingArea">
+    <div style="width:100%; min-height:720px;" class="col-md-7 col-sm-12 col-xs-12 list_left"  id="loadingArea">
         <div class="list_filter">
             <div class="list_content">
                 <ul class="row">
@@ -30,7 +30,10 @@
                                 <p>지역선택</p><span class="sch_down"><i class="fas fa-angle-down"></i></span>
                             </div>
                             <div class="list_box">
-                                <h4>지역선택</h4>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <h4>지역선택</h4>
+                                    <i class="fa-solid fa-x list_x" style="font-size: 18px; margin-right: 10px; cursor: pointer;"></i>
+                                </div>
                                 <div class="sch_checkbox" id="subArea">
 								<!--
                                     <span>
@@ -80,7 +83,8 @@
                             </div>
                             <div class="list_box">
                                 <div class="list_scroll">
-                                    
+                                    <i class="fa-solid fa-x list_x" style="font-size: 18px; margin-right: 10px; display:flex; justify-content: flex-end; cursor: pointer;"></i>
+
                                     <div>
                                         <h4>동승인원수</h4>
                                         <input type="text" name='personnel'>

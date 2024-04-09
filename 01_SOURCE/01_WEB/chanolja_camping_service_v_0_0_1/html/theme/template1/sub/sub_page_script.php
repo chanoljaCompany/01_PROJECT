@@ -20,7 +20,14 @@
     
     $(function(){
         $(".list_select").click(function(){
+            $(".active").not($(this).parent(".list_form")).removeClass("active");
             $(this).parent(".list_form").toggleClass("active");
+        });
+    });
+
+    $(function(){
+        $(".list_x").click(function(){
+            $(this).parent().parent().parent(".list_form").removeClass("active");
         });
     });
     
