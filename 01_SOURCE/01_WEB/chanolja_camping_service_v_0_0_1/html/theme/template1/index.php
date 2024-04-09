@@ -769,7 +769,7 @@ function touch_end(event) {
    <div class="box inner">
 		<div class="main_title">
             <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=51"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
         <?php echo latest('theme/basic_news', '14', 4, 300);        
