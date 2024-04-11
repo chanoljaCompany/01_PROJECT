@@ -224,11 +224,11 @@ include_once(G5_THEME_PATH.'/head.php');
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
               <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
-                <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
+                <img style="border-radius:10px; box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; font-size:19px; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
                 >캠핑여행 일정을 세워볼까요 ?</span>
-                <img style="box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; margin-left:25px;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
+                <img style="opacity:1; margin-left:25px;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar2.png" style="max-width : 100%">
                 <span
                     style="font-size:19px; position:absolute; right:43px; color:#fff;  top: 50%; transform: translateY(-50%);  letter-spacing:1px;"
                 >Search</span>
@@ -241,7 +241,7 @@ include_once(G5_THEME_PATH.'/head.php');
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
               <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
-                <img style="border-radius:10px; box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
+                <img style="border-radius:10px; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
                 >캠핑여행 일정을 세워볼까요 ?</span>
@@ -304,24 +304,24 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall">
-                        <img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall">
-                        <img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://company.chanolja.co.kr/theme/basichome/sub/goods_info.php"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/goods.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://company.chanolja.co.kr/theme/basichome/sub/goods_info.php"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/goods.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/meal.png" style="width:192px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/meal.png" style="width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
 
             </ul>
@@ -331,7 +331,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <style>
     .bounceInUp img:hover{
-        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .85) !important;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .20) !important;
         filter: blur(0) brightness(1.05);
         transition: all 150ms ease-out;
     }
@@ -351,18 +351,18 @@ include_once(G5_THEME_PATH.'/head.php');
             <ul class="clearfix2">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="http://chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng">
-                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="#">
-                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/business__2.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52">
-                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
+                        <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
             </ul>
@@ -568,23 +568,23 @@ function touch_end(event) {
         <div class="detail" style="display:flex; justify-content: center;">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:10px;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                     </ul>
         </div>
         <div class="detail">
             <ul class="clearfix" style="margin-bottom: 20px; margin-top:20px;" >
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:20px;">
-                    <a href="http://company.chanolja.co.kr/theme/basichome/sub/goods_info.php"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/goods.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://company.chanolja.co.kr/theme/basichome/sub/goods_info.php"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/goods.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li style="margin-right:30%;" class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/meal.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" ></a>
+                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/meal.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
             </ul>
         </div>
@@ -998,9 +998,6 @@ function touch_end(event) {
               $('.pop_up_back').css('display', 'none');
               $('body').css('position', 'relative');
           }
-
-          $('.pop_up_back').css('display', 'none');
-          $('body').css('position', 'relative');
       }else {
           $('.pop_up2').css('display', 'none');
           if($('.pop_up1').css('display')==='none') {
