@@ -40,7 +40,3 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 </body>
 </html>
 
-
-<?php
-include_once(G5_THEME_PATH.'/tail.php');
-?>

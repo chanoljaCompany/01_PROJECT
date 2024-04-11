@@ -27,7 +27,7 @@ if(G5_COMMUNITY_USE === false) {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="<?php echo G5_THEME_URL?>/theme/basichome/sub/ch-company.php">
+                                        <a href="<?php echo G5_THEME_URL?>/sub/ch-company.php">
                                             회사소개
                                         </a>
                                     </li>
