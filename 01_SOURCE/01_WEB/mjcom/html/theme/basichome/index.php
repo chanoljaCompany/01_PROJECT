@@ -31,19 +31,14 @@ include_once(G5_THEME_PATH.'/head.php');
 
         </div>
         <div id="fullpage">
-
-
             <div class="section main-section">
-
-
-
-
                 <div class="main-slick">
                     <div>
                         <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner.jpeg')"></div>
                         <div class="main-tit">
                             <dl>
-                                <dd>차놀자<br>렌트카<br>창업 스쿨 </dd>
+                                <dd class="main_dd-one">차놀자<br>렌트카<br>창업 스쿨</dd>
+                                <dd class="main_dd-two">차놀자<br>렌트카<br>창업 스쿨</dd>
                             </dl>
                         </div>
                     </div>
@@ -51,38 +46,30 @@ include_once(G5_THEME_PATH.'/head.php');
                         <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner.jpeg')"></div>
                         <div class="main-tit">
                             <dl>
-                                <dt>전국 어디서나 캠핑여행이 필요할 때</dt>
-                                <dd>차놀자캠핑 종합 여행 <br class="mo-br"> 플랫폼 서비스</dd>
-                                <dd>#캠핑여행 #캠핑취미 #캠핑레저</dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/main_banner.jpeg')"></div>
-                        <div class="main-tit">
-                            <dl>
-                                <dt>행복한 삶을 위한 여가활동 서비스</dt>
-                                <dd>차놀자캠핑의 다양한 여가지원 <br><br class="mo-br"> 서비스는 여유있는 삶을 드립니다</dd>
-                                <dd>#전국지점네트워크 #기업형여가서비스</dd>
+                                <dd class="main_dd-one">차놀자<br>렌트카<br>창업 스쿨</dd>
+                                <dd class="main_dd-two">차놀자<br>렌트카<br>창업 스쿨</dd>
                             </dl>
                         </div>
                     </div>
                 </div>
                 <div class="controll">
                     <div class="progressBarContainer">
-                            <div class="item">
-                                <h3>01</h3>
-                                <span data-slick-index="0" class="progressBar"></span>
-                            </div>
-                            <div class="item">
-                                <h3>02</h3>
-                                <span data-slick-index="1" class="progressBar"></span>
-                            </div>
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="0" class="progressBar"></span>
+                        </div>
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="1" class="progressBar"></span>
+                        </div>
+                        <!--
                             <div class="item">
                                 <h3>03</h3>
                                 <span data-slick-index="2" class="progressBar"></span>
                             </div>
+                        -->
                     </div>
+                    <!--
                     <div class="slick-btn">
                         <div class="pause-btn">
                             <i class="xi-pause"></i>
@@ -91,16 +78,130 @@ include_once(G5_THEME_PATH.'/head.php');
                             <i class="xi-play"></i>
                         </div>
                     </div>
+                    -->
                     <div class="main-controll">
                     </div>
                 </div>
+
+                <div class="scroll_ani" style="display: block;">
+                    <div></div>
+                </div>
             </div>
+<!--
+            <script>
+                let main_tits = document.getElementsByClassName('.menu_tit');
+                let two_section = document.querySelector('.two_section');
 
+                for (let i = 0; i < main_tits.length; i++) {
+                    if (window.scrollY >= two_section.offsetTop) {
+                        main_tits[i].classList.add('menu_white_tit');
+                        main_tits[i].classList.remove('menu_black_tit');
+                    } else {
+                        main_tits[i].classList.remove('menu_white_tit');
+                        main_tits[i].classList.add('menu_black_tit');
+                    }
+                }
 
+            </script>
+-->
+            <style>
 
-            <div class="section section1">
+                .menu_white_tit {
+                    color: #fff;
+                }
+
+                .menu_black_tit {
+                    color: black;
+                }
+
+                .slick-slide {
+                    transition: none !important;
+                }
+
+                .bar_item_h3{
+                    width:10px;
+                    height: 10px;
+                    border: 2px solid #fff;
+                    background: #fff;
+                    border-radius: 100%;
+                }
+
+                .scroll_ani {
+                    position: absolute;
+                    height: 60px;
+                    width: 40px;
+                    left: 50%;
+                    bottom: 8%;
+                    border: 2px solid #fff;
+                    border-radius: 50px;
+                    z-index: 2;
+                    transform: translate(-50%, -50%);
+                    animation: scrollani_1 5000ms linear infinite;
+                }
+
+                .scroll_ani div {
+                    width: 5px;
+                    margin: 0 auto;
+                    height: 5px;
+                    background: #fff;
+                    border-radius: 100%;
+                    margin-top: 5px;
+                    animation: scrollani_2 5000ms linear infinite;
+                }
+
+                @keyframes scrollani_1 {
+                    0% {
+                        opacity: 0;
+                    }
+                    0% {
+                        opacity: 0;
+                    }
+                    42% {
+                        opacity: 1;
+                    }
+                    58% {
+                        opacity: 1;
+                    }
+                    62% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes scrollani_2 {
+                    0% {
+                        margin-top: 5px;
+                    }
+                    42% {
+                        margin-top: 5px;
+                    }
+                    46% {
+                        margin-top: 5px;
+                    }
+                    54% {
+                        margin-top: 15px;
+                    }
+                    58% {
+                        margin-top: 21px;
+                    }
+                    100% {
+                        margin-top: 21px;
+                    }
+                }
+
+            </style>
+
+            <div class="section section1 two_section">
                 <div class="sec1-inner">
                     <div class="sec1-lt">
+                        <div class="category">
+                            <div class="line"></div><span>사업영역</span>
+                        </div>
+
+                    <div class="sec1-rt">
+
                         <div>
                             <img src="<?php echo G5_THEME_URL?>/img/main/Product_01.jpg" alt="sec1">
                         </div>
@@ -110,83 +211,9 @@ include_once(G5_THEME_PATH.'/head.php');
                         <div>
                             <img src="<?php echo G5_THEME_URL?>/img/main/Product_03.jpg" alt="sec1">
                         </div>
-                    </div>
-                    <div class="sec1-rt">
-                        <div class="category">
-                            <div class="line"></div><span>사업영역</span>
-                        </div>
-                            <div class="sec1-slick">
-                                <div class="_dl">
-                                    <dl>
-                                        <dt>
-                                            캠핑카 기반 종합<br>여행 플랫폼
-                                        </dt>
-                                        <dd>
-                                            차놀자캠핑은 단순한 캠피카 대여 플랫폼이 아닙니다.<br>
-                                            캠핑카와 렌터카등 모빌리티 기반의 종합 여행플랫폼입니다.
-                                        </dd>
-                                        <dd>
-                                            캠핑카대여, 캠핑카기반 지역여행패키지, 캠핑장, 캠핑음식 등<br>
-                                            캠핑카를 기반하는 종합 여행패키지 상품을 만날 수 있습니다<br>
-                                        
-                                        </dd>
-                                    </dl>
-                                    <a href="<?php echo G5_THEME_URL?>/sub/allinone.php"><span>MORE VIEW</span></a>
-                                </div>
-                                <div class="_dl">
-                                    <dl>
-                                        <dt>
-                                            임직원 복지형<br> 캠핑카 서비스
-                                        </dt>
-                                        <dd>
-                                            차놀자캠핑의 전국 지점 인프라를 바탕으로 기업체의 복지플랜과<br>결합이 가능합니다. 차놀자캠핑카 제휴를 통해 임직원들은<br>어디서나 할인된 가격으로 캠핑카 여행이 가능해집니다.
-                                             
-                                        </dd>
-                                        <dd>
-                                            임직원을 위한 차별화된 복지서비스, 지금 바로 차놀자와 상의하세요
-                                        </dd>
-                                    </dl>
-                                    <a href="<?php echo G5_THEME_URL?>/sub/b2b_camp.php"><span>MORE VIEW</span></a>
-                                </div>
-                                <div class="_dl">
-                                    <dl>
-                                        <dt>
-                                            수익형 캠핑카 
-                                        </dt>
-                                        <dd>
-                                            1년에 몇 번 안타는 캠핑카 때문에 고민이신가요?<br>억 대의 캠핑카 구매에 망설이시나요?
-                                        </dd>
-                                        <dd>
-                                            차놀자 캠핑의 수익형 위탁운영 서비스는 고민을 해결합니다.<br>
-                                            차놀자 캠핑 본사의 홍보마케팅 정책과, 전국 인프라를 바탕으로<br>
-                                            필요한 곳에 위탁운영을 실시하여 수익을 안겨드립니다.
-                                        </dd>
-                                    </dl>
-                                    <a href="http://chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng"><span>MORE VIEW</span></a>
-                                </div>
-                            </div>
-                            <div class="progressWrap">
-                                <div class="item2">
-                                    <h3>캠핑종합여행사</h3>
-                                    <span data-slick-index="0" class="progress"></span>
-                                </div>
-                                <div class="item2">
-                                    <h3>기업복지형플랜</h3>
-                                    <span data-slick-index="1" class="progress"></span>
-                                </div>
-                                <div class="item2">
-                                    <h3>수익형캠핑카</h3>
-                                    <span data-slick-index="2" class="progress"></span>
-                                </div>
-                                <div class="sec1-controll">
-                                    <div class="sec1-pause">
-                                        <i class="xi-pause"></i>
-                                    </div>
-                                    <div class="sec1-play">
-                                        <i class="xi-play sec1-play"></i>
-                                    </div>
-                                </div>
-                            </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -243,7 +270,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </div>
             </div>
 
-            <div class="section section3 background">
+            <div class="section section3 two_section background">
                 <div class="bg background"></div>
                 <div class="sec3-inner">
                     <div class="sec3-tit">
@@ -291,32 +318,6 @@ include_once(G5_THEME_PATH.'/head.php');
                 </div>
             </div>
 
-
-            <div class="section section4 fp-auto-height" >
-                <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/main/14.jpg')"></div>
-                <div class="sec4-inner">
-                    <div class="sec4-tit">
-                        <dl>
-                            <dd><div class="line"></div>Our News</dd>
-                            <dt>대한민국 캠핑카 <br class="mo-br"> 사업의 중심에 있는<br>
-                                차놀자 캠핑의 <br class="mo-br"> 소식을 확인하세요.
-                            </dt>
-                            <dd>
-                            차놀자캠핑의 이벤트, 행사 등 다양한 소식을 전해드립니다.<br>
-                            건강한 삶을 만들어가는 차놀자 캠핑
-                            </dd>
-                        </dl>
-                        <a href="http://camping.dothome.co.kr/bbs/board.php?bo_table=14"><span>MORE VIEW</span></a>
-                    </div>
-                    <div class="sec4-contents">
-                        <div class="news-tit">
-                            <h4>NEWS</h4>
-                            <div class="sec4-arrow"></div>
-                        </div>
-                        <?php echo latest("theme/slider","14",3,100)?>
-                    </div>
-                </div>
-            </div>
             <?php include_once(G5_THEME_PATH.'/tail.php'); ?>
 
             <div class="section fp-auto-height">

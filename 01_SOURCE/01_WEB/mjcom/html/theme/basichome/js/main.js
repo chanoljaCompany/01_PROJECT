@@ -98,7 +98,7 @@ $(document).ready(function(){
             if (percentTime >= 100) {
                 $('.main-slick').slick('slickNext');
                 progressBarIndex++;
-                if (progressBarIndex > 2) {
+                if (progressBarIndex > 1) {
                     progressBarIndex = 0;
                 }
                 startProgressbar();

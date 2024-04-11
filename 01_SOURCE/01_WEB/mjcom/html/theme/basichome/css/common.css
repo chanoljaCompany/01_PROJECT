@@ -9,8 +9,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body { 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Pretendard-Regular', sans-serif;
     overflow: hidden;
 }
 .blind {
@@ -25,13 +32,6 @@ body {
     position:fixed;
     top:0px;
     z-index:999999999999999999999999999999999;
-    background-color: #fff;
-}
-#header.active{
-    background-color: rgba(255,255,255,0.5);
-}
-#header:hover{
-    background-color: #fff;
 }
 #header.nav-down{
     transform: translateY(0);
@@ -85,7 +85,8 @@ body {
 #header #nav .menu_ul {
     display:flex;
     /* width:720px; */
-    width:920px
+    width:920px;
+    justify-content: flex-end;
 }
 #header #nav .menu_li {
     /* padding:0 40px; */
@@ -102,7 +103,6 @@ body {
     content:"";
     width:0%;
     height: 2px;
-    background-color: #54C3F1;
     position: absolute;
     bottom: -1px;
     left:50%;transform: translateX(-50%);
@@ -117,9 +117,12 @@ body {
     font-weight:bold;
     position:relative;
     letter-spacing:-0.6px;
-    color: #363636;
+    color: #fff;
 }
 
+.userBox a {
+    color: #fff;
+}
   
 /*#header #nav .menu_tit.on {
     color:#f6f6f6;
@@ -179,7 +182,11 @@ body {
     color: #363636;
 }
 #header #nav .gnb_a:hover {
-    color:#54C3F1;;
+    color:#54C3F1;
+}
+
+#header #nav .menu_tit:hover {
+    color: #54C3FD;
 }
 /* #header #nav .gnb_li .gnb_a::before {
     content:'';    
@@ -202,7 +209,6 @@ body {
     width:100%;height: 350px;
     position: absolute;
     top:100px;left:0;
-    background-color: #fff;
     display: none;
 }
 #header #info {
@@ -241,10 +247,9 @@ body {
     right: 0;top:0;
     z-index:99999;
     width:100px;height: 100px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid #ddd;
 }
 .hamburger.on{
     border-left: none;
