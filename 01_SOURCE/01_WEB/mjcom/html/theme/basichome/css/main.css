@@ -247,7 +247,6 @@
     position: absolute;
     top:0;left: 0;
     z-index: -2;
-    background-image: url("../img/main/img02.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.15;
@@ -257,7 +256,7 @@
     width:1440px;
     display: flex;
     margin: 0 auto;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     position: relative;
 }

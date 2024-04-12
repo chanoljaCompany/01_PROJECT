@@ -146,7 +146,7 @@ $g5['title'] = "보유차량";
                                         <p class="txt"><?php echo $list[$i]['wr_2'] ?></p>
                                     </li>
                                     <li>
-                                        <p class="tit">반려동물가능여부</p>
+                                        <p class="tit">반려동물 가능여부</p>
                                         <p class="txt"><?php echo $list[$i]['wr_3'] ?></p>
                                     </li>
                                     <li>

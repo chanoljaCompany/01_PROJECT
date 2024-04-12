@@ -174,11 +174,11 @@ include_once(G5_THEME_PATH.'/head.php');
                                             캠핑카 여행을 위한<br>다양한 부가서비스
                                         </dt>
                                         <dd>
-                                            캠핑카여행을 위한 다양한 캠핑용품과<br>장작, 숯등일 준비되어 있습니다<br>이제 먹을것만 챙기면 됩니다.
+                                            캠핑카여행을 위한 다양한 캠핑용품과<br>장작, 숯등 준비되어 있습니다<br>이제 먹을것만 챙기면 됩니다.
                                              
                                         </dd>
                                         <dd>
-                                            편리한 캠핑카여행을 떠나볼까요/
+                                            편리한 캠핑카여행을 떠나볼까요?
                                         </dd>
                                     </dl>
                                     <a href="http://cambranch.dothome.co.kr/BRANCH/icairport/theme/branch/sub/goods_info.php"><span>MORE VIEW</span></a>
@@ -285,8 +285,8 @@ include_once(G5_THEME_PATH.'/head.php');
                     <div class="sec4-tit">
                         <dl>
                             <dd><div class="line"></div>Real 후기</dd>
-                            <dt>백문이 불여일견! <br class="mo-br"> 생생한 고객후기를<br>
-                                통해 캠핑카 여행을 <br class="mo-br">계획해 볼까요?
+                            <dt>고객후기를 통해<br>
+                                캠핑카 여행을 계획해보세요!
                             </dt>
                             <dd>
                             차놀자 캠핑카를 통해 여행하신 실제 고객님들의.<br>

@@ -23,6 +23,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/icofont.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/slick.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/f1ca3de2c6.css" crossorigin="anonymous">
 
     </div>
     <div id="main">
@@ -191,28 +192,98 @@ include_once(G5_THEME_PATH.'/head.php');
                     }
                 }
 
+                .sec_h3{
+                    font-size: 36px;
+                    font-weight: 600;
+                }
+
+                .sec_h1{
+                    font-size:72px;
+                    font-weight: 900;
+                    margin-top:3px;
+                    margin-bottom:9px;
+                }
+
+                .sec_p {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 40px
+                }
+
+                .sec_morebtn{
+                    background-color: #54C3FD;
+                    width: 282px;
+                    height: 60px;
+                    border: none;
+                    border-radius: 40px;
+                    color: #fff;
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                .morebtn_arrow {
+                    position: relative;
+                    right: -2px;
+                    animation: 1000ms arrow_ infinite;
+                }
+
+                @keyframes arrow_ {
+                    0% {
+                        opacity: 0;
+                        right: 5px;
+                    }
+                    100% {
+                        opacity: 1;
+                        right: -5px;
+                    }
+                }
+
+                .sec1_card {
+                    max-width: 590px;
+                    width:100%;
+                    height: 590px;
+                    color:#fff;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+                    text-align: center;
+                    transition:all 0.4s;
+                    background: url(<?php echo G5_THEME_URL?>/img/main/sec1_img.png) center no-repeat;
+                    background-size: 100%;
+                }
             </style>
 
-            <div class="section section1 two_section">
+            <div class="section section1">
                 <div class="sec1-inner">
                     <div class="sec1-lt">
-                        <div class="category">
-                            <div class="line"></div><span>사업영역</span>
+                        <div>
+                            <h3 class="sec_h3">RENTAL SERVICE</h3>
+                            <h1 class="sec_h1">렌트카 창업 스쿨</h1>
+                            <p class="sec_p">전문적인 렌트카 창업 교육으로 여러분의 꿈을 이뤄보세요.  <br>
+                                비즈니스 성공을 향한 첫걸음을 차놀자와 함께하세요.
+                            </p>
+                            <button class="sec_morebtn"><span>MORE VIEW</span> <i class="fa-solid fa-chevrons-right morebtn_arrow"></i> </button>
                         </div>
 
+                    </div>
                     <div class="sec1-rt">
+                        <div class="sec1_card">
 
-                        <div>
-                            <img src="<?php echo G5_THEME_URL?>/img/main/Product_01.jpg" alt="sec1">
+                            <!--<img style="max-width:590px; transition: all 0.4s"  src="<?php echo G5_THEME_URL?>/img/main/sec1_img.png" alt="sec1">-->
+                            <!--
+                            <div class=""></div>
+                            <h3><a href="#">10 inspiring photos</a></h3>
+                                <div class="intro"> <a href="#">Inspiration</a> </div>
+                                -->
                         </div>
-                        <div>
-                            <img src="<?php echo G5_THEME_URL?>/img/main/Product_02.jpg" alt="sec1">
-                        </div>
-                        <div>
-                            <img src="<?php echo G5_THEME_URL?>/img/main/Product_03.jpg" alt="sec1">
-                        </div>
-
-
+                        <!--
+                            <div class="card-info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...
+                                <a href="#">Read Article<span class="licon icon-arr icon-black"></span></a>
+                            </div>
+                        -->
 
                     </div>
                 </div>
@@ -229,7 +300,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                     시작한 건실한 사업자입니다.</dd>
                             </dl>
                             <a href="<?php echo G5_THEME_URL?>/sub/ch-company.php"><span>MORE VIEW</span></a>
-                         
+
                             <ul class="sec2-contents">
                                 <li>
                                     <i class="icofont-chart-growth"></i>

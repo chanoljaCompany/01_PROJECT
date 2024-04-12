@@ -25,7 +25,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
     .youtube_a {
         background-color: #51C3F1;
-        padding: 15px;
+        padding: 35px;
         border-radius: 20px;
         color: white !important;
         font-weight: bold;

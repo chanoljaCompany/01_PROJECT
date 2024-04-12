@@ -149,7 +149,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                             캠핑여행을 위한<br>지점 보유 캠핑카
                                         </dt>
                                         <dd>
-                                            꿈에 그리던 캠핑카 여행, 어려우신가요?.<br>
+                                            꿈에 그리던 캠핑카 여행, 어려우신가요?<br>
                                             차놀자캠핑과 만나면 다양한 서비스를 통해 캠핑카 여행이 쉬워집니다.
                                         </dd>
                                         <dd>
@@ -166,11 +166,11 @@ include_once(G5_THEME_PATH.'/head.php');
                                             캠핑카 여행을 위한<br>다양한 부가서비스
                                         </dt>
                                         <dd>
-                                            캠핑카여행을 위한 다양한 캠핑용품과<br>장작, 숯등일 준비되어 있습니다<br>이제 먹을것만 챙기면 됩니다.
+                                            캠핑카여행을 위한 다양한 캠핑용품과<br>장작, 숯등 준비되어 있습니다<br>이제 먹을것만 챙기면 됩니다.
 
                                         </dd>
                                         <dd>
-                                            편리한 캠핑카여행을 떠나볼까요/
+                                            편리한 캠핑카여행을 떠나볼까요?
                                         </dd>
                                     </dl>
                                     <a href="http://cambranch.chanolja.co.kr/BRANCH/bu_deajeo/theme/branch/sub/goods_info.php"><span>MORE VIEW</span></a>
