@@ -19,7 +19,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/jw-sub.css">')
 <?php
 $g5['navTitle'] = "차놀자캠핑";
 $g5['title'] = "기업소개";
-$g5['sub-text']="안녕하세요. 차놀자캠핑 전주지점입니다.";
+$g5['sub-text']="안녕하세요. 차놀자캠핑 안성탑스모빌지점입니다.";
 ?>
 
 
@@ -104,17 +104,16 @@ $g5['sub-text']="안녕하세요. 차놀자캠핑 전주지점입니다.";
                     <ul>
                         <li class="on" data-img="<?php echo G5_THEME_URL?>/img/sub/011.jpg">
                             <dl>
-                                <dt>역사와 자연의 만남 <span><i class="xi-angle-down-min"></i></span></dt>
-                                <dd>전주지점, 전통과 자연이 어우러진 특별한 공간에서 <br>
-                                    여유로운 휴식을 경험하세요.
+                                <dt>일상을 잊고 즐거움을 만끽하는 시간<span><i class="xi-angle-down-min"></i></span></dt>
+                                <dd>일상을 잊는 특별한 순간,<br/>
+                                    안성의 자연 속으로
                                 </dd>
                             </dl>
                         </li>
                         <li data-img="<?php echo G5_THEME_URL?>/img/sub/012.jpg">
                             <dl>
                                  <dt>자연의 힐링, 캠핑카 여행<span><i class="xi-angle-down-min"></i></span></dt>
-                                <dd>전통, 그리고 자연이 숨쉬는 전주<br>
-                                    아름다운 곳에서 여유로운 휴식을 즐기세요.
+                                <dd>자연과의 하나되는 여정, <br> 안성지점에서의 새로운 경험
                                 </dd>
                             </dl>
                         </li>
