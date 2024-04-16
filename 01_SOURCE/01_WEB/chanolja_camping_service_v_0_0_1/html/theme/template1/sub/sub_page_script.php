@@ -20,14 +20,7 @@
     
     $(function(){
         $(".list_select").click(function(){
-            $(".active").not($(this).parent(".list_form")).removeClass("active");
             $(this).parent(".list_form").toggleClass("active");
-        });
-    });
-
-    $(function(){
-        $(".list_x").click(function(){
-            $(this).parent().parent().parent(".list_form").removeClass("active");
         });
     });
     
@@ -146,6 +139,20 @@ $("#inputDate_sub").flatpickr({
         // findSearchData('init');
           
     });
+    <? }else if($act_target == 'car_detail'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").hide(); 
+       // $("#sub_page_map").hide(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        room_detail('<?=$car_code?>');  
+    });
     <? }else if($act_target == 'icairport'){?>
         $(document).ready(function() {
         $("#subpagebg").hide();  
@@ -176,6 +183,35 @@ $("#inputDate_sub").flatpickr({
         
           
     });
+
+    <? }else if($act_target == 'tops'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        findSearchData('tops');
+    });
+
+    <? }else if($act_target == 'jeju'){?>
+    $(document).ready(function() {
+        $("#subpagebg").hide();
+        $("#sub_page_1").show();
+        $("#sub_page_detail").hide();
+        $("#customer_info").hide();
+        $("#reservation_completion").hide();
+        $("#reservation_inquiry_list").hide();
+        $("#reservation_inquiry").hide();
+        $("#login_form").hide();
+        $("#memberjoin").hide();
+        findSearchData('jeju');
+    });
+
     <? }else if($act_target == 'deajeo'){?>
         $(document).ready(function() {
         $("#subpagebg").hide();  
@@ -191,20 +227,9 @@ $("#inputDate_sub").flatpickr({
         
           
     });
-    <? }else if($act_target == 'car_detail'){?>
-        $(document).ready(function() {
-        $("#subpagebg").hide();  
-        $("#sub_page_1").hide(); 
-       // $("#sub_page_map").hide(); 
-        $("#sub_page_detail").hide(); 
-        $("#customer_info").hide(); 
-        $("#reservation_completion").hide(); 
-        $("#reservation_inquiry").hide(); 
-        $("#reservation_inquiry_list").hide(); 
-        $("#login_form").hide(); 
-        $("#memberjoin").hide(); 
-        roorm_detail('<?=$car_code?>');  
-    });
+
+
+
     <?}else{?>
         $(document).ready(function() {
          //    room_image('9416914189');
@@ -246,10 +271,17 @@ $("#inputDate_sub").flatpickr({
        //console.log('get_area========', json[0]['area_name']);
        areaData = json;
        var html = "";
+       /*
+         html += "<span>";
+         html += "<input type='checkbox' name='area[]' value='' onclick='location_allcheck()' class='check_box' id='all_check'>";
+         html += "<label for='chk1'>전체</label>";
+         html += "</span>";
+        */
         for(var i=0 ; i < areaData.length ; i++ ){
+        
 			console.log('data test : ', json[i]);
             html += "<span>";
-            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class=''>";
+            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class='check_box'>";
             html += "<label for='chk1'>"+areaData[i]['area_name']+"</label>";
             html += "</span>";
             $("#mainArea").html(html);
@@ -288,6 +320,12 @@ $("#inputDate_sub").flatpickr({
    });
   }
 
+function location_allcheck() {
+    var isChecked = $('#all_check').prop('checked');
+
+    $('.check_box').prop('checked', isChecked);
+}
+
 function setDate(setdate){
     //  alert('setdate ' + setdate);
     $("#dateStr").val(setdate);
@@ -295,19 +333,13 @@ function setDate(setdate){
     $("#sss").val(setdatesplit['0']);
     $("#eee").val(setdatesplit['1']);
 }
-
 function findSearchData(locate) {
   if(locate == 'main'){
     $("#sub_page_1").show(); 
     //$("#sub_page_map").show(); 
     $("#subpagebg").hide(); 
     setDate($("#inputDate").val());
-    $("#inputDate_sub").val($("#inputDate").val()); 
-  
-  }
-  else if(locate == 'init'){
-    setDate('<?=$dateType?>').val();
-    $("#inputDate_sub").val('<?=$dateType?>');
+    $("#inputDate_sub").val($("#inputDate").val());
   }
   else if(locate == 'icairport'){
     $("#sub_page_1").show(); 
@@ -323,12 +355,30 @@ function findSearchData(locate) {
     $("#inputDate_sub").val($("#inputDate").val());
     
   }
-  else if(locate == 'deajeo'){
+
+  else if(locate == 'tops'){
     $("#sub_page_1").show(); 
     $("#subpagebg").hide(); 
     setDate($("#inputDate").val());
     $("#inputDate_sub").val($("#inputDate").val());
     
+  }
+  else if(locate == 'deajeo'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());    
+  }
+
+  else if(locate == 'jeju'){
+      $("#sub_page_1").show();
+      $("#subpagebg").hide();
+      setDate($("#inputDate").val());
+      $("#inputDate_sub").val($("#inputDate").val());
+  }
+  else if(locate == 'init'){
+    setDate('<?=$dateType?>').val();
+    $("#inputDate_sub").val('<?=$dateType?>');
   }
   else{
     setDate($("#inputDate_sub").val());
@@ -337,31 +387,11 @@ function findSearchData(locate) {
   divisionType = $("#divisionType").val();
   getData(divisionType,locate)
 }
-
 function getData(divisionType,locate) {
-  if(locate == 'main'){
-    var local = '';
-    }
-    else if(locate == 'icairport'){
-      var local = '인천 영종도';
-    }     
-    else if(locate == 'jeonju'){
-      var local = '전북 전주';
-    }     
-    else if(locate == 'deajeo'){
-      var local = '부산 강서';
-    }     
-    else if(locate == 'sub'){      
-      var local = $("#guestroom_name").val();
-      //var local = $("guestroom_name').val();
-    } 
-    else{       
-    }
-
   $("#divisionType").val(divisionType);
   var division = 'getData';
   var personnel = "1";
-  if(divisionType == '1'){
+if(divisionType == '1'){
   // var divisionType = $("#divisionType").val();
   var dateStr = $("#dateStr").val();
   var datalen = dateStr.length;
@@ -371,35 +401,29 @@ function getData(divisionType,locate) {
      if(locate == 'main'){
         $("#inputDate").val(ndateStr);
      }else{
-        $("#inputDate_sub").val(ndateStr);        
+        $("#inputDate_sub").val(ndateStr);
      }
      dateStr = ndateStr;
   }
-  }
-  var areaArray = new Array();
+}
+    var areaArray = new Array();
+    $("input[name='area[]']:checked").each(function() { 
+      var areaVal = $(this).val(); 
+      areaArray.push(areaVal);
+    });
 
+    var optionArray = new Array();
+    $("input[name='basicoption[]']:checked").each(function() { 
+      var optionVal = $(this).val(); 
+      optionArray.push(optionVal);
+    });
 
-  $("input[name='area[]']:checked").each(function() { 
-  var areaVal = $(this).val(); 
-  areaArray.push(areaVal);
-});
-
-var optionArray = new Array();
-$("input[name='basicoption[]']:checked").each(function() { 
-  var optionVal = $(this).val(); 
-  optionArray.push(optionVal);
-});
-
-
-
-
-var form = $('#reserveForm')[0];
-var formData = new FormData(form);
-formData.append("division", "getData");
-formData.append("locate", locate);
-formData.append("area", areaArray);
-formData.append("basicoption", optionArray);
-//formData.append("guestroom_name", local);
+    var form = $('#reserveForm')[0];
+    var formData = new FormData(form);
+    formData.append("division", "getData");
+    formData.append("locate", locate);
+    formData.append("area", areaArray);
+    formData.append("basicoption", optionArray);
 
     for (var pair of formData.entries())
     {

@@ -8,7 +8,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.chanolja.camping_serivce.R;
+import com.chanolja.union_serivce.R;
 
 
 public class MainActivity extends AppCompatActivity {

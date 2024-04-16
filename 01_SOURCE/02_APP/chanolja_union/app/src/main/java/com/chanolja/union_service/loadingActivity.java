@@ -5,7 +5,8 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.start.chanolja_union.R;
+import com.chanolja.union_serivce.R;
+
 
 public class loadingActivity extends AppCompatActivity {
     @Override

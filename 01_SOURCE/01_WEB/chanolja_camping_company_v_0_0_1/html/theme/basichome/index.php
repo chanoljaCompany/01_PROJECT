@@ -24,6 +24,24 @@ include_once(G5_THEME_PATH.'/head.php');
     <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL?>/css/slick.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <style>
+
+        #main_banner_mp4_mo {
+            display: none;
+        }
+
+        @media screen and (max-width: 480px) {
+            #main_banner_mp4 {
+                display: none;
+            }
+            #main_banner_mp4_mo {
+                display: block;
+            }
+        }
+
+    </style>
+
+
     </div>
     <div id="main">
         <div class="top-btn">
@@ -40,7 +58,8 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 <div class="main-slick">
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/메인_04.jpg')"></div>
+                        <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4.mp4"></video>
+                        <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo.mp4"></video>
                         <div class="main-tit">
                             <dl>
                                 <dt>국내 최대/최다 캠핑카 플랫폼</dt>
@@ -50,7 +69,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         </div>
                     </div>
                     <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/메인_03.jpg')"></div>
+                        <video id="main_banner_mp4" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp42.mp4"></video>
+                        <video id="main_banner_mp4_mo" style="width: 100vw; padding: 0px; margin: 0px;" muted autoplay playsinline loop data-keepplaying src="<?php echo G5_THEME_URL?>/img/common/main_banner_mp4_mo2.mp4"></video>
                         <div class="main-tit">
                             <dl>
                                 <dt>전국 어디서나 캠핑여행이 필요할 때</dt>
@@ -59,17 +79,9 @@ include_once(G5_THEME_PATH.'/head.php');
                             </dl>
                         </div>
                     </div>
-                    <div>
-                        <div class="bg background" style="background-image:url('<?php echo G5_THEME_URL?>/img/common/배너01.jpg')"></div>
-                        <div class="main-tit">
-                            <dl>
-                                <dt>행복한 삶을 위한 여가활동 서비스</dt>
-                                <dd>차놀자캠핑의 다양한 여가지원 <br><br class="mo-br"> 서비스는 여유있는 삶을 드립니다</dd>
-                                <dd>#전국지점네트워크 #기업형여가서비스</dd>
-                            </dl>
-                        </div>
-                    </div>
+
                 </div>
+                <!--
                 <div class="controll">
                     <div class="progressBarContainer">
                             <div class="item">
@@ -80,10 +92,7 @@ include_once(G5_THEME_PATH.'/head.php');
                                 <h3>02</h3>
                                 <span data-slick-index="1" class="progressBar"></span>
                             </div>
-                            <div class="item">
-                                <h3>03</h3>
-                                <span data-slick-index="2" class="progressBar"></span>
-                            </div>
+
                     </div>
                     <div class="slick-btn">
                         <div class="pause-btn">
@@ -96,8 +105,34 @@ include_once(G5_THEME_PATH.'/head.php');
                     <div class="main-controll">
                     </div>
                 </div>
+                -->
+                <div class="controll">
+                    <div class="progressBarContainer">
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="0" class="progressBar"></span>
+                        </div>
+                        <div class="item">
+                            <h3 class="bar_item_h3"></h3>
+                            <span data-slick-index="1" class="progressBar"></span>
+                        </div>
+                    </div>
+                    <div class="main-controll">
+                    </div>
+                </div>
             </div>
 
+            <style>
+
+                .bar_item_h3{
+                    width:10px;
+                    height: 10px;
+                    border: 2px solid #fff;
+                    background: #fff;
+                    border-radius: 100%;
+                }
+
+            </style>
 
 
             <div class="section section1">
