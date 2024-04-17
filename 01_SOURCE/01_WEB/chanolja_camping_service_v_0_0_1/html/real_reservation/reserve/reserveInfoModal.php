@@ -48,7 +48,7 @@ $counts = sql_num_rows($result);
                  <thead>
                  <tbody>
                    <tr>
-                     <th colspan="4" class="text-right">예약조회일자 : <?=$dateString?></th>
+                     <th colspan="4" class="text-right">!예약조회일자 : <?=$dateString?></th>
                    </tr>
                    <tr>
                      <th>NO</th>

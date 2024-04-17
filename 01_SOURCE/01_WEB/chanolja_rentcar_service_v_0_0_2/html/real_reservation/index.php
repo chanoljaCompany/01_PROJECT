@@ -33,7 +33,7 @@ if($mem_autologin){
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-       <img src="logo_adm.png"><br>
+       <a href="http://www.chanolja.co.kr/"><img src="logo_adm.png"></a><br>
        <a href="#"><b>차놀자캠핑 관리시스템</b></a>
   </div>
   <!-- /.login-logo -->

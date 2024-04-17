@@ -100,3 +100,30 @@ class __TwigTemplate_f45dbbc5eb889f8781652ce94ef2ac7b854eca8e6cce6fa0b5be5168de9
     }
 
     public function getTemplateName()
+    {
+        return "columns_definitions/column_indexes.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  94 => 21,  89 => 20,  83 => 17,  78 => 16,  72 => 13,  67 => 12,  61 => 9,  56 => 8,  50 => 5,  45 => 4,  41 => 3,  35 => 2,  30 => 1,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("", "columns_definitions/column_indexes.twig", "/host/home2/chatour/html/real_reservation/phpMyAdmin-4.9.10/templates/columns_definitions/column_indexes.twig");
+    }
+}

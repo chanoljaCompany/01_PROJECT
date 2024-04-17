@@ -25,11 +25,13 @@ $pet_able = isset($_REQUEST['pet_able']) ? $_REQUEST['pet_able'] : ''; //최대�
 $delivery_able = isset($_REQUEST['delivery_able']) ? $_REQUEST['delivery_able'] : ''; //최대인원
 $camping_able = isset($_REQUEST['camping_able']) ? $_REQUEST['camping_able'] : ''; //최대인원
 $get_guestroom_code = isset($_REQUEST['guestroom_code']) ? $_REQUEST['guestroom_code'] : '';
+//$com_name = isset($_REQUEST['com_name']) ? $_REQUEST['com_name'] : ''; //최대인원
+$guestroom_name = isset($_REQUEST['guestroom_name']) ? $_REQUEST['guestroom_name'] : ''; //최대인원
 if($division == 'getData'){
   $get_guestroom_type = get_guestroom_type($divisionType);
   $room_info_array_etc = "";
   $room_info_array_etc = room_info_array_etc($get_guestroom_code,$dateStr,$divisionType,$personnel,$area,$basicoption,$com_name
-                          ,$sPrice,$ePrice,$driver_license,$pet_able,$delivery_able,$camping_able);
+                          ,$sPrice,$ePrice,$driver_license,$pet_able,$delivery_able,$camping_able,$guestroom_name);
   $peak_data_array = "";
   $semi_peak_data_array = "";
   $html ="";
@@ -37,6 +39,7 @@ if($division == 'getData'){
   $room_info_array_etc_size = sizeof($room_info_array_etc);
   if($room_info_array_etc_size <= '0'){
     $html ="
+<!--
     <table border='1' class='tbroom' id='tb_9416914189' style='display: table; width: 100%;'>
     <thead>
         <tr>
@@ -44,11 +47,42 @@ if($division == 'getData'){
         </tr>
     </thead>
     <tbody>
-    </table>";
+    </table>
+    -->
+    <div style='font-size: 35px; text-align: center;' >
+        조건에 만족하는 상품이 없습니다.    
+    </div>
+    ";
 
   }
   $arrayLocation = array();
+
+  /*
+$sql = "SELECT B.* ,C.*
+    FROM $GUESTROOM_RESERVATION_INFO_TB AS A
+    INNER JOIN $GUESTROOM_RESERVATION_TB AS B
+    ON B.guestroom_reserve_code = A.guestroom_reserve_code
+    INNER JOIN $GUESTROOM_INFO_TB AS C
+    ON C.guestroom_code = A.guestroom_code
+    WHERE 1=1
+    AND A.guestroom_reserve_date = '".$dateString."'
+    ".$sub_qry."
+    AND A.guestroom_reserve_status = '3'
+    GROUP BY A.guestroom_code  
+    ";
+
+$result = sql_query($sql);
+
+    김찬희 추가
+*/
+
   foreach ($room_info_array_etc as $key=>$value) {
+?>
+    <script>
+      var room_info_array_etc = <?php echo json_encode($room_info_array_etc); ?>;
+      console.log(room_info_array_etc);
+    </script>
+<?php
     $goption_all = "";
     $imgUrl = $guestroom_image_url."/".$value['guestroom_image_name'];
     $guestroom_use_hour_exp = explode("~",$value['guestroom_use_hour']);
@@ -81,9 +115,10 @@ if($division == 'getData'){
                   <ul class='sct_sub_ul'>
                       <!--<li><span> <i class='fas fa-map-marker-alt'></i> 차고지 : ".$value['guestroom_address']."</span></li>-->
                       <li><span> <i class='fas fa-address-card'></i>".$value['driver_license']."</span></li>
-                      <li><span> <i class='fas'></i>2021/05</span></li>
-                      <li><span> <i class='fas'></i>59.305km</span></li>
-                      <li><span> <i class='fas'></i>가솔린</span></li>
+                      <li><span> <i class='fas fa-user-friends'></i> 동승 ".$value['guestroom_personnel']."명</span></li>
+                      <li><span> <i class='fas fa-bed'></i> 취침 ".$value['guestroom_max_personnel']."명</span></li>
+                      <li><span> <i class='fas fa-dog'></i>".$pet_able_str."</span></li>
+                      <li><span> <i class='fas fa-bolt'></i>".$delivery_able_str."</span></li>
                   </ul>
                   <div class='sct_sub_txt'><span><i class='far fa-calendar-check'>정상가: <s></i> ".number_format($value['room_fee_all'])."원(".$value['dateintval']."박)</span></s></div>
                   <div class='sct_sub_txt'><span><i class='far fa-calendar-check'>할인가: </i> ".number_format($value['room_fee'])."원(".$value['dateintval']."박)</span></div>
@@ -93,8 +128,8 @@ if($division == 'getData'){
               </div>
           </li>
         ";
-    }
-    $html .= "<input type='hidden' name='arrayLocation' id='arrayLocation' value='".json_encode($arrayLocation)."'>";
+  }
+  $html .= "<input type='hidden' name='arrayLocation' id='arrayLocation' value='".json_encode($arrayLocation)."'>";
   echo $html;
 }
 else if($division == 'guestroom_info_ajax'){

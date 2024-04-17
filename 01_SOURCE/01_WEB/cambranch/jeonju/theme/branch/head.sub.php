@@ -34,7 +34,15 @@ header("Pragma: no-cache"); // HTTP/1.0
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="차놀자캠핑 전주지점">
+    <meta property="og:description" content="행복한 캠핑카 여행은 차놀자캠핑 전주지점과 함께">
+    <meta property="og:url" content="http://cambranch.dothome.co.kr/BRANCH/jeonju/">
+    <meta name="title" content="차놀자캠핑 전주지점">
+    <meta name="description" content="전국 최대 최다 캠핑카 여행 플랫폼, 차놀자 캠핑, 캠핑카렌트, 캠핑카대여, 서울캠핑카, 경기캠핑카, 인천캠핑카, 부산캠핑카, 경남캠핑카, 전북캠핑카, 전남캠핑카, 충남캠핑카 ">
+
     <link rel="icon" href="http://cambranch.dothome.co.kr/BRANCH/jeonju/theme/branch/img/favicon.ico" />
 <?php
 if (G5_IS_MOBILE) {

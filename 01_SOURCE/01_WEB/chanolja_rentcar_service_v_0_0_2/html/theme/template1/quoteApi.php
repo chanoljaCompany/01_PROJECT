@@ -12,7 +12,7 @@ include_once(G5_LIB_PATH.'/icode.sms.lib.php');
 //----------------------------------------------------------
 // SMS 문자전송 시작
 //----------------------------------------------------------
-$sms_contents = '[캠핑카 문의] '.$first_name.'님, 연락처 : '.$email_from.'. 희망지역 및 날짜 : '.$telephone.'. 희망차종 및 인원 : '.$comments ;  // 문자 내용
+$sms_contents = '[렌트카 문의] '.$first_name.'님, 연락처 : '.$email_from.'. 문의내용 : '.$telephone.'. 희망지역 : '.$comments ;  // 문자 내용
 
 echo '<script>';
 echo 'console.log("' . $sms_contents . '")';

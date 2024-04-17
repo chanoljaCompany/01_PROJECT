@@ -68,7 +68,6 @@ $html = "";
                                 <div class='info_all info_con2'>
                                     <h5>■ 상세 정보</h5>
                                     <ul class=''>
-                                        <!--
                                         <li><i class='far fa-user'></i> <span>동승가능인원 : ".$room_info_array_etc['0']['guestroom_personnel']."명</span></li>
                                         <li><i class='far fa-user'></i> <span>취침가능인원 : ".$room_info_array_etc['0']['guestroom_max_personnel']."명</span></li>
                                         <li><i class='far fa-clock'></i> <span>출차가능시간 ".$guestroom_start_hour."시 부터</span></li>
@@ -76,9 +75,9 @@ $html = "";
                                         <li><i class='fas fa-money-check'></i> <span>평일 가격 : ".number_format($room_info_array_etc['0']['guestroom_low_season_fee_weekday'])."원 /박</span></li>
                                         <li><i class='fas fa-money-check'></i> <span>주말 가격 : ".number_format($room_info_array_etc['0']['guestroom_low_season_fee_weekend'])."원 /박</span></li>
                                         <li><i class='fas fa-check'></i> <span>만 ".$room_info_array_etc['0']['driver_age']."세 이상</span></li>
-                                        <li><i class='fas fa-car'></i> <span>운전 경력 ".$room_info_array_etc['0']['driver_carrer']."년 이상</span></li>
-                                        <li><i class='fas fa-map-marker-alt'></i> <span>주소 : ".$room_info_array_etc['0']['address']."</span></li>-->
                                         <li><i class='far fa-address-card'></i> <span>".$room_info_array_etc['0']['driver_license']." 이상</span></li>
+                                        <li><i class='fas fa-car'></i> <span>운전 경력 ".$room_info_array_etc['0']['driver_carrer']."년 이상</span></li>
+                                        <li><i class='fas fa-map-marker-alt'></i> <span>주소 : ".$room_info_array_etc['0']['address']."</span></li>
                                     </ul>
                                 </div>
 

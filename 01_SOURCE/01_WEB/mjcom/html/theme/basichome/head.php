@@ -45,7 +45,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     }else {
 
                     ?>
-                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="menu_tit hd_color menu_white_tit"><?php echo $row['me_name'] ?></a>
+                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="menu_tit hd_color "><?php echo $row['me_name'] ?></a>
                     <?php
                     }
                     ?>

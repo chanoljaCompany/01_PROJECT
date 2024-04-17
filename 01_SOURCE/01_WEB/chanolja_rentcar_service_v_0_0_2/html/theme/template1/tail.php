@@ -139,9 +139,9 @@ if (G5_IS_MOBILE) {
         <div id="ft_wr">
             <div id="ft_sns" style="margin-top:30px; display: flex; justify-content: flex-end;">
                 <ul>
-                    <li style="margin:0px;"><a href="https://www.youtube.com/watch?v=7FJhmXFPC0w">youtube</a></li>
-                    <li class="ft_sns2"><a style="width:100%; background-size: auto 90%; background-repeat: no-repeat;" href="https://www.instagram.com/chanolja_7000/">instagram</a></li>
-                    <li class="ft_sns3"><a href="https://m.blog.naver.com/PostList.naver?blogId=m_chanolja&tab=1">naver blog</a></li>
+                    <li class="ft_sns2"><a style="width:100%; background-repeat: no-repeat;" href="https://www.instagram.com/chanolja_7000/">instagram</a></li>
+                    <li class="ft_sns3"><a style="background-size: auto 104%;" href="https://m.blog.naver.com/PostList.naver?blogId=m_chanolja&tab=1">naver blog</a></li>
+                    <li class="ft_sns1"><a href="https://cafe.naver.com/chanolja">naver cafe</a></li>
                 </ul>
             </div>
             <div id="ft_contact">
@@ -157,7 +157,7 @@ if (G5_IS_MOBILE) {
             <div id="ft_company">
                 <ul>
                     <li class="ft_company1">상호 : 차놀자렌트카(주)</li>
-                    <li class="ft_company2">대표 : 전은택 </li>
+                    <li class="ft_company2">대표 : 전은태 </li>
                     <li class="ft_company3">주소 : 충청남도 천안시 동남구 충절로 224 1층 차놀자 </li>
                     <li class="ft_company4">차놀자렌트카(주) 사업자등록번호 : 000-00-0000</li>
                     <li class="ft_company5">상호 : 지에스렌트카(주)</li>

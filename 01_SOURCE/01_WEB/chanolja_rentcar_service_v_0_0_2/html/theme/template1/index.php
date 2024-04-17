@@ -14,7 +14,7 @@ include_once(G5_THEME_PATH.'/head.php');
     new WOW().init();
 
    $(document).ready(function () {
-
+/*
        console.log(document.cookie.indexOf("pop_up1"));
        if(document.cookie.indexOf("pop_up1") === -1 || document.cookie.indexOf("pop_up2") === -1  ){ // 못 찾으면
 
@@ -29,7 +29,7 @@ include_once(G5_THEME_PATH.'/head.php');
            $('.pop_up_back').css('display', 'block');
            $('body').css('position', 'fixed');
        }
-
+*/
    });
   </script>
 
@@ -223,7 +223,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap" style="margin-bottom: 20px !important; margin-top: 20px;">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
+              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; font-size:19px; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -240,7 +240,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap_mo" style="margin-bottom: 20px !important; ">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
+              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -275,25 +275,25 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="detail">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall">
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon1.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall">
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon2.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="#"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://company.chanolja.co.kr/theme/basichome/sub/goods_info.php"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon4.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://www.chanolja.co.kr/"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon4.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon5.png" style="width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://chanolja-union.kr/"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon5.png" style="width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
 
             </ul>
@@ -388,8 +388,8 @@ function touch_end(event) {
 <div class="aboutWrap">
     <div class="box inner">
      		<div class="main_title">
-               <h2 class="wow fadeInDown" data-wow-delay="0.4s">이달의 추천 캠핑여행</h2>
-		      <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+               <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카</h2>
+		      <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
             <?php  echo latest('theme/splide2', 'tour_guide', 4, 4);   ?>
@@ -401,8 +401,8 @@ function touch_end(event) {
 <div class="aboutWrap">
    <div class="box inner">
 		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자캠핑 신규입점</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카 신규입점</h2>
+			<a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
        <?php
@@ -447,15 +447,14 @@ function touch_end(event) {
    <div class="box inner">
         <div class="utube_wrap">
             <table style="width:100%;">
-                    <td width="40%">
-                       <h3>차놀자캠핑<br> 미디어</h3>
-                       <h4>#차놀자캠핑 #캠핑카여행 #캠핑 #여행</h4>
-                     </td>
-                     <td width="60%">
-                       <!--  <?php echo latest('theme/youtube_latest','91',1,50) ?> -->
-                        <iframe style="border-radius:20px;" width="100%" height="400px" src="https://www.youtube.com/embed/-hBJW-ZgL0I?si=fZBO3WeF02q3yMpi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                     </td>
+                <td width="40%">
+                   <h3>차놀자렌트카<br> 미디어</h3>
+                   <h4>#차놀자렌트카 #장기렌트 #단기렌트</h4>
+                 </td>
+                <td width="60%">
+                    <!--<?php echo latest('theme/youtube_latest','91',1,50) ?>-->
+                    <iframe style="border-radius:20px;" width="100%" height="400px" src="https://www.youtube.com/embed/Qy-G99rthA4?si=6Wqornkikl4UrLwC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </td>
                 </tr>
              </table>
         </div>
@@ -499,16 +498,16 @@ function touch_end(event) {
 
 <!--NEWS -->
 <div class="aboutWrap">
-   <div class="box inner">
-		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+    <div class="box inner">
+        <div class="main_title">
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스룸</h2>
+            <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
-        <?php echo latest('theme/basic_news', '14', 4, 120);
-         ?>
-	    </div>
-	</div>
+            <?php echo latest('theme/basic_news', '14', 4, 120);
+            ?>
+        </div>
+    </div>
 </div>
 
 
@@ -540,23 +539,23 @@ function touch_end(event) {
         <div class="detail" style="display:flex; justify-content: center;">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:10px;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon1.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon1.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon2.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon2.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="#"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                     </ul>
         </div>
         <div class="detail">
             <ul class="clearfix" style="margin-bottom: 20px; margin-top:20px;" >
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:20px;">
-                    <a href="http://company.chanolja.co.kr/theme/basichome/sub/goods_info.php"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon4.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://www.chanolja.co.kr/"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon4.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li style="margin-right:30%;" class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon5.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://chanolja-union.kr/"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon5.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
             </ul>
         </div>
@@ -703,13 +702,14 @@ function touch_end(event) {
 <br>
 <br>
 <br>
+
 <div class="aboutWrap_mo">
    <div class="box inner">
         <div class="utube_wrap"  style="max-width : 100%" >
-                       <center> <font size=5><bold> 차놀자캠핑 미디어 </bold></font></br>
-                       <font size=3>#차놀자캠핑 #캠핑카여행 #캠핑 #여행</font>  </center>
+                       <center> <font size=5><bold> 차놀자렌트카 미디어 </bold></font></br>
+                       <font size=3>#차놀자렌트카 #장기렌트 #단기렌트</font>  </center>
                        <div style="position:relative;height:0;padding-bottom:56.25%">
-                           <iframe src="https://www.youtube.com/embed/-hBJW-ZgL0I?si=fZBO3WeF02q3yMpi"
+                           <iframe src="https://www.youtube.com/embed/Qy-G99rthA4?si=6Wqornkikl4UrLwC"
                            style="position:absolute;width:100%;height:100%;left:0; border-radius:20px;"
                            frameborder="0" allowfullscreen></iframe>
                        </div>
@@ -738,21 +738,20 @@ function touch_end(event) {
 
 <!--NEWS -->
 <div class="aboutWrap_mo">
-   <div class="box inner">
-		<div class="main_title">
-            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+    <div class="box inner">
+        <div class="main_title">
+            <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스룸</h2>
+            <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
-        <?php echo latest('theme/basic_news', '14', 4, 300);        
-         ?>
-	    </div>	    
-	</div>
+            <?php echo latest('theme/basic_news', '14', 4, 120);
+            ?>
+        </div>
+    </div>
 </div>
-
  </div>
 
-
+<!--
 <div class="pop_up_back" style="display:none;" >
     <div class="pop_up1">
         <div style="cursor:pointer; width: auto; height:80vh; display:flex; justify-content: center;" >
@@ -781,12 +780,12 @@ function touch_end(event) {
 
 </div>
 
-
+-->
 <script>
     // 모바일 화면일 때 이미지 경로 변경
     if (window.innerWidth <= 600) {
-        document.querySelector('.slider_img1').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo1.png";
-        document.querySelector('.slider_img2').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo2.png";
+        document.querySelector('.slider_img1').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo1.jpg";
+        document.querySelector('.slider_img2').src = "<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner_mo2.jpg";
     }
 </script>
 

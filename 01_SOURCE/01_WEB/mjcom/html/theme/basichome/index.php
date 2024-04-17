@@ -106,13 +106,8 @@ include_once(G5_THEME_PATH.'/head.php');
             </script>
 -->
             <style>
-
-                .menu_white_tit {
-                    color: #fff;
-                }
-
-                .menu_black_tit {
-                    color: black;
+                .black_tit {
+                    color: black !important;
                 }
 
                 .slick-slide {
@@ -241,6 +236,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 }
 
                 .sec1_card {
+                    position:relative;
                     max-width: 590px;
                     width:100%;
                     height: 590px;
@@ -252,6 +248,141 @@ include_once(G5_THEME_PATH.'/head.php');
                     transition:all 0.4s;
                     background: url(<?php echo G5_THEME_URL?>/img/main/sec1_img.png) center no-repeat;
                     background-size: 100%;
+                }
+                .sec1_card a{
+                    color:#fff;
+                    text-decoration:none;
+                    transition:all 0.2s
+                }
+                .sec1_card .color-overlay {
+                    width: 590px;
+                    height: 590px;
+                    position: absolute;
+                    z-index: 10;
+                    top: 0;
+                    left: 0;
+                    transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+                    border-radius: 20px;
+                }
+                .sec1_card:hover{
+                    box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+                }
+                .sec1_card:hover .card-info {
+                    opacity: 1;
+                    bottom: 170px;
+                }
+                .sec1_card:hover .color-overlay {
+                    background: rgba(64, 84, 94,0.5);
+                }
+                .sec1_card:hover .title-content{
+                    margin-top:170px
+                }
+                .title-content {
+                    text-align: center;
+                    margin: 45% 0 0 0;
+                    width: 100%;
+                    transition:all 0.6s;
+                    position:absolute;
+                    z-index: 30;
+                    top:0;
+                    left:0;
+                }
+
+                .sec1_card:hover .sec1_card_title:after{
+
+                    width:20%
+                }
+
+                .sec1_card h3,h1 {
+                    font-size: 1.9em;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    margin-bottom: 0;
+                    display:inline-block;
+                }
+                .sec1_card h3 a{
+                    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                    transition:all 0.2s;
+                    font-size: 30px;
+                }
+                .sec1_card h3 a:hover{
+                    text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
+                }
+                .sec1_card_title:after {
+                    content: " ";
+                    display: block;
+                    height: 2px;
+                    margin: 20px auto;
+                    width:20%;
+                    border: 0;
+                    background: #54C3FD;
+                    transition:all 0.2s
+
+                }
+
+                .intro {
+                    width: 170px;
+                    margin: 0 auto;
+                    color: #ddd;
+                    font-style: italic;
+                    line-height: 18px;
+                }
+                .intro a{
+                    color: #ddd
+                }
+                .intro a:hover{
+                    text-decoration:underline
+                }
+                .card-info {
+/*
+                    card-info {
+                        box-sizing: border-box;
+                        padding: 0;
+                        width: 100%;
+                        position: absolute;
+                        bottom: -40px;
+                        left: 0;
+                        margin: 0 auto;
+                        padding: 0 50px;
+                        font-style: 16px;
+                        line-height: 24px;
+                        z-index: 20;
+                        opacity: 0;
+                        transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+                    }
+        */
+
+                    box-sizing: border-box;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 0 50px;
+                    font-style: 16px;
+                    line-height: 24px;
+                    opacity: 0;
+                    bottom: -40px;
+                    left: 0;
+                    position: absolute;
+                    z-index: 30;
+                    transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+                }
+
+                .card-info a{
+                    display:block;
+                    width:100px;
+                    margin:15px auto;
+                    background:#fff;
+                    color:#444;
+                    padding:3px 10px;
+                    border-radius:2px;
+                    font-size:0.8em
+                }
+                .card-info a:hover{
+                    background: #8e7c49;
+                    color:#fff;
+                }
+                .card-info a:hover span{
+                    filter: brightness(10);
+                    opacity:1
                 }
             </style>
 
@@ -271,12 +402,17 @@ include_once(G5_THEME_PATH.'/head.php');
                     <div class="sec1-rt">
                         <div class="sec1_card">
 
-                            <!--<img style="max-width:590px; transition: all 0.4s"  src="<?php echo G5_THEME_URL?>/img/main/sec1_img.png" alt="sec1">-->
-                            <!--
-                            <div class=""></div>
-                            <h3><a href="#">10 inspiring photos</a></h3>
+                            <div class="title-content">
+                                <h3 class="sec1_card_title"><a href="#">렌트카 창업 스쿨</a></h3>
                                 <div class="intro"> <a href="#">Inspiration</a> </div>
-                                -->
+                            </div>
+                            <div class="card-info">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...
+                                <a href="#">Read Article<span class="licon icon-arr icon-black"></span></a>
+                            </div>
+                            <div class="color-overlay"></div>
+
+
                         </div>
                         <!--
                             <div class="card-info">
@@ -288,6 +424,8 @@ include_once(G5_THEME_PATH.'/head.php');
                     </div>
                 </div>
             </div>
+
+
 
             <div class="section section2">
                 <div class="sec2-inner elm">

@@ -336,7 +336,7 @@ function get_date_intval_client($dateStr){ //날짜차이 계산...
 //     return $dateintval;
 //   }
 
-function room_info_array_etc($get_guestroom_code, $dateStr, $divisionType, $personnel = "", $area = "", $basicoption = "", $com_name = "", $sPrice = "", $ePrice = "", $driver_license = "", $pet_able = "", $delivery_able = "", $camping_able = "") 
+function room_info_array_etc($get_guestroom_code, $dateStr, $divisionType, $personnel = "", $area = "", $basicoption = "", $com_name = "", $sPrice = "", $ePrice = "", $driver_license = "", $pet_able = "", $delivery_able = "", $camping_able = "", $guestroom_name = "") 
   {
   global $GUESTROOM_INFO_TB,$GUESTROOM_IMAGE_INFO_TB,$SITENAME,$wr_test;
 //   echo "
@@ -359,10 +359,10 @@ function room_info_array_etc($get_guestroom_code, $dateStr, $divisionType, $pers
   if($personnel) $sub_qry .= " AND A.guestroom_personnel >= '".$personnel."'";
   if($pet_able) $sub_qry .= " AND A.pet_able = 'Y'";
   if($delivery_able) $sub_qry .= " AND A.delivery_able = 'Y'";
-  if($camping_able) $sub_qry .= " AND A.camping_able = 'Y'";
-  if($pet_able) $sub_qry .= " AND A.pet_able = 'Y'";
-  if($pet_able) $sub_qry .= " AND A.pet_able = 'Y'";
+  if($camping_able) $sub_qry .= " AND A.camping_able = 'Y'";  
   if($com_name) $sub_qry .= " AND A.com_name like '%".$com_name."%'";
+  //if($guestroom_name) $sub_qry .= " AND A.guestroom_name = '".$guestroom_name."'"; 
+  if($guestroom_name) $sub_qry .= " AND A.guestroom_name like '%".$guestroom_name."%'"; 
   if((int)$sPrice && !(int)$ePrice) $sub_qry .= " AND A.guestroom_low_season_fee_weekday >='".$sPrice."'";
   if(!(int)$sPrice && (int)$ePrice) $sub_qry .= " AND A.guestroom_low_season_fee_weekday <='".$ePrice."'";
   if((int)$sPrice && (int)$ePrice) $sub_qry .= " AND A.guestroom_low_season_fee_weekday BETWEEN  '".$sPrice."' AND '".$ePrice."'";
@@ -385,9 +385,23 @@ function room_info_array_etc($get_guestroom_code, $dateStr, $divisionType, $pers
           WHERE A.guestroom_type = '".$divisionType."'
           $sub_qry
           AND A.post_show = 'Y'
-          AND A.guestroom_del_whether = 'N'
+         AND A.guestroom_del_whether = 'N'
           ";
+  //echo $sql;
+
+  // $sql = "SELECT DISTINCT A.* , B.guestroom_image_name
+  // FROM guestroom_info AS A 
+  // INNER JOIN guestroom_image_info AS B ON B.guestroom_code = A.guestroom_code
+  // WHERE A.guestroom_type = '1' 
+  // AND A.com_name like '%부평%'
+  // AND A.post_show = 'Y' 
+  // AND A.guestroom_del_whether = 'N'
+  // ";
   // echo $sql;
+
+
+
+
 // if($wr_test){
 //       echo "
 // $sql
@@ -448,7 +462,7 @@ function room_info_array_etc($get_guestroom_code, $dateStr, $divisionType, $pers
      // ";
       $room_fee_all = 0;
       $room_fee = 0;
-      $reserve_possible_value = "N"; //N->예약가능,Y->예약불가
+      $reserve_possible_value = 'N'; //N->예약가능,Y->예약불가
     for($i = 0; $i < $dateintval ; $i++) {
           if($i > '0'){
             $startDate = date('Y-m-d', strtotime("+1 day", strtotime($startDate)));
@@ -648,11 +662,11 @@ function room_info_array_etc($get_guestroom_code, $dateStr, $divisionType, $pers
               'com_name' => $rows['com_name'],
               'latitude' => $rows['latitude'],
               'longitude' => $rows['longitude'],
-		      'bf_file_1' => $rows['bf_file_1'],
-		      'bf_file_2' => $rows['bf_file_2'],
-		      'bf_file_3' => $rows['bf_file_3'],
-		      'bf_file_4' => $rows['bf_file_4'],
-		      'bf_file_5' => $rows['bf_file_5'],
+		          'bf_file_1' => $rows['bf_file_1'],
+		          'bf_file_2' => $rows['bf_file_2'],
+		          'bf_file_3' => $rows['bf_file_3'],
+		          'bf_file_4' => $rows['bf_file_4'],
+		          'bf_file_5' => $rows['bf_file_5'],
 		
 
                );

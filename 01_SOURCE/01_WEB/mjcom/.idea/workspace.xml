@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88d04039-233d-4add-97b8-60d8d65683f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../cambranch/topsmobil/extend/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/head.sub.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/img/face/text_logo_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/img/face/text_logo_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/sub/ceo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/sub/ceo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/sub/ch-company.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/sub/ch-company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/sub/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cambranch/topsmobil/theme/branch/sub/map.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cambranch/jeonju/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cambranch/jeonju/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../camcombranch/jeju/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../camcombranch/jeju/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../camcombranch/jeju/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../camcombranch/jeju/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../camcombranch/topsmobil/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../camcombranch/topsmobil/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../camcombranch/topsmobil/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../camcombranch/topsmobil/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanolja_rentcar_service_v_0_0_2/html/theme/template1/css/common/footerStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../chanolja_rentcar_service_v_0_0_2/html/theme/template1/css/common/footerStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanolja_rentcar_service_v_0_0_2/html/theme/template1/img/common/ft_sns1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../chanolja_rentcar_service_v_0_0_2/html/theme/template1/img/common/ft_sns1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanolja_rentcar_service_v_0_0_2/html/theme/template1/tail.php" beforeDir="false" afterPath="$PROJECT_DIR$/../chanolja_rentcar_service_v_0_0_2/html/theme/template1/tail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/theme/basichome/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/theme/basichome/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,29 +30,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php@7.4/7.4.33_6/bin/php" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2evr2tQStOFt4m9lvOeTpDst0s4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kimchanhee/Documents/GitHub/01_PROJECT/01_SOURCE/01_WEB/mjcom",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kimchanhee/Documents/GitHub/01_PROJECT/01_SOURCE/01_WEB/mjcom&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html/theme/basichome/img/main" />
@@ -73,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712795689407</updated>
       <workItem from="1712795690697" duration="21319000" />
+      <workItem from="1713246190116" duration="3586000" />
     </task>
     <servers />
   </component>

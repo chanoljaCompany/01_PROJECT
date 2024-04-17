@@ -12,8 +12,34 @@ if ($is_nogood) $colspan++;
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<!-- 게시판 목록 시작 { -->
-<div id="bo_list" style="width:<?php echo $width; ?>">
+<!-- 게시판 목록 시작 - 캠핑카 위탁 운영 안내 및 설명 { -->
+
+<style>
+    .youtube_div {
+        margin:0 auto;
+        max-width:1200px;
+        margin-top:150px !important;
+        display:flex;
+        justify-content:center;
+    }
+
+    .youtube_a {
+        background-color: #51C3F1;
+        padding: 35px;
+        border-radius: 20px;
+        color: white !important;
+        font-weight: bold;
+        position: relative;
+        left: -49%;
+        transform: translateX(50%);
+        font-size: 20px;
+        box-shadow: 0px 0px 9px 7px #52c3f138;
+        text-decoration: none !important;
+    }
+
+</style>
+
+<div id="bo_list" style="max-width:1200px; margin:0 auto;">
 
     <!-- 게시판 카테고리 시작 { -->
     <?php if ($is_category) { ?>

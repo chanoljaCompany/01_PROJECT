@@ -34,10 +34,15 @@ $(document).ready(function(){
                  }else{
                      $('#header').removeClass('active')
                      $('.top-btn').removeClass('on')
+                     $('.menu_tit').removeClass('black_tit');
+                     $('.userBox a').removeClass('black_tit');
+
                  }
 
                  if(destination.index==1){
                      $('#fp-nav ul li').addClass('on');
+                     $('.menu_tit').addClass('black_tit');
+                     $('.userBox a').addClass('black_tit');
                  }else{
                      $('#fp-nav ul li').removeClass('on');
                  }
@@ -45,6 +50,16 @@ $(document).ready(function(){
                     $('.top-btn').addClass('active')
                  }else{
                     $('.top-btn').removeClass('active');
+                 }
+
+                 if(destination.index==2){
+                     $('.menu_tit').removeClass('black_tit');
+                     $('.userBox a').removeClass('black_tit');
+                 }
+
+                 if(destination.index==3){
+                     $('.menu_tit').addClass('black_tit');
+                     $('.userBox a').addClass('black_tit');
                  }
 
              },

@@ -5,25 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32d77865-d450-46eb-90f4-7a6220a0602c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../chanolja_camping_service_v_0_0_1/html/theme/template1/sub/reserve_camp_jeju.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../chanolja_camping_service_v_0_0_1/html/theme/template1/sub/sub_page_1_jeju.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cambranch/bu_deajeo/theme/branch/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../cambranch/bu_deajeo/theme/branch/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cambranch/icairport/theme/branch/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../cambranch/icairport/theme/branch/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../cambranch/jeonju/theme/branch/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../cambranch/jeonju/theme/branch/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jeju/theme/branch/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jeju/theme/branch/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jeju/theme/branch/sub/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jeju/theme/branch/sub/map.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/branch/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/branch/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chanolja_camping_service_v_0_0_1/html/theme/template1/skin/board/html/list.skin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_camping_service_v_0_0_1/html/theme/template1/skin/board/html/list.skin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chanolja_camping_service_v_0_0_1/html/theme/template1/sub/sub_page_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_camping_service_v_0_0_1/html/theme/template1/sub/sub_page_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_camping/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02_APP/chanolja_camping/app/release/app-release.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/release/app-release.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/java/com/chanolja/union_service/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/java/com/chanolja/union_service/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/java/com/chanolja/union_service/loadingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/java/com/chanolja/union_service/loadingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../02_APP/chanolja_union/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cambranch/bu_deajeo/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../cambranch/bu_deajeo/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cambranch/icairport/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../cambranch/icairport/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cambranch/jeonju/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../cambranch/jeonju/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jeju/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jeju/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jeju/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jeju/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/branch/head.sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/theme/branch/head.sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/css/common/footerStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/css/common/footerStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/img/common/ft_sns1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/img/common/ft_sns1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/quoteApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/quoteApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/quoteContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/quoteContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/tail.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../chanolja_rentcar_service_v_0_0_2/html/theme/template1/tail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mjcom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mjcom/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mjcom/html/theme/basichome/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../mjcom/html/theme/basichome/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +77,8 @@
       <updated>1713162718265</updated>
       <workItem from="1713162720273" duration="1696000" />
       <workItem from="1713241120259" duration="1381000" />
+      <workItem from="1713251663712" duration="656000" />
+      <workItem from="1713252672554" duration="1478000" />
     </task>
     <servers />
   </component>

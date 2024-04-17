@@ -227,4 +227,174 @@ else if ($w == 'u') {//수정
         //if (!preg_match("/[^0-9]{0,1}{$wr_id}[\r]{0,1}/",$board['bo_notice']))
         if (!in_array((int)$wr_id, $notice_array)) {
             $bo_notice = $wr_id . ',' . $board['bo_notice'];
-            sql_query(" update {$g5['
+            sql_query(" update {$g5['board_table']} set bo_notice = '{$bo_notice}' where bo_table = '{$bo_table}' ");
+        }
+    } else {
+        $bo_notice = '';
+        for ($i=0; $i<count($notice_array); $i++)
+            if ((int)$wr_id != (int)$notice_array[$i])
+                $bo_notice .= $notice_array[$i] . ',';
+        $bo_notice = trim($bo_notice);
+        //$bo_notice = preg_replace("/^".$wr_id."[\n]?$/m", "", $board['bo_notice']);
+        sql_query(" update {$g5['board_table']} set bo_notice = '{$bo_notice}' where bo_table = '{$bo_table}' ");
+    }
+    */
+
+    $bo_notice = board_notice($board['bo_notice'], $wr_id, $notice);
+    sql_query(" UPDATE {$g5['board_table']} SET bo_notice = '{$bo_notice}' WHERE bo_table = '{$bo_table}' ");
+
+    // 글을 수정한 경우에는 제목이 달라질수도 있으니 static variable 를 새로고침합니다.
+    $write = get_write( $NBOARD_TB, $wr['wr_id'], false);
+}
+
+else if ($w == 'ru') {//답변글 수정
+     if ($session_userid) {
+        // 자신의 글이라면
+
+        if ($session_userid == $wr['mb_id']) {
+            $mb_id = $session_userid;
+            $wr_name = addslashes(clean_xss_tags($session_username));
+            $wr_email = addslashes($session_useremail);
+            $wr_homepage = addslashes(clean_xss_tags($session_userehomepage));
+        } else {
+            alert("글을 수정할수 없습니다.(작성자불일치1)");
+        }
+    } else {
+        alert("글을 수정할수 없습니다.(작성자불일치2)");
+    }
+
+    $sql_ip = " , wr_ip = '{$_SERVER['REMOTE_ADDR']}' ";
+    $sql = " UPDATE {$NBOARD_TB}
+                SET ca_name = '{$ca_name}',
+                     wr_option = '{$html},{$secret},{$mail}',
+                     wr_subject = '{$wr_subject}',
+                     wr_content = '{$nboard_content}',
+                     wr_seo_title = '$wr_seo_title',
+                     wr_link1 = '{$wr_link1}',
+                     wr_link2 = '{$wr_link2}',
+                     mb_id = '{$mb_id}',
+                     wr_name = '{$wr_name}',
+                     wr_email = '{$wr_email}',
+                     wr_homepage = '{$wr_homepage}',
+                     wr_1 = '{$wr_1}',
+                     wr_2 = '{$wr_2}',
+                     wr_3 = '{$wr_3}',
+                     wr_4 = '{$wr_4}',
+                     wr_5 = '{$wr_5}',
+                     wr_6 = '{$wr_6}',
+                     wr_7 = '{$wr_7}',
+                     wr_8 = '{$wr_8}',
+                     wr_9 = '{$wr_9}',
+                     wr_10= '{$wr_10}'
+                     {$sql_ip}
+                     {$sql_password}
+              			 WHERE wr_id = '{$wr_id_re}'
+										 AND pension_user_id = '$session_userid'
+										  ";
+    sql_query($sql);
+
+echo "
+<br> 답변수정 >>>> sql >>> $sql <br>
+";
+    // 분류가 수정되는 경우 해당되는 코멘트의 분류명도 모두 수정함
+    // 코멘트의 분류를 수정하지 않으면 검색이 제대로 되지 않음
+    // $sql = " update {$NBOARD_TB} set ca_name = '{$ca_name}' where wr_parent = '{$wr['wr_id']}' ";
+    // sql_query($sql);
+
+    /*
+    if ($notice) {
+        //if (!preg_match("/[^0-9]{0,1}{$wr_id}[\r]{0,1}/",$board['bo_notice']))
+        if (!in_array((int)$wr_id, $notice_array)) {
+            $bo_notice = $wr_id . ',' . $board['bo_notice'];
+            sql_query(" update {$g5['board_table']} set bo_notice = '{$bo_notice}' where bo_table = '{$bo_table}' ");
+        }
+    } else {
+        $bo_notice = '';
+        for ($i=0; $i<count($notice_array); $i++)
+            if ((int)$wr_id != (int)$notice_array[$i])
+                $bo_notice .= $notice_array[$i] . ',';
+        $bo_notice = trim($bo_notice);
+        //$bo_notice = preg_replace("/^".$wr_id."[\n]?$/m", "", $board['bo_notice']);
+        sql_query(" update {$g5['board_table']} set bo_notice = '{$bo_notice}' where bo_table = '{$bo_table}' ");
+    }
+    */
+
+    $bo_notice = board_notice($board['bo_notice'], $wr_id, $notice);
+    sql_query(" UPDATE {$g5['board_table']} SET bo_notice = '{$bo_notice}' WHERE bo_table = '{$bo_table}' ");
+
+    // 글을 수정한 경우에는 제목이 달라질수도 있으니 static variable 를 새로고침합니다.
+    $write = get_write( $NBOARD_TB, $wr['wr_id'], false);
+}
+
+
+$upload_file_exist = $_FILES['upload']['name'][0];
+
+if($upload_file_exist) { //파일이 있다면....
+					foreach ($_FILES['upload']['name'] as $i => $name) {
+					    $fileName = $_FILES['upload']['name'][$i];
+							$fileSize = $_FILES['upload']['size'][$i];
+					    $fileType = $_FILES['upload']['type'][$i];
+					    $uploadFileArray = explode('.', $fileName);
+							$file_ext = $uploadFileArray[1];
+							$file_ext_check = file_check($uploadFileArray[1]);
+// echo "
+// file_ext_check >>> $file_ext_check <br>
+// ";
+							if($file_ext_check == '1') { //업로드가능파일 확장자...
+											$saveFileName = abs(ip2long($_SERVER['REMOTE_ADDR'])).'_'.substr($shuffle,0,8).'_'.replace_filename($fileName);
+											// $saveFileName = $saveFileName.'.'.$uploadFileArray[1];
+//
+// 											echo "
+// saveFileName >>> $saveFileName <br>
+// 											";
+											$saveFile = $board_upload_dir.$saveFileName;
+											if(move_uploaded_file($_FILES['upload']['tmp_name'][$i], $saveFile)) {
+									        //데이터베이스 입력
+													$sql = "INSERT INTO $NBOARD_FILE_TB
+																	(pension_user_id,original_table , file_code , original_seq , v_fileName , o_fileName , cnt , file_size , mod_ip , mod_date)
+																	VALUES
+																	('$session_userid','$NBOARD_TB','$file_code','$wr_id','$fileName','$saveFileName','$cnt','$fileSize','$mod_ip','$mod_date')";
+													$result = sql_query($sql);
+									    }else{
+												 //데이터베이스 입력 삭제
+												 $str = "SELECT * FROM $NBOARD_FILE_TB
+											           WHERE pension_user_id = '$session_userid'
+																 AND file_code = '$file_code'
+											          ";
+											   $result = sql_query($str);
+											   while ($rows_img = mysqli_fetch_array($result)) {
+											     @unlink($board_upload_dir.$rows_img['o_fileName']); //이미지 삭제
+											   }
+											    //등록DB  삭제한다.
+												 $sql = "DELETE FROM $NBOARD_FILE_TB  WHERE pension_user_id = '$session_userid' AND  file_code = '$file_code'";
+						             $result = sql_query($sql);
+												 alert('업로드 에러가 발생하였습니다.');
+												 exit;
+									    }
+							}else{
+								//데이터베이스 입력 삭제
+								$str = "SELECT * FROM $NBOARD_FILE_TB
+												WHERE pension_user_id = '$session_userid'
+												AND file_code = '$file_code'
+											 ";
+								$result = sql_query($str);
+								while ($rows_img = mysqli_fetch_array($result)) {
+									@unlink($board_upload_dir.$rows_img['o_fileName']); //이미지 삭제
+								}
+								 //등록DB  삭제한다.
+								$sql = "DELETE FROM $NBOARD_FILE_TB  WHERE pension_user_id = '$session_userid' AND  file_code = '$file_code'";
+								$result = sql_query($sql);
+								 alert('업로드 할수 없는 파일입니다.');
+								exit;
+							}
+					}
+
+					echo "<script>alert('문의하기를 등록/변경하였습니다.');</script>";
+					echo "<meta http-equiv='Refresh' content='0; URL=nboard_list.php?top_menu_id=".$top_menu_id."&left_menu_id=".$left_menu_id."&curpage=".$page."'>";
+					exit;
+			}else{ //파일이 없다면...
+					echo "<script>alert('문의하기를 등록/변경하였습니다.');</script>";
+					echo "<meta http-equiv='Refresh' content='0; URL=nboard_list.php?top_menu_id=".$top_menu_id."&left_menu_id=".$left_menu_id."&curpage=".$page."'>";
+					exit;
+			}
+?>

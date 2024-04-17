@@ -84,7 +84,7 @@ if($mangement_array['semi_peak_season_whether'] == 'Y'){
 		<h2 class="title">예약달력</h2>
 	</div>
 	<table class="tbl_row multi_shop">
-		<caption class="hidden">예약달력</caption>
+		<caption class="hidden">예약달력!</caption>
 
 		<tr>
 			<td>

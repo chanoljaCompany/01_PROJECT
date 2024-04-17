@@ -432,7 +432,7 @@ var r_currency_list = new layerWindow('config@reference_currency.exe');
 		<h2 class="title">예약달력</h2>
 	</div>
 	<table class="tbl_row multi_shop">
-		<caption class="hidden">예약달력</caption>
+		<caption class="hidden">!예약달력</caption>
 
 		<tr>
 			<td>

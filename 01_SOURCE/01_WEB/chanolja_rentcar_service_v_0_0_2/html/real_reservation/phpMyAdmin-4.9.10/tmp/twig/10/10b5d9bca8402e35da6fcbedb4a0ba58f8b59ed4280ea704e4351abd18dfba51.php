@@ -226,4 +226,73 @@ class __TwigTemplate_d2cb60b1430578833e7952fa59a2385c38bb42792b74b109bf1d9a3cd57
         </tr>
     ";
         }
-  
+        // line 80
+        echo "
+    ";
+        // line 81
+        if ($this->getAttribute(($context["showtable"] ?? null), "Update_time", [], "array", true, true)) {
+            // line 82
+            echo "        <tr>
+        <th class=\"name\">";
+            // line 83
+            echo _gettext("Last update");
+            echo "</th>
+        <td class=\"value\">";
+            // line 84
+            echo twig_escape_filter($this->env, PhpMyAdmin\Util::localisedDate(twig_date_format_filter($this->env, $this->getAttribute(($context["showtable"] ?? null), "Update_time", [], "array"), "U")), "html", null, true);
+            echo "</td>
+        </tr>
+    ";
+        }
+        // line 87
+        echo "
+    ";
+        // line 88
+        if ($this->getAttribute(($context["showtable"] ?? null), "Check_time", [], "array", true, true)) {
+            // line 89
+            echo "        <tr>
+        <th class=\"name\">";
+            // line 90
+            echo _gettext("Last check");
+            echo "</th>
+        <td class=\"value\">";
+            // line 91
+            echo twig_escape_filter($this->env, PhpMyAdmin\Util::localisedDate(twig_date_format_filter($this->env, $this->getAttribute(($context["showtable"] ?? null), "Check_time", [], "array"), "U")), "html", null, true);
+            echo "</td>
+        </tr>
+    ";
+        }
+        // line 94
+        echo "</tbody>
+</table>
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "table/structure/row_stats_table.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  266 => 94,  260 => 91,  256 => 90,  253 => 89,  251 => 88,  248 => 87,  242 => 84,  238 => 83,  235 => 82,  233 => 81,  230 => 80,  224 => 77,  220 => 76,  217 => 75,  215 => 74,  212 => 73,  206 => 70,  202 => 69,  199 => 68,  197 => 67,  194 => 66,  186 => 63,  182 => 62,  179 => 61,  177 => 60,  176 => 59,  175 => 58,  174 => 57,  173 => 56,  170 => 55,  161 => 52,  159 => 51,  155 => 50,  152 => 49,  150 => 48,  149 => 47,  148 => 46,  145 => 45,  139 => 42,  135 => 41,  132 => 40,  130 => 39,  127 => 38,  119 => 33,  115 => 32,  110 => 30,  107 => 29,  105 => 28,  102 => 27,  98 => 25,  92 => 23,  86 => 21,  84 => 20,  80 => 19,  77 => 18,  75 => 17,  72 => 16,  68 => 14,  62 => 12,  56 => 10,  54 => 9,  49 => 8,  47 => 7,  43 => 6,  40 => 5,  38 => 4,  33 => 2,  30 => 1,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("", "table/structure/row_stats_table.twig", "/host/home2/chatour/html/real_reservation/phpMyAdmin-4.9.10/templates/table/structure/row_stats_table.twig");
+    }
+}

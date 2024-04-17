@@ -7,7 +7,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
 <!-- 회원정보 입력/수정 시작 { -->
 
-<div class="register">
+<div class="register" style="max-width:1200px;">
 <script src="<?php echo G5_JS_URL ?>/jquery.register_form.js"></script>
 <?php if($config['cf_cert_use'] && ($config['cf_cert_ipin'] || $config['cf_cert_hp'])) { ?>
 <script src="<?php echo G5_JS_URL ?>/certify.js?v=<?php echo G5_JS_VER; ?>"></script>
@@ -487,9 +487,9 @@ function member_leave() {  // 회원 탈퇴 tto
 
     if (confirm("회원에서 탈퇴 하시겠습니까?"))
 
-        location.href = '<?php echo G5_BBS_URL ?>/member_confirm.php?url=member_leave.php';
+            location.href = '<?php echo G5_BBS_URL ?>/member_confirm.php?url=member_leave.php';
 
-}
+ }
 
 </script>
 
