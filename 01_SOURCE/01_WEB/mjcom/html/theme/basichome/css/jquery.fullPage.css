@@ -129,7 +129,6 @@
      width:1px;height: 100%;
      position: absolute;
      top:0;left:50%;transform: translateX(-50%);
-     background-color: #ddd;
  }
 
  #fp-nav ul li{
@@ -266,11 +265,11 @@
 }
 
 #fp-nav ul .on a span{
-    border:2px solid #005890;
+    border:2px solid #54C3FD;
 }
 #fp-nav ul .on .active span{
-    background-color: #005890;;
+    background-color: #54C3FD;
 }
 #fp-nav ul .on .active::before{
-    color:#005890
+    color:#54C3FD;
 }

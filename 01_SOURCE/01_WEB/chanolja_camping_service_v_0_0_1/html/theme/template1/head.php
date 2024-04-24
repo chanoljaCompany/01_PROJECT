@@ -60,13 +60,11 @@ include_once(G5_THEME_PATH.'/quoteContent.php');
     <h1 id="hd_h1"><?php echo $g5['title'] ?></h1>
 
     <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
-
     <?php
-    if(defined('_INDEX_')) { // index에서만 실행
-        include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+    if(defined('_INDEX_')) {  //index에서만 실행
+        include G5_BBS_PATH.'/newwin.inc.php';  // 팝업레이어
     }
     ?>
-
     <div id="hd_wrapper">
 
         <div class="inner">

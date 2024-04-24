@@ -15,10 +15,76 @@ if(G5_COMMUNITY_USE === false) {
         <link rel="stylesheet" href="<?php echo G5_THEME_URL?>/css/footer.css">
         <footer id="footer">
                     <div class="foo-inner">
-                        <div class="logo">
-                            <img src="<?php echo G5_THEME_URL?>/img/face/text_logo_black.png" alt="logo">
+                        <div class="logo" style="margin-bottom:40px">
+                            <img style="max-width:230px;" src="<?php echo G5_THEME_URL?>/img/face/text_logo_black.png" alt="logo">
                         </div>
+
                         <div class="foo-info">
+                            <div>
+                                <p style="line-height: 1.6;">
+                                    차놀자 렌트카 창업스쿨 </br>
+                                    000-000-0000 </br>
+                                    인천광역시 연수구 센트럴로 263, IBS타워 23층 </br>
+                                    m_chanolja@daum.net
+                                </p>
+                                <ul style="display: flex; margin-top:6px;">
+                                    <li style="margin-right: 26px;">
+                                        <a href="<?php echo G5_BBS_URL?>/content.php?co_id=privacy">
+                                            개인정보처리방침
+                                        </a>
+                                    </li>
+                                    <li style="padding-left: 39px; border-left: 1px solid #888888; padding-right: 42px; border-right: 1px solid #888888;">
+                                        <a href="http://company.chanolja.co.kr/theme/basichome/sub/ch-company.php">
+                                            회사소개
+                                        </a>
+                                    </li>
+                                    <li style="margin-left: 23px;">
+                                        <a href="<?php echo G5_BBS_URL?>/content.php?co_id=provision">
+                                            이용약관
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="family-tab">
+                                    <p>FAMILY SITE</p>
+                                    <i class="xi-angle-right"></i>
+                                    <ul class="f-tab">
+                                        <li>
+                                            <a href="http://www.chanolja-union.kr/">차놀자협동조합</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.gsrent.kr/">차놀자렌트카</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://smartstore.naver.com/chanolja">차놀자캠핑스마트스토어</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="sns" style="display: flex; margin-top:20px;">
+                                    <li>
+                                        <a href="#">
+                                            <img src="<?php echo G5_THEME_URL?>/img/face/face.png"/>
+                                        </a>
+                                    </li>
+                                    <li style="margin-left:30px; margin-right:30px;">
+                                        <a href="#">
+                                            <img style="width:42px;" src="<?php echo G5_THEME_URL?>/img/face/youtube.png"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img style="width: 42px;" src="<?php echo G5_THEME_URL?>/img/face/instagram.png"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="margin-top:45px; text-align: center;">
+                            Copyright © Chanolja All Rights Reserved.
+                        </div>
+
+                        <!--
                             <div class="foo-tp">
                                 <ul>
                                     <li>
@@ -76,7 +142,7 @@ if(G5_COMMUNITY_USE === false) {
                                             월~금 09:00 - 18:00
                                         </li>
                                     </ul>
-                                    <!--
+
                                     <ul class="sns">
                                         <li>
                                             <a href="#">
@@ -94,10 +160,12 @@ if(G5_COMMUNITY_USE === false) {
                                             </a>
                                         </li>
                                     </ul>
--->
+
                                 </div>
+
                             </div>
                         </div>
+            -->
                     </div>
                 </footer>
 

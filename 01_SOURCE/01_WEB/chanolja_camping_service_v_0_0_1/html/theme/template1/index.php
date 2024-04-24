@@ -223,7 +223,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap" style="margin-bottom: 20px !important; margin-top: 20px;">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
+              <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=local&act_target=local" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; font-size:19px; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -240,7 +240,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap_mo" style="margin-bottom: 20px !important; ">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
+              <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=local&act_target=local" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -303,18 +303,18 @@ include_once(G5_THEME_PATH.'/head.php');
                 -->
 
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall">
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=local&act_target=local">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall">
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=local&act_target=local">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
@@ -350,7 +350,7 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="detail">
             <ul class="clearfix2">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng">
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
@@ -361,6 +361,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
+                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52">
                     <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
@@ -417,10 +418,10 @@ function touch_end(event) {
     <div class="box inner">
      		<div class="main_title">
                <h2 class="wow fadeInDown" data-wow-delay="0.4s">이달의 추천 캠핑여행</h2>
-		      <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+		      <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
-            <?php  echo latest('theme/splide2', 'tour_guide', 4, 4);   ?>
+            <?php  echo latest('theme/splide2', 'tour_guide', 3, 3);   ?>
 	        </div>
 	</div>
 </div>
@@ -430,7 +431,7 @@ function touch_end(event) {
    <div class="box inner">
 		<div class="main_title">
             <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자캠핑 신규입점</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+			<a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
        <?php
@@ -530,7 +531,7 @@ function touch_end(event) {
    <div class="box inner">
 		<div class="main_title">
             <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+			<a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
         <?php echo latest('theme/basic_news', '14', 4, 120);
@@ -568,13 +569,13 @@ function touch_end(event) {
         <div class="detail" style="display:flex; justify-content: center;">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:10px;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=local&act_target=local"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/pack.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=local&act_target=local"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/campervan.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=24"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/place.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                     </ul>
         </div>
@@ -598,7 +599,7 @@ function touch_end(event) {
         <div class="detail">
             <ul class="clearfix2" >
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;  width:88% !important;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng">
+                    <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>
@@ -676,7 +677,7 @@ function touch_end(event) {
     <div class="box inner">
      		<div class="main_title">
                <h2 class="wow fadeInDown" data-wow-delay="0.4s">이달의 추천 캠핑여행</h2>
-		      <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+		      <a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
             <?php  echo latest('theme/splide22', 'tour_guide', 4, 4);   ?>
@@ -689,7 +690,7 @@ function touch_end(event) {
    <div class="box inner">
 		<div class="main_title">
             <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자캠핑 신규입점</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+			<a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=2222"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
        <?php
@@ -769,7 +770,7 @@ function touch_end(event) {
    <div class="box inner">
 		<div class="main_title">
             <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 뉴스</h2>
-			<a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
+			<a href="https://www.chanolja.co.kr/bbs/board.php?bo_table=14"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
         </div>
         <div class="detail">
         <?php echo latest('theme/basic_news', '14', 4, 300);        
@@ -784,7 +785,7 @@ function touch_end(event) {
 <div class="pop_up_back" style="display:none;" >
     <div class="pop_up1">
         <div style="cursor:pointer; width: auto; height:80vh; display:flex; justify-content: center;" >
-            <img onclick="location.href='http://chatour.dothome.co.kr/bbs/board.php?bo_table=event&wr_id=10'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.jpg" />
+            <img onclick="location.href='https://www.chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=10'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up.jpg" />
         </div>
          <div  class="pop_up_spans">
               <div class="pop_up_btns">
@@ -797,7 +798,7 @@ function touch_end(event) {
 
     <div class="pop_up2">
         <div style="cursor:pointer; width: auto; display:flex; justify-content: center;" >
-            <img onclick="location.href='http://chatour.dothome.co.kr/bbs/board.php?bo_table=event&wr_id=11'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up2.jpg" />
+            <img onclick="location.href='https://www.chanolja.co.kr/bbs/board.php?bo_table=event&wr_id=11'" style="width:80%; border-top-left-radius: 10px; border-top-right-radius: 10px; " src="http://www.chanolja.co.kr/theme/template1/img/event_pop_up2.jpg" />
         </div>
         <div  class="pop_up_spans">
             <div class="pop_up_btns" >

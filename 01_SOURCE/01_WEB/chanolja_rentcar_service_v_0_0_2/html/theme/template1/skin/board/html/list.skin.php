@@ -85,7 +85,7 @@ if ($board['bo_table'] == '70')
 include_once(G5_THEME_PATH."/sub/reserve_camp.php");
 
 if ($board['bo_table'] == 'mall')
-include_once(G5_THEME_PATH."/sub/reserve_camp.php");
+include_once(G5_THEME_PATH."/sub/reserve_camp_mall.php");
 
 if ($board['bo_table'] == 'icairport')
 include_once(G5_THEME_PATH."/sub/reserve_camp_icairport.php");

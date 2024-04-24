@@ -71,6 +71,7 @@ if($left_menu_id == '001' || $left_menu_id == ''){
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>차놀자캠핑 관리자</title>

@@ -41,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         webView.getSettings().setSupportMultipleWindows(true);
         webView.getSettings().setDomStorageEnabled(true);
-        webView.loadUrl("http://www.chanolja.co.kr/");
+        webView.loadUrl("https://www.chanolja.co.kr/");
     }
 }

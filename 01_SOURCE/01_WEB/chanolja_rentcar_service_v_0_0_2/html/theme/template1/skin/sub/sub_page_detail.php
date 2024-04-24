@@ -16,7 +16,7 @@
                 <div id="sit_info_wrap">
                     <!-- 제목, 탭 영역 -->
                     <h3 id="room_subject">[카올라] 카니발 캠퍼밴 (2인승)</h3>
-                    <span>프리미엄 풀옵션 차박</span>
+                    <span>프리미엄 풀옵션 차박1111111</span>
                     <section id="tabHeader" class="travel_scroll_tab_header">
                         <!--<h4 class="hide">tab header</h4> -->
                         <div class="tab_header_wrapper">

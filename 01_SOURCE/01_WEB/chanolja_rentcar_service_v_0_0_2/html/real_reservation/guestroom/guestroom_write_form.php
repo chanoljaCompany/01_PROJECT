@@ -251,7 +251,7 @@ $filesLimitNum = $filesLimitNumSet - $roomImageNum;
 								<td>
 									<input type="checkbox" name="car_parking_able" id="car_parking_able" <? if ($rows['car_parking_able'] == 'Y') { ?> checked <? } ?> value="Y">
 								</td>
-								<th scope="row">캠핑장비 기본제공 여부</th>
+								<th scope="row">낚시용품 지참 가능여부</th>
 								<td>
 									<input type="checkbox" name="camping_able" id="camping_able" <? if ($rows['camping_able'] == 'Y') { ?> checked <? } ?> value="Y">
 								</td>
@@ -281,6 +281,33 @@ $filesLimitNum = $filesLimitNumSet - $roomImageNum;
 									<input type="checkbox" name="immediately_reserve" id="immediately_reserve" <? if ($rows['immediately_reserve'] == 'Y') { ?> checked <? } ?> value="Y">
 								</td>
 							</tr>
+
+							<!--240421 신규추가행 (연식,연료,연비,변속)-->
+							<tr>
+								<th scope="row">차량연식</th>
+								<td>
+								      <input type="text" name="car_year" id="car_year" class="input input_full" placeholder="차량연식을 입력하세요" value="<?= $rows['car_year'] ?>">
+								</td>
+								<th scope="row">연료</th>
+								<td>
+								       <input type="text" name="fuel" id="fuel" class="input input_full" placeholder="차량유종을 입력하세요" value="<?= $rows['fuel'] ?>">
+								</td>
+							</tr>
+
+
+							<tr>
+								<th scope="row">변속기여부</th>
+								<td>
+								      <input type="text" name="transmission" id="transmission" class="input input_full" placeholder="오토, 수동여부를 입력하세요" value="<?= $rows['transmission'] ?>">
+								</td>
+								<th scope="row">연비</th>
+								<td>
+								       <input type="text" name="F_efficiency" id="F_efficiency" class="input input_full" placeholder="연비를 입력하세요" value="<?= $rows['F_efficiency'] ?>">
+								</td>
+							</tr>
+							
+
+
 							<tr>
 								<th scope="row">최소예약가능일수</th>
 								<td>
@@ -694,9 +721,15 @@ function del1()
 			guestroom_intro = $('#guestroom_intro').val();
 			guestroom_phone = $('#guestroom_phone').val();
 			guestroom_homepage = $('#guestroom_homepage').val();
-			guestroom_intro = $('#guestroom_intro').val();
-			guestroom_intro = $('#guestroom_intro').val();
-			guestroom_intro = $('#guestroom_intro').val();
+			//왜? 3줄이나 더 있지? 24.04.21 + 4줄 추가
+			//guestroom_intro = $('#guestroom_intro').val();
+			//guestroom_intro = $('#guestroom_intro').val();
+			//guestroom_intro = $('#guestroom_intro').val();
+			car_year = $('#car_year').val();
+			fuel = $('#fuel').val();
+			transmission = $('#transmission').val();
+			F_efficiency = $('#F_efficiency').val();
+
 			guestroom_personnel = $('#guestroom_personnel').val();
 			guestroom_max_personnel = $('#guestroom_max_personnel').val();
 			driver_age = $('#driver_age').val();

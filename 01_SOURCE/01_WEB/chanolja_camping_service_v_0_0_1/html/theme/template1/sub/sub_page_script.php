@@ -17,13 +17,19 @@
             $(this).parent(".sch_select").toggleClass("active");
         });
     });
-    
     $(function(){
         $(".list_select").click(function(){
+            $(".active").not($(this).parent(".list_form")).removeClass("active");
             $(this).parent(".list_form").toggleClass("active");
         });
     });
-    
+
+    $(function(){
+        $(".list_x").click(function(){
+            $(this).parent().parent().parent(".list_form").removeClass("active");
+        });
+    });
+
     /* 탭 메뉴 */
     $(function (){
 	    $(".tab_con>div").hide();
@@ -228,6 +234,22 @@ $("#inputDate_sub").flatpickr({
           
     });
 
+    <? }else if($act_target == 'local'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        findSearchData('local');
+        
+          
+    });
+
 
 
     <?}else{?>
@@ -349,6 +371,14 @@ function findSearchData(locate) {
     
   }
   else if(locate == 'jeonju'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+
+  else if(locate == 'local'){
     $("#sub_page_1").show(); 
     $("#subpagebg").hide(); 
     setDate($("#inputDate").val());

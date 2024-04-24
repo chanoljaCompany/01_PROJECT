@@ -69,6 +69,7 @@
     </ul>
     </li>
     <li class="title over">
+    <!--
     <a class="mid" data="1000"><span class="icon" style="background:url('<?=$file_url?>/img/1000.png') no-repeat center; background-size:16px 16px;"></span>정산관리설정<span class="arrow" onmouseover="midToolTip(event, this)" onmouseout="hideToolTip();"></span></a>
     <ul id="pgcode1000" class="sideSmall" >
       <li <?=$left_menu_015_sel?>>
@@ -80,6 +81,7 @@
     </ul>
     </li>
     <li class="title over">
+          -->  
     <a class="mid" data="1000"><span class="icon" style="background:url('<?=$file_url?>/img/1000.png') no-repeat center; background-size:16px 16px;"></span>캠핑카차량관제<span class="arrow" onmouseover="midToolTip(event, this)" onmouseout="hideToolTip();"></span></a>
     <ul id="pgcode1000" class="sideSmall" >
       <li <?=$left_menu_020_sel?>>

@@ -41,6 +41,7 @@ array_push($arrayLocation, $arrData);
 $html = "";
                 $html="     <section class='info_sec'>
                                 <div class='info_all info_con0'>
+                                <!--
                                 <h5>■ 기본정보</h5>
                                     <ul class=''>
                                         ";
@@ -57,9 +58,9 @@ $html = "";
                                             $html .="<li><i class='fas fa-parking'></i> 주차가능</li>";
                                         }     
                     $html .="    </ul>
-                                </div>
+                                </div> -->
                                 <div class='info_all info_con1'>
-                                    <h5>■ 캠핑카 소개</h5>
+                                    <h5>■ 차량 기본 소개</h5>
                                     <p>
                                     ".$room_info_array_etc['0']['guestroom_intro']."
                                     </p>
@@ -67,9 +68,13 @@ $html = "";
 
                                 <div class='info_all info_con2'>
                                     <h5>■ 상세 정보</h5>
+                                    <!-- <h5>■ 상세 정보11111</h5> -->
                                     <ul class=''>
-                                        <li><i class='far fa-user'></i> <span>동승가능인원 : ".$room_info_array_etc['0']['guestroom_personnel']."명</span></li>
-                                        <li><i class='far fa-user'></i> <span>취침가능인원 : ".$room_info_array_etc['0']['guestroom_max_personnel']."명</span></li>
+                                        <li><i class='far fa-user'></i> <span>차량연식 : ".$room_info_array_etc['0']['car_year']."년형</span></li>
+                                        <li><i class='far fa-user'></i> <span>유종 : ".$room_info_array_etc['0']['fuel']."</span></li>
+                                        <li><i class='far fa-user'></i> <span>탑승인원 : ".$room_info_array_etc['0']['guestroom_personnel']."명</span></li>
+                                        <li><i class='far fa-user'></i> <span>변속기 : ".$room_info_array_etc['0']['transmission']."</span></li>
+                                        <li><i class='far fa-user'></i> <span>연비 : ".$room_info_array_etc['0']['F_efficiency']."</span></li>
                                         <li><i class='far fa-clock'></i> <span>출차가능시간 ".$guestroom_start_hour."시 부터</span></li>
                                         <li><i class='far fa-clock'></i> <span>반납가능시간 ".$guestroom_end_hour."시 까지</span></li>
                                         <li><i class='fas fa-money-check'></i> <span>평일 가격 : ".number_format($room_info_array_etc['0']['guestroom_low_season_fee_weekday'])."원 /박</span></li>
@@ -124,7 +129,7 @@ $html = "";
 									
 							   $html .="
 									</p>
-                                    <h5 class='hide'>상품 하단 정보</h5>
+                                    <!--<h5 class='hide'>상품 하단 정보</h5> -->
                                     ".$room_info_array_etc['0']['guestroom_content']."
                                     
                                 </div>

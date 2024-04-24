@@ -161,6 +161,22 @@ $("#inputDate_sub").flatpickr({
         room_detail('<?=$car_code?>');  
     });
 
+    <? }else if($act_target == 'mall'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        findSearchData('mall');
+        
+          
+    });
+
     <?}else{?>
         $(document).ready(function() {
          //    room_image('9416914189');
@@ -280,6 +296,14 @@ function findSearchData(locate) {
     
   }
   else if(locate == 'jeonju'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+
+  else if(locate == 'mall'){
     $("#sub_page_1").show(); 
     $("#subpagebg").hide(); 
     setDate($("#inputDate").val());
@@ -454,7 +478,7 @@ function room_detail(guestroom_code){
   if(dateStr =='') {
     dateStr = "<?=$intidate?>";
   }
-  var makeCopyUrl = "http://www.chanolja.co.kr/bbs/board.php?bo_table=mall&act_target=car_detail&car_code="+guestroom_code;
+  var makeCopyUrl = "http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=car_detail&car_code="+guestroom_code;
   $("#copyUrl").val(makeCopyUrl);
 //   alert(dateStr);
   var division = 'guestroom_info_ajax';

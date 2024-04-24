@@ -23,8 +23,8 @@ date_default_timezone_set("Asia/Seoul");
 보안서버주소가 없다면 공란으로 두시면 되며 보안서버주소 뒤에 / 는 붙이지 않습니다.
 입력예) https://www.domain.com:443/gnuboard5
 */
-define('G5_DOMAIN', '');
-define('G5_HTTPS_DOMAIN', '');
+define('G5_DOMAIN', 'https://www.chanolja.co.kr');
+define('G5_HTTPS_DOMAIN', 'https://www.chanolja.co.kr');
 
 // 디버깅 상수, 실제 서버운영시 false 로 설정해 주세요.
 define('G5_DEBUG', false);
@@ -73,9 +73,11 @@ define('G5_CONTENT_DIR',    'content');
 // URL 은 브라우저상에서의 경로 (도메인으로 부터의)
 if (G5_DOMAIN) {
     define('G5_URL', G5_DOMAIN);
+    //define('G5_URL', G5_HTTPS_DOMAIN);
 } else {
     if (isset($g5_path['url']))
         define('G5_URL', $g5_path['url']);
+        //define('G5_URL', G5_HTTPS_DOMAIN);
     else
         define('G5_URL', '');
 }

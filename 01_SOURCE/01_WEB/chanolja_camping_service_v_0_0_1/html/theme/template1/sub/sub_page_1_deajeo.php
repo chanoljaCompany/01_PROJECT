@@ -32,40 +32,54 @@
                             <div class="list_box">
                                 <h4>지역선택</h4>
                                 <div class="sch_checkbox" id="subArea">
-								<!--
-                                    <span>
-                                        <input type="checkbox" id="chk1" name="area_sub[]" value="강원" class="">
-                                        <label for="chk1">강원</label>
+                                <span>
+                                        <input type="checkbox" id="chk1" name="area[]" value="7766247314" class="check_box">
+                                        <label for="chk1">서울</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" id="chk2" name="area_sub[]" value="경기/인천" class="">
-                                        <label for="chk2">경기/인천</label>
+                                        <input type="checkbox" id="chk1" name="area[]" value="8767441382" class="check_box">
+                                        <label for="chk1">경기</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" id="chk3" name="area_sub[]" value="광주/전라" class="">
-                                        <label for="chk3">광주/전라</label>
+                                        <input type="checkbox" id="chk1" name="area[]" value="6427014833" class="check_box">
+                                        <label for="chk1">인천</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" id="chk4" name="area_sub[]" value="대구/울산/경북" class="">
-                                        <label for="chk4">대구/울산/경북</label>
+                                        <input type="checkbox" id="chk1" name="area[]" value="9811772038" class="check_box">
+                                        <label for="chk1">세종</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" id="chk5" name="area_sub[]" value="대전/충청" class="">
-                                        <label for="chk5">대전/충청</label>
+                                        <input type="checkbox" id="chk1" name="area[]" value="5319767511" class="check_box">
+                                        <label for="chk1">부산</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" id="chk6" name="area_sub[]" value="부산/경남" class="">
-                                        <label for="chk6">부산/경남</label>
+                                        <input type="checkbox" id="chk1" name="area[]" value="8751220715" class="check_box">
+                                        <label for="chk1">제주</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" id="chk7" name="area_sub[]" value="서울" class="">
-                                        <label for="chk7">서울</label>
+                                        <input type="checkbox" id="chk1" name="area[]" value="5622547561" class="check_box">
+                                        <label for="chk1">충청북도</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" id="chk8" name="area_sub[]" value="제주" class="">
-                                        <label for="chk8">제주</label>
+                                        <input type="checkbox" id="chk1" name="area[]" value="2365512657" class="check_box">
+                                        <label for="chk1">충청남도</label>
                                     </span>
-									-->
+                                    <span>
+                                        <input type="checkbox" id="chk1" name="area[]" value="1615552567" class="check_box">
+                                        <label for="chk1">경상북도</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="chk1" name="area[]" value="5615768153" class="check_box">
+                                        <label for="chk1">경상남도</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="chk1" name="area[]" value="5751461116" class="check_box">
+                                        <label for="chk1">전라북도</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="chk1" name="area[]" value="5466817255" class="check_box">
+                                        <label for="chk1">전라남도</label>
+                                    </span>                        
                                 </div>
                                 <div class="check_btn"><a href='javascript:void(0);' onclick="selecthide('list_form_subarea');">선택완료</a></div>
                             </div>

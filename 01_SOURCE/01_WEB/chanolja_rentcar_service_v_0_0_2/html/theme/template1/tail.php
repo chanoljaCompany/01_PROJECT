@@ -140,7 +140,7 @@ if (G5_IS_MOBILE) {
             <div id="ft_sns" style="margin-top:30px; display: flex; justify-content: flex-end;">
                 <ul>
                     <li class="ft_sns2"><a style="width:100%; background-repeat: no-repeat;" href="https://www.instagram.com/chanolja_7000/">instagram</a></li>
-                    <li class="ft_sns3"><a style="background-size: auto 104%;" href="https://m.blog.naver.com/PostList.naver?blogId=m_chanolja&tab=1">naver blog</a></li>
+                    <li class="ft_sns3"><a style="background-size: auto 104%;" href="https://blog.naver.com/chanolja_7000">naver blog</a></li>
                     <li class="ft_sns1"><a href="https://cafe.naver.com/chanolja">naver cafe</a></li>
                 </ul>
             </div>

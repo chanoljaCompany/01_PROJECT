@@ -16,7 +16,7 @@
     font-style: normal;
 }
 
-body { 
+body {
     font-family: 'Pretendard-Regular', sans-serif;
     overflow: hidden;
 }
@@ -33,6 +33,11 @@ body {
     top:0px;
     z-index:999999999999999999999999999999999;
 }
+
+#header.active{
+    background-color: rgba(255,255,255,0.5);
+}
+
 #header.nav-down{
     transform: translateY(0);
     transition: .5s ease;
@@ -45,7 +50,7 @@ body {
     content:"";
     width:0%;height: 1px;
     position: absolute;
-    top:99px;
+    top:79px;
     background-color: #7a7a7a;
     left:50%;transform: translateX(-50%);
 }
@@ -64,7 +69,7 @@ body {
     margin:0 auto;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 80px;
     justify-content: space-between;
     padding:0px 40px;
 }
@@ -73,8 +78,8 @@ body {
 #header #info {
 }
 #header .logo {
-   left:0;
-   z-index:999999999;
+    left:0;
+    z-index:999999999;
 }
 #header .logo img{
     width:230px;
@@ -94,7 +99,7 @@ body {
     text-align:center;
     position:relative;
     width:20%;
-    height: 100px;
+    height: 80px;
     display: flex;align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -123,7 +128,7 @@ body {
 .userBox a {
     color: #fff;
 }
-  
+
 /*#header #nav .menu_tit.on {
     color:#f6f6f6;
 }
@@ -145,7 +150,7 @@ body {
     display:block;
 }
 #header #nav .gnb_ul{
-     display: none;
+    display: none;
 }
 #header #nav .gnb_li {
     flex-direction:column;
@@ -186,7 +191,7 @@ body {
 }
 
 #header #nav .menu_tit:hover {
-    color: #54C3FD;
+    color: #54C3FD !important;
 }
 /* #header #nav .gnb_li .gnb_a::before {
     content:'';    
@@ -229,7 +234,7 @@ body {
 }
 #header #info .member li:last-child:after {
     border-right:none;
-} 
+}
 #header #info .member li a{
     font-size:1em;
     font-weight:400;
@@ -355,8 +360,8 @@ body {
     font-size: 5em;
     font-weight: 600;
     -webkit-user-select: none;
-  -webkit-touch-callout: none;  
-  text-align:center;
+    -webkit-touch-callout: none;
+    text-align:center;
     white-space: nowrap;
 
 }
@@ -365,7 +370,7 @@ body {
 }
 /* text_hover effect */
 
-#header #all_menu .menu_tit:hover:after, 
+#header #all_menu .menu_tit:hover:after,
 #header #all_menu .menu_tit:focus:after{
     width: 100%;
     background-color: #fff;
@@ -440,11 +445,11 @@ body {
         display:none;
     }
 
-   
+
     #header #all_menu {
         background-color:#333;
     }
-  
+
     #header .member.on {
         display:block;
         position:fixed;

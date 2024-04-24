@@ -14,6 +14,14 @@ $guestroom_code = isset($_REQUEST['guestroom_code']) ? $_REQUEST['guestroom_code
 $guestroom_type = isset($_REQUEST['guestroom_type']) ? $_REQUEST['guestroom_type'] : '';
 $guestroom_name = isset($_REQUEST['guestroom_name']) ? $_REQUEST['guestroom_name'] : '';
 $guestroom_intro = isset($_REQUEST['guestroom_intro']) ? $_REQUEST['guestroom_intro'] : '';
+
+// 4줄 추카
+$car_year = isset($_REQUEST['car_year']) ? $_REQUEST['car_year'] : '';
+$fuel = isset($_REQUEST['fuel']) ? $_REQUEST['fuel'] : '';
+$transmission = isset($_REQUEST['transmission']) ? $_REQUEST['transmission'] : '';
+$F_efficiency = isset($_REQUEST['F_efficiency']) ? $_REQUEST['F_efficiency'] : '';
+
+
 $guestroom_phone = isset($_REQUEST['guestroom_phone']) ? $_REQUEST['guestroom_phone'] : '';
 $guestroom_homepage = isset($_REQUEST['guestroom_homepage']) ? $_REQUEST['guestroom_homepage'] : '';
 $driver_age = isset($_REQUEST['driver_age']) ? $_REQUEST['driver_age'] : '';
@@ -173,7 +181,8 @@ $sql = "INSERT INTO $GUESTROOM_INFO_TB
          ,'$car_parking_able','$camping_able','$pet_able','$delivery_able','$driver_area','$discount_1','$discount_2'
          ,'$immediately_reserve','$minimum_reservation_day','$maximum_reservation_day','".$com_name_str."','$lat','$lng'
          )";
-*/
+*/ 
+// 4.21 연료등 4줄 추카
    $sql = "INSERT INTO $GUESTROOM_INFO_TB
            SET
 		   user_id='$user_str',
@@ -181,6 +190,10 @@ $sql = "INSERT INTO $GUESTROOM_INFO_TB
 		   guestroom_code='$guestroom_code',
            guestroom_name='$guestroom_name',
            guestroom_intro='$guestroom_intro',
+           car_year='$car_year',
+           fuel='$fuel',
+           transmission='$transmission',
+           F_efficiency='$F_efficiency',
            guestroom_personnel='$guestroom_personnel',
            guestroom_quantity='$guestroom_quantity',
            guestroom_max_personnel='$guestroom_max_personnel',
@@ -233,7 +246,7 @@ $sql = "INSERT INTO $GUESTROOM_INFO_TB
    echo"$json";
    exit;
  }else if($division == 'modify') {
-   /*상품정보수정*/
+   /*상품정보수정 4.214줄 추가*/
 //    $get_geolocation_google = get_geolocation_google($address);
 //    $geolocationExp = explode("^",$get_geolocation_google);
 //    $lat = $geolocationExp['0'];
@@ -247,6 +260,10 @@ $sql = "INSERT INTO $GUESTROOM_INFO_TB
             guestroom_type='$guestroom_type'
            ,guestroom_name='$guestroom_name'
            ,guestroom_intro='$guestroom_intro'
+           ,car_year='$car_year'
+           ,fuel='$fuel'
+           ,transmission='$transmission'
+           ,F_efficiency='$F_efficiency
            ,guestroom_personnel='$guestroom_personnel'
            ,guestroom_quantity='$guestroom_quantity'
            ,guestroom_max_personnel='$guestroom_max_personnel'

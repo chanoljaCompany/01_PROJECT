@@ -19,17 +19,19 @@
                 <div id="sit_info_wrap" style="margin-top: 30px;">
                     <!-- 제목, 탭 영역 -->
                     <h3 id="room_subject">[카올라] 카니발 캠퍼밴 (2인승)</h3>
+                    <!--
                     <span>프리미엄 풀옵션 차박</span>
                     <section id="tabHeader" class="travel_scroll_tab_header">
-                        <!--<h4 class="hide">tab header</h4> -->
+                        <h4 class="hide">tab header</h4>
                         <div class="tab_header_wrapper">
                             <ul class="tab_headers">
                                 <li class="selected" rel="#sit_info"><a>캠핑카 대여 상세 정보</a></li>
-                                <!-- <li rel="#sit_use"><a>사용후기</a></li>
-                                <li rel="#sit_qa"><a>상품문의</a></li> -->
+                                <li rel="#sit_use"><a>사용후기</a></li>
+                                <li rel="#sit_qa"><a>상품문의</a></li>
                             </ul>
                         </div>
                     </section>
+                    -->
                     <!-- 상품정보 시작 -->
                     <div class="tab_con">
                         <div id='sit_info'>

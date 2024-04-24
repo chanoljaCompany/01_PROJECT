@@ -102,6 +102,9 @@ include_once(G5_THEME_PATH."/sub/reserve_camp_tops.php");
 if ($board['bo_table'] == 'jeju')
     include_once(G5_THEME_PATH."/sub/reserve_camp_jeju.php");
 
+if ($board['bo_table'] == 'local')
+    include_once(G5_THEME_PATH."/sub/reserve_camp_local.php");
+
 if ($board['bo_table'] == '71')
 include_once(G5_THEME_PATH."/sub/71.php");
                             

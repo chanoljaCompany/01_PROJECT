@@ -17,13 +17,20 @@
             $(this).parent(".sch_select").toggleClass("active");
         });
     });
-    
+
     $(function(){
         $(".list_select").click(function(){
+            $(".active").not($(this).parent(".list_form")).removeClass("active");
             $(this).parent(".list_form").toggleClass("active");
         });
     });
-    
+
+    $(function(){
+        $(".list_x").click(function(){
+            $(this).parent().parent().parent(".list_form").removeClass("active");
+        });
+    });
+
     /* 탭 메뉴 */
     $(function (){
 	    $(".tab_con>div").hide();
@@ -105,7 +112,7 @@ $("#inputDate_sub").flatpickr({
         $(document).ready(function() {
         $("#subpagebg").hide();  
         $("#sub_page_1").hide(); 
-        $("#sub_page_map").hide(); 
+        //$("#sub_page_map").hide(); 
         $("#sub_page_detail").hide(); 
         $("#customer_info").hide(); 
         $("#reservation_completion").hide(); 
@@ -124,7 +131,7 @@ $("#inputDate_sub").flatpickr({
         reserve_fifth("<?=$orderId?>");    
         $("#subpagebg").hide();  
         $("#sub_page_1").hide(); 
-        $("#sub_page_map").hide(); 
+       // $("#sub_page_map").hide(); 
         $("#sub_page_detail").hide(); 
         $("#customer_info").hide(); 
         $("#reservation_completion").show(); 
@@ -143,7 +150,7 @@ $("#inputDate_sub").flatpickr({
         $(document).ready(function() {
         $("#subpagebg").hide();  
         $("#sub_page_1").hide(); 
-        $("#sub_page_map").hide(); 
+       // $("#sub_page_map").hide(); 
         $("#sub_page_detail").hide(); 
         $("#customer_info").hide(); 
         $("#reservation_completion").hide(); 
@@ -153,13 +160,30 @@ $("#inputDate_sub").flatpickr({
         $("#memberjoin").hide(); 
         room_detail('<?=$car_code?>');  
     });
+
+    <? }else if($act_target == 'mall'){?>
+        $(document).ready(function() {
+        $("#subpagebg").hide();  
+        $("#sub_page_1").show(); 
+        $("#sub_page_detail").hide(); 
+        $("#customer_info").hide(); 
+        $("#reservation_completion").hide(); 
+        $("#reservation_inquiry_list").hide(); 
+        $("#reservation_inquiry").hide(); 
+        $("#login_form").hide(); 
+        $("#memberjoin").hide(); 
+        findSearchData('mall');
+        
+          
+    });
+
     <?}else{?>
         $(document).ready(function() {
          //    room_image('9416914189');
         //    room_detail('9416914189');
         $("#subpagebg").show();  
         $("#sub_page_1").hide(); 
-        $("#sub_page_map").hide(); 
+       // $("#sub_page_map").hide(); 
         $("#sub_page_detail").hide(); 
         $("#customer_info").hide(); 
         $("#reservation_completion").hide(); 
@@ -169,7 +193,7 @@ $("#inputDate_sub").flatpickr({
         $("#memberjoin").hide(); 
         //   reserve_fifth('1647937331');
         get_area();
-        get_option_basic();
+        //get_option_basic();
     });
     <?}?>
    
@@ -191,12 +215,20 @@ $("#inputDate_sub").flatpickr({
       console.log('guestroom_info_ajax error');
       },
      success:function(json){
-    //   console.log('get_area========');
+       //console.log('get_area========', json[0]['area_name']);
        areaData = json;
        var html = "";
-        for(var i=0 ; i < areaData.length ;i++ ){
+       /*
+         html += "<span>";
+         html += "<input type='checkbox' name='area[]' value='' onclick='location_allcheck()' class='check_box' id='all_check'>";
+         html += "<label for='chk1'>전체</label>";
+         html += "</span>";
+        */
+        for(var i=0 ; i < areaData.length ; i++ ){
+        
+			console.log('data test : ', json[i]);
             html += "<span>";
-            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class=''>";
+            html += "<input type='checkbox' name='area[]' value='"+areaData[i]['area_code']+"' class='check_box'>";
             html += "<label for='chk1'>"+areaData[i]['area_name']+"</label>";
             html += "</span>";
             $("#mainArea").html(html);
@@ -235,6 +267,12 @@ $("#inputDate_sub").flatpickr({
    });
   }
 
+function location_allcheck() {
+    var isChecked = $('#all_check').prop('checked');
+
+    $('.check_box').prop('checked', isChecked);
+}
+
 function setDate(setdate){
     //  alert('setdate ' + setdate);
     $("#dateStr").val(setdate);
@@ -245,10 +283,53 @@ function setDate(setdate){
 function findSearchData(locate) {
   if(locate == 'main'){
     $("#sub_page_1").show(); 
-    $("#sub_page_map").show(); 
+    //$("#sub_page_map").show(); 
     $("#subpagebg").hide(); 
     setDate($("#inputDate").val());
     $("#inputDate_sub").val($("#inputDate").val());
+  }
+  else if(locate == 'icairport'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+  else if(locate == 'jeonju'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+
+  else if(locate == 'mall'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+
+  else if(locate == 'tops'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());
+    
+  }
+  else if(locate == 'deajeo'){
+    $("#sub_page_1").show(); 
+    $("#subpagebg").hide(); 
+    setDate($("#inputDate").val());
+    $("#inputDate_sub").val($("#inputDate").val());    
+  }
+
+  else if(locate == 'jeju'){
+      $("#sub_page_1").show();
+      $("#subpagebg").hide();
+      setDate($("#inputDate").val());
+      $("#inputDate_sub").val($("#inputDate").val());
   }
   else if(locate == 'init'){
     setDate('<?=$dateType?>').val();
@@ -304,7 +385,7 @@ if(divisionType == '1'){
     //   console.log(pair[0]+ ', ' + pair[1]);
     }
   $.ajax({
-      type: 'POST',
+      type: 'post',
       url:'/client/act/get_room_info.php',
       enctype: 'multipart/form-data',
       data:formData,
@@ -312,9 +393,11 @@ if(divisionType == '1'){
       contentType : false,
       processData : false,
       error: function (request, status, error) {
-      console.log('event error');
+        // console.log('sddddddddddddddddd');
+        console.log('event error');
       },
       success:function(html){
+        // console.log('html', html);
         // alert();
     //   if(conType == '1'){
     //   $("#reserve_first_area_mo").html(html);
@@ -328,8 +411,8 @@ if(divisionType == '1'){
    }
 
  );
- $("#mapid").val('getData');
- setTimeout(mapstart, 1000, 1);
+ //$("#mapid").val('getData');
+ //setTimeout(mapstart, 1000, 1);
  
 //   showLoadingBar('stop');
 }
@@ -388,14 +471,14 @@ function room_image(guestroom_code){
 function room_detail(guestroom_code){
   $("#sub_page_detail").show(); 
   $("#sub_page_1").hide(); 
-  $("#sub_page_map").hide(); 
+ // $("#sub_page_map").hide(); 
   var dateStr = $("#dateStr").val();
 //   alert(dateStr);
   //var dateStr="2022-03-19~2022-03-20";
   if(dateStr =='') {
     dateStr = "<?=$intidate?>";
   }
-  var makeCopyUrl = "http://www.chanolja.co.kr/bbs/board.php?bo_table=70&act_target=car_detail&car_code="+guestroom_code;
+  var makeCopyUrl = "http://http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=car_detail&car_code="+guestroom_code;
   $("#copyUrl").val(makeCopyUrl);
 //   alert(dateStr);
   var division = 'guestroom_info_ajax';
@@ -419,9 +502,13 @@ function room_detail(guestroom_code){
         pid = "1";
        var state = { 'page_id': 1, 'user_id': 5 }; 
        var title = 'Hello World'; 
-       var url = '/bbs/board.php?bo_table=70'; 
+       var url = '/bbs/board.php?bo_table=mall'; 
        history.pushState(state, title, url);
       $("#sit_info").html(html);
+
+
+      // 스크롤을 최상단으로 이동
+      window.scrollTo(0, 0);
      }
    }
  );
@@ -452,13 +539,13 @@ function loadStateContent(stateData){
     // }
     // alert(pid);
     if(pid == '1'){
-        $("#sub_page_map").show(); 
+       // $("#sub_page_map").show(); 
         $("#sub_page_detail").hide(); 
         $("#sub_page_1").show(); 
         move_top();
     }
     else if(pid == '2'){
-        $("#sub_page_map").hide(); 
+        //$("#sub_page_map").hide(); 
         $("#sub_page_detail").show(); 
         $("#customer_info").hide(); 
         move_top();
@@ -519,7 +606,7 @@ function rightData() {
         $("#guestroom_name").val(room_info_data[i]['guestroom_name']);
         $("#select_guestroom_code").val(room_info_data[i]['guestroom_code']);
         $("#guestroom_use_hour").val(room_info_data[i]['guestroom_use_hour']);
-        $("#reserve_term").text("X"+room_info_data[i]['dateintval']);
+        $("#reserve_term").text(room_info_data[i]['dateintval']+"박");
 
         
         if(room_info_data[i]['dateintval'] == '1'){
@@ -586,8 +673,8 @@ function rightData() {
         $("#opt_pay").hide();
     } 
     move_top();
-    $("#mapid").val('rightData');
-    setTimeout(mapstart, 1000, 1);
+    //$("#mapid").val('rightData');
+    //setTimeout(mapstart, 1000, 1);
 }
 function optcheck(val){
     var chval = "ch_"+val;
@@ -651,7 +738,7 @@ $("#reserve_btn").click(function(){
        pid = "2";
        var state = { 'page_id': 2, 'user_id': 5 }; 
        var title = 'Hello World'; 
-       var url = '/bbs/board.php?bo_table=70'; 
+       var url = '/bbs/board.php?bo_table=mall'; 
        history.pushState(state, title, url);
   $("#sub_page_detail").hide(); 
   $("#customer_info").show(); 
@@ -879,10 +966,10 @@ function pg_payment_proc(reserve_code) {
         amount: card_pay_total,
         // amount: 1004,
         goodsName: guestroom_name,
-        returnUrl: 'http://www.chanolja.co.kr/bbs/board.php?bo_table=70&act_target=card_return',
+        returnUrl: 'http://www.chanolja.co.kr/bbs/board.php?bo_table=mall&act_target=card_return',
         fnError: function (result) {
 
-		alert(card_pay_total + '개발자확인용 : ' + result.errorMsg + '')
+		//alert(card_pay_total + '개발자확인용 : ' + result.errorMsg + '')
         }
       });
 }
@@ -1127,7 +1214,7 @@ function reserve_confirm_detail(guestroom_reserve_code,dnum){
 
 }
 </script>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=df0e6b53dd68e241445cdf16324475bb"></script>
+<!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=df0e6b53dd68e241445cdf16324475bb"></script> -->
 <!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=63dd22443462e7c3d0e4dfbdb9c49b05"></script> -->
 
 <script>

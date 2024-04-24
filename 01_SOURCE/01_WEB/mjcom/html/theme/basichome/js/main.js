@@ -1,6 +1,6 @@
 
 $(window).resize(function(){
-	loaction.reload();
+    location.reload();
 });
 
 $(document).ready(function(){
@@ -31,11 +31,14 @@ $(document).ready(function(){
                  if(destination.index!==0){
                      $('#header').addClass('active');
                      $('.top-btn').addClass('on')
+
                  }else{
                      $('#header').removeClass('active')
                      $('.top-btn').removeClass('on')
                      $('.menu_tit').removeClass('black_tit');
                      $('.userBox a').removeClass('black_tit');
+                     $('#fp-nav ul li').removeClass('on');
+                     $('#header').css('background-color', 'transparent');
 
                  }
 
@@ -43,8 +46,6 @@ $(document).ready(function(){
                      $('#fp-nav ul li').addClass('on');
                      $('.menu_tit').addClass('black_tit');
                      $('.userBox a').addClass('black_tit');
-                 }else{
-                     $('#fp-nav ul li').removeClass('on');
                  }
                  if(destination.index==1 || destination.index==5){
                     $('.top-btn').addClass('active')
@@ -55,11 +56,17 @@ $(document).ready(function(){
                  if(destination.index==2){
                      $('.menu_tit').removeClass('black_tit');
                      $('.userBox a').removeClass('black_tit');
+                     $('#header.active').css('background-color', 'transparent');
+                     $('#fp-nav ul li').removeClass('on');
+                 }else {
+                     $('#header.active').css('background-color', 'rgba(255,255,255,0.5)');
                  }
+
 
                  if(destination.index==3){
                      $('.menu_tit').addClass('black_tit');
                      $('.userBox a').addClass('black_tit');
+                     $('#fp-nav ul li').addClass('on');
                  }
 
              },
@@ -80,8 +87,8 @@ $(document).ready(function(){
         slidesToShow:1,
         slidesToScroll:1,
         appendArrows:$('.main-controll'),
-        prevArrow:"<div><i class='xi-angle-left'></i></div>",
-        nextArrow:"<div><i class='xi-angle-right'></i></div>",
+        prevArrow:"<div><i class=\"fa-solid fa-chevron-left\"></i></div>",
+        nextArrow:"<div><i class=\"fa-solid fa-chevron-right\"></i></div>",
         fade:true,
     });
 
@@ -354,7 +361,7 @@ $(document).ready(function(){
         if($(window).width() < 1001 && $(window).width()>=601) { 			
             $('.sec3-contents').slick('unslick'); 		
         }else{ 			
-            $('.sec3-contents').not('.slick-initialized').slick(slickOptions); 		
+            //$('.sec3-contents').not('.slick-initialized').slick(slickOptions);
         } 
     });
 

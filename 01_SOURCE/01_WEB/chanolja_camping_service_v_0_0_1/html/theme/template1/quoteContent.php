@@ -41,7 +41,7 @@
 </div>
 
 <div class="help" style="cursor:pointer; display:none; position:fixed; z-index:999; bottom: 10%; right: 20px; transform: translateY(50%);">
-    <img src="http://cmtest.dothome.co.kr/theme/template1/img/help.png" />
+    <img src="<?php echo G5_THEME_IMG_URL ?>/help.png" />
 </div>
 
 <style>

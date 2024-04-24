@@ -1,5 +1,5 @@
     <!-- 리스트 페이지 -->
-    <div class="col-md-7 col-sm-12 col-xs-12 list_left"  id="loadingArea">
+    <div style="width:100%;" class="col-md-7 col-sm-12 col-xs-12 list_left"  id="loadingArea">
         <div class="list_filter">
             <div class="list_content">
                 <ul class="row">

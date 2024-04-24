@@ -19,6 +19,7 @@ if($mem_autologin){
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>차놀자 파트너스센터</title>

@@ -73,7 +73,7 @@ $get_management_value = get_management_value();
 // print_r($get_wzp_pension_info);
 
 
-include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+//include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
 ?>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>

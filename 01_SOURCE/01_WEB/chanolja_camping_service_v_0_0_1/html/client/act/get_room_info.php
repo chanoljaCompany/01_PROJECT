@@ -56,29 +56,10 @@ if($division == 'getData'){
 
   }
   $arrayLocation = array();
-
-  /*
-$sql = "SELECT B.* ,C.*
-    FROM $GUESTROOM_RESERVATION_INFO_TB AS A
-    INNER JOIN $GUESTROOM_RESERVATION_TB AS B
-    ON B.guestroom_reserve_code = A.guestroom_reserve_code
-    INNER JOIN $GUESTROOM_INFO_TB AS C
-    ON C.guestroom_code = A.guestroom_code
-    WHERE 1=1
-    AND A.guestroom_reserve_date = '".$dateString."'
-    ".$sub_qry."
-    AND A.guestroom_reserve_status = '3'
-    GROUP BY A.guestroom_code  
-    ";
-
-$result = sql_query($sql);
-
-    김찬희 추가
-*/
-
   foreach ($room_info_array_etc as $key=>$value) {
 ?>
     <script>
+        console.log("test");
       var room_info_array_etc = <?php echo json_encode($room_info_array_etc); ?>;
       console.log(room_info_array_etc);
     </script>

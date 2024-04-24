@@ -223,7 +223,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap" style="margin-bottom: 20px !important; margin-top: 20px;">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
+              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=mall" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:85%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; font-size:19px; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -240,7 +240,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div class="aboutWrap_mo" style="margin-bottom: 20px !important; ">
    <div class="box inner" style="padding : 0px;">
     <div class="detail">
-              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall" style="display:flex; position:relative;">
+              <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=mall" style="display:flex; position:relative;">
                 <img style="border-radius:10px; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .15); opacity:1; width:75%;" src="<?php echo G5_THEME_IMG_URL ?>/serch_bar1.png" style="max-width : 100%">
                 <span
                     style="position:absolute; top:50%; left:7%; transform: translateY(-50%); font-weight:bold;"
@@ -266,7 +266,7 @@ include_once(G5_THEME_PATH.'/head.php');
 -->
 <div class="slider" style="max-witdh : 100%;  position: relative;">
       <div><img class="slider_img1" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner.jpg" style="border-radius: 20px; "></div>
-      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.png" style="border-radius: 20px; "></div>
+      <div><img class="slider_img2" src="<?php echo G5_THEME_IMG_URL ?>/top_banner/top_banner2.jpg" style="border-radius: 20px; "></div>
 </div>
 
 <!-- 상단아이콘 PC -->
@@ -275,12 +275,12 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="detail">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall">
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=mall">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon1.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall">
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=mall">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon2.png" style="margin-right : 60px; width:192px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
 
@@ -322,7 +322,7 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="detail">
             <ul class="clearfix2">
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng">
+                    <a href="http://gsrent.kr/">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
@@ -333,7 +333,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://company.chanolja.co.kr/bbs/board.php?bo_table=52">
+                    <a href="http://gsrent.kr/bbs/board.php?bo_table=qanda">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/customer__.png" style=" border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" >
                     </a>
                 </li>
@@ -388,7 +388,7 @@ function touch_end(event) {
 <div class="aboutWrap">
     <div class="box inner">
      		<div class="main_title">
-               <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자렌트카</h2>
+               <h2 class="wow fadeInDown" data-wow-delay="0.4s">차놀자 인기차량</h2>
 		      <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=tour_guide"><h5 class="wow fadeInDown" data-wow-delay="0.4s">전체보기</h5></a>
             </div>
             <div class="detail">
@@ -539,10 +539,10 @@ function touch_end(event) {
         <div class="detail" style="display:flex; justify-content: center;">
             <ul class="clearfix">
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin-left:10px;">
-                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon1.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon1.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
-                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon2.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
+                    <a href="http://testsv.dothome.co.kr/bbs/board.php?bo_table=mall&act_target=mall"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon2.png" style="width:90px; margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
                 </li>
                 <li class="wow bounceInUp" data-wow-delay="0.5s">
                     <a href="#"><img src="<?php echo G5_THEME_IMG_URL ?>/icon/top_icon3.png" style="width:90px;margin-left : 5px; margin-right : 5px; border-radius: 20px;  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .15); opacity:1;" ></a>
@@ -569,7 +569,7 @@ function touch_end(event) {
         <div class="detail">
             <ul class="clearfix2" >
                 <li class="wow bounceInUp" data-wow-delay="0.5s" style="margin:20px;  width:88% !important;">
-                    <a href="http://www.chanolja.co.kr/bbs/board.php?bo_table=rv_rental_mng">
+                    <a href="http://gsrent.kr/">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/business__1.png" style="margin-right:40px; border-radius: 20px;  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35); opacity:1;" >
                     </a>
                 </li>

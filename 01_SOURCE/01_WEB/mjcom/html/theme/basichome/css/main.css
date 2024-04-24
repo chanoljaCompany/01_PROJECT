@@ -95,15 +95,14 @@
 .main-tit{
     position: absolute;
     top:50%;left: 50%;
-    transform: translate(-50%,-50%);
-    width:100%;
+    transform: translate(-50%,-35%);
+    width:1200px;
 }
 
 .main-tit dl{
     text-align: center;
     color:#fff;
     text-shadow: 3px 3px 10px #111;
-    margin-top:10%;
 }
 .main-tit dt{
     font-size: 30px;
@@ -253,7 +252,7 @@
 }
 
 .sec1-inner{
-    width:1440px;
+    width:1200px;
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -261,7 +260,7 @@
     position: relative;
 }
 .sec1-lt{
-    width:47%;
+    width:50%;
 }
 .sec1-lt .slick-slide img{
     width:100%;
@@ -275,7 +274,7 @@
 }
 
 .sec1-rt{
-    width:45%;
+    width:50%;
     padding-top:15px;
 }
 .sec1-rt .category{
@@ -396,12 +395,14 @@
 }
 .sec2-inner{
     display: flex;
-    width:100%;height: 100%;
+    width:1200px;height: 100%;
+    margin: 0 auto;
 }
 .sec2-lt{
-    width:53%;height: 100%;
+    width:35%;height: 100%;
     display: flex;align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 12%;
 }
 .sec2-con{
     display: flex;
@@ -534,21 +535,9 @@
     color:#666;
 }
 .sec2-rt{
-    width:47%;height: 100%;
-    background-image:url("../img/main/Pipeline_01.jpg")
+    width:56%;height: 100%;
 }
-.sec2-rt.on1{
-    background-image: url("../img/main/Pipeline_02.jpg");
-}
-.sec2-rt.on2{
-    background-image: url("../img/main/Pipeline_03.jpg");
-}
-.sec2-rt.on3{
-    background-image: url("../img/main/Pipeline_04.jpg");
-}
-
 .section3 .bg{
-    background-image: url("../img/main/7.jpg");
     position: relative;
     width:100%;height: 100%;
     position: absolute;top:0;left: 0;
@@ -560,41 +549,30 @@
     height: 100%;
     position: absolute;
     top:0;left: 0;
-    background-color: rgba(0, 0, 0, 0.45);
     z-index: 0;
 }
 .sec3-inner{
-    width:1400px;
+    width:1200px;
     margin:0 auto;
     z-index: 99999;
 }
 .sec3-tit{
-    width:100%;text-align: center;
+    width:100%;
 }
 .sec3-tit dl{
-    color:#fff;
 }
 .sec3-tit dt{
     font-size: 72px;
-    font-weight: 600;
+    font-weight: 900;
     margin-top:25px;
+    margin-bottom:50px;
 }
 .sec3-tit dd{
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1.3;
     margin-top:10px;
-}
-.sec3-tit dd:nth-of-type(1){
-    font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sec3-tit dd .line{
-    width:60px;height: 1px;
-    background-color: #fff;
-    margin-right: 10px;
+    color:#54C3FD;
+    font-weight: 600;
 }
 .sec3-contents{
     width:100%;
