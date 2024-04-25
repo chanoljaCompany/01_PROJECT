@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ac408e9-d96d-48c5-b075-f8e1723eb870" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../chanolja_mng/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../chanolja_mng/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanolja_mng/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chanolja_mng/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanolja_mng/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanolja_mng/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chanolja_mng/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanolja_mng/chanolja_mng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanolja_mng/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7ac408e9-d96d-48c5-b075-f8e1723eb870" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,25 +32,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kimchanhee/Documents/GitHub/01_PROJECT/01_SOURCE/01_WEB/chanolja_mng_b",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kimchanhee/Documents/GitHub/01_PROJECT/01_SOURCE/01_WEB/chanolja_mng_b&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/html/view/img" />
@@ -84,6 +76,7 @@
       <workItem from="1710986661558" duration="7649000" />
       <workItem from="1710999275336" duration="3159000" />
       <workItem from="1711324723319" duration="975000" />
+      <workItem from="1714023183640" duration="53000" />
     </task>
     <servers />
   </component>

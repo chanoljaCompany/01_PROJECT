@@ -225,6 +225,7 @@ include_once(G5_THEME_PATH.'/head.php');
                     border: 1px solid #54C3FE !important;
                 }
 
+
                 .morebtn_arrow {
                     position: relative;
                     right: -2px;
@@ -394,13 +395,11 @@ include_once(G5_THEME_PATH.'/head.php');
                 .section1.hide .sec_h3,
                 .section1.hide .sec_h1,
                 .section1.hide .sec_p,
-                .section1.hide .sec_morebtn,
                 .section1.hide .sec1-rt{opacity: 0; transform: translateY(100px); }
 
                 .section1 .sec_h3,
                 .section1 .sec_h1,
                 .section1 .sec_p,
-                .section1 .sec_morebtn,
                 .section1 .sec1-rt{opacity: 1 ; transform: translateY(0); transition: all 750ms ease-out; }
 
                 .section1 .sec_h1{
@@ -411,9 +410,6 @@ include_once(G5_THEME_PATH.'/head.php');
                     transition-delay: 600ms;
                 }
 
-                .section1 .sec_morebtn{
-                    transition-delay: 900ms;
-                }
 
                 .section1 .sec1-rt{
                     transition-delay: 1200ms;
@@ -1070,13 +1066,11 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 .section2.hide .sec_h3,
                 .section2.hide .sec_h1,
-                .section2.hide .sec_p,
-                .section2.hide .sec_morebtn{opacity: 0; transform: translateY(100px); }
+                .section2.hide .sec_p{opacity: 0; transform: translateY(100px); }
 
                 .section2 .sec_h3,
                 .section2 .sec_h1,
-                .section2 .sec_p,
-                .section2 .sec_morebtn{opacity: 1 ; transform: translateY(0); transition: all 750ms ease-out; }
+                .section2 .sec_p{opacity: 1 ; transform: translateY(0); transition: all 750ms ease-out; }
 
                 .section2 .sec_h1{
                     transition-delay: 300ms;
@@ -1086,9 +1080,6 @@ include_once(G5_THEME_PATH.'/head.php');
                     transition-delay: 600ms;
                 }
 
-                .section2 .sec_morebtn{
-                    transition-delay: 900ms;
-                }
             </style>
 
             <div class="section hide section2" >

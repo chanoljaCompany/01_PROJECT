@@ -482,13 +482,11 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 .section2.hide .s2_h3,
                 .section2.hide .s2_h1,
-                .section2.hide .s2_p,
-                .section2.hide .sec_morebtn{opacity: 0; transform: translateY(100px); }
+                .section2.hide .s2_p{opacity: 0; transform: translateY(100px); }
 
                 .section2 .s2_h3,
                 .section2 .s2_h1,
-                .section2 .s2_p,
-                .section2 .sec_morebtn{opacity: 1 ; transform: translateY(0); transition: all 750ms ease-out; }
+                .section2 .s2_p{opacity: 1 ; transform: translateY(0); transition: all 750ms ease-out; }
 
                 .section2 .s2_h1{
                     transition-delay: 300ms;
@@ -496,10 +494,6 @@ include_once(G5_THEME_PATH.'/head.php');
 
                 .section2 .s2_p{
                     transition-delay: 600ms;
-                }
-
-                .section2 .sec_morebtn{
-                    transition-delay: 900ms;
                 }
 
 
